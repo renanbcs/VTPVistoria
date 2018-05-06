@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "624339179875",
+    "firebase_url": "https://vtpvistoria-9896b.firebaseio.com",
+    "project_id": "vtpvistoria-9896b",
+    "storage_bucket": "vtpvistoria-9896b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:624339179875:android:48886732a85cafe6",
+        "android_client_info": {
+          "package_name": "com.vtpvistorias_tcc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "624339179875-j005vgq4iasc9bq5e3bevc45525m4thh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vtpvistorias_tcc",
+            "certificate_hash": "0ab90a87034f94185c408d99aca8430dbc84dc04"
+          }
+        },
+        {
+          "client_id": "624339179875-3mfkbvrgd4ja4jo0k5gqa23q17ol8ia6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAapbo__AgDnFsGYnjPs-7f-01o64lu4aE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "624339179875-3mfkbvrgd4ja4jo0k5gqa23q17ol8ia6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
