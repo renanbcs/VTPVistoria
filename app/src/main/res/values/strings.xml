@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">VTPVistorias-TCC</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="item_sair">Sair</string>
+    <string name="item_configuracao">Configuração</string>
+    <string name="botao_voltar">Voltar</string>
+    <string name="botao_proximo">Próximo</string>
+    <string name="hint_prefixo">Prefixo do Veiculo</string>
+    <string name="mensagem_iniciarInspecao">Insira o Prefixo do veiculo para iniciar o processo de inspeção</string>
 </resources>
