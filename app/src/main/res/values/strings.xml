@@ -7,4 +7,13 @@
     <string name="botao_proximo">Próximo</string>
     <string name="hint_prefixo">Prefixo do Veiculo</string>
     <string name="mensagem_iniciarInspecao">Insira o Prefixo do veiculo para iniciar o processo de inspeção</string>
+    <string name="mensagem_detalhesVeiculo">Confirme os dados do veiculo:</string>
+    <string name="label_prefixo">Prefixo:</string>
+    <string name="label_placa">Placa:</string>
+    <string name="label_chassi">Chassi:</string>
+    <string name="label_empresa">Empresa:</string>
+    <string name="label_bloqueado">Bloqueado:</string>
+    <string name="sim">Sim</string>
+    <string name="não">Não</string>
+
 </resources>

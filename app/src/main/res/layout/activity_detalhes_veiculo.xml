@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="420dp"
+    tools:context=".activity.DetalhesVeiculoActivity"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/textView_mensagemDetalhesVeiculo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mensagem_detalhesVeiculo" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/textView_labelPrefixo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_prefixo"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/textView_Prefixo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+    </TableRow>
+
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/textView_labelPlaca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_placa"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/textView_Placa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+    </TableRow>
+
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/textView_labelChassi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_chassi"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/textView_Chassi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+    </TableRow>
+
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/textView_labelEmpresa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_empresa"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/textView_Empresa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/textView_labelBloqueado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_bloqueado"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/textView_Bloqueado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+    </TableRow>
+
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp">
+
+        <Button
+            android:id="@+id/button_Não"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/não"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/button_Sim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sim"
+            android:layout_margin="10dp"/>
+    </TableRow>
+
+
+</LinearLayout>

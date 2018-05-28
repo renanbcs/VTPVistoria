@@ -1,6 +1,8 @@
 package com.vtpvistorias_tcc.Model;
 
-public class Veiculo {
+import java.io.Serializable;
+
+public class Veiculo implements Serializable{
 
     //Atributos
 
@@ -17,6 +19,11 @@ public class Veiculo {
         this.chassi = chassi;
         this.empresa = empresa;
         this.placa = placa;
+
+    }
+
+    public Veiculo(){
+
 
     }
 
@@ -43,12 +50,12 @@ public class Veiculo {
 
     //Set's
 
-    public void setPrefixo(int prefixo) {
-        this.prefixo = prefixo;
-    }
+    public void setPrefixo(String prefixo) { this.prefixo = Integer.parseInt(prefixo); }
 
-    public void setBloqueado(boolean bloqueado) {
-        this.bloqueado = bloqueado;
+    public void setBloqueado(String bloqueado) {
+
+        if(bloqueado.equals("Sim"))this.bloqueado = true;
+        else this.bloqueado = false;
     }
 
     public void setChassi(String chassi) {
