@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SelecionarFichaActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/botaoGrupoA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="103dp"
+        android:background="@color/botaoGrupoFichaColor"
+        android:padding="@dimen/padding_botao_padrao"
+        android:text="@string/grupoA"
+        android:textColor="@color/botaoTextoPadrao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botaoGrupoA1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:background="@color/botaoGrupoFichaColor"
+        android:padding="@dimen/padding_botao_padrao"
+        android:text="@string/grupoA1"
+        android:textColor="@color/botaoTextoPadrao"
+        app:layout_constraintStart_toStartOf="@+id/botaoGrupoA"
+        app:layout_constraintTop_toBottomOf="@+id/botaoGrupoA" />
+
+    <Button
+        android:id="@+id/botaoGrupoB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@color/botaoGrupoFichaColor"
+        android:padding="@dimen/padding_botao_padrao"
+        android:text="@string/grupoB"
+        android:textColor="@color/botaoTextoPadrao"
+        app:layout_constraintStart_toStartOf="@+id/botaoGrupoA1"
+        app:layout_constraintTop_toBottomOf="@+id/botaoGrupoA1" />
+
+
+    <Button
+        android:id="@+id/botaoCancelarFicha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:background="@color/botaoCancelar"
+        android:text="@string/botao_cancelar"
+        android:textColor="@color/botaoTextoEscuro"
+        app:layout_constraintStart_toStartOf="@+id/botaoGrupoB"
+        app:layout_constraintTop_toBottomOf="@+id/botaoGrupoB" />
+</android.support.constraint.ConstraintLayout>

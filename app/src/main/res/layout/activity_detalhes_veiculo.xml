@@ -17,7 +17,8 @@
             android:id="@+id/textView_mensagemDetalhesVeiculo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/mensagem_detalhesVeiculo" />
+            android:text="@string/mensagem_detalhesVeiculo"
+            android:textColor="@color/preto"/>
     </TableRow>
 
     <TableRow
@@ -133,17 +134,17 @@
 
         <Button
             android:id="@+id/button_Não"
-            android:layout_width="wrap_content"
+            android:layout_width="75dp"
             android:layout_height="wrap_content"
-            android:text="@string/não"
-            android:layout_margin="10dp"/>
+            android:layout_margin="10dp"
+            android:text="@string/não" />
 
         <Button
             android:id="@+id/button_Sim"
-            android:layout_width="wrap_content"
+            android:layout_width="75dp"
             android:layout_height="wrap_content"
-            android:text="@string/sim"
-            android:layout_margin="10dp"/>
+            android:layout_margin="10dp"
+            android:text="@string/sim" />
     </TableRow>
 
 

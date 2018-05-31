@@ -4,17 +4,21 @@ import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.vtpvistorias_tcc.Model.Veiculo;
 import com.vtpvistorias_tcc.R;
 
-public class DetalhesVeiculoActivity extends Activity {
+public class DetalhesVeiculoActivity extends Activity implements View.OnClickListener {
 
     private TextView labelPrefixo,labelPlaca,labelChassi,labelBloqueado,labelEmpresa;
     private Veiculo veiculo;
+    private Button buttonSim, buttonNao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +31,8 @@ public class DetalhesVeiculoActivity extends Activity {
         labelChassi = findViewById(R.id.textView_Chassi);
         labelBloqueado = findViewById(R.id.textView_Bloqueado);
         labelEmpresa = findViewById(R.id.textView_Empresa);
+        buttonSim = findViewById(R.id.button_Sim);
+        buttonNao = findViewById(R.id.button_Não);
 
         Intent i = getIntent();
 
@@ -36,9 +42,35 @@ public class DetalhesVeiculoActivity extends Activity {
         labelPlaca.setText(""+veiculo.getPlaca());
         labelChassi.setText(""+veiculo.getChassi());
         labelEmpresa.setText(""+veiculo.getEmpresa());
+        labelBloqueado.setText(""+veiculo.isBloqueado());
 
-        if(veiculo.isBloqueado())labelBloqueado.setText(R.string.sim);
-        else labelBloqueado.setText(R.string.não);
+        buttonNao.setOnClickListener(this);
+        buttonSim.setOnClickListener(this);
+
+    }
+
+
+    @Override
+    public void onClick(View view) {
+
+        switch (view.getId()){
+
+            case R.id.button_Não:
+
+                finish();
+
+            break;
+
+            case R.id.button_Sim:
+
+                finish();
+                Intent intent = new Intent(getApplicationContext(),SelecionarFichaActivity.class);
+                startActivity(intent);
+
+                break;
+
+
+        }
 
     }
 }

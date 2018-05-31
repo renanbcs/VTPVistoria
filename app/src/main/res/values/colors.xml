@@ -3,4 +3,15 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="preto">#000000</color>
+    <color name="botaoSalvar">#3d9429</color>
+    <color name="botaoCancelar">#edd536</color>
+    <color name="botaoVoltar">#edd536</color>
+    <color name="botaoNovoProcessoInspecao">#061a6b</color>
+    <color name="botaoConsultarInspecao">#061a6b</color>
+    <color name="botaoTextoPadrao">#d9dce6</color>
+    <color name="botaoTextoEscuro">#323338</color>
+    <color name="toolbar">#00030b</color>
+    <color name="toolbar_texto">#ffffff</color>
+    <color name="botaoGrupoFichaColor">#061a6b</color>
 </resources>

@@ -15,5 +15,17 @@
     <string name="label_bloqueado">Bloqueado:</string>
     <string name="sim">Sim</string>
     <string name="não">Não</string>
+    <string name="action_sobre">Sobre</string>
+    <string name="action_deslogar">Deslogar</string>
+    <string name="action_ajuda">Ajuda</string>
+    <string name="botao_salvar">Salvar</string>
+    <string name="botao_cancelar">Cancelar</string>
+    <string name="botao_nova_vistoria">Iniciar novo processo de Inspeção</string>
+    <string name="botao_consultar_vistoria">Consultar Vistoria</string>
+    <string name="digitar_numero_veiculo_texto">Digite o número do veículo</string>
+    <string name="grupoA">Grupo A</string>
+    <string name="grupoA1">Grupo A1</string>
+    <string name="grupoB">Grupo B</string>
+    <string name="escolhaGrupoView">Escolha o grupo da ficha para preenchimento</string>
 
 </resources>

@@ -1,3 +1,5 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="padding_botao_padrao">16dp</dimen>
+    <dimen name="tamanho_texto_padrao">20sp</dimen>
 </resources>

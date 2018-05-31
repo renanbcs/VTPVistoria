@@ -1,5 +1,7 @@
 package com.vtpvistorias_tcc.Model;
 
+import com.vtpvistorias_tcc.R;
+
 import java.io.Serializable;
 
 public class Veiculo implements Serializable{
@@ -32,8 +34,11 @@ public class Veiculo implements Serializable{
         return prefixo;
     }
 
-    public boolean isBloqueado() {
-        return bloqueado;
+    public String isBloqueado() {
+
+        if(bloqueado == true) return "Sim";
+        else return "Não";
+
     }
 
     public String getChassi() {
