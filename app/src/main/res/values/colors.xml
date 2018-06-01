@@ -14,4 +14,5 @@
     <color name="toolbar">#00030b</color>
     <color name="toolbar_texto">#ffffff</color>
     <color name="botaoGrupoFichaColor">#061a6b</color>
+    <color name="branco">#ffff</color>
 </resources>
