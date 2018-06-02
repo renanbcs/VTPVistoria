@@ -7,37 +7,45 @@
     tools:context=".activity.MainActivity"
     tools:layout_editor_absoluteY="25dp">
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/button4"
-        android:layout_marginEnd="75dp"
-        android:text="Buscar" />
-
     <include
         android:id="@+id/toolbar"
         layout="@layout/toolbar" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/botaoNovaInspecao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Iniciar Nova Inspeção" />
+
+    <Button
+        android:id="@+id/botaoLacharVeiculo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="193dp"
-        android:layout_marginStart="68dp"
-        android:text="Voltar" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="222dp"
+        android:text="Lacrar Veículo" />
 
-    <EditText
-        android:id="@+id/editText2"
+    <Button
+        android:id="@+id/botaoConsultarInspecao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="165dp"
+        android:text="Buscar Inspeção" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="161dp"
+        android:layout_height="32dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="233dp"
-        android:ems="10"
-        android:inputType="number" />
+        android:layout_marginTop="181dp"
+        android:text="Menu Principal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="visible" />
+
 
 </RelativeLayout>

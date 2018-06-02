@@ -10,7 +10,7 @@ import com.vtpvistorias_tcc.R;
 
 public class SelecionarFichaActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private Button fichaA1,fichaA,fichaB,cancela;
+    private Button fichaA1,fichaA,fichaB,cancela, botalVoltarTelaIniciarProcesso;
     private Intent i;
 
     @Override
@@ -21,7 +21,7 @@ public class SelecionarFichaActivity extends AppCompatActivity implements View.O
         fichaA = findViewById(R.id.botaoGrupoA);
         fichaA1 = findViewById(R.id.botaoGrupoA1);
         fichaB = findViewById(R.id.botaoGrupoB);
-        cancela = findViewById(R.id.botaoCancelarFicha);
+        cancela = findViewById(R.id.botalVoltarTelaIniciarProcesso);
 
         fichaA.setOnClickListener(this);
         fichaA1.setOnClickListener(this);
@@ -60,7 +60,7 @@ public class SelecionarFichaActivity extends AppCompatActivity implements View.O
 
                 break;
 
-            case R.id.botaoCancelarFicha:
+            case R.id.botalVoltarTelaIniciarProcesso:
 
                 finish();
 

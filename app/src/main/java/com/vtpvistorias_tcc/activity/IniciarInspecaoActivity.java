@@ -27,7 +27,9 @@ public class IniciarInspecaoActivity extends AppCompatActivity implements View.O
 
     private Toolbar toolbar;
     private EditText editTextPrefixo;
-    private Button buttonBuscarPrefixo;
+    private Button botaoBuscarPrefixo;
+    private Button botaoVoltarTelaPrincipal;
+    private Button botaoConsultarInspecao;
     private DatabaseReference firebase;
     private Veiculo veiculo;
 
@@ -41,9 +43,18 @@ public class IniciarInspecaoActivity extends AppCompatActivity implements View.O
         setSupportActionBar(toolbar);
 
         editTextPrefixo = findViewById(R.id.editText_prefixo_inciarInpecao);
-        buttonBuscarPrefixo = findViewById(R.id.button_buscarPrefixo);
+        botaoBuscarPrefixo = findViewById(R.id.botaoBuscarPrefixo);
 
-        buttonBuscarPrefixo.setOnClickListener(this);
+        botaoBuscarPrefixo.setOnClickListener(this);
+
+        botaoVoltarTelaPrincipal = (Button) findViewById(R.id.botaoVoltarTelaPrincipal);
+
+        botaoVoltarTelaPrincipal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
     }
 
@@ -75,7 +86,7 @@ public class IniciarInspecaoActivity extends AppCompatActivity implements View.O
 
         switch (view.getId()){
 
-            case R.id.button_buscarPrefixo:
+            case R.id.botaoBuscarPrefixo:
 
                 if (!editTextPrefixo.getText().toString().equals("")) {
 
