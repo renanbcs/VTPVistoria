@@ -22,15 +22,15 @@
         <activity
             android:name=".activity.IniciarInspecaoActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.DetalhesVeiculoActivity"
-            android:theme="@android:style/Theme.Holo.Dialog"></activity>
-        <activity android:name=".activity.SelecionarFichaActivity"></activity>
+            android:theme="@android:style/Theme.Holo.Dialog" />
+        <activity android:name=".activity.SelecionarFichaActivity" />
         <activity
             android:name=".activity.ItensFichaActivity"
-            android:theme="@android:style/Theme.Holo.Dialog"></activity>
-        <activity android:name=".activity.GrupoAActivity"></activity>
+            android:theme="@android:style/Theme.Holo.Dialog" />
+        <activity android:name=".activity.GrupoAActivity" />
     </application>
 
 </manifest>
