@@ -31,6 +31,10 @@
             android:name=".activity.ItensFichaActivity"
             android:theme="@android:style/Theme.Holo.Dialog" />
         <activity android:name=".activity.GrupoAActivity" />
+        <activity
+            android:name=".activity.GrupoBActivity"
+            android:label="@string/title_activity_grupo_b"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

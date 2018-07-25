@@ -32,5 +32,6 @@
     <string name="itens_fichaA1">* Elevador \n\n* Rampa \n\n*Área reservada - Box\n\n*Itens de segurança\n\n*Identidade visual</string>
     <string name="itens_fichaA">* Freios\n\n*Suspensão\n\n*Tranção\n\n*Sistema Rodante\n\n*Direção/Eixo Dianteiro\n\n*Chassi/Plataforma\n\n*Teste Fuligem</string>
     <string name="itens_fichaB">* Carroceria interna e externa\n\n*Iluminação interna e externa\n\n*Posto de comando\n\n*Sistema Elétrico\n\n*Equip. obrigatórios\Segurança\n\n*Limpeza</string>
+    <string name="title_activity_grupo_b">GrupoBActivity</string>
 
 </resources>
