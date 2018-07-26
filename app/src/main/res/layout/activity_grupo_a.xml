@@ -1,332 +1,438 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".activity.GrupoAActivity">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        tools:context=".activity.GrupoAActivity">
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Grupo A"
-        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.016" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="1 - Sistemas de Freio"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.111" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="99dp"
-        android:layout_height="27dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="8dp"
-        android:text="Componente"
-        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.058"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.224" />
+                <TextView
+                    android:id="@+id/textViewTituloGrupoA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Grupo A"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Irregularidade"
-        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.742"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.221" />
+                <TextView
+                    android:id="@+id/textViewSistemaFreio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="1 - Sistemas de Freio"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="15sp" />
 
-    <CheckBox
-        android:id="@+id/valvulaPedalVazando"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Vazando"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.311" />
+                <TextView
+                    android:id="@+id/textViewValvulaPedal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Válvula Pedal"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:layout_marginLeft="30dp"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
 
-    <CheckBox
-        android:id="@+id/valvulaPedalContaminada"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Contaminada"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.96"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.311" />
+                <CheckBox
+                    android:id="@+id/valvulaPedalVazando"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vazando" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="32dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Válvula Pedal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.119"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.38" />
+                <CheckBox
+                    android:id="@+id/valvulaPedalContaminada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contaminada" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Almofada Pedal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.067"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.533" />
+                <TextView
+                    android:id="@+id/textViewAlmofadaPedal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Almofada Pedal"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:layout_marginLeft="30dp"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="104dp"
-        android:layout_height="36dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Freio de Estacionamento"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.106"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.668" />
+                <CheckBox
+                    android:id="@+id/almofadaPedalGasta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gasta" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="86dp"
-        android:layout_height="37dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Válvula do Freio de Mão"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.113"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.79" />
+                <CheckBox
+                    android:id="@+id/almofadaPedalFalta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Falta" />
 
-    <CheckBox
-        android:id="@+id/almofadaPedalGasta"
-        android:layout_width="wrap_content"
-        android:layout_height="28dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Gasta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.404" />
+                <TextView
+                    android:id="@+id/textViewFreioEstacionamento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Freio de Estacionamento"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:layout_marginLeft="30dp"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
 
-    <CheckBox
-        android:id="@+id/almofadaPedalFalta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Falta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.408" />
+                <CheckBox
+                    android:id="@+id/freioEstacionamentoVazando"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vazando" />
 
-    <CheckBox
-        android:id="@+id/freioEstacionamentoVazando"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Vazando"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/freioEstacionamentoVazandoNaoFunciona"
-        app:layout_constraintHorizontal_bias="0.58"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.52" />
+                <CheckBox
+                    android:id="@+id/freioEstacionamentoNaoFunciona"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Não Funciona" />
 
-    <CheckBox
-        android:id="@+id/freioEstacionamentoVazandoNaoFunciona"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Não Funciona"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.968"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.52" />
+                <TextView
+                    android:id="@+id/textViewVaraoFreioMao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Varão do Freio de Mão"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:layout_marginLeft="30dp"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
 
-    <CheckBox
-        android:id="@+id/valvulaFreioMaoComFolga"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Com Folga"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.57"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.663" />
+                <CheckBox
+                    android:id="@+id/varaoFreioMaoDespressurizada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Despressurizada" />
 
-    <CheckBox
-        android:id="@+id/valvulaFreioMaoFalta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Falta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.829"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.663" />
+                <CheckBox
+                    android:id="@+id/varaoFreioMaoSolta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Solta" />
 
-    <CheckBox
-        android:id="@+id/valvulaFreioMaoSolto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Solto"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.781" />
+                <CheckBox
+                    android:id="@+id/varaoFreioMaoSemAcao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sem Ação" />
 
-    <CheckBox
-        android:id="@+id/valvulaFreioMaoDesregulado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Desregulado"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.968"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.781" />
+                <TextView
+                    android:id="@+id/textViewCatracas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Catracas Automática/Mecânica"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:layout_marginLeft="30dp"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
 
-    <Button
-        android:id="@+id/botaoVoltarSelecionarFicha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Voltar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.982" />
+                <CheckBox
+                    android:id="@+id/catracaFalta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Falta" />
 
-    <Button
-        android:id="@+id/botaoProximo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Próximo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.896"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.982" />
+                <TextView
+                    android:id="@+id/textViewPinoCatraca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Pino da Catraca"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:layout_marginLeft="30dp"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
 
-</android.support.constraint.ConstraintLayout>
+                <CheckBox
+                    android:id="@+id/pinoCatracaFalta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Falta" />
+
+                <TextView
+                    android:id="@+id/textViewLonasFreio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Lonas de Freio"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:layout_marginLeft="30dp"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/lonasFreioContaminada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contaminada" />
+
+                <CheckBox
+                    android:id="@+id/lonasFreioSolta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Solta" />
+
+                <CheckBox
+                    android:id="@+id/lonasFreioQuebrada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quebrada" />
+
+                <CheckBox
+                    android:id="@+id/lonasFreioDesrregulada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Desrregulada" />
+
+                <CheckBox
+                    android:id="@+id/lonasFreioFina"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fina" />
+
+                <TextView
+                    android:id="@+id/textViewCilindrosPneumaticos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Cilindros Pneumáticos"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:layout_marginLeft="30dp"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/cilindrosPneumaticosVazando"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vazando" />
+
+                <CheckBox
+                    android:id="@+id/cilindrosPneumaticosDesativado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Desativado" />
+
+                <TextView
+                    android:id="@+id/textViewServoFreio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Servo do Freio"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:layout_marginLeft="30dp"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/servoFreioVazando"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vazando" />
+
+                <CheckBox
+                    android:id="@+id/servoFreioSolto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Solto" />
+
+                <TextView
+                android:id="@+id/textViewCilindroRoda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Cilindro de Roda"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/cilindroRodaVazando"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vazando" />
+
+                <CheckBox
+                    android:id="@+id/cilindroRodaSolto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Solto" />
+
+                <TextView
+                    android:id="@+id/textViewCilindroMestre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Cilindro Mestre"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:layout_marginLeft="30dp"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/cilindroMestreVazando"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vazando" />
+
+                <CheckBox
+                    android:id="@+id/cilindroMestreSolto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Solto" />
+
+                <TextView
+                    android:id="@+id/textViewFlexivelRoda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Flexível da Roda"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:layout_marginLeft="30dp"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/flexivelRodaVazando"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vazando" />
+
+                <CheckBox
+                    android:id="@+id/flexivelRodaDanificado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Danificado" />
+
+                <CheckBox
+                    android:id="@+id/flexivelRodaDesalinhado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Desalinhado" />
+
+                <CheckBox
+                    android:id="@+id/flexivelRodaIrregular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Irregular" />
+
+                <TextView
+                    android:id="@+id/textViewValvulaTubularReservatorio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Válvulas Tubular Reservatório"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:layout_marginLeft="30dp"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/valvulaTubularReservatorioVazando"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vazando" />
+
+                <CheckBox
+                    android:id="@+id/valvulaTubularReservatorioContaminada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contaminada" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/botaoVoltarSelecionarFicha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="Voltar"
+                        tools:layout_marginLeft="50dp" />
+
+                    <Button
+                        android:id="@+id/botaoProximo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:gravity="center_vertical|end"
+                        android:text="Próximo"
+                        tools:layout_marginLeft="50dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>

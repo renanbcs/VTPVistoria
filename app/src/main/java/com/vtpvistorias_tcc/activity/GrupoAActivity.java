@@ -26,6 +26,31 @@ public class GrupoAActivity extends AppCompatActivity implements View.OnClickLis
     private CheckBox valvulaPedalContaminada;
     private CheckBox almofadaPedalGasta;
     private CheckBox almofadaPedalFalta;
+    private CheckBox freioEstacionamentoVazando;
+    private CheckBox freioEstacionamentoNaoFunciona;
+    private CheckBox varaoFreioMaoDespressurizada;
+    private CheckBox varaoFreioMaoSolta;
+    private CheckBox varaoFreioMaoSemAcao;
+    private CheckBox catracaFalta;
+    private CheckBox pinoCatracaFalta;
+    private CheckBox lonasFreioContaminada;
+    private CheckBox lonasFreioSolta;
+    private CheckBox lonasFreioDesrregulada;
+    private CheckBox lonasFreioFina;
+    private CheckBox cilindrosPneumaticosVazando;
+    private CheckBox cilindrosPneumaticosDesativado;
+    private CheckBox servoFreioVazando;
+    private CheckBox servoFreioSolto;
+    private CheckBox cilindroRodaVazando;
+    private CheckBox cilindroRodaSolto;
+    private CheckBox cilindroMestreVazando;
+    private CheckBox cilindroMestreSolto;
+    private CheckBox flexivelRodaVazando;
+    private CheckBox flexivelRodaDanificado;
+    private CheckBox flexivelRodaDesalinhado;
+    private CheckBox flexivelRodaIrregular;
+    private CheckBox valvulaTubularReservatorioVazando;
+    private CheckBox valvulaTubularReservatorioContaminada;
 
     private DatabaseReference firebase;
     private GrupoA grupoA;
@@ -45,6 +70,32 @@ public class GrupoAActivity extends AppCompatActivity implements View.OnClickLis
         valvulaPedalContaminada = (CheckBox)findViewById(R.id.valvulaPedalContaminada);
         almofadaPedalGasta = (CheckBox)findViewById(R.id.almofadaPedalGasta);
         almofadaPedalFalta = (CheckBox)findViewById(R.id.almofadaPedalFalta);
+        freioEstacionamentoVazando = (CheckBox)findViewById(R.id.freioEstacionamentoVazando);
+        freioEstacionamentoNaoFunciona = (CheckBox)findViewById(R.id.freioEstacionamentoNaoFunciona);
+        varaoFreioMaoDespressurizada = (CheckBox)findViewById(R.id.varaoFreioMaoDespressurizada);
+        varaoFreioMaoSolta = (CheckBox)findViewById(R.id.varaoFreioMaoSolta);
+        varaoFreioMaoSemAcao = (CheckBox)findViewById(R.id.varaoFreioMaoSemAcao);
+        catracaFalta = (CheckBox)findViewById(R.id.catracaFalta);
+        pinoCatracaFalta = (CheckBox)findViewById(R.id.pinoCatracaFalta);
+        lonasFreioContaminada = (CheckBox)findViewById(R.id.lonasFreioContaminada);
+        lonasFreioSolta = (CheckBox)findViewById(R.id.lonasFreioSolta);
+        lonasFreioDesrregulada = (CheckBox)findViewById(R.id.lonasFreioDesrregulada);
+        lonasFreioFina = (CheckBox)findViewById(R.id.lonasFreioFina);
+        cilindrosPneumaticosVazando = (CheckBox)findViewById(R.id.cilindrosPneumaticosVazando);
+        cilindrosPneumaticosDesativado = (CheckBox)findViewById(R.id.cilindrosPneumaticosDesativado);
+        servoFreioVazando = (CheckBox)findViewById(R.id.servoFreioVazando);
+        servoFreioSolto = (CheckBox)findViewById(R.id.servoFreioSolto);
+        cilindroRodaVazando = (CheckBox)findViewById(R.id.cilindroRodaVazando);
+        cilindroRodaSolto = (CheckBox)findViewById(R.id.cilindroRodaSolto);
+        cilindroMestreVazando = (CheckBox)findViewById(R.id.cilindroMestreVazando);
+        cilindroMestreSolto = (CheckBox)findViewById(R.id.cilindroMestreSolto);
+        flexivelRodaVazando = (CheckBox)findViewById(R.id.flexivelRodaVazando);
+        flexivelRodaDanificado = (CheckBox)findViewById(R.id.flexivelRodaDanificado);
+        flexivelRodaDesalinhado = (CheckBox)findViewById(R.id.flexivelRodaDesalinhado);
+        flexivelRodaIrregular = (CheckBox)findViewById(R.id.flexivelRodaIrregular);
+        valvulaTubularReservatorioVazando = (CheckBox)findViewById(R.id.valvulaTubularReservatorioVazando);
+        valvulaTubularReservatorioContaminada = (CheckBox)findViewById(R.id.valvulaTubularReservatorioContaminada);
+
     }
 
     @Override
@@ -67,11 +118,34 @@ public class GrupoAActivity extends AppCompatActivity implements View.OnClickLis
 
         grupoA = new GrupoA();
 
-        grupoA.setIdFicha(1l);
+        //grupoA.setIdFicha(1l);
         grupoA.setValvulaPedalVazando(valvulaPedalVazando.isChecked());
         grupoA.setValvulaPedalContaminada(valvulaPedalContaminada.isChecked());
-        grupoA.setValvulaPedalContaminada(almofadaPedalGasta.isChecked());
-        grupoA.setValvulaPedalContaminada(almofadaPedalFalta.isChecked());
+        grupoA.setAlmofadaPedalFalta(almofadaPedalFalta.isChecked());
+        grupoA.setAlmofadaPedalGasta(almofadaPedalGasta.isChecked());
+        grupoA.setAlmofadaPedalGasta(almofadaPedalGasta.isChecked());
+        grupoA.setAlmofadaPedalGasta(almofadaPedalGasta.isChecked());
+        grupoA.setAlmofadaPedalGasta(almofadaPedalGasta.isChecked());
+        grupoA.setAlmofadaPedalGasta(almofadaPedalGasta.isChecked());
+        grupoA.setAlmofadaPedalGasta(almofadaPedalGasta.isChecked());
+        grupoA.setAlmofadaPedalGasta(almofadaPedalGasta.isChecked());
+        grupoA.setAlmofadaPedalGasta(almofadaPedalGasta.isChecked());
+        grupoA.setAlmofadaPedalGasta(almofadaPedalGasta.isChecked());
+        grupoA.setAlmofadaPedalGasta(almofadaPedalGasta.isChecked());
+        grupoA.setAlmofadaPedalGasta(almofadaPedalGasta.isChecked());
+        grupoA.setAlmofadaPedalGasta(almofadaPedalGasta.isChecked());
+        grupoA.setAlmofadaPedalGasta(almofadaPedalGasta.isChecked());
+        grupoA.setAlmofadaPedalGasta(almofadaPedalGasta.isChecked());
+        grupoA.setAlmofadaPedalGasta(almofadaPedalGasta.isChecked());
+        grupoA.setAlmofadaPedalGasta(almofadaPedalGasta.isChecked());
+        grupoA.setAlmofadaPedalGasta(almofadaPedalGasta.isChecked());
+        grupoA.setAlmofadaPedalGasta(almofadaPedalGasta.isChecked());
+        grupoA.setAlmofadaPedalGasta(almofadaPedalGasta.isChecked());
+        grupoA.setAlmofadaPedalGasta(almofadaPedalGasta.isChecked());
+        grupoA.setAlmofadaPedalGasta(almofadaPedalGasta.isChecked());
+        grupoA.setAlmofadaPedalGasta(almofadaPedalGasta.isChecked());
+        grupoA.setAlmofadaPedalGasta(almofadaPedalGasta.isChecked());
+
 
        grupoA.salvar();
     }
