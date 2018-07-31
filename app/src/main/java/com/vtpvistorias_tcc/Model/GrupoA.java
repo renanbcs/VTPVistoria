@@ -32,6 +32,7 @@ public class GrupoA extends Inspecao {
 
     private Boolean lonasFreioContaminada = false;
     private Boolean lonasFreioSolta = false;
+    private Boolean lonasFreioQuebrada = false;
     private Boolean lonasFreioDesrregulada = false;
     private Boolean lonasFreioFina = false;
 
@@ -69,23 +70,33 @@ public class GrupoA extends Inspecao {
         HashMap<String, Object> hashMapFichaA = new HashMap<>();
 
         hashMapFichaA.put("idFicha",getIdFicha());
+
         hashMapFichaA.put("valvulaPedalVazando",getValvulaPedalVazando());
         hashMapFichaA.put("valvulaPedalContaminada",getValvulaPedalContaminada());
+
         hashMapFichaA.put("almofadaPedalGasta",getAlmofadaPedalGasta());
         hashMapFichaA.put("almofadaPedalFalta",getAlmofadaPedalFalta());
+
         hashMapFichaA.put("freioEstacionamentoVazando",getFreioEstacionamentoVazando());
         hashMapFichaA.put("freioEstacionamentoNaoFunciona",getFreioEstacionamentoNaoFunciona());
+
         hashMapFichaA.put("varaoFreioMaoDespressurizada",getVaraoFreioMaoDespressurizada());
         hashMapFichaA.put("varaoFreioMaoSolta",getVaraoFreioMaoSolta());
         hashMapFichaA.put("varaoFreioMaoSemAcao",getVaraoFreioMaoSemAcao());
+
         hashMapFichaA.put("catracaFalta",getCatracaFalta());
+
         hashMapFichaA.put("pinoCatracaFalta",getPinoCatracaFalta());
+
         hashMapFichaA.put("lonasFreioContaminada",getLonasFreioContaminada());
         hashMapFichaA.put("lonasFreioSolta",getLonasFreioSolta());
+        hashMapFichaA.put("lonasFreioQuebrada",getLonasFreioQuebrada());
         hashMapFichaA.put("lonasFreioDesrregulada",getLonasFreioDesrregulada());
         hashMapFichaA.put("lonasFreioFina",getLonasFreioFina());
+
         hashMapFichaA.put("cilindrosPneumaticosVazando",getCilindrosPneumaticosVazando());
         hashMapFichaA.put("cilindrosPneumaticosDesativado",getCilindrosPneumaticosDesativado());
+
         hashMapFichaA.put("servoFreioVazando",getServoFreioVazando());
         hashMapFichaA.put("servoFreioSolto",getServoFreioSolto());
         hashMapFichaA.put("cilindroRodaVazando",getCilindroRodaVazando());
@@ -341,6 +352,14 @@ public class GrupoA extends Inspecao {
 
     public void setValvulaTubularReservatorioContaminada(Boolean valvulaTubularReservatorioContaminada) {
         this.valvulaTubularReservatorioContaminada = valvulaTubularReservatorioContaminada;
+    }
+
+    public Boolean getLonasFreioQuebrada() {
+        return lonasFreioQuebrada;
+    }
+
+    public void setLonasFreioQuebrada(Boolean lonasFreioQuebrada) {
+        this.lonasFreioQuebrada = lonasFreioQuebrada;
     }
 }
 
