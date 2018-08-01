@@ -3,23 +3,16 @@ package com.vtpvistorias_tcc.activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.Toast;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 import com.vtpvistorias_tcc.Model.GrupoA;
 import com.vtpvistorias_tcc.Model.Inspecao;
-import com.vtpvistorias_tcc.Model.Veiculo;
 import com.vtpvistorias_tcc.R;
 
-public class GrupoAActivity extends AppCompatActivity implements View.OnClickListener {
+public class GrupoASistemaFreioActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button botaoVoltarSelecionarFicha;
     private Button botaoProximo;
@@ -72,7 +65,7 @@ public class GrupoAActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_grupo_a);
+        setContentView(R.layout.activity_grupo_a_sistema_freio);
 
         botaoVoltarSelecionarFicha = (Button) findViewById(R.id.botaoVoltarSelecionarFicha);
         botaoVoltarSelecionarFicha.setOnClickListener(this);
@@ -137,9 +130,8 @@ public class GrupoAActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.botaoProximo:
                 salvarDados();
-                Intent intent = new Intent(getApplicationContext(),GrupoBActivity.class);
+                Intent intent = new Intent(getApplicationContext(),GrupoASistemaSuspensaoActivity.class);
                 intent.putExtra("inspecao",inspecao);
-                inspecao.getClass();
                 startActivity(intent);
                 break;
         }
