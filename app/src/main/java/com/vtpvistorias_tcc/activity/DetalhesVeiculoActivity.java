@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.vtpvistorias_tcc.Model.Inspecao;
 import com.vtpvistorias_tcc.Model.Veiculo;
 import com.vtpvistorias_tcc.R;
 
@@ -19,6 +20,7 @@ public class DetalhesVeiculoActivity extends Activity implements View.OnClickLis
     private TextView labelPrefixo,labelPlaca,labelChassi,labelBloqueado,labelEmpresa;
     private Veiculo veiculo;
     private Button buttonSim, buttonNao;
+    private Inspecao inspecao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +66,12 @@ public class DetalhesVeiculoActivity extends Activity implements View.OnClickLis
             case R.id.button_Sim:
 
                 finish();
+
+                inspecao = new Inspecao();
+
                 Intent intent = new Intent(getApplicationContext(),SelecionarFichaActivity.class);
+                intent.putExtra("inspecao", inspecao);
+
                 startActivity(intent);
 
                 break;

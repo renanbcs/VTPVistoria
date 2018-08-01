@@ -48,7 +48,6 @@ public class IniciarInspecaoActivity extends AppCompatActivity implements View.O
         botaoBuscarPrefixo.setOnClickListener(this);
 
         botaoVoltarTelaPrincipal = (Button) findViewById(R.id.botaoVoltarTelaPrincipal);
-
         botaoVoltarTelaPrincipal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -61,16 +60,13 @@ public class IniciarInspecaoActivity extends AppCompatActivity implements View.O
     @Override
     public void onPause(){
         super.onPause();
-
     }
-
 
     //metodo para criar os menus
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        //exiir os menus
+        //exibir os menus
         MenuInflater inflater = getMenuInflater();
-
         inflater.inflate(R.menu.menu_main,menu);
 
         return true ;
@@ -114,21 +110,15 @@ public class IniciarInspecaoActivity extends AppCompatActivity implements View.O
                         @Override
                         public void onCancelled(DatabaseError databaseError) {
 
-
-
                         }
                     });
 
                 }else {
-
                     Toast.makeText(getApplicationContext(), "Digite um valor válido", Toast.LENGTH_SHORT).show();
-
                 }
 
                 break;
 
         }
-
-
     }
 }

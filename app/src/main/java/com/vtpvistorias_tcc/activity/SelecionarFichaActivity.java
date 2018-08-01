@@ -6,12 +6,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.vtpvistorias_tcc.Model.Inspecao;
+import com.vtpvistorias_tcc.Model.Veiculo;
 import com.vtpvistorias_tcc.R;
 
 public class SelecionarFichaActivity extends AppCompatActivity implements View.OnClickListener{
 
     private Button fichaA1,fichaA,fichaB,cancela, botalVoltarTelaIniciarProcesso;
     private Intent i;
+    private Inspecao inspecao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +31,8 @@ public class SelecionarFichaActivity extends AppCompatActivity implements View.O
         fichaB.setOnClickListener(this);
         cancela.setOnClickListener(this);
 
+        i = getIntent();
+        inspecao = (Inspecao) i.getSerializableExtra("inspecao");
 
     }
 
@@ -38,25 +43,28 @@ public class SelecionarFichaActivity extends AppCompatActivity implements View.O
 
             case R.id.botaoGrupoA:
 
-                i = new Intent(getApplicationContext(),ItensFichaActivity.class);
-                i.putExtra("ficha","FichaA");
-                startActivity(i);
+                Intent intentNovo = new Intent(getApplicationContext(),ItensFichaActivity.class);
+                intentNovo.putExtra("ficha","FichaA");
+                intentNovo.putExtra("inspecao",inspecao);
+                startActivity(intentNovo);
 
                 break;
 
             case R.id.botaoGrupoA1:
 
-                i = new Intent(getApplicationContext(),ItensFichaActivity.class);
-                i.putExtra("ficha","FichaA1");
-                startActivity(i);
+                Intent intentNovo2 = new Intent(getApplicationContext(),ItensFichaActivity.class);
+                intentNovo2.putExtra("ficha","FichaA1");
+                intentNovo2.putExtra("inspecao",inspecao);
+                startActivity(intentNovo2);
 
                 break;
 
             case R.id.botaoGrupoB:
 
-                i = new Intent(getApplicationContext(),ItensFichaActivity.class);
-                i.putExtra("ficha","FichaB");
-                startActivity(i);
+                Intent intentNovo3 = new Intent(getApplicationContext(),ItensFichaActivity.class);
+                intentNovo3.putExtra("ficha","FichaB");
+                intentNovo3.putExtra("inspecao",inspecao);
+                startActivity(intentNovo3);
 
                 break;
 

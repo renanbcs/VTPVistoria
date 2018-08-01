@@ -3,6 +3,7 @@ package com.vtpvistorias_tcc.activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -14,6 +15,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.vtpvistorias_tcc.Model.GrupoA;
+import com.vtpvistorias_tcc.Model.Inspecao;
 import com.vtpvistorias_tcc.Model.Veiculo;
 import com.vtpvistorias_tcc.R;
 
@@ -63,6 +65,9 @@ public class GrupoAActivity extends AppCompatActivity implements View.OnClickLis
 
     private DatabaseReference firebase;
     private GrupoA grupoA;
+    private Intent i;
+    private Inspecao inspecao;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -118,6 +123,9 @@ public class GrupoAActivity extends AppCompatActivity implements View.OnClickLis
         valvulaTubularReservatorioVazando = (CheckBox)findViewById(R.id.valvulaTubularReservatorioVazando);
         valvulaTubularReservatorioContaminada = (CheckBox)findViewById(R.id.valvulaTubularReservatorioContaminada);
 
+        i = getIntent();
+        inspecao = (Inspecao) i.getSerializableExtra("inspecao");
+
     }
 
     @Override
@@ -130,6 +138,8 @@ public class GrupoAActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.botaoProximo:
                 salvarDados();
                 Intent intent = new Intent(getApplicationContext(),GrupoBActivity.class);
+                intent.putExtra("inspecao",inspecao);
+                inspecao.getClass();
                 startActivity(intent);
                 break;
         }
@@ -184,7 +194,8 @@ public class GrupoAActivity extends AppCompatActivity implements View.OnClickLis
         grupoA.setValvulaTubularReservatorioVazando(valvulaTubularReservatorioVazando.isChecked());
         grupoA.setValvulaTubularReservatorioContaminada(valvulaTubularReservatorioContaminada.isChecked());
 
-       grupoA.salvar();
+        inspecao.setGrupoA(grupoA);
+       //grupoA.salvar();
     }
 
     @Override

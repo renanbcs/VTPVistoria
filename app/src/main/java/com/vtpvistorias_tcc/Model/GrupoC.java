@@ -4,12 +4,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.Exclude;
 import com.vtpvistorias_tcc.config.ConfiguracaoFirebase;
 
-import java.io.Serializable;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-public class GrupoA extends Inspecao implements Serializable {
+public class GrupoC extends Inspecao {
 
     //Atributos
     private Long idFicha;
@@ -57,7 +55,7 @@ public class GrupoA extends Inspecao implements Serializable {
     private Boolean valvulaTubularReservatorioVazando = false;
     private Boolean valvulaTubularReservatorioContaminada = false;
 
-    public GrupoA() {
+    public GrupoC() {
     }
 
     public void salvar(){

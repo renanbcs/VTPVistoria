@@ -9,6 +9,7 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.vtpvistorias_tcc.Model.Inspecao;
 import com.vtpvistorias_tcc.R;
 
 public class ItensFichaActivity extends Activity  implements View.OnClickListener {
@@ -16,6 +17,8 @@ public class ItensFichaActivity extends Activity  implements View.OnClickListene
     private TextView itensFicha;
     private String fichaSelecionada;
     private Button buttonSim, buttonNao;
+    private Inspecao inspecao;
+    private Intent i;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,9 +30,11 @@ public class ItensFichaActivity extends Activity  implements View.OnClickListene
         buttonSim = findViewById(R.id.button_nao_FichaA);
         buttonNao = findViewById(R.id.button_sim_FichaA);
 
-        Intent i = getIntent();
+        i = getIntent();
         fichaSelecionada = i.getStringExtra("ficha");
         itensFicha.setMovementMethod(new ScrollingMovementMethod());
+
+        inspecao = (Inspecao) i.getSerializableExtra("inspecao");
 
         if(fichaSelecionada.equals("FichaA1"))itensFicha.setText(getString(R.string.itens_fichaA1));
         else if(fichaSelecionada.equals("FichaA")) itensFicha.setText(getString(R.string.itens_fichaA));
@@ -37,7 +42,6 @@ public class ItensFichaActivity extends Activity  implements View.OnClickListene
 
         buttonNao.setOnClickListener(this);
         buttonSim.setOnClickListener(this);
-
 
     }
 
@@ -54,8 +58,9 @@ public class ItensFichaActivity extends Activity  implements View.OnClickListene
             case R.id.button_sim_FichaA:
 
                 finish();
-                Intent intent = new Intent(getApplicationContext(),GrupoAActivity.class);
-                startActivity(intent);
+                Intent intentNovo = new Intent(getApplicationContext(),GrupoASistemaFreioActivity.class);
+                intentNovo.putExtra("inspecao",inspecao);
+                startActivity(intentNovo);
 
                 break;
 
