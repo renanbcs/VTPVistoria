@@ -79,6 +79,484 @@
                 android:layout_height="wrap_content"
                 android:text="Danificado" />
 
+            <TextView
+                android:id="@+id/textViewSuporteAmortecedor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Suporte Amortecedor"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/suporteAmortecedorDanificado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Danificado" />
+
+            <CheckBox
+                android:id="@+id/suporteAmortecedorSolto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solto" />
+
+            <TextView
+                android:id="@+id/textViewBuchaAmortecedor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Bucha Amortecedor"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/buchaAmortecedorDanificada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Danificada" />
+
+            <CheckBox
+                android:id="@+id/buchaAmortecedorSolta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solto" />
+
+            <TextView
+                android:id="@+id/textViewFeixeMolas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Feixe Molas"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/feixeMolasDanificado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solto" />
+
+            <CheckBox
+                android:id="@+id/feixeMolasSolta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solto" />
+
+            <TextView
+                android:id="@+id/textViewBuchaMolas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Bucha Molas"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/buchaMolasFolga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Folga" />
+
+            <TextView
+                android:id="@+id/textViewEspigaoMolas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Espigão Molas"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/espigaoMolasCortado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cortado" />
+
+            <CheckBox
+                android:id="@+id/espigaoMolasQuebrado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quebrado" />
+
+            <TextView
+                android:id="@+id/textViewGrampoMolas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Grampo Molas"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/grampoMolasDanificado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Danificado" />
+
+            <CheckBox
+                android:id="@+id/grampoMolasSolto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solto" />
+
+            <TextView
+                android:id="@+id/textViewSuporteMolas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Suporte Molas"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/suporteMolasDanificado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Danificado" />
+
+            <CheckBox
+                android:id="@+id/suporteMolasSolto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solto" />
+
+            <TextView
+                android:id="@+id/textViewAlgemaJumelo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Algema (Jumelo)"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/algemaDanificado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Danificado" />
+
+            <CheckBox
+                android:id="@+id/algemaSolto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solto" />
+
+            <TextView
+                android:id="@+id/textViewPinoSuporteMola"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Pino Suporte Mola"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/pinoSuporteMolaSolto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solto" />
+
+            <CheckBox
+                android:id="@+id/pinoSuporteMolaQuebrado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quebrado" />
+
+            <CheckBox
+                android:id="@+id/pinoSuporteMolaFalta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Falta" />
+
+            <TextView
+                android:id="@+id/textViewMolaHelicoidal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Mola Helicoidal"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <TextView
+                android:id="@+id/textViewSuporteParafusoMolaHelicoidal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Suporte Parafuso Mola Helicoidal"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/molaHelicoidalQuebrada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quebrada" />
+
+            <CheckBox
+                android:id="@+id/molaHelicoidalSolta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solto" />
+
+            <TextView
+                android:id="@+id/textViewBolsaoAR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Bolsao AR"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/bolsaoDeArDanificada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Danificada" />
+
+            <CheckBox
+                android:id="@+id/bolsaoDeArSolto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solto" />
+
+            <CheckBox
+                android:id="@+id/bolsaoDeArVazando"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vazando" />
+
+            <TextView
+                android:id="@+id/textViewValvulaNivel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Valvula Nível"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/valculaNivelDanificada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Danificada" />
+
+            <CheckBox
+                android:id="@+id/valculaNivelSolta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solto" />
+
+            <CheckBox
+                android:id="@+id/valculaNivelVazando"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vazando" />
+
+            <TextView
+                android:id="@+id/textViewBarraEstabilizadora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Barra Estabilizadora"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/barraEstabilizadoraSolta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solto" />
+
+            <CheckBox
+                android:id="@+id/barraEstabilizadoraFalta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Falta" />
+
+            <CheckBox
+                android:id="@+id/barraEstabilizadoraQuebrada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quebrada" />
+
+            <CheckBox
+                android:id="@+id/barraEstabilizadoraFolga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Folga" />
+
+            <TextView
+                android:id="@+id/textViewBuchaBarraEstabilizadora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Bucha Barra Estabilizadora"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/buchaBarraEstabilizadoraFalta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Falta" />
+
+            <CheckBox
+                android:id="@+id/buchaBarraEstabilizadoraFolga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Folga" />
+
+            <TextView
+                android:id="@+id/textViewBananaBean"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Banana Bean"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/bananaBeanSolta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solta" />
+
+            <CheckBox
+                android:id="@+id/bananaBeanDanificada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Danificada" />
+
+            <CheckBox
+                android:id="@+id/bananaBeanDesalinhada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Desalinhada" />
+
+            <CheckBox
+                android:id="@+id/bananaBeanFolga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Folga" />
+
+            <TextView
+                android:id="@+id/textViewHasteSuporteReacaoTraseira"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Haste Suporte Reação Traseira"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/hasteSuporteReacaoTraseiraEmpenada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Empenada" />
+
+            <CheckBox
+                android:id="@+id/hasteSuporteReacaoTraseiraFolga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Folga" />
+
+            <CheckBox
+                android:id="@+id/hasteSuporteReacaoTraseiraSolta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solta" />
+
+            <CheckBox
+                android:id="@+id/hasteSuporteReacaoTraseiraQuebrada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quebrada" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

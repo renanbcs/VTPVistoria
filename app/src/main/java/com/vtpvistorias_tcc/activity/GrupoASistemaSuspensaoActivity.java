@@ -57,7 +57,7 @@ public class GrupoASistemaSuspensaoActivity extends AppCompatActivity implements
                 break;
             case R.id.botaoProximo:
                 salvarDados();
-                Intent intent = new Intent(getApplicationContext(),GrupoASistemaSuspensaoActivity.class);
+                Intent intent = new Intent(getApplicationContext(),GrupoASistemaTracaoActivity.class);
                 intent.putExtra("inspecao",inspecao);
                 startActivity(intent);
                 break;
