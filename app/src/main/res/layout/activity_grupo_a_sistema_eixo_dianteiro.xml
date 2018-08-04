@@ -67,6 +67,32 @@
             android:layout_height="wrap_content"
             android:text="Vazam em flexiveis encanamentos" />
 
+        <TextView
+            android:id="@+id/textViewSuporteCaixa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="fill_horizontal|center"
+            android:text="Suporte da Caixa"
+            android:textIsSelectable="false"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:layout_marginLeft="30dp"
+            tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+        <CheckBox
+            android:id="@+id/suporteCaixaSolto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solto" />
+
+        <CheckBox
+            android:id="@+id/suporteCaixaTrincado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trincado" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

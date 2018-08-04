@@ -19,6 +19,8 @@ public class GrupoASistemaEixoDianteiroActivity extends AppCompatActivity implem
 
     private CheckBox caixaDirecaoSolta;
     private CheckBox caixaDirecaoVazamFlexEncanamento;
+    private CheckBox suporteCaixaSolto;
+    private CheckBox suporteCaixaTrincado;
 
     private DatabaseReference firebase;
     private GrupoA grupoA;
@@ -39,6 +41,9 @@ public class GrupoASistemaEixoDianteiroActivity extends AppCompatActivity implem
 
         caixaDirecaoSolta = (CheckBox)findViewById(R.id.caixaDirecaoSolta);
         caixaDirecaoVazamFlexEncanamento = (CheckBox)findViewById(R.id.caixaDirecaoVazamFlexEncanamento);
+
+        suporteCaixaSolto = (CheckBox)findViewById(R.id.suporteCaixaSolto);
+        suporteCaixaTrincado = (CheckBox)findViewById(R.id.suporteCaixaTrincado);
 
         i = getIntent();
         inspecao = (Inspecao) i.getSerializableExtra("inspecao");
@@ -72,7 +77,8 @@ public class GrupoASistemaEixoDianteiroActivity extends AppCompatActivity implem
         grupoA.setCaixaDirecaoSolta(caixaDirecaoSolta.isChecked());
         grupoA.setCaixaDirecaoVazamFlexEncanamento(caixaDirecaoVazamFlexEncanamento.isChecked());
 
-
+        grupoA.setSuporteCaixaTrincado(suporteCaixaTrincado.isChecked());
+        grupoA.setSuporteCaixaSolto(suporteCaixaSolto.isChecked());
         //inspecao.setGrupoA(grupoA);
         //grupoA.salvar();
     }
