@@ -9,7 +9,7 @@
     android:layout_marginRight="16dp"
     android:layout_marginTop="16dp"
     android:orientation="vertical"
-    tools:context=".activity.GrupoASistemaTracaoActivity">
+    tools:context=".activity.GrupoASistemaRodanteActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -32,23 +32,61 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textViewSistemaSuspensao"
+        android:id="@+id/textViewSistemaFreio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:gravity="center"
-        android:text="3 - Sistemas de Tração"
+        android:text="4 - Sistemas Rodante"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="15sp" />
 
         <TextView
-            android:id="@+id/textViewEixoCardan"
+        android:id="@+id/textViewPneu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="fill_horizontal|center"
+        android:text="Pneu"
+        android:textIsSelectable="false"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:layout_marginLeft="30dp"
+        tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+        <CheckBox
+            android:id="@+id/pneuDesgastado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Desgastado" />
+
+        <CheckBox
+            android:id="@+id/pneuIrregular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Irregular" />
+
+        <CheckBox
+            android:id="@+id/pneuDanificado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Danificado" />
+
+        <CheckBox
+            android:id="@+id/pneuTalao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Talao" />
+
+        <TextView
+            android:id="@+id/textViewRoda"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
             android:layout_marginTop="10dp"
             android:gravity="fill_horizontal|center"
-            android:text="Eixo Cardan"
+            android:text="Roda"
             android:textIsSelectable="false"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -56,25 +94,19 @@
             tools:style="@android:style/Widget.DeviceDefault.TextView" />
 
         <CheckBox
-            android:id="@+id/eixoCardanFolga"
+            android:id="@+id/rodaFaltaPorca"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Folga" />
+            android:text="Falta Porca" />
 
         <CheckBox
-            android:id="@+id/eixoCardanDesalinhado"
+            android:id="@+id/rodaFaltaEspelho"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Desalinhado" />
+            android:text="FaltaEspelho" />
 
         <CheckBox
-            android:id="@+id/eixoCardanSolto"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Solto" />
-
-        <CheckBox
-            android:id="@+id/eixoCardanBorrachaDanificada"
+            android:id="@+id/rodaDanificada"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Danificada" />
@@ -108,6 +140,7 @@
         </LinearLayout>
 
     </LinearLayout>
+
     </ScrollView>
 
 </LinearLayout>

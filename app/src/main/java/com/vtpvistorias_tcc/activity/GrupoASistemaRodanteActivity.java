@@ -12,15 +12,19 @@ import com.vtpvistorias_tcc.Model.GrupoA;
 import com.vtpvistorias_tcc.Model.Inspecao;
 import com.vtpvistorias_tcc.R;
 
-public class GrupoASistemaTracaoActivity extends AppCompatActivity implements View.OnClickListener {
+public class GrupoASistemaRodanteActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button botaoVoltarSelecionarFicha;
     private Button botaoProximo;
 
-    private CheckBox eixoCardanFolga;
-    private CheckBox eixoCardanDesalinhado;
-    private CheckBox eixoCardanSolto;
-    private CheckBox eixoCardanBorrachaDanificada;
+    private CheckBox pneuDesgastado;
+    private CheckBox pneuIrregular;
+    private CheckBox pneuDanificado;
+    private CheckBox pneuTalao;
+
+    private CheckBox rodaFaltaPorca;
+    private CheckBox rodaFaltaEspelho;
+    private CheckBox rodaDanificada;
 
     private DatabaseReference firebase;
     private GrupoA grupoA;
@@ -30,7 +34,7 @@ public class GrupoASistemaTracaoActivity extends AppCompatActivity implements Vi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_grupo_a_sistema_tracao);
+        setContentView(R.layout.activity_grupo_a_sistema_rodante);
 
         botaoVoltarSelecionarFicha = (Button) findViewById(R.id.botaoVoltarSelecionarFicha);
         botaoVoltarSelecionarFicha.setOnClickListener(this);
@@ -38,14 +42,19 @@ public class GrupoASistemaTracaoActivity extends AppCompatActivity implements Vi
         botaoProximo = (Button) findViewById(R.id.botaoProximo);
         botaoProximo.setOnClickListener(this);
 
-        eixoCardanFolga = (CheckBox)findViewById(R.id.eixoCardanFolga);
-        eixoCardanDesalinhado = (CheckBox)findViewById(R.id.eixoCardanDesalinhado);
-        eixoCardanSolto = (CheckBox)findViewById(R.id.eixoCardanSolto);
-        eixoCardanBorrachaDanificada = (CheckBox)findViewById(R.id.eixoCardanBorrachaDanificada);
+        pneuDesgastado = (CheckBox)findViewById(R.id.pneuDesgastado);
+        pneuIrregular = (CheckBox)findViewById(R.id.pneuIrregular);
+        pneuDanificado = (CheckBox)findViewById(R.id.pneuDanificado);
+        pneuTalao = (CheckBox)findViewById(R.id.pneuTalao);
+
+        rodaFaltaPorca = (CheckBox)findViewById(R.id.rodaFaltaPorca);
+        rodaFaltaEspelho = (CheckBox)findViewById(R.id.rodaFaltaEspelho);
+        rodaDanificada = (CheckBox)findViewById(R.id.rodaDanificada);
 
         i = getIntent();
         inspecao = (Inspecao) i.getSerializableExtra("inspecao");
         grupoA = inspecao.getGrupoA();
+
     }
 
     @Override
@@ -57,7 +66,7 @@ public class GrupoASistemaTracaoActivity extends AppCompatActivity implements Vi
                 break;
             case R.id.botaoProximo:
                 salvarDados();
-                Intent intent = new Intent(getApplicationContext(),GrupoASistemaRodanteActivity.class);
+                Intent intent = new Intent(getApplicationContext(),GrupoASistemaEixoDianteiroActivity.class);
                 intent.putExtra("inspecao",inspecao);
                 startActivity(intent);
                 break;
@@ -71,11 +80,14 @@ public class GrupoASistemaTracaoActivity extends AppCompatActivity implements Vi
             grupoA = new GrupoA();
 
         //grupoA.setIdFicha(1l);
-        grupoA.setEixoCardanFolga(eixoCardanFolga.isChecked());
-        grupoA.setEixoCardanDesalinhado(eixoCardanDesalinhado.isChecked());
-        grupoA.setEixoCardanSolto(eixoCardanSolto.isChecked());
-        grupoA.setEixoCardanBorrachaDanificada(eixoCardanBorrachaDanificada.isChecked());
+        grupoA.setPneuDesgastado(pneuDesgastado.isChecked());
+        grupoA.setPneuIrregular(pneuIrregular.isChecked());
+        grupoA.setPneuDanificado(pneuDanificado.isChecked());
+        grupoA.setPneuTalao(pneuTalao.isChecked());
 
+        grupoA.setRodaFaltaPorca(rodaFaltaPorca.isChecked());
+        grupoA.setRodaFaltaEspelho(rodaFaltaEspelho.isChecked());
+        grupoA.setRodaDanificada(rodaDanificada.isChecked());
 
         //inspecao.setGrupoA(grupoA);
         //grupoA.salvar();

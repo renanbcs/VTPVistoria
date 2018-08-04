@@ -9,7 +9,7 @@
     android:layout_marginRight="16dp"
     android:layout_marginTop="16dp"
     android:orientation="vertical"
-    tools:context=".activity.GrupoASistemaTracaoActivity">
+    tools:context=".activity.GrupoASistemaEixoDianteiroActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -32,52 +32,40 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textViewSistemaSuspensao"
+        android:id="@+id/textViewSistemaFreio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:gravity="center"
-        android:text="3 - Sistemas de Tração"
+        android:text="5 - Sistema de Eixo dianteiro -Direção"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="15sp" />
 
-        <TextView
-            android:id="@+id/textViewEixoCardan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="10dp"
-            android:gravity="fill_horizontal|center"
-            android:text="Eixo Cardan"
-            android:textIsSelectable="false"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            tools:layout_marginLeft="30dp"
-            tools:style="@android:style/Widget.DeviceDefault.TextView" />
+    <TextView
+        android:id="@+id/textViewCaixaDirecao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="fill_horizontal|center"
+        android:text="Caixa de Direção"
+        android:textIsSelectable="false"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:layout_marginLeft="30dp"
+        tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+    <CheckBox
+        android:id="@+id/caixaDirecaoSolta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Solta" />
 
         <CheckBox
-            android:id="@+id/eixoCardanFolga"
+            android:id="@+id/caixaDirecaoVazamFlexEncanamento"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Folga" />
-
-        <CheckBox
-            android:id="@+id/eixoCardanDesalinhado"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Desalinhado" />
-
-        <CheckBox
-            android:id="@+id/eixoCardanSolto"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Solto" />
-
-        <CheckBox
-            android:id="@+id/eixoCardanBorrachaDanificada"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Danificada" />
+            android:text="Vazam em flexiveis encanamentos" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -108,6 +96,7 @@
         </LinearLayout>
 
     </LinearLayout>
+
     </ScrollView>
 
 </LinearLayout>

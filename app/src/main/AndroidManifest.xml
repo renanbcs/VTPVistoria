@@ -36,7 +36,11 @@
             android:label="@string/title_activity_grupo_b"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activity.GrupoASistemaSuspensaoActivity" />
-        <activity android:name=".activity.GrupoASistemaTracaoActivity"></activity>
+        <activity android:name=".activity.GrupoASistemaTracaoActivity" />
+        <activity android:name=".activity.GrupoASistemaRodanteActivity" />
+        <activity android:name=".activity.GrupoASistemaEixoDianteiroActivity" />
+        <activity android:name=".activity.GrupoAChassioPlataformaActivity" />
+        <activity android:name=".activity.SalvarActivity"></activity>
     </application>
 
 </manifest>

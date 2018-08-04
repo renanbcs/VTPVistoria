@@ -31,7 +31,7 @@ public class Inspecao implements Serializable {
 
     public void salvar(){
         DatabaseReference referenciaFiReference = ConfiguracaoFirebase.getFirebase();
-        referenciaFiReference.child("Inspeção").push().setValue(this);
+        referenciaFiReference.child("Inspecao").push().setValue(this);
     }
 
     @Exclude
@@ -41,8 +41,10 @@ public class Inspecao implements Serializable {
 
         hashMapInspecao.put("idInspecao",getIdInspecao());
         hashMapInspecao.put("dataHoraRegistro",getDataHoraRegistro());
+
         if(getGrupoA() != null){
             hashMapInspecao.put("grupoA",getGrupoA());
+            System.out.print("Passei aqui");
         }
         if(getGrupoB() != null){
             hashMapInspecao.put("grupoB",getGrupoB());

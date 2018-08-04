@@ -45,6 +45,7 @@ public class GrupoASistemaSuspensaoActivity extends AppCompatActivity implements
 
         i = getIntent();
         inspecao = (Inspecao) i.getSerializableExtra("inspecao");
+        grupoA = inspecao.getGrupoA();
 
     }
 
@@ -71,10 +72,13 @@ public class GrupoASistemaSuspensaoActivity extends AppCompatActivity implements
             grupoA = new GrupoA();
 
         //grupoA.setIdFicha(1l);
-        //grupoA.setValvulaPedalVazando(valvulaPedalVazando.isChecked());
+        grupoA.setAmortecedorFaltando(amortecedorFaltando.isChecked());
+        grupoA.setAmortecedorVazando(amortecedorVazando.isChecked());
+        grupoA.setAmortecedorSolto(amortecedorSolto.isChecked());
+        grupoA.setAmortecedorDanificado(amortecedorDanificado.isChecked());
 
 
-        inspecao.setGrupoA(grupoA);
+        //inspecao.setGrupoA(grupoA);
         //grupoA.salvar();
     }
 

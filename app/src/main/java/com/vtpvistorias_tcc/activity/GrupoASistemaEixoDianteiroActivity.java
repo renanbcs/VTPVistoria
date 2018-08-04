@@ -12,25 +12,24 @@ import com.vtpvistorias_tcc.Model.GrupoA;
 import com.vtpvistorias_tcc.Model.Inspecao;
 import com.vtpvistorias_tcc.R;
 
-public class GrupoASistemaTracaoActivity extends AppCompatActivity implements View.OnClickListener {
+public class GrupoASistemaEixoDianteiroActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button botaoVoltarSelecionarFicha;
     private Button botaoProximo;
 
-    private CheckBox eixoCardanFolga;
-    private CheckBox eixoCardanDesalinhado;
-    private CheckBox eixoCardanSolto;
-    private CheckBox eixoCardanBorrachaDanificada;
+    private CheckBox caixaDirecaoSolta;
+    private CheckBox caixaDirecaoVazamFlexEncanamento;
 
     private DatabaseReference firebase;
     private GrupoA grupoA;
     private Intent i;
     private Inspecao inspecao;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_grupo_a_sistema_tracao);
+        setContentView(R.layout.activity_grupo_a_sistema_eixo_dianteiro);
 
         botaoVoltarSelecionarFicha = (Button) findViewById(R.id.botaoVoltarSelecionarFicha);
         botaoVoltarSelecionarFicha.setOnClickListener(this);
@@ -38,14 +37,13 @@ public class GrupoASistemaTracaoActivity extends AppCompatActivity implements Vi
         botaoProximo = (Button) findViewById(R.id.botaoProximo);
         botaoProximo.setOnClickListener(this);
 
-        eixoCardanFolga = (CheckBox)findViewById(R.id.eixoCardanFolga);
-        eixoCardanDesalinhado = (CheckBox)findViewById(R.id.eixoCardanDesalinhado);
-        eixoCardanSolto = (CheckBox)findViewById(R.id.eixoCardanSolto);
-        eixoCardanBorrachaDanificada = (CheckBox)findViewById(R.id.eixoCardanBorrachaDanificada);
+        caixaDirecaoSolta = (CheckBox)findViewById(R.id.caixaDirecaoSolta);
+        caixaDirecaoVazamFlexEncanamento = (CheckBox)findViewById(R.id.caixaDirecaoVazamFlexEncanamento);
 
         i = getIntent();
         inspecao = (Inspecao) i.getSerializableExtra("inspecao");
         grupoA = inspecao.getGrupoA();
+
     }
 
     @Override
@@ -57,7 +55,7 @@ public class GrupoASistemaTracaoActivity extends AppCompatActivity implements Vi
                 break;
             case R.id.botaoProximo:
                 salvarDados();
-                Intent intent = new Intent(getApplicationContext(),GrupoASistemaRodanteActivity.class);
+                Intent intent = new Intent(getApplicationContext(),GrupoAChassioPlataformaActivity.class);
                 intent.putExtra("inspecao",inspecao);
                 startActivity(intent);
                 break;
@@ -71,10 +69,8 @@ public class GrupoASistemaTracaoActivity extends AppCompatActivity implements Vi
             grupoA = new GrupoA();
 
         //grupoA.setIdFicha(1l);
-        grupoA.setEixoCardanFolga(eixoCardanFolga.isChecked());
-        grupoA.setEixoCardanDesalinhado(eixoCardanDesalinhado.isChecked());
-        grupoA.setEixoCardanSolto(eixoCardanSolto.isChecked());
-        grupoA.setEixoCardanBorrachaDanificada(eixoCardanBorrachaDanificada.isChecked());
+        grupoA.setCaixaDirecaoSolta(caixaDirecaoSolta.isChecked());
+        grupoA.setCaixaDirecaoVazamFlexEncanamento(caixaDirecaoVazamFlexEncanamento.isChecked());
 
 
         //inspecao.setGrupoA(grupoA);
@@ -85,4 +81,5 @@ public class GrupoASistemaTracaoActivity extends AppCompatActivity implements Vi
     public void onPause(){
         super.onPause();
     }
+
 }
