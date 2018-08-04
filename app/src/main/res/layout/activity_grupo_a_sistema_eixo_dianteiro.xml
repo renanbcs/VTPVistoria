@@ -93,6 +93,259 @@
             android:layout_height="wrap_content"
             android:text="Trincado" />
 
+        <TextView
+            android:id="@+id/textViewBracoTerminalCaixa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="fill_horizontal|center"
+            android:text="Braço Terminal da Caixa"
+            android:textIsSelectable="false"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:layout_marginLeft="30dp"
+            tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+        <CheckBox
+            android:id="@+id/bracoTerminalCaixaFolga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Folga" />
+
+        <CheckBox
+            android:id="@+id/bracoTerminalCaixaSolto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solto" />
+
+        <TextView
+            android:id="@+id/textViewAmortecedorDirecao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="fill_horizontal|center"
+            android:text="Amortecedor de Direção"
+            android:textIsSelectable="false"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:layout_marginLeft="30dp"
+            tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+        <CheckBox
+            android:id="@+id/amortecedorDirecaoSolto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solto" />
+
+        <CheckBox
+            android:id="@+id/amortecedorDirecaoVazando"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vazando" />
+
+        <CheckBox
+            android:id="@+id/amortecedorDirecaoFalta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Falta" />
+
+        <TextView
+            android:id="@+id/textViewEixoDianteiro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="fill_horizontal|center"
+            android:text="Eixo Dianteiro"
+            android:textIsSelectable="false"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:layout_marginLeft="30dp"
+            tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+        <CheckBox
+            android:id="@+id/eixoDianteiroEmpenado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Empenado" />
+
+        <CheckBox
+            android:id="@+id/eixoDianteiroTrincado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trincado" />
+
+        <TextView
+            android:id="@+id/textViewRolamentoMangaEixo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="fill_horizontal|center"
+            android:text="Rolamento da Manga do Eixo"
+            android:textIsSelectable="false"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:layout_marginLeft="30dp"
+            tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+
+        <CheckBox
+            android:id="@+id/rolamentoMangaEixoDanificado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Danificado" />
+
+        <CheckBox
+            android:id="@+id/rolamentoMangaEixoFolga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Folga" />
+
+        <TextView
+            android:id="@+id/textViewParafusoBatenteManga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="fill_horizontal|center"
+            android:text="Parafuso do Batente Manga"
+            android:textIsSelectable="false"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:layout_marginLeft="30dp"
+            tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+        <CheckBox
+            android:id="@+id/parafusoBatenteMangaFalta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Falta" />
+
+        <CheckBox
+            android:id="@+id/parafusoBatenteMangaSolto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solto" />
+
+        <TextView
+            android:id="@+id/textViewBraçoEixoDianteiro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="fill_horizontal|center"
+            android:text="Braço do Eixo Dianteiro"
+            android:textIsSelectable="false"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:layout_marginLeft="30dp"
+            tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+        <CheckBox
+                android:id="@+id/bracoEixoDianteiroSolto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solto" />
+        <CheckBox
+            android:id="@+id/bracoEixoDianteiroDanificado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Danificado" />
+
+        <TextView
+            android:id="@+id/textViewTerminaisBarraLonga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="fill_horizontal|center"
+            android:text="Terminais da Barra Longa"
+            android:textIsSelectable="false"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:layout_marginLeft="30dp"
+            tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+        <CheckBox
+            android:id="@+id/terminaisBarraLongaSolto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solto" />
+
+        <CheckBox
+            android:id="@+id/terminaisBarraLongaFolga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Com Folga" />
+
+
+        <TextView
+            android:id="@+id/textViewBracoIntermediario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="fill_horizontal|center"
+            android:text="Braço Intermediario"
+            android:textIsSelectable="false"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:layout_marginLeft="30dp"
+            tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+        <CheckBox
+            android:id="@+id/bracoIntermediarioSolto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solto" />
+
+        <CheckBox
+            android:id="@+id/bracoIntermediarioFolga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Com Folga" />
+
+        <TextView
+            android:id="@+id/textViewHasteSuporteReação"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="fill_horizontal|center"
+            android:text="Haste/Suporte de Reação"
+            android:textIsSelectable="false"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:layout_marginLeft="30dp"
+            tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+        			hasteSuporteReacaoQuebrada
+        <CheckBox
+            android:id="@+id/hasteSuporteReacaoEmpenada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Empenada" />
+
+        <CheckBox
+            android:id="@+id/hasteSuporteReacaoFolga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Com Folga" />
+        <CheckBox
+            android:id="@+id/hasteSuporteReacaoSolta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solta" />
+        <CheckBox
+            android:id="@+id/hasteSuporteReacaoQuebrada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quebrada" />
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

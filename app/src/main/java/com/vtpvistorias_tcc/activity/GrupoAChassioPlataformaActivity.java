@@ -19,6 +19,13 @@ public class GrupoAChassioPlataformaActivity extends AppCompatActivity implement
 
     private CheckBox tanqueCombustivelVazando;
     private CheckBox tanqueCombustivelSolto;
+    private CheckBox cintaSuporteTanqueFalta;
+    private CheckBox cintaSuporteTanqueQuebrada;
+    private CheckBox charrisPlatTrincado;
+    private CheckBox charrisPlatQuebrado;
+    private CheckBox charrisPlatReparoInadequado;
+    private CheckBox segCintoBloqueioPortasNFunciona;
+    private CheckBox segCintoBloqueioPortasFalta;
 
     private DatabaseReference firebase;
     private GrupoA grupoA;
@@ -38,6 +45,16 @@ public class GrupoAChassioPlataformaActivity extends AppCompatActivity implement
 
         tanqueCombustivelVazando = (CheckBox)findViewById(R.id.tanqueCombustivelVazando);
         tanqueCombustivelSolto = (CheckBox)findViewById(R.id.tanqueCombustivelSolto);
+
+        cintaSuporteTanqueFalta = (CheckBox)findViewById(R.id.cintaSuporteTanqueFalta);
+        cintaSuporteTanqueQuebrada = (CheckBox)findViewById(R.id.cintaSuporteTanqueQuebrada);
+
+        charrisPlatTrincado = (CheckBox)findViewById(R.id.charrisPlatTrincado);
+        charrisPlatQuebrado = (CheckBox)findViewById(R.id.charrisPlatQuebrado);
+        charrisPlatReparoInadequado = (CheckBox)findViewById(R.id.charrisPlatReparoInadequado);
+
+        segCintoBloqueioPortasNFunciona = (CheckBox)findViewById(R.id.segCintoBloqueioPortasNFunciona);
+        segCintoBloqueioPortasFalta = (CheckBox)findViewById(R.id.segCintoBloqueioPortasFalta);
 
         i = getIntent();
         inspecao = (Inspecao) i.getSerializableExtra("inspecao");
@@ -69,6 +86,16 @@ public class GrupoAChassioPlataformaActivity extends AppCompatActivity implement
         //grupoA.setIdFicha(1l);
         grupoA.setTanqueCombustivelVazando(tanqueCombustivelVazando.isChecked());
         grupoA.setTanqueCombustivelSolto(tanqueCombustivelSolto.isChecked());
+
+        grupoA.setCintaSuporteTanqueFalta(cintaSuporteTanqueFalta.isChecked());
+        grupoA.setCintaSuporteTanqueQuebrada(cintaSuporteTanqueQuebrada.isChecked());
+
+        grupoA.setCharrisPlatTrincado(charrisPlatTrincado.isChecked());
+        grupoA.setCharrisPlatQuebrado(charrisPlatQuebrado.isChecked());
+        grupoA.setCharrisPlatReparoInadequado(charrisPlatReparoInadequado.isChecked());
+
+        grupoA.setSegCintoBloqueioPortasFalta(segCintoBloqueioPortasFalta.isChecked());
+        grupoA.setSegCintoBloqueioPortasNFunciona(segCintoBloqueioPortasNFunciona.isChecked());
 
         //inspecao.setGrupoA(grupoA);
         //grupoA.salvar();

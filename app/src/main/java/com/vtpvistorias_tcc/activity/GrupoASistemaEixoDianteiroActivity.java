@@ -21,6 +21,29 @@ public class GrupoASistemaEixoDianteiroActivity extends AppCompatActivity implem
     private CheckBox caixaDirecaoVazamFlexEncanamento;
     private CheckBox suporteCaixaSolto;
     private CheckBox suporteCaixaTrincado;
+    private CheckBox bracoTerminalCaixaFolga;
+    private CheckBox bracoTerminalCaixaSolto;
+    private CheckBox amortecedorDirecaoSolto;
+    private CheckBox amortecedorDirecaoVazando;
+    private CheckBox amortecedorDirecaoFalta;
+    private CheckBox eixoDianteiroEmpenado;
+    private CheckBox eixoDianteiroTrincado;
+    private CheckBox rolamentoMangaEixoDanificado;
+    private CheckBox rolamentoMangaEixoFolga;
+    private CheckBox parafusoBatenteMangaFalta;
+    private CheckBox parafusoBatenteMangaSolto;
+    private CheckBox bracoEixoDianteiroSolto;
+    private CheckBox bracoEixoDianteiroDanificado;
+    private CheckBox terminaisBarraLongaSolto;
+    private CheckBox terminaisBarraLongaFolga;
+    private CheckBox bracoIntermediarioSolto;
+    private CheckBox bracoIntermediarioFolga;
+    private CheckBox hasteSuporteReacaoEmpenada;
+    private CheckBox hasteSuporteReacaoFolga;
+    private CheckBox hasteSuporteReacaoSolta;
+    private CheckBox hasteSuporteReacaoQuebrada;
+
+
 
     private DatabaseReference firebase;
     private GrupoA grupoA;
@@ -42,8 +65,40 @@ public class GrupoASistemaEixoDianteiroActivity extends AppCompatActivity implem
         caixaDirecaoSolta = (CheckBox)findViewById(R.id.caixaDirecaoSolta);
         caixaDirecaoVazamFlexEncanamento = (CheckBox)findViewById(R.id.caixaDirecaoVazamFlexEncanamento);
 
-        suporteCaixaSolto = (CheckBox)findViewById(R.id.suporteCaixaSolto);
+        suporteCaixaSolto    = (CheckBox)findViewById(R.id.suporteCaixaSolto);
         suporteCaixaTrincado = (CheckBox)findViewById(R.id.suporteCaixaTrincado);
+
+        bracoTerminalCaixaFolga = (CheckBox)findViewById(R.id.bracoTerminalCaixaFolga);
+        bracoTerminalCaixaSolto = (CheckBox)findViewById(R.id.bracoTerminalCaixaSolto);
+
+        amortecedorDirecaoSolto	  = (CheckBox)findViewById(R.id.amortecedorDirecaoSolto);
+        amortecedorDirecaoVazando = (CheckBox)findViewById(R.id.amortecedorDirecaoVazando);
+        amortecedorDirecaoFalta   = (CheckBox)findViewById(R.id.amortecedorDirecaoFalta);
+
+        eixoDianteiroEmpenado = (CheckBox)findViewById(R.id.eixoDianteiroEmpenado);
+        eixoDianteiroTrincado = (CheckBox)findViewById(R.id.eixoDianteiroTrincado);
+
+        rolamentoMangaEixoDanificado = (CheckBox)findViewById(R.id.rolamentoMangaEixoDanificado);
+        rolamentoMangaEixoFolga      = (CheckBox)findViewById(R.id.rolamentoMangaEixoFolga);
+
+        parafusoBatenteMangaFalta = (CheckBox)findViewById(R.id.parafusoBatenteMangaFalta);
+        parafusoBatenteMangaSolto = (CheckBox)findViewById(R.id.parafusoBatenteMangaSolto);
+
+        bracoEixoDianteiroSolto = (CheckBox)findViewById(R.id.bracoEixoDianteiroSolto);
+        bracoEixoDianteiroDanificado = (CheckBox)findViewById(R.id.bracoEixoDianteiroDanificado);
+
+        terminaisBarraLongaSolto = (CheckBox)findViewById(R.id.terminaisBarraLongaSolto);
+        terminaisBarraLongaFolga = (CheckBox)findViewById(R.id.terminaisBarraLongaFolga);
+
+        bracoIntermediarioSolto = (CheckBox)findViewById(R.id.bracoIntermediarioSolto);
+        bracoIntermediarioFolga = (CheckBox)findViewById(R.id.bracoIntermediarioFolga);
+
+        hasteSuporteReacaoEmpenada = (CheckBox)findViewById(R.id.hasteSuporteReacaoEmpenada);
+        hasteSuporteReacaoFolga = (CheckBox)findViewById(R.id.hasteSuporteReacaoFolga);
+        hasteSuporteReacaoSolta = (CheckBox)findViewById(R.id.hasteSuporteReacaoSolta);
+        hasteSuporteReacaoQuebrada = (CheckBox)findViewById(R.id.hasteSuporteReacaoQuebrada);
+
+
 
         i = getIntent();
         inspecao = (Inspecao) i.getSerializableExtra("inspecao");
@@ -79,6 +134,38 @@ public class GrupoASistemaEixoDianteiroActivity extends AppCompatActivity implem
 
         grupoA.setSuporteCaixaTrincado(suporteCaixaTrincado.isChecked());
         grupoA.setSuporteCaixaSolto(suporteCaixaSolto.isChecked());
+
+        grupoA.setBracoTerminalCaixaFolga(bracoTerminalCaixaFolga.isChecked());
+        grupoA.setBracoTerminalCaixaSolto(bracoTerminalCaixaSolto.isChecked());
+
+        grupoA.setAmortecedorDirecaoSolto(amortecedorDirecaoSolto.isChecked());
+        grupoA.setAmortecedorDirecaoVazando(amortecedorDirecaoVazando.isChecked());
+        grupoA.setAmortecedorDirecaoFalta(amortecedorDirecaoFalta.isChecked());
+
+        grupoA.setEixoDianteiroEmpenado(eixoDianteiroEmpenado.isChecked());
+        grupoA.setEixoDianteiroTrincado(eixoDianteiroTrincado.isChecked());
+
+        grupoA.setRolamentoMangaEixoDanificado(rolamentoMangaEixoDanificado.isChecked());
+        grupoA.setRolamentoMangaEixoFolga(rolamentoMangaEixoFolga.isChecked());
+
+        grupoA.setParafusoBatenteMangaFalta(parafusoBatenteMangaFalta.isChecked());
+        grupoA.setParafusoBatenteMangaSolto(parafusoBatenteMangaSolto.isChecked());
+
+        grupoA.setBracoEixoDianteiroSolto(bracoEixoDianteiroSolto.isChecked());
+        grupoA.setBracoEixoDianteiroDanificado(bracoEixoDianteiroDanificado.isChecked());
+
+        grupoA.setTerminaisBarraLongaSolto(terminaisBarraLongaSolto.isChecked());
+        grupoA.setTerminaisBarraLongaFolga(terminaisBarraLongaFolga.isChecked());
+
+        grupoA.setBracoIntermediarioSolto(bracoIntermediarioSolto.isChecked());
+        grupoA.setBracoIntermediarioFolga(bracoIntermediarioFolga.isChecked());
+
+        grupoA.setHasteSuporteReacaoEmpenada(hasteSuporteReacaoEmpenada.isChecked());
+        grupoA.setHasteSuporteReacaoFolga(hasteSuporteReacaoFolga.isChecked());
+        grupoA.setHasteSuporteReacaoSolta(hasteSuporteReacaoSolta.isChecked());
+        grupoA.setHasteSuporteReacaoQuebrada(hasteSuporteReacaoQuebrada.isChecked());
+
+
         //inspecao.setGrupoA(grupoA);
         //grupoA.salvar();
     }

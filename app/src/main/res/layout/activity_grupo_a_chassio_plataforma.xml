@@ -67,6 +67,123 @@
                 android:layout_height="wrap_content"
                 android:text="Solto" />
 
+            <TextView
+                android:id="@+id/textViewCintaSuporteTanque"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Cinta/Suporte do Tanque"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/cintaSuporteTanqueFalta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Falta" />
+
+            <CheckBox
+                android:id="@+id/cintaSuporteTanqueQuebrada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quebrada" />
+
+            <TextView
+                android:id="@+id/textViewEstruturaDegraus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Estrutura dos Degraus"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/estruturaDegrausSolta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solta" />
+
+            <CheckBox
+                android:id="@+id/estruturaDegrausAlturaIrregular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Altura Irregular" />
+
+            <CheckBox
+                android:id="@+id/estruturaDegrausQuebrada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quebrada" />
+
+            <TextView
+                android:id="@+id/textViewCharrisPlataforma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Charris e Plataforma"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/charrisPlatTrincado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trincado" />
+
+            <CheckBox
+                android:id="@+id/charrisPlatQuebrado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quebrado" />
+
+            <CheckBox
+                android:id="@+id/charrisPlatReparoInadequado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reparo Inadequado" />
+
+            <TextView
+                android:id="@+id/textViewSistemaSegurancaCintoMotoristaBloqueioPortas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Sistema Segurança do Cinto Motorista e Bloqueio Portas"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/segCintoBloqueioPortasNFunciona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Não Funciona" />
+
+            <CheckBox
+                android:id="@+id/segCintoBloqueioPortasFalta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Falta" />
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
