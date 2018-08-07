@@ -32,7 +32,7 @@
             android:theme="@android:style/Theme.Holo.Dialog" />
         <activity android:name=".activity.GrupoASistemaFreioActivity" />
         <activity
-            android:name=".activity.GrupoBActivity"
+            android:name=".activity.GrupoBSistemaCarroceriaActivity"
             android:label="@string/title_activity_grupo_b"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activity.GrupoASistemaSuspensaoActivity" />
