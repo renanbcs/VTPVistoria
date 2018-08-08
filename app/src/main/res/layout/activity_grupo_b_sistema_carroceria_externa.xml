@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="16dp"
+    android:orientation="vertical"
+    tools:context=".activity.GrupoBSistemaCarroceriaExternaActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewTituloGrupoB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Grupo B"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewSistemaCarroceriaExterna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="8 - Sistema carroceria - Externa"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textViewSilencioso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Silencioso"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/silenciosoSolto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solto" />
+
+            <CheckBox
+                android:id="@+id/silenciosoDanificado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Danificado" />
+
+            <TextView
+                android:id="@+id/textViewTuboDescarga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Tubo de Descarga"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/tuboDescargaSolto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solto" />
+
+            <CheckBox
+                android:id="@+id/tuboDescargaFalta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Falta" />
+
+            <CheckBox
+                android:id="@+id/tuboDescargaIrregular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Irregular" />
+
+            <TextView
+                android:id="@+id/textViewProtecaoTuboDescarga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Proteção Tubo descarga"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/protecaoTuboDescargaFalta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Falta" />
+
+            <CheckBox
+                android:id="@+id/protecaoTuboDescargaSolta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solta" />
+
+            <TextView
+                android:id="@+id/textViewArticulacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Articulação"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/articulacaoSolto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solto" />
+
+            <CheckBox
+                android:id="@+id/articulacaoFalta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Falta" />
+
+            <CheckBox
+                android:id="@+id/articulacaoRasgado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rasgado" />
+
+            <CheckBox
+                android:id="@+id/articulacaoGasto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gasto" />
+
+            <TextView
+                android:id="@+id/textViewVazamentoExcessivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Vazamento excessivo"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/vazamentoExcessivoMotor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Motor" />
+
+            <CheckBox
+                android:id="@+id/vazamentoExcessivoCambio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cambio" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/botaoVoltarSelecionarFicha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Voltar"
+                    tools:layout_marginLeft="50dp" />
+
+                <Button
+                    android:id="@+id/botaoProximo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical|end"
+                    android:text="Próximo"
+                    tools:layout_marginLeft="50dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="16dp"
+    android:orientation="vertical"
+    tools:context=".activity.GrupoBIluminacaoInternaActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewTituloGrupoB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Grupo B"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewIluminacaoInterna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="2 - Iluminação Interna"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textViewCaixaDeItinerario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Caixa de Itinerário"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/caixaItinerarioIluminacaoInsulficiente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Iluminação Insulficiente" />
+
+            <CheckBox
+                android:id="@+id/caixaItinerarioTampaSolta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tampa Solta" />
+
+            <CheckBox
+                android:id="@+id/caixaItinerarioMecanicaDefeito"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mecanica com Defeito" />
+
+            <CheckBox
+                android:id="@+id/caixaItinerariaVidroQuebrado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vidro Quebrado" />
+
+            <CheckBox
+                android:id="@+id/caixaItinerarioFaltaBorracha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Falta Borracha" />
+
+            <TextView
+                android:id="@+id/textViewIluminacaoSalaoInterna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Iluminação do salão/interna"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/iluminacaoSalaoInternaNaoFunciona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Não funciona" />
+
+            <CheckBox
+                android:id="@+id/iluminacaoSalaoInternaQuebrada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quebrada" />
+
+
+
+            <CheckBox
+                android:id="@+id/iluminacaoSalaoInternaFalta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Falta" />
+
+            <TextView
+                android:id="@+id/textViewSolicitacaoDeParada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Solicitação de Parada"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/solicitacaoParadaLampadaQueimada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lampada Queimada" />
+
+            <CheckBox
+                android:id="@+id/solicitacaoParadaSonoroNaoFunciona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sonoro não funciona" />
+
+            <CheckBox
+                android:id="@+id/solicitacaoParadaSemCordao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sem cordão" />
+
+            <TextView
+                android:id="@+id/textViewLuzDoDegrau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Luz do Degrau"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/luzDegrauFalta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Falta" />
+
+            <CheckBox
+                android:id="@+id/luzDegrauNaoFunciona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Não funciona" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/botaoVoltarSelecionarFicha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Voltar"
+                    tools:layout_marginLeft="50dp" />
+
+                <Button
+                    android:id="@+id/botaoProximo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical|end"
+                    android:text="Próximo"
+                    tools:layout_marginLeft="50dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

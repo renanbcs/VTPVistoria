@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="16dp"
+    android:orientation="vertical"
+    tools:context=".activity.GrupoBPostoComandoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewTituloGrupoB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Grupo B"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewPostoComando"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="3 - Posto de comando"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textViewComandosPainel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Comandos do painel"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/comandoPainelManometroNaoFunciona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manômetro não funciona" />
+
+            <CheckBox
+                android:id="@+id/comandoPainelVelocimentoNaoFunciona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Velocimentro não funciona" />
+
+            <CheckBox
+                android:id="@+id/comandoPainelLuzesNaoAcende"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Luzes não acendem" />
+
+            <CheckBox
+                android:id="@+id/comandoPainelSistemaVentilacaoNaoFunciona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sistema de ventilação não funciona" />
+
+            <TextView
+                android:id="@+id/textViewChaveSetaBuzina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Chave de seta/Buzina"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/chaveSetaBuzinaNaoFunciona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Não funciona" />
+
+            <CheckBox
+                android:id="@+id/chaveSetaBuzinaDanificada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Danificada" />
+
+            <CheckBox
+                android:id="@+id/chaveSetaBuzinaFalta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Falta" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/botaoVoltarSelecionarFicha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Voltar"
+                    tools:layout_marginLeft="50dp" />
+
+                <Button
+                    android:id="@+id/botaoProximo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical|end"
+                    android:text="Próximo"
+                    tools:layout_marginLeft="50dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
