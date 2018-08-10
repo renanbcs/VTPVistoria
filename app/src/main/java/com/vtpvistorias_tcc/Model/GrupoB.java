@@ -101,6 +101,10 @@ public class GrupoB extends Inspecao {
     private Boolean solicitacaoParadaSonoroNaoFunciona = false;
     private Boolean solicitacaoParadaSemCordao = false;
 
+    private Boolean iluminacaoSalaoInternaNaoFunciona = false;
+    private Boolean iluminacaoSalaoInternaQuebrada = false;
+    private Boolean iluminacaoSalaoInternaFalta = false;
+
     private Boolean luzDegrauFalta = false;
     private Boolean luzDegrauNaoFunciona = false;
 
@@ -125,11 +129,13 @@ public class GrupoB extends Inspecao {
     private Boolean tampaInspecaoDanificada = false;
     private Boolean tampaInspecaoFaltaManutencao = false;
 
-    private Boolean tampaMotorSolto	= false;
+    private Boolean tampaMotorSolta	= false;
+    private boolean tampaMotorSemTrava = false;
     private Boolean tampaMotorDanificado = false;
     private Boolean tampaMotorSemVedacao = false;
 
     private Boolean revestimentoInternoSolto = false;
+    private boolean revestimentoInternoDanificada = false;
     private Boolean revestimentoInternoDanificado = false;
     private Boolean revestimentoInternoFaltando = false;
     private Boolean revestimentoInternoIrregular = false;
@@ -197,6 +203,7 @@ public class GrupoB extends Inspecao {
     private Boolean extintorIrregular = false;
     private Boolean extintorSuporteQuebrado = false;
     private Boolean extintorSuporteSolto = false;
+    private Boolean extintorFalta = false;
 
     private Boolean trianguloFalta = false;
     private Boolean trianguloDanificado = false;
@@ -327,6 +334,10 @@ public class GrupoB extends Inspecao {
         hashMapFichaB.put("solicitacaoParadaSonoroNaoFunciona", getSolicitacaoParadaSonoroNaoFunciona());
         hashMapFichaB.put("solicitacaoParadaSemCordao",getSolicitacaoParadaSemCordao());
 
+        hashMapFichaB.put("iluminacaoSalaoInternaNaoFunciona",getIluminacaoSalaoInternaNaoFunciona());
+        hashMapFichaB.put("iluminacaoSalaoInternaQuebrada", getIluminacaoSalaoInternaQuebrada());
+        hashMapFichaB.put("iluminacaoSalaoInternaFalta",getIluminacaoSalaoInternaFalta());
+
         hashMapFichaB.put("luzDegrauFalta", getLuzDegrauFalta());
         hashMapFichaB.put("luzDegrauNaoFunciona", getLuzDegrauNaoFunciona());
 
@@ -351,11 +362,13 @@ public class GrupoB extends Inspecao {
         hashMapFichaB.put("tampaInspecaoDanificada", getTampaInspecaoDanificada());
         hashMapFichaB.put("tampaInspecaoFaltaManutencao", getTampaInspecaoFaltaManutencao());
 
-        hashMapFichaB.put("tampaMotorSolto", getTampaMotorSolto());
+        hashMapFichaB.put("tampaMotorSolta", getTampaMotorSolta());
+        hashMapFichaB.put("tampaMotorSemTrava", getTampaMotorSemTrava());
         hashMapFichaB.put("tampaMotorDanificado", getTampaMotorDanificado());
         hashMapFichaB.put("tampaMotorSemVedacao", getTampaMotorSemVedacao());
 
         hashMapFichaB.put("revestimentoInternoSolto", getRevestimentoInternoSolto());
+        hashMapFichaB.put("revestimentoInternoDanificada", getRevestimentoInternoDanificada());
         hashMapFichaB.put("revestimentoInternoDanificado", getRevestimentoInternoDanificado());
         hashMapFichaB.put("revestimentoInternoFaltando",getRevestimentoInternoFaltando());
         hashMapFichaB.put("revestimentoInternoIrregular", getRevestimentoInternoIrregular());
@@ -422,6 +435,7 @@ public class GrupoB extends Inspecao {
         hashMapFichaB.put("extintorIrregular", getExtintorIrregular());
         hashMapFichaB.put("extintorSuporteQuebrado",getExtintorSuporteQuebrado());
         hashMapFichaB.put("extintorSuporteSolto",getExtintorSuporteSolto());
+        hashMapFichaB.put("extintorFalta",getExtintorSuporteSolto());
 
         hashMapFichaB.put("trianguloFalta",getTrianguloFalta());
         hashMapFichaB.put("trianguloDanificado",getTrianguloDanificado());
@@ -982,6 +996,32 @@ public class GrupoB extends Inspecao {
         this.solicitacaoParadaSemCordao = solicitacaoParadaSemCordao;
     }
 
+
+    public Boolean getIluminacaoSalaoInternaNaoFunciona() {
+        return iluminacaoSalaoInternaNaoFunciona;
+    }
+
+    public void setIluminacaoSalaoInternaNaoFunciona(Boolean iluminacaoSalaoInternaNaoFunciona) {
+        this.iluminacaoSalaoInternaNaoFunciona = iluminacaoSalaoInternaNaoFunciona;
+    }
+
+    public Boolean getIluminacaoSalaoInternaQuebrada() {
+        return iluminacaoSalaoInternaNaoFunciona;
+    }
+
+    public void setIluminacaoSalaoInternaQuebrada(Boolean iluminacaoSalaoInternaQuebrada) {
+        this.iluminacaoSalaoInternaQuebrada = iluminacaoSalaoInternaQuebrada;
+    }
+
+    public Boolean getIluminacaoSalaoInternaFalta() {
+        return iluminacaoSalaoInternaFalta;
+    }
+
+    public void setIluminacaoSalaoInternaFalta(Boolean iluminacaoSalaoInternaFalta) {
+        this.iluminacaoSalaoInternaFalta = iluminacaoSalaoInternaFalta;
+    }
+
+
     public Boolean getLuzDegrauFalta() {
         return luzDegrauFalta;
     }
@@ -1110,12 +1150,21 @@ public class GrupoB extends Inspecao {
         this.tampaInspecaoFaltaManutencao = tampaInspecaoFaltaManutencao;
     }
 
-    public Boolean getTampaMotorSolto() {
-        return tampaMotorSolto;
+    public Boolean getTampaMotorSolta() {
+        return tampaMotorSolta;
     }
 
-    public void setTampaMotorSolto(Boolean tampaMotorSolto) {
-        this.tampaMotorSolto = tampaMotorSolto;
+    public void setTampaMotorSolta(Boolean tampaMotorSolta) {
+        this.tampaMotorSolta = tampaMotorSolta;
+    }
+
+
+    public Boolean getTampaMotorSemTrava() {
+        return tampaMotorSemTrava;
+    }
+
+    public void setTampaMotorSemTrava(Boolean tampaMotorSemTrava) {
+        this.tampaMotorSemTrava = tampaMotorSemTrava;
     }
 
     public Boolean getTampaMotorDanificado() {
@@ -1140,6 +1189,14 @@ public class GrupoB extends Inspecao {
 
     public void setRevestimentoInternoSolto(Boolean revestimentoInternoSolto) {
         this.revestimentoInternoSolto = revestimentoInternoSolto;
+    }
+
+    public Boolean getRevestimentoInternoDanificada() {
+        return revestimentoInternoDanificada;
+    }
+
+    public void setRevestimentoInternoDanificada(Boolean revestimentoInternoDanificada) {
+        this.revestimentoInternoDanificada = revestimentoInternoDanificada;
     }
 
     public Boolean getRevestimentoInternoDanificado() {
@@ -1532,6 +1589,14 @@ public class GrupoB extends Inspecao {
 
     public void setExtintorSuporteSolto(Boolean extintorSuporteSolto) {
         this.extintorSuporteSolto = extintorSuporteSolto;
+    }
+
+    public Boolean getExtintorFalta() {
+        return extintorFalta;
+    }
+
+    public void setExtintorFalta(Boolean extintorFalta) {
+        this.extintorFalta = extintorFalta;
     }
 
     public Boolean getTrianguloFalta() {
