@@ -12,353 +12,585 @@ public class GrupoC extends Inspecao {
     //Atributos
     private Long idFicha;
 
-    private Boolean valvulaPedalVazando = false;
-    private Boolean valvulaPedalContaminada = false;
+    private Boolean areaCadeirasRodasMenorEspecificacao = false;
+    private Boolean comunicacaoVisualInternaAdesivosObstaculos = false;
 
-    private Boolean almofadaPedalGasta = false;
-    private Boolean almofadaPedalFalta = false;
+    private Boolean areaManobrasObstaculos = false;
 
-    private Boolean freioEstacionamentoVazando = false;
-    private Boolean freioEstacionamentoNaoFunciona = false;
+    private Boolean portasFechamentoDeficiente = false;
+    private Boolean portasConservacao = false;
+    private Boolean portasNaoTrava = false;
 
-    private Boolean varaoFreioMaoDespressurizada = false;
-    private Boolean varaoFreioMaoSolta = false;
-    private Boolean varaoFreioMaoSemAcao = false;
+    private Boolean elevadorIncompativel = false;
+    private Boolean elevadorVaoLivre = false;
+    private Boolean elevadorCursoIncompativel = false;
+    private Boolean elevadorSeparado = false;
+    private Boolean elevadorInacessivel = false;
+    private Boolean elevadorInexistente = false;
+    private Boolean elevadorNaoFunciona = false;
+    private Boolean elevadorPinturaForaPadrao = false;
+    private Boolean elevadorObstaculo = false;
+    private Boolean elevadorRapido = false;
+    private Boolean elevadorBrusco = false;
+    private Boolean elevadorBarulho = false;
+    private Boolean elevadorOutros = false;
+    private Boolean elevadorBarulhoExcessivo = false;
+    private Boolean elevadorVazamento = false;
+    private Boolean elevadorInoperante = false;
 
-    private Boolean catracaFalta = false;
+    private Boolean itensSegurancaInexistente = false;
+    private Boolean itensSegurancaFuncionamento = false;
+    private Boolean itensSegurancaInoperante = false;
+    private Boolean itensSegurancaConservacao = false;
+    private Boolean itensSegurancaTransporteDeficiente = false;
+    private Boolean itensSegurancaMaterialNaoResiliente = false;
 
-    private Boolean pinoCatracaFalta = false;
+    private Boolean tacografoFalta;
+    private Boolean tacografoFaltaLacre;
+    private Boolean tacografoNaoFunciona;
+    private Boolean tacografoEstadoConservacao;
 
-    private Boolean lonasFreioContaminada = false;
-    private Boolean lonasFreioSolta = false;
-    private Boolean lonasFreioQuebrada = false;
-    private Boolean lonasFreioDesrregulada = false;
-    private Boolean lonasFreioFina = false;
+    private Boolean pisoLiso;
+    private Boolean pisoSujo;
+    private Boolean pisoDerrapante;
 
-    private Boolean cilindrosPneumaticosVazando = false;
-    private Boolean cilindrosPneumaticosDesativado = false;
+    private Boolean quebraSolInexistente;
+    private Boolean quebraSolDesregulado;
+    private Boolean quebraSolSolto;
 
-    private Boolean servoFreioVazando = false;
-    private Boolean servoFreioSolto = false;
+    private Boolean desembacadorParaBrisaNaoFunciona;
+    private Boolean desembacadorParaBrisaFalta;
 
-    private Boolean cilindroRodaVazando = false;
-    private Boolean cilindroRodaSolto = false;
+    private Boolean bancosAltosSimplesInexistentes;
+    private Boolean bancosAltosSimplesConservacao;
+    private Boolean bancosAltosSimplesFixacao;
 
-    private Boolean cilindroMestreVazando = false;
-    private Boolean cilindroMestreSolto = false;
+    private Boolean radioComunicacaoNaoFunciona;
+    private Boolean radioComunicacaoFixacao;
+    private Boolean radioComunicacaoConservacao;
+    private Boolean radioComunicacaoLenteDanificada;
 
-    private Boolean flexivelRodaVazando = false;
-    private Boolean flexivelRodaDanificado = false;
-    private Boolean flexivelRodaDesalinhado = false;
-    private Boolean flexivelRodaIrregular = false;
+    private Boolean brakeLightInexistente;
+    private Boolean brakeLightSolto;
 
-    private Boolean valvulaTubularReservatorioVazando = false;
-    private Boolean valvulaTubularReservatorioContaminada = false;
+    private Boolean comunicacaoVisualInternaAdesivosInexistente;
+    private Boolean comunicacaoVisualInternaAdesivosConservacao;
+    private Boolean comunicacaoVisualInternaAdesivosForaPadrao;
+
 
     public GrupoC() {
     }
 
-    public void salvar(){
+    public void salvar() {
         DatabaseReference referenciaFiReference = ConfiguracaoFirebase.getFirebase();
-        referenciaFiReference.child("Grupo A").push().setValue(this);
+        referenciaFiReference.child("Grupo C").push().setValue(this);
     }
 
     @Exclude
 
-    public Map<String, Object> toMap(){
+    public Map<String, Object> toMap() {
         HashMap<String, Object> hashMapFichaA = new HashMap<>();
 
-        hashMapFichaA.put("idFicha",getIdFicha());
+        hashMapFichaA.put("idFicha", getIdFicha());
 
-        hashMapFichaA.put("valvulaPedalVazando",getValvulaPedalVazando());
-        hashMapFichaA.put("valvulaPedalContaminada",getValvulaPedalContaminada());
+        hashMapFichaA.put("areaCadeirasRodasMenorEspecificacao", getAreaCadeirasRodasMenorEspecificacao());
+        hashMapFichaA.put("comunicacaoVisualInternaAdesivosObstaculos", getComunicacaoVisualInternaAdesivosObstaculos());
 
-        hashMapFichaA.put("almofadaPedalGasta",getAlmofadaPedalGasta());
-        hashMapFichaA.put("almofadaPedalFalta",getAlmofadaPedalFalta());
+        hashMapFichaA.put("areaManobrasObstaculos", getAreaManobrasObstaculos());
 
-        hashMapFichaA.put("freioEstacionamentoVazando",getFreioEstacionamentoVazando());
-        hashMapFichaA.put("freioEstacionamentoNaoFunciona",getFreioEstacionamentoNaoFunciona());
+        hashMapFichaA.put("portasFechamentoDeficiente", getPortasFechamentoDeficiente());
+        hashMapFichaA.put("portasConservacao", getPortasConservacao());
+        hashMapFichaA.put("portasNaoTrava", getPortasNaoTrava());
 
-        hashMapFichaA.put("varaoFreioMaoDespressurizada",getVaraoFreioMaoDespressurizada());
-        hashMapFichaA.put("varaoFreioMaoSolta",getVaraoFreioMaoSolta());
-        hashMapFichaA.put("varaoFreioMaoSemAcao",getVaraoFreioMaoSemAcao());
 
-        hashMapFichaA.put("catracaFalta",getCatracaFalta());
+        hashMapFichaA.put("elevadorIncompativel", getElevadorIncompativel());
+        hashMapFichaA.put("elevadorVaoLivre", getElevadorVaoLivre());
+        hashMapFichaA.put("elevadorCursoIncompativel", getElevadorCursoIncompativel());
+        hashMapFichaA.put("elevadorSeparado", getElevadorSeparado());
+        hashMapFichaA.put("elevadorInacessivel", getElevadorInacessivel());
+        hashMapFichaA.put("elevadorInexistente", getElevadorInexistente());
+        hashMapFichaA.put("elevadorNaoFunciona", getElevadorNaoFunciona());
+        hashMapFichaA.put("elevadorPinturaForaPadrao", getElevadorPinturaForaPadrao());
+        hashMapFichaA.put("elevadorObstaculo", getElevadorObstaculo());
+        hashMapFichaA.put("elevadorRapido", getElevadorRapido());
+        hashMapFichaA.put("elevadorBrusco", getElevadorBrusco());
+        hashMapFichaA.put("elevadorBarulho", getElevadorBarulho());
+        hashMapFichaA.put("elevadorOutros", getElevadorOutros());
+        hashMapFichaA.put("elevadorBarulhoExcessivo", getElevadorBarulhoExcessivo());
+        hashMapFichaA.put("elevadorVazamento", getElevadorVazamento());
+        hashMapFichaA.put("elevadorInoperante", getElevadorInoperante());
 
-        hashMapFichaA.put("pinoCatracaFalta",getPinoCatracaFalta());
+        hashMapFichaA.put("itensSegurancaInexistente", getItensSegurancaInexistente());
+        hashMapFichaA.put("itensSegurancaFuncionamento", getItensSegurancaFuncionamento());
+        hashMapFichaA.put("itensSegurancaInoperante", getItensSegurancaInoperante());
+        hashMapFichaA.put("itensSegurancaConservacao", getItensSegurancaConservacao());
+        hashMapFichaA.put("itensSegurancaTransporteDeficiente", getItensSegurancaTransporteDeficiente());
+        hashMapFichaA.put("itensSegurancaMaterialNaoResiliente", getItensSegurancaMaterialNaoResiliente());
 
-        hashMapFichaA.put("lonasFreioContaminada",getLonasFreioContaminada());
-        hashMapFichaA.put("lonasFreioSolta",getLonasFreioSolta());
-        hashMapFichaA.put("lonasFreioQuebrada",getLonasFreioQuebrada());
-        hashMapFichaA.put("lonasFreioDesrregulada",getLonasFreioDesrregulada());
-        hashMapFichaA.put("lonasFreioFina",getLonasFreioFina());
+        hashMapFichaA.put("tacografoFalta", getTacografoFalta());
+        hashMapFichaA.put("tacografoFaltaLacre", getTacografoFaltaLacre());
+        hashMapFichaA.put("tacografoNaoFunciona", getTacografoNaoFunciona());
+        hashMapFichaA.put("tacografoEstadoConservacao", getTacografoEstadoConservacao());
 
-        hashMapFichaA.put("cilindrosPneumaticosVazando",getCilindrosPneumaticosVazando());
-        hashMapFichaA.put("cilindrosPneumaticosDesativado",getCilindrosPneumaticosDesativado());
+        hashMapFichaA.put("quebraSolInexistente", getQuebraSolInexistente());
+        hashMapFichaA.put("quebraSolDesregulado", getQuebraSolDesregulado());
+        hashMapFichaA.put("quebraSolSolto", getQuebraSolSolto());
 
-        hashMapFichaA.put("servoFreioVazando",getServoFreioVazando());
-        hashMapFichaA.put("servoFreioSolto",getServoFreioSolto());
-        hashMapFichaA.put("cilindroRodaVazando",getCilindroRodaVazando());
-        hashMapFichaA.put("cilindroRodaSolto",getCilindroRodaSolto());
-        hashMapFichaA.put("cilindroMestreVazando",getCilindroMestreVazando());
-        hashMapFichaA.put("cilindroMestreSolto",getCilindroMestreSolto());
-        hashMapFichaA.put("flexivelRodaVazando",getFlexivelRodaVazando());
-        hashMapFichaA.put("flexivelRodaDanificado",getFlexivelRodaDanificado());
-        hashMapFichaA.put("flexivelRodaDesalinhado",getFlexivelRodaDesalinhado());
-        hashMapFichaA.put("flexivelRodaIrregular",getFlexivelRodaIrregular());
-        hashMapFichaA.put("valvulaTubularReservatorioVazando",getValvulaTubularReservatorioVazando());
-        hashMapFichaA.put("valvulaTubularReservatorioContaminada",getValvulaTubularReservatorioContaminada());
+        hashMapFichaA.put("pisoLiso", getPisoLiso());
+        hashMapFichaA.put("pisoSujo", getPisoSujo());
+        hashMapFichaA.put("pisoDerrapante", getPisoDerrapante());
+
+        hashMapFichaA.put("desembacadorParaBrisaNaoFunciona", getDesembacadorParaBrisaNaoFunciona());
+        hashMapFichaA.put("desembacadorParaBrisaFalta", getDesembacadorParaBrisaFalta());
+
+        hashMapFichaA.put("bancosAltosSimplesInexistentes", getBancosAltosSimplesInexistentes());
+        hashMapFichaA.put("bancosAltosSimplesConservacao", getBancosAltosSimplesConservacao());
+        hashMapFichaA.put("bancosAltosSimplesFixacao", getBancosAltosSimplesFixacao());
+
+        hashMapFichaA.put("radioComunicacaoNaoFunciona", getRadioComunicacaoNaoFunciona());
+        hashMapFichaA.put("radioComunicacaoFixacao", getRadioComunicacaoFixacao());
+        hashMapFichaA.put("radioComunicacaoConservacao", getRadioComunicacaoConservacao());
+        hashMapFichaA.put("radioComunicacaoLenteDanificada", getRadioComunicacaoLenteDanificada());
+
+        hashMapFichaA.put("brakeLightInexistente", getBrakeLightInexistente());
+        hashMapFichaA.put("brakeLightSolto", getBrakeLightSolto());
+
+        hashMapFichaA.put("comunicacaoVisualInternaAdesivosInexistente", getComunicacaoVisualInternaAdesivosInexistente());
+        hashMapFichaA.put("comunicacaoVisualInternaAdesivosConservacao", getComunicacaoVisualInternaAdesivosConservacao());
+        hashMapFichaA.put("comunicacaoVisualInternaAdesivosForaPadrao", getComunicacaoVisualInternaAdesivosForaPadrao());
+
 
         return hashMapFichaA;
     }
 
 
-    public Long getIdFicha(){
+    public Long getIdFicha() {
         return idFicha;
     }
 
-    public void setIdFicha(Long idFicha){
-        this.idFicha=idFicha;
+    public void setIdFicha(Long idFicha) {
+        this.idFicha = idFicha;
     }
 
-    public Boolean getValvulaPedalVazando() {
-        return valvulaPedalVazando;
+    public Boolean getAreaCadeirasRodasMenorEspecificacao() {
+        return areaCadeirasRodasMenorEspecificacao;
     }
 
-    public void setValvulaPedalVazando(Boolean valvulaPedalVazando) {
-        this.valvulaPedalVazando = valvulaPedalVazando;
+    public void setAreaCadeirasRodasMenorEspecificacao(Boolean areaCadeirasRodasMenorEspecificacao) {
+        this.areaCadeirasRodasMenorEspecificacao = areaCadeirasRodasMenorEspecificacao;
     }
 
-    public Boolean getValvulaPedalContaminada() {
-        return valvulaPedalContaminada;
+    public Boolean getComunicacaoVisualInternaAdesivosObstaculos() {
+        return comunicacaoVisualInternaAdesivosObstaculos;
     }
 
-    public void setValvulaPedalContaminada(Boolean valvulaPedalContaminada) {
-        this.valvulaPedalContaminada = valvulaPedalContaminada;
+    public void setComunicacaoVisualInternaAdesivosObstaculos(Boolean comunicacaoVisualInternaAdesivosObstaculos) {
+        this.comunicacaoVisualInternaAdesivosObstaculos = comunicacaoVisualInternaAdesivosObstaculos;
     }
 
-    public Boolean getAlmofadaPedalGasta() {
-        return almofadaPedalGasta;
+    public Boolean getAreaManobrasObstaculos() {
+        return areaManobrasObstaculos;
     }
 
-    public void setAlmofadaPedalGasta(Boolean almofadaPedalGasta) {
-        this.almofadaPedalGasta = almofadaPedalGasta;
+    public void setAreaManobrasObstaculos(Boolean areaManobrasObstaculos) {
+        this.areaManobrasObstaculos = areaManobrasObstaculos;
     }
 
-    public Boolean getAlmofadaPedalFalta() {
-        return almofadaPedalFalta;
+    public Boolean getPortasFechamentoDeficiente() {
+        return portasFechamentoDeficiente;
     }
 
-    public void setAlmofadaPedalFalta(Boolean almofadaPedalFalta) {
-        this.almofadaPedalFalta = almofadaPedalFalta;
+    public void setPortasFechamentoDeficiente(Boolean portasFechamentoDeficiente) {
+        this.portasFechamentoDeficiente = portasFechamentoDeficiente;
     }
 
-    public Boolean getFreioEstacionamentoVazando() {
-        return freioEstacionamentoVazando;
+    public Boolean getPortasConservacao() {
+        return portasConservacao;
     }
 
-    public void setFreioEstacionamentoVazando(Boolean freioEstacionamentoVazando) {
-        this.freioEstacionamentoVazando = freioEstacionamentoVazando;
+    public void setPortasConservacao(Boolean portasConservacao) {
+        this.portasConservacao = portasConservacao;
     }
 
-    public Boolean getFreioEstacionamentoNaoFunciona() {
-        return freioEstacionamentoNaoFunciona;
+    public Boolean getPortasNaoTrava() {
+        return portasNaoTrava;
     }
 
-    public void setFreioEstacionamentoNaoFunciona(Boolean freioEstacionamentoNaoFunciona) {
-        this.freioEstacionamentoNaoFunciona = freioEstacionamentoNaoFunciona;
+    public void setPortasNaoTrava(Boolean portasNaoTrava) {
+        this.portasNaoTrava = portasNaoTrava;
     }
 
-    public Boolean getVaraoFreioMaoDespressurizada() {
-        return varaoFreioMaoDespressurizada;
+    public Boolean getElevadorIncompativel() {
+        return elevadorIncompativel;
     }
 
-    public void setVaraoFreioMaoDespressurizada(Boolean varaoFreioMaoDespressurizada) {
-        this.varaoFreioMaoDespressurizada = varaoFreioMaoDespressurizada;
+    public void setElevadorIncompativel(Boolean elevadorIncompativel) {
+        this.elevadorIncompativel = elevadorIncompativel;
     }
 
-    public Boolean getVaraoFreioMaoSolta() {
-        return varaoFreioMaoSolta;
+    public Boolean getElevadorVaoLivre() {
+        return elevadorVaoLivre;
     }
 
-    public void setVaraoFreioMaoSolta(Boolean varaoFreioMaoSolta) {
-        this.varaoFreioMaoSolta = varaoFreioMaoSolta;
+    public void setElevadorVaoLivre(Boolean elevadorVaoLivre) {
+        this.elevadorVaoLivre = elevadorVaoLivre;
     }
 
-    public Boolean getVaraoFreioMaoSemAcao() {
-        return varaoFreioMaoSemAcao;
+    public Boolean getElevadorCursoIncompativel() {
+        return elevadorCursoIncompativel;
     }
 
-    public void setVaraoFreioMaoSemAcao(Boolean varaoFreioMaoSemAcao) {
-        this.varaoFreioMaoSemAcao = varaoFreioMaoSemAcao;
+    public void setElevadorCursoIncompativel(Boolean elevadorCursoIncompativel) {
+        this.elevadorCursoIncompativel = elevadorCursoIncompativel;
     }
 
-    public Boolean getCatracaFalta() {
-        return catracaFalta;
+    public Boolean getElevadorSeparado() {
+        return elevadorSeparado;
     }
 
-    public void setCatracaFalta(Boolean catracaFalta) {
-        this.catracaFalta = catracaFalta;
+    public void setElevadorSeparado(Boolean catracaFalta) {
+        this.elevadorSeparado = elevadorSeparado;
     }
 
-    public Boolean getPinoCatracaFalta() {
-        return pinoCatracaFalta;
+    public Boolean getElevadorInacessivel() {
+        return elevadorInacessivel;
     }
 
-    public void setPinoCatracaFalta(Boolean pinoCatracaFalta) {
-        this.pinoCatracaFalta = pinoCatracaFalta;
+    public void setElevadorInacessivel(Boolean elevadorInacessivel) {
+        this.elevadorInacessivel = elevadorInacessivel;
     }
 
-    public Boolean getLonasFreioContaminada() {
-        return lonasFreioContaminada;
+    public Boolean getElevadorInexistente() {
+        return elevadorInexistente;
     }
 
-    public void setLonasFreioContaminada(Boolean lonasFreioContaminada) {
-        this.lonasFreioContaminada = lonasFreioContaminada;
+    public void setElevadorInexistente(Boolean elevadorInexistente) {
+        this.elevadorInexistente = elevadorInexistente;
     }
 
-    public Boolean getLonasFreioSolta() {
-        return lonasFreioSolta;
+    public Boolean getElevadorNaoFunciona() {
+        return elevadorNaoFunciona;
     }
 
-    public void setLonasFreioSolta(Boolean lonasFreioSolta) {
-        this.lonasFreioSolta = lonasFreioSolta;
+    public void setElevadorNaoFunciona(Boolean elevadorNaoFunciona) {
+        this.elevadorNaoFunciona = elevadorNaoFunciona;
     }
 
-    public Boolean getLonasFreioDesrregulada() {
-        return lonasFreioDesrregulada;
+    public Boolean getElevadorPinturaForaPadrao() {
+        return elevadorPinturaForaPadrao;
     }
 
-    public void setLonasFreioDesrregulada(Boolean lonasFreioDesrregulada) {
-        this.lonasFreioDesrregulada = lonasFreioDesrregulada;
+    public void setElevadorPinturaForaPadrao(Boolean elevadorPinturaForaPadrao) {
+        this.elevadorPinturaForaPadrao = elevadorPinturaForaPadrao;
     }
 
-    public Boolean getLonasFreioFina() {
-        return lonasFreioFina;
+    public Boolean getElevadorObstaculo() {
+        return elevadorObstaculo;
     }
 
-    public void setLonasFreioFina(Boolean lonasFreioFina) {
-        this.lonasFreioFina = lonasFreioFina;
+    public void setElevadorObstaculo(Boolean elevadorObstaculo) {
+        this.elevadorObstaculo = elevadorObstaculo;
     }
 
-    public Boolean getCilindrosPneumaticosVazando() {
-        return cilindrosPneumaticosVazando;
+    public Boolean getElevadorRapido() {
+        return elevadorRapido;
     }
 
-    public void setCilindrosPneumaticosVazando(Boolean cilindrosPneumaticosVazando) {
-        this.cilindrosPneumaticosVazando = cilindrosPneumaticosVazando;
+    public void setElevadorRapido(Boolean elevadorRapido) {
+        this.elevadorRapido = elevadorRapido;
     }
 
-    public Boolean getCilindrosPneumaticosDesativado() {
-        return cilindrosPneumaticosDesativado;
+    public Boolean getElevadorBrusco() {
+        return elevadorBrusco;
     }
 
-    public void setCilindrosPneumaticosDesativado(Boolean cilindrosPneumaticosDesativado) {
-        this.cilindrosPneumaticosDesativado = cilindrosPneumaticosDesativado;
+    public void setElevadorBrusco(Boolean elevadorBrusco) {
+        this.elevadorBrusco = elevadorBrusco;
     }
 
-    public Boolean getServoFreioVazando() {
-        return servoFreioVazando;
+    public Boolean getElevadorBarulho() {
+        return elevadorBarulho;
     }
 
-    public void setServoFreioVazando(Boolean servoFreioVazando) {
-        this.servoFreioVazando = servoFreioVazando;
+    public void setElevadorBarulho(Boolean elevadorBarulho) {
+        this.elevadorBarulho = elevadorBarulho;
     }
 
-    public Boolean getServoFreioSolto() {
-        return servoFreioSolto;
+    public Boolean getElevadorOutros() {
+        return elevadorOutros;
     }
 
-    public void setServoFreioSolto(Boolean servoFreioSolto) {
-        this.servoFreioSolto = servoFreioSolto;
+    public void setElevadorOutros(Boolean elevadorOutros) {
+        this.elevadorOutros = elevadorOutros;
     }
 
-    public Boolean getCilindroRodaVazando() {
-        return cilindroRodaVazando;
+    public Boolean getElevadorBarulhoExcessivo() {
+        return elevadorBarulhoExcessivo;
     }
 
-    public void setCilindroRodaVazando(Boolean cilindroRodaVazando) {
-        this.cilindroRodaVazando = cilindroRodaVazando;
+    public void setElevadorBarulhoExcessivo(Boolean elevadorBarulhoExcessivo) {
+        this.elevadorBarulhoExcessivo = elevadorBarulhoExcessivo;
     }
 
-    public Boolean getCilindroRodaSolto() {
-        return cilindroRodaSolto;
+    public Boolean getElevadorVazamento() {
+        return elevadorVazamento;
     }
 
-    public void setCilindroRodaSolto(Boolean cilindroRodaSolto) {
-        this.cilindroRodaSolto = cilindroRodaSolto;
+    public void setElevadorVazamento(Boolean elevadorVazamento) {
+        this.elevadorVazamento = elevadorVazamento;
     }
 
-    public Boolean getCilindroMestreVazando() {
-        return cilindroMestreVazando;
+    public Boolean getElevadorInoperante() {
+        return elevadorInoperante;
     }
 
-    public void setCilindroMestreVazando(Boolean cilindroMestreVazando) {
-        this.cilindroMestreVazando = cilindroMestreVazando;
+    public void setElevadorInoperante(Boolean elevadorInoperante) {
+        this.elevadorInoperante = elevadorInoperante;
     }
 
-    public Boolean getCilindroMestreSolto() {
-        return cilindroMestreSolto;
+    public Boolean getItensSegurancaInexistente() {
+        return itensSegurancaInexistente;
     }
 
-    public void setCilindroMestreSolto(Boolean cilindroMestreSolto) {
-        this.cilindroMestreSolto = cilindroMestreSolto;
+    public void setItensSegurancaInexistente(Boolean itensSegurancaInexistente) {
+        this.itensSegurancaInexistente = itensSegurancaInexistente;
     }
 
-    public Boolean getFlexivelRodaVazando() {
-        return flexivelRodaVazando;
+    public Boolean getItensSegurancaFuncionamento() {
+        return itensSegurancaFuncionamento;
     }
 
-    public void setFlexivelRodaVazando(Boolean flexivelRodaVazando) {
-        this.flexivelRodaVazando = flexivelRodaVazando;
+    public void setItensSegurancaFuncionamento(Boolean itensSegurancaFuncionamento) {
+        this.itensSegurancaFuncionamento = itensSegurancaFuncionamento;
     }
 
-    public Boolean getFlexivelRodaDanificado() {
-        return flexivelRodaDanificado;
+    public Boolean getItensSegurancaInoperante() {
+        return itensSegurancaInoperante;
     }
 
-    public void setFlexivelRodaDanificado(Boolean flexivelRodaDanificado) {
-        this.flexivelRodaDanificado = flexivelRodaDanificado;
+    public void setItensSegurancaInoperante(Boolean itensSegurancaInoperante) {
+        this.itensSegurancaInoperante = itensSegurancaInoperante;
     }
 
-    public Boolean getFlexivelRodaDesalinhado() {
-        return flexivelRodaDesalinhado;
+    public Boolean getItensSegurancaConservacao() {
+        return itensSegurancaConservacao;
     }
 
-    public void setFlexivelRodaDesalinhado(Boolean flexivelRodaDesalinhado) {
-        this.flexivelRodaDesalinhado = flexivelRodaDesalinhado;
+    public void setItensSegurancaConservacao(Boolean itensSegurancaConservacao) {
+        this.itensSegurancaConservacao = itensSegurancaConservacao;
     }
 
-    public Boolean getFlexivelRodaIrregular() {
-        return flexivelRodaIrregular;
+    public Boolean getItensSegurancaTransporteDeficiente() {
+        return itensSegurancaTransporteDeficiente;
     }
 
-    public void setFlexivelRodaIrregular(Boolean flexivelRodaIrregular) {
-        this.flexivelRodaIrregular = flexivelRodaIrregular;
+    public void setItensSegurancaTransporteDeficiente(Boolean itensSegurancaTransporteDeficiente) {
+        this.itensSegurancaTransporteDeficiente = itensSegurancaTransporteDeficiente;
     }
 
-    public Boolean getValvulaTubularReservatorioVazando() {
-        return valvulaTubularReservatorioVazando;
+    public Boolean getItensSegurancaMaterialNaoResiliente() {
+        return itensSegurancaMaterialNaoResiliente;
     }
 
-    public void setValvulaTubularReservatorioVazando(Boolean valvulaTubularReservatorioVazando) {
-        this.valvulaTubularReservatorioVazando = valvulaTubularReservatorioVazando;
+    public void setItensSegurancaMaterialNaoResiliente(Boolean itensSegurancaMaterialNaoResiliente) {
+        this.itensSegurancaMaterialNaoResiliente = itensSegurancaMaterialNaoResiliente;
     }
 
-    public Boolean getValvulaTubularReservatorioContaminada() {
-        return valvulaTubularReservatorioContaminada;
+    ////sistema carroceria nivel b
+    public Boolean getTacografoFalta() {
+        return tacografoFalta;
     }
 
-    public void setValvulaTubularReservatorioContaminada(Boolean valvulaTubularReservatorioContaminada) {
-        this.valvulaTubularReservatorioContaminada = valvulaTubularReservatorioContaminada;
+    public void setTacografoFalta(Boolean tacografoFalta) {
+        this.tacografoFalta = tacografoFalta;
     }
 
-    public Boolean getLonasFreioQuebrada() {
-        return lonasFreioQuebrada;
+    public Boolean getTacografoFaltaLacre() {
+        return tacografoFaltaLacre;
     }
 
-    public void setLonasFreioQuebrada(Boolean lonasFreioQuebrada) {
-        this.lonasFreioQuebrada = lonasFreioQuebrada;
+    public void setTacografoFaltaLacre(Boolean tacografoFaltaLacre) {
+        this.tacografoFaltaLacre = tacografoFaltaLacre;
     }
+
+    public Boolean getTacografoNaoFunciona() {
+        return tacografoNaoFunciona;
+    }
+
+    public void setTacografoNaoFunciona(Boolean tacografoNaoFunciona) {
+        this.tacografoNaoFunciona = tacografoNaoFunciona;
+    }
+
+    public Boolean getTacografoEstadoConservacao() {
+        return tacografoEstadoConservacao;
+    }
+
+    public void setTacografoEstadoConservacao(Boolean tacografoEstadoConservacao) {
+        this.tacografoEstadoConservacao = tacografoEstadoConservacao;
+    }
+
+    public Boolean getPisoLiso() {
+        return pisoLiso;
+    }
+
+    public void setPisoLiso(Boolean pisoLiso) {
+        this.pisoLiso = pisoLiso;
+    }
+
+    public Boolean getPisoSujo() {
+        return pisoSujo;
+    }
+
+    public void setPisoSujo(Boolean pisoSujo) {
+        this.pisoSujo = pisoSujo;
+    }
+
+    public Boolean getPisoDerrapante() {
+        return pisoDerrapante;
+    }
+
+    public void setPisoDerrapante(Boolean pisoDerrapante) {
+        this.pisoDerrapante = pisoDerrapante;
+    }
+
+    public Boolean getQuebraSolInexistente() {
+        return quebraSolInexistente;
+    }
+
+    public void setQuebraSolInexistente(Boolean quebraSolInexistente) {
+        this.quebraSolInexistente = quebraSolInexistente;
+    }
+
+    public Boolean getQuebraSolDesregulado() {
+        return quebraSolDesregulado;
+    }
+
+    public void setQuebraSolDesregulado(Boolean quebraSolDesregulado) {
+        this.quebraSolDesregulado = quebraSolDesregulado;
+    }
+
+    public Boolean getQuebraSolSolto() {
+        return quebraSolSolto;
+    }
+
+    public void setQuebraSolSolto(Boolean quebraSolSolto) {
+        this.quebraSolSolto = quebraSolSolto;
+    }
+
+    public Boolean getDesembacadorParaBrisaNaoFunciona() {
+        return desembacadorParaBrisaNaoFunciona;
+    }
+
+    public void setDesembacadorParaBrisaNaoFunciona(Boolean desembacadorParaBrisaNaoFunciona) {
+        this.desembacadorParaBrisaNaoFunciona = desembacadorParaBrisaNaoFunciona;
+    }
+
+    public Boolean getDesembacadorParaBrisaFalta() {
+        return desembacadorParaBrisaFalta;
+    }
+
+    public void setDesembacadorParaBrisaFalta(Boolean desembacadorParaBrisaFalta) {
+        this.desembacadorParaBrisaFalta = desembacadorParaBrisaFalta;
+    }
+
+    public Boolean getBancosAltosSimplesInexistentes() {
+        return bancosAltosSimplesInexistentes;
+    }
+
+    public void setBancosAltosSimplesInexistentes(Boolean bancosAltosSimplesInexistentes) {
+        this.bancosAltosSimplesInexistentes = bancosAltosSimplesInexistentes;
+    }
+
+    public Boolean getBancosAltosSimplesConservacao() {
+        return bancosAltosSimplesConservacao;
+    }
+
+    public void setBancosAltosSimplesConservacao(Boolean bancosAltosSimplesConservacao) {
+        this.bancosAltosSimplesConservacao = bancosAltosSimplesConservacao;
+    }
+
+    public Boolean getBancosAltosSimplesFixacao() {
+        return bancosAltosSimplesFixacao;
+    }
+
+    public void setBancosAltosSimplesFixacao(Boolean bancosAltosSimplesFixacao) {
+        this.bancosAltosSimplesFixacao = bancosAltosSimplesFixacao;
+    }
+
+    public Boolean getRadioComunicacaoNaoFunciona() {
+        return radioComunicacaoNaoFunciona;
+    }
+
+    public void setRadioComunicacaoNaoFunciona(Boolean radioComunicacaoNaoFunciona) {
+        this.radioComunicacaoNaoFunciona = radioComunicacaoNaoFunciona;
+    }
+
+    public Boolean getRadioComunicacaoFixacao() {
+        return radioComunicacaoFixacao;
+    }
+
+    public void setRadioComunicacaoFixacao(Boolean radioComunicacaoFixacao) {
+        this.radioComunicacaoFixacao = radioComunicacaoFixacao;
+    }
+
+    public Boolean getRadioComunicacaoConservacao() {
+        return radioComunicacaoConservacao;
+    }
+
+    public void setRadioComunicacaoConservacao(Boolean radioComunicacaoConservacao) {
+        this.radioComunicacaoConservacao = radioComunicacaoConservacao;
+    }
+
+    public Boolean getRadioComunicacaoLenteDanificada() {
+        return radioComunicacaoLenteDanificada;
+    }
+
+    public void setRadioComunicacaoLenteDanificada(Boolean radioComunicacaoLenteDanificada) {
+        this.radioComunicacaoLenteDanificada = radioComunicacaoLenteDanificada;
+    }
+
+    public Boolean getBrakeLightInexistente() {
+        return brakeLightInexistente;
+    }
+
+    public void setBrakeLightInexistente( Boolean brakeLightInexistente) {
+        this.brakeLightInexistente = brakeLightInexistente;
+    }
+
+    public Boolean getBrakeLightSolto() {
+        return brakeLightSolto;
+    }
+
+    public void setBrakeLightSolto(Boolean brakeLightSolto) {
+        this.brakeLightSolto = brakeLightSolto;
+    }
+
+    public Boolean getComunicacaoVisualInternaAdesivosInexistente() {
+        return comunicacaoVisualInternaAdesivosInexistente;
+    }
+
+    public void setComunicacaoVisualInternaAdesivosInexistente(Boolean comunicacaoVisualInternaAdesivosInexistente) {
+        this.comunicacaoVisualInternaAdesivosInexistente = comunicacaoVisualInternaAdesivosInexistente;
+    }
+
+    public Boolean getComunicacaoVisualInternaAdesivosConservacao() {
+        return comunicacaoVisualInternaAdesivosConservacao;
+    }
+
+    public void setComunicacaoVisualInternaAdesivosConservacao(Boolean comunicacaoVisualInternaAdesivosConservacao) {
+        this.comunicacaoVisualInternaAdesivosConservacao = comunicacaoVisualInternaAdesivosConservacao;
+    }
+
+    public Boolean getComunicacaoVisualInternaAdesivosForaPadrao() {
+        return tacografoFalta;
+    }
+
+    public void setComunicacaoVisualInternaAdesivosForaPadrao(Boolean comunicacaoVisualInternaAdesivosForaPadrao) {
+        this.comunicacaoVisualInternaAdesivosForaPadrao = comunicacaoVisualInternaAdesivosForaPadrao;
+    }
+
+
+
+
 }
 

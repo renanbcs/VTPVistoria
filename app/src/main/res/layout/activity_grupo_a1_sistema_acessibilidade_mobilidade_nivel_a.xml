@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="16dp"
+    android:orientation="vertical"
+    tools:context=".activity.GrupoA1SistemaAcessibilidadeMobilidadeNivelAActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewTituloGrupoA1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Grupo A1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewAcessibilidadeMobilidadeNivelA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="2 - Acessibilidade e Mobilidade Nivel A"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textViewAreaCadeiraRodas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Area para cadeira de rodas"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/areaCadeirasRodasMenorEspecificacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Area menor que a especificação" />
+
+            <CheckBox
+                android:id="@+id/comunicacaoVisualInternaAdesivosObstaculos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comunicação Visual Interna com obstaculos" />
+
+            <TextView
+                android:id="@+id/textViewAreaManobras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Area para manobras"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/areaManobrasObstaculos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Area para manobras com obstaculos" />
+
+            <TextView
+                android:id="@+id/textViewPortas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Portas"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/portasFechamentoDeficiente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Portas com fechamento deficiente" />
+
+            <CheckBox
+                android:id="@+id/portasConservacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Portas conservação" />
+
+            <CheckBox
+                android:id="@+id/portasNaoTrava"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Porta não trava" />
+
+            <TextView
+                android:id="@+id/textViewElevador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Elevador"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/elevadorIncompativel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elevador Incompatível" />
+
+            <CheckBox
+                android:id="@+id/elevadorVaoLivre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elevador com vão livre min 800mm" />
+
+            <CheckBox
+                android:id="@+id/elevadorCursoIncompativel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elevador com cursor incompatível" />
+
+            <CheckBox
+                android:id="@+id/elevadorSeparado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elevador separado" />
+
+            <CheckBox
+                android:id="@+id/elevadorInacessivel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elevador Inacessível" />
+
+            <CheckBox
+                android:id="@+id/elevadorInexistente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elevador inacessível" />
+
+            <CheckBox
+                android:id="@+id/elevadorNaoFunciona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elevador Não Funciona" />
+
+            <CheckBox
+                android:id="@+id/elevadorPinturaForaPadrao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elevador fora do padrão" />
+
+            <CheckBox
+                android:id="@+id/elevadorObstaculo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elevador com obstaculo" />
+
+            <CheckBox
+                android:id="@+id/elevadorRapido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elevador rápido" />
+
+            <CheckBox
+                android:id="@+id/elevadorBrusco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elevador brusco" />
+
+            <CheckBox
+                android:id="@+id/elevadorBarulho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elevador apresenta barulhos" />
+
+            <CheckBox
+                android:id="@+id/elevadorOutros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elevador outros problemas" />
+
+            <CheckBox
+                android:id="@+id/elevadorBarulhoExcessivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elevador barulho excessivo" />
+
+            <CheckBox
+                android:id="@+id/elevadorVazamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elevador com vazamento" />
+
+            <CheckBox
+                android:id="@+id/elevadorInoperante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elevador inoperante" />
+
+            <TextView
+                android:id="@+id/textViewItensSeguranca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Itens de segurança"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/itensSegurancaInexistente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Itens de segurança inexistentes" />
+
+            <CheckBox
+                android:id="@+id/itensSegurancaFuncionamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Itens de segurança com mal funcionamento" />
+
+            <CheckBox
+                android:id="@+id/itensSegurancaInoperante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Itens de segurança inoperante" />
+
+            <CheckBox
+                android:id="@+id/itensSegurancaConservacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Itens de segurança sem conservação" />
+
+            <CheckBox
+                android:id="@+id/itensSegurancaTransporteDeficiente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Itens de segurança com transporte deficiente " />
+
+            <CheckBox
+                android:id="@+id/itensSegurancaMaterialNaoResiliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Itens de segurança com material não resiliente" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/botaoVoltarSelecionarFicha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Voltar"
+                    tools:layout_marginLeft="50dp" />
+
+                <Button
+                    android:id="@+id/botaoProximo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical|end"
+                    android:text="Próximo"
+                    tools:layout_marginLeft="50dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
