@@ -8,9 +8,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 
 import com.google.firebase.database.DatabaseReference;
-import com.vtpvistorias_tcc.Model.GrupoA;
-import com.vtpvistorias_tcc.Model.GrupoB;
-import com.vtpvistorias_tcc.Model.GrupoC;
+import com.vtpvistorias_tcc.Model.GrupoA1;
 import com.vtpvistorias_tcc.Model.Inspecao;
 import com.vtpvistorias_tcc.R;
 
@@ -50,7 +48,7 @@ public class GrupoA1SistemaAcessibilidadeMobilidadeNivelAActivity extends AppCom
 
 
     private DatabaseReference firebase;
-    private GrupoC grupoC;
+    private GrupoA1 grupoA1;
     private Intent i;
     private Inspecao inspecao;
 
@@ -98,7 +96,7 @@ public class GrupoA1SistemaAcessibilidadeMobilidadeNivelAActivity extends AppCom
 
         i = getIntent();
         inspecao = (Inspecao) i.getSerializableExtra("inspecao");
-        grupoC = inspecao.getGrupoC();
+        grupoA1 = inspecao.getGrupoA1();
     }
 
     @Override
@@ -110,7 +108,7 @@ public class GrupoA1SistemaAcessibilidadeMobilidadeNivelAActivity extends AppCom
                 break;
             case R.id.botaoProximo:
                 salvarDados();
-                Intent intent = new Intent(getApplicationContext(),GrupoA1SistemaAcessibilidadeMobilidadeNivelAActivity.class);
+                Intent intent = new Intent(getApplicationContext(),SelecionarFichaActivity.class);
                 intent.putExtra("inspecao",inspecao);
                 startActivity(intent);
                 break;
@@ -120,41 +118,41 @@ public class GrupoA1SistemaAcessibilidadeMobilidadeNivelAActivity extends AppCom
 
     public void salvarDados(){
 
-        if(grupoC == null)
-            grupoC = new GrupoC();
+        if(grupoA1 == null)
+            grupoA1 = new GrupoA1();
 
         //grupoC.setIdFicha(1l);
 
-        grupoC.setAreaCadeirasRodasMenorEspecificacao(areaCadeirasRodasMenorEspecificacao.isChecked());
-        grupoC.setComunicacaoVisualInternaAdesivosObstaculos(comunicacaoVisualInternaAdesivosObstaculos.isChecked());
-        grupoC.setAreaManobrasObstaculos(areaManobrasObstaculos.isChecked());
-        grupoC.setPortasFechamentoDeficiente(portasFechamentoDeficiente.isChecked());
-        grupoC.setPortasConservacao(portasConservacao.isChecked());
-        grupoC.setPortasNaoTrava(portasNaoTrava.isChecked());
-        grupoC.setElevadorIncompativel(elevadorIncompativel.isChecked());
-        grupoC.setElevadorVaoLivre(elevadorVaoLivre.isChecked());
-        grupoC.setElevadorCursoIncompativel(elevadorCursoIncompativel.isChecked());
-        grupoC.setElevadorSeparado(elevadorSeparado.isChecked());
-        grupoC.setElevadorInacessivel(elevadorInacessivel.isChecked());
-        grupoC.setElevadorInexistente(elevadorInexistente.isChecked());
-        grupoC.setElevadorNaoFunciona(elevadorNaoFunciona.isChecked());
-        grupoC.setElevadorPinturaForaPadrao(elevadorPinturaForaPadrao.isChecked());
-        grupoC.setElevadorObstaculo(elevadorObstaculo.isChecked());
-        grupoC.setElevadorRapido(elevadorRapido.isChecked());
-        grupoC.setElevadorBrusco(elevadorBrusco.isChecked());
-        grupoC.setElevadorBarulho(elevadorBarulho.isChecked());
-        grupoC.setElevadorOutros(elevadorOutros.isChecked());
-        grupoC.setElevadorBarulhoExcessivo(elevadorBarulhoExcessivo.isChecked());
-        grupoC.setElevadorVazamento(elevadorVazamento.isChecked());
-        grupoC.setElevadorInoperante(elevadorInoperante.isChecked());
-        grupoC.setItensSegurancaInexistente(itensSegurancaInexistente.isChecked());
-        grupoC.setItensSegurancaFuncionamento(itensSegurancaFuncionamento.isChecked());
-        grupoC.setItensSegurancaInoperante(itensSegurancaInoperante.isChecked());
-        grupoC.setItensSegurancaConservacao(itensSegurancaConservacao.isChecked());
-        grupoC.setItensSegurancaTransporteDeficiente(itensSegurancaTransporteDeficiente.isChecked());
-        grupoC.setItensSegurancaMaterialNaoResiliente(itensSegurancaMaterialNaoResiliente.isChecked());
+        grupoA1.setAreaCadeirasRodasMenorEspecificacao(areaCadeirasRodasMenorEspecificacao.isChecked());
+        grupoA1.setComunicacaoVisualInternaAdesivosObstaculos(comunicacaoVisualInternaAdesivosObstaculos.isChecked());
+        grupoA1.setAreaManobrasObstaculos(areaManobrasObstaculos.isChecked());
+        grupoA1.setPortasFechamentoDeficiente(portasFechamentoDeficiente.isChecked());
+        grupoA1.setPortasConservacao(portasConservacao.isChecked());
+        grupoA1.setPortasNaoTrava(portasNaoTrava.isChecked());
+        grupoA1.setElevadorIncompativel(elevadorIncompativel.isChecked());
+        grupoA1.setElevadorVaoLivre(elevadorVaoLivre.isChecked());
+        grupoA1.setElevadorCursoIncompativel(elevadorCursoIncompativel.isChecked());
+        grupoA1.setElevadorSeparado(elevadorSeparado.isChecked());
+        grupoA1.setElevadorInacessivel(elevadorInacessivel.isChecked());
+        grupoA1.setElevadorInexistente(elevadorInexistente.isChecked());
+        grupoA1.setElevadorNaoFunciona(elevadorNaoFunciona.isChecked());
+        grupoA1.setElevadorPinturaForaPadrao(elevadorPinturaForaPadrao.isChecked());
+        grupoA1.setElevadorObstaculo(elevadorObstaculo.isChecked());
+        grupoA1.setElevadorRapido(elevadorRapido.isChecked());
+        grupoA1.setElevadorBrusco(elevadorBrusco.isChecked());
+        grupoA1.setElevadorBarulho(elevadorBarulho.isChecked());
+        grupoA1.setElevadorOutros(elevadorOutros.isChecked());
+        grupoA1.setElevadorBarulhoExcessivo(elevadorBarulhoExcessivo.isChecked());
+        grupoA1.setElevadorVazamento(elevadorVazamento.isChecked());
+        grupoA1.setElevadorInoperante(elevadorInoperante.isChecked());
+        grupoA1.setItensSegurancaInexistente(itensSegurancaInexistente.isChecked());
+        grupoA1.setItensSegurancaFuncionamento(itensSegurancaFuncionamento.isChecked());
+        grupoA1.setItensSegurancaInoperante(itensSegurancaInoperante.isChecked());
+        grupoA1.setItensSegurancaConservacao(itensSegurancaConservacao.isChecked());
+        grupoA1.setItensSegurancaTransporteDeficiente(itensSegurancaTransporteDeficiente.isChecked());
+        grupoA1.setItensSegurancaMaterialNaoResiliente(itensSegurancaMaterialNaoResiliente.isChecked());
 
-        //inspecao.setGrupoC(grupoC);
+        inspecao.setGrupoA1(grupoA1);
         //grupoC.salvar();
     }
 

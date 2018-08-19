@@ -62,7 +62,7 @@ public class GrupoBEquipamentosSegurancaActivity extends AppCompatActivity imple
                 break;
             case R.id.botaoProximo:
                 salvarDados();
-                Intent intent = new Intent(getApplicationContext(),GrupoBEquipamentosSegurancaActivity.class);
+                Intent intent = new Intent(getApplicationContext(),GrupoBSistemaCarroceriaExternaActivity.class);
                 intent.putExtra("inspecao",inspecao);
                 startActivity(intent);
                 break;
@@ -82,7 +82,7 @@ public class GrupoBEquipamentosSegurancaActivity extends AppCompatActivity imple
         grupoB.setExtintorFalta(extintorFalta.isChecked());
 
 
-        //inspecao.setGrupoB(grupoB);
+        inspecao.setGrupoB(grupoB);
         //grupoB.salvar();
     }
 

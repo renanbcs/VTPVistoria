@@ -85,7 +85,7 @@ public class GrupoBSistemaCarroceriaExternaActivity extends AppCompatActivity im
                 break;
             case R.id.botaoProximo:
                 salvarDados();
-                Intent intent = new Intent(getApplicationContext(),GrupoBSistemaCarroceriaExternaActivity.class);
+                Intent intent = new Intent(getApplicationContext(),SelecionarFichaActivity.class);
                 intent.putExtra("inspecao",inspecao);
                 startActivity(intent);
                 break;
@@ -117,7 +117,7 @@ public class GrupoBSistemaCarroceriaExternaActivity extends AppCompatActivity im
         grupoB.setVazamentoExcessivoMotor(vazamentoExcessivoMotor.isChecked());
         grupoB.setVazamentoExcessivoCambio(vazamentoExcessivoCambio.isChecked());
 
-        //inspecao.setGrupoB(grupoB);
+        inspecao.setGrupoB(grupoB);
         //grupoB.salvar();
     }
 

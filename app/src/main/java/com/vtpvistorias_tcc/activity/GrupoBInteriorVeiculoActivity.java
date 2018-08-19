@@ -110,7 +110,7 @@ public class GrupoBInteriorVeiculoActivity extends AppCompatActivity implements 
                 break;
             case R.id.botaoProximo:
                 salvarDados();
-                Intent intent = new Intent(getApplicationContext(),GrupoBInteriorVeiculoActivity.class);
+                Intent intent = new Intent(getApplicationContext(),GrupoBIluminacaoExternaSinalizacaoActivity.class);
                 intent.putExtra("inspecao",inspecao);
                 startActivity(intent);
                 break;
@@ -156,7 +156,7 @@ public class GrupoBInteriorVeiculoActivity extends AppCompatActivity implements 
 
 
 
-        //inspecao.setGrupoB(grupoB);
+        inspecao.setGrupoB(grupoB);
         //grupoB.salvar();
     }
 

@@ -16,7 +16,7 @@ public class ItensFichaActivity extends Activity  implements View.OnClickListene
 
     private TextView itensFicha;
     private String fichaSelecionada;
-    private Button buttonSim, buttonNao;
+    private Button buttonSimA, buttonNao;
     private Inspecao inspecao;
     private Intent i;
 
@@ -27,7 +27,7 @@ public class ItensFichaActivity extends Activity  implements View.OnClickListene
         setContentView(R.layout.activity_itens_ficha);
 
         itensFicha = findViewById(R.id.textViewConteudo);
-        buttonSim = findViewById(R.id.button_nao_FichaA);
+        buttonSimA = findViewById(R.id.button_nao_FichaA);
         buttonNao = findViewById(R.id.button_sim_FichaA);
 
         i = getIntent();
@@ -41,7 +41,7 @@ public class ItensFichaActivity extends Activity  implements View.OnClickListene
         else itensFicha.setText(getString(R.string.itens_fichaB));
 
         buttonNao.setOnClickListener(this);
-        buttonSim.setOnClickListener(this);
+        buttonSimA.setOnClickListener(this);
 
     }
 
@@ -58,11 +58,24 @@ public class ItensFichaActivity extends Activity  implements View.OnClickListene
             case R.id.button_sim_FichaA:
 
                 finish();
-                Intent intentNovo = new Intent(getApplicationContext(),GrupoASistemaFreioActivity.class);
-                intentNovo.putExtra("inspecao",inspecao);
-                startActivity(intentNovo);
+                if(fichaSelecionada.equals("FichaA")) {
+                    Intent intentNovo = new Intent(getApplicationContext(), GrupoASistemaFreioActivity.class);
+                    intentNovo.putExtra("inspecao", inspecao);
+                    startActivity(intentNovo);
+                }
+                if(fichaSelecionada.equals("FichaA1")) {
+                    Intent intentNovo = new Intent(getApplicationContext(), GrupoA1SistemaCarroceriaNivelBActivity.class);
+                    intentNovo.putExtra("inspecao", inspecao);
+                    startActivity(intentNovo);
+                }
+                if(fichaSelecionada.equals("FichaB")) {
+                    Intent intentNovo = new Intent(getApplicationContext(), GrupoBSistemaCarroceriaActivity.class);
+                    intentNovo.putExtra("inspecao", inspecao);
+                    startActivity(intentNovo );
+                }
 
                 break;
+
 
 
         }

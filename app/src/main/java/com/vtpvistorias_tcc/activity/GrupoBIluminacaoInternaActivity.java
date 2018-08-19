@@ -76,7 +76,7 @@ public class GrupoBIluminacaoInternaActivity extends AppCompatActivity implement
                 break;
             case R.id.botaoProximo:
                 salvarDados();
-                Intent intent = new Intent(getApplicationContext(),GrupoBIluminacaoInternaActivity.class);
+                Intent intent = new Intent(getApplicationContext(),GrupoBPostoComandoActivity.class);
                 intent.putExtra("inspecao",inspecao);
                 startActivity(intent);
                 break;
@@ -106,7 +106,7 @@ public class GrupoBIluminacaoInternaActivity extends AppCompatActivity implement
 
 
 
-        //inspecao.setGrupoB(grupoB);
+        inspecao.setGrupoB(grupoB);
         //grupoB.salvar();
     }
 

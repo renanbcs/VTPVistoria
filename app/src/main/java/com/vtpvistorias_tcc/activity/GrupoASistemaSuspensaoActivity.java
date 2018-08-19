@@ -78,7 +78,7 @@ public class GrupoASistemaSuspensaoActivity extends AppCompatActivity implements
         grupoA.setAmortecedorDanificado(amortecedorDanificado.isChecked());
 
 
-        //inspecao.setGrupoA(grupoA);
+        inspecao.setGrupoA(grupoA);
         //grupoA.salvar();
     }
 

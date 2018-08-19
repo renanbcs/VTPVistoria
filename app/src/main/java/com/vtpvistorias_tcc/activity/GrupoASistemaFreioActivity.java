@@ -140,7 +140,8 @@ public class GrupoASistemaFreioActivity extends AppCompatActivity implements Vie
 
     public void salvarDados(){
 
-        grupoA = new GrupoA();
+        if(grupoA == null)
+            grupoA = new GrupoA();
 
         //grupoA.setIdFicha(1l);
         grupoA.setValvulaPedalVazando(valvulaPedalVazando.isChecked());

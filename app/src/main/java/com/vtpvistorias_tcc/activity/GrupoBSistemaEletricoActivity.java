@@ -54,7 +54,7 @@ public class GrupoBSistemaEletricoActivity extends AppCompatActivity implements 
                 break;
             case R.id.botaoProximo:
                 salvarDados();
-                Intent intent = new Intent(getApplicationContext(),GrupoBSistemaEletricoActivity.class);
+                Intent intent = new Intent(getApplicationContext(),GrupoBEquipamentosSegurancaActivity.class);
                 intent.putExtra("inspecao",inspecao);
                 startActivity(intent);
                 break;
@@ -71,7 +71,7 @@ public class GrupoBSistemaEletricoActivity extends AppCompatActivity implements 
         grupoB.setPartidaNaoFunciona(partidaNaoFunciona.isChecked());
 
 
-        //inspecao.setGrupoB(grupoB);
+        inspecao.setGrupoB(grupoB);
         //grupoB.salvar();
     }
 

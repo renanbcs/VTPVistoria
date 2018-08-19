@@ -14,17 +14,17 @@ import java.util.Map;
 public class Inspecao implements Serializable {
     //Atributos
     private Long idInspecao;
-    private Date dataHoraRegistro;
+    private String dataHoraRegistro;
     private GrupoA grupoA;
     private GrupoB grupoB;
-    private GrupoC grupoC;
+    private GrupoA1 grupoA1;
     private String titulo;
 
     public Inspecao(){
 
     }
 
-    public Inspecao(Long idInspecao, Date dataHoraRegistro){
+    public Inspecao(Long idInspecao, String dataHoraRegistro){
         this.idInspecao=idInspecao;
         this.dataHoraRegistro=dataHoraRegistro;
     }
@@ -44,13 +44,12 @@ public class Inspecao implements Serializable {
 
         if(getGrupoA() != null){
             hashMapInspecao.put("grupoA",getGrupoA());
-            System.out.print("Passei aqui");
         }
         if(getGrupoB() != null){
             hashMapInspecao.put("grupoB",getGrupoB());
         }
-        if(getGrupoC() != null){
-            hashMapInspecao.put("grupoC",getGrupoC());
+        if(getGrupoA1() != null){
+            hashMapInspecao.put("grupoA1",getGrupoA1());
         }
 
         return hashMapInspecao;
@@ -64,11 +63,11 @@ public class Inspecao implements Serializable {
         this.idInspecao=idInspecao;
     }
 
-    public Date getDataHoraRegistro(){
+    public String getDataHoraRegistro(){
         return dataHoraRegistro;
     }
 
-    public void setDataHoraRegistro(Date dataHoraRegistro){
+    public void setDataHoraRegistro(String dataHoraRegistro){
         this.dataHoraRegistro=dataHoraRegistro;
     }
 
@@ -80,8 +79,8 @@ public class Inspecao implements Serializable {
         this.grupoB = grupoB;
     }
 
-    public void setGrupoC(GrupoC grupoC) {
-        this.grupoC = grupoC;
+    public void setGrupoA1(GrupoA1 grupoA1) {
+        this.grupoA1 = grupoA1;
     }
 
     public void setGrupoA(GrupoA grupoA) {
@@ -92,8 +91,8 @@ public class Inspecao implements Serializable {
         return grupoB;
     }
 
-    public GrupoC getGrupoC() {
-        return grupoC;
+    public GrupoA1 getGrupoA1() {
+        return grupoA1;
     }
 
     public String getTitulo() {

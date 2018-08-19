@@ -166,7 +166,7 @@ public class GrupoASistemaEixoDianteiroActivity extends AppCompatActivity implem
         grupoA.setHasteSuporteReacaoQuebrada(hasteSuporteReacaoQuebrada.isChecked());
 
 
-        //inspecao.setGrupoA(grupoA);
+        inspecao.setGrupoA(grupoA);
         //grupoA.salvar();
     }
 

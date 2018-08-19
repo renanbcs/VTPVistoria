@@ -72,11 +72,11 @@ public class SalvarActivity extends AppCompatActivity implements View.OnClickLis
         inspecao.salvar();
     }
 
-    public Date getPegaDataAtual() {
+    public String getPegaDataAtual() {
         Calendar calendar = new GregorianCalendar();
         Date date = new Date();
         calendar.setTime(date);
-        return calendar.getTime();
+        return "";
     }
 
     @Override

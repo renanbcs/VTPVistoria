@@ -182,12 +182,6 @@ public class GrupoBSistemaCarroceriaActivity extends AppCompatActivity implement
         limpezaExterna = (CheckBox)findViewById(R.id.limpezaExterna);
         limpezaInferior = (CheckBox)findViewById(R.id.limpezaInferior);
 
-
-
-
-
-
-
         i = getIntent();
         inspecao = (Inspecao) i.getSerializableExtra("inspecao");
         grupoB = inspecao.getGrupoB();
@@ -291,7 +285,7 @@ public class GrupoBSistemaCarroceriaActivity extends AppCompatActivity implement
 
 
 
-        //inspecao.setGrupoB(grupoB);
+        inspecao.setGrupoB(grupoB);
         //grupoB.salvar();
     }
 

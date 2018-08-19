@@ -104,7 +104,7 @@ public class GrupoBIluminacaoExternaSinalizacaoActivity extends AppCompatActivit
                 break;
             case R.id.botaoProximo:
                 salvarDados();
-                Intent intent = new Intent(getApplicationContext(),GrupoBIluminacaoExternaSinalizacaoActivity.class);
+                Intent intent = new Intent(getApplicationContext(),GrupoBSistemaEletricoActivity.class);
                 intent.putExtra("inspecao",inspecao);
                 startActivity(intent);
                 break;
@@ -145,7 +145,7 @@ public class GrupoBIluminacaoExternaSinalizacaoActivity extends AppCompatActivit
         grupoB.setLuzPlacaFalta(luzPlacaFalta.isChecked());
         grupoB.setLuzPlacaConservacaoIrregular(luzPlacaConservacaoIrregular.isChecked());
 
-        //inspecao.setGrupoB(grupoB);
+        inspecao.setGrupoB(grupoB);
         //grupoB.salvar();
     }
 

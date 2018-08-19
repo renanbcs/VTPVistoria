@@ -5,16 +5,30 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
+import com.vtpvistorias_tcc.Model.GrupoA;
+import com.vtpvistorias_tcc.Model.GrupoA1;
+import com.vtpvistorias_tcc.Model.GrupoB;
 import com.vtpvistorias_tcc.Model.Inspecao;
 import com.vtpvistorias_tcc.Model.Veiculo;
 import com.vtpvistorias_tcc.R;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
 public class SelecionarFichaActivity extends AppCompatActivity implements View.OnClickListener{
 
     private Button fichaA1,fichaA,fichaB,cancela, botalVoltarTelaIniciarProcesso;
+    private Button botaoSalvar;
     private Intent i;
     private Inspecao inspecao;
+    private GrupoA grupoA;
+    private GrupoB grupoB;
+    private GrupoA1 grupoA1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +47,14 @@ public class SelecionarFichaActivity extends AppCompatActivity implements View.O
 
         i = getIntent();
         inspecao = (Inspecao) i.getSerializableExtra("inspecao");
+
+        botaoSalvar = (Button) findViewById(R.id.botaoSalvar);
+        botaoSalvar.setOnClickListener(this);
+
+        grupoA = inspecao.getGrupoA();
+        grupoA1 = inspecao.getGrupoA1();
+        grupoB = inspecao.getGrupoB();
+
 
     }
 
@@ -73,7 +95,46 @@ public class SelecionarFichaActivity extends AppCompatActivity implements View.O
                 finish();
 
                 break;
+
+            case R.id.botaoSalvar:
+
+                if(inspecao.getGrupoA() == null && grupoA1 == null && grupoB == null)
+                    Toast.makeText(getApplicationContext(), "Preencha pelo menos uma ficha!", Toast.LENGTH_SHORT).show();
+                else {
+                    salvarDados();
+
+                    Toast.makeText(getApplicationContext(), "Salvo Com Sucesso", Toast.LENGTH_SHORT).show();
+
+                    Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                    startActivity(i);
+                }
+
+                break;
         }
 
+    }
+
+    public void salvarDados(){
+
+        //grupoA.setIdFicha(1l);
+
+        //inspecao.setGrupoA(grupoA);
+        //grupoA.salvar();
+
+        inspecao.setDataHoraRegistro(getPegaDataAtual());
+
+        inspecao.salvar();
+    }
+
+    public String getPegaDataAtual() {
+        DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+        Date date = new Date();
+        System.out.println(dateFormat.format(date)); //2016/11/16 12:08:43
+
+        //Calendar calendar = Calendar.getInstance();
+        //Date date = new Date();
+        //calendar.setTime(date);
+        //return calendar.getTime();
+        return dateFormat.format(date);
     }
 }

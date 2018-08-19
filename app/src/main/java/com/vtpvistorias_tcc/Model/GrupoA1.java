@@ -7,7 +7,7 @@ import com.vtpvistorias_tcc.config.ConfiguracaoFirebase;
 import java.util.HashMap;
 import java.util.Map;
 
-public class GrupoC extends Inspecao {
+public class GrupoA1 extends Inspecao {
 
     //Atributos
     private Long idFicha;
@@ -78,7 +78,7 @@ public class GrupoC extends Inspecao {
     private Boolean comunicacaoVisualInternaAdesivosForaPadrao;
 
 
-    public GrupoC() {
+    public GrupoA1() {
     }
 
     public void salvar() {

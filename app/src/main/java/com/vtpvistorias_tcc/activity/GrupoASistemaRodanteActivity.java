@@ -89,7 +89,7 @@ public class GrupoASistemaRodanteActivity extends AppCompatActivity implements V
         grupoA.setRodaFaltaEspelho(rodaFaltaEspelho.isChecked());
         grupoA.setRodaDanificada(rodaDanificada.isChecked());
 
-        //inspecao.setGrupoA(grupoA);
+        inspecao.setGrupoA(grupoA);
         //grupoA.salvar();
     }
 

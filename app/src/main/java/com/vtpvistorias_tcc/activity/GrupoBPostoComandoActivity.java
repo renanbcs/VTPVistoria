@@ -64,7 +64,7 @@ public class GrupoBPostoComandoActivity extends AppCompatActivity implements Vie
                 break;
             case R.id.botaoProximo:
                 salvarDados();
-                Intent intent = new Intent(getApplicationContext(),GrupoBPostoComandoActivity.class);
+                Intent intent = new Intent(getApplicationContext(),GrupoBInteriorVeiculoActivity.class);
                 intent.putExtra("inspecao",inspecao);
                 startActivity(intent);
                 break;
@@ -87,7 +87,7 @@ public class GrupoBPostoComandoActivity extends AppCompatActivity implements Vie
         grupoB.setChaveSetaBuzinaFalta(chaveSetaBuzinaFalta.isChecked());
 
 
-        //inspecao.setGrupoB(grupoB);
+        inspecao.setGrupoB(grupoB);
         //grupoB.salvar();
     }
 

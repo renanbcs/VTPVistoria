@@ -77,7 +77,7 @@ public class GrupoASistemaTracaoActivity extends AppCompatActivity implements Vi
         grupoA.setEixoCardanBorrachaDanificada(eixoCardanBorrachaDanificada.isChecked());
 
 
-        //inspecao.setGrupoA(grupoA);
+        inspecao.setGrupoA(grupoA);
         //grupoA.salvar();
     }
 

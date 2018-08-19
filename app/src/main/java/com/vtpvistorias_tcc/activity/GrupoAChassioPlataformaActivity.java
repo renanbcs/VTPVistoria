@@ -70,7 +70,7 @@ public class GrupoAChassioPlataformaActivity extends AppCompatActivity implement
                 break;
             case R.id.botaoProximo:
                 salvarDados();
-                Intent intent = new Intent(getApplicationContext(),SalvarActivity.class);
+                Intent intent = new Intent(getApplicationContext(),SelecionarFichaActivity.class);
                 intent.putExtra("inspecao",inspecao);
                 startActivity(intent);
                 break;
@@ -97,7 +97,7 @@ public class GrupoAChassioPlataformaActivity extends AppCompatActivity implement
         grupoA.setSegCintoBloqueioPortasFalta(segCintoBloqueioPortasFalta.isChecked());
         grupoA.setSegCintoBloqueioPortasNFunciona(segCintoBloqueioPortasNFunciona.isChecked());
 
-        //inspecao.setGrupoA(grupoA);
+        inspecao.setGrupoA(grupoA);
         //grupoA.salvar();
     }
 
