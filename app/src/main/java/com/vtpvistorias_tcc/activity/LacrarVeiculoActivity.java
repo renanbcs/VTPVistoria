@@ -1,11 +1,9 @@
 package com.vtpvistorias_tcc.activity;
 
 import android.content.Intent;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
@@ -21,9 +19,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.vtpvistorias_tcc.Model.Veiculo;
 import com.vtpvistorias_tcc.R;
 
-import java.io.Serializable;
-
-public class IniciarInspecaoActivity extends AppCompatActivity implements View.OnClickListener{
+public class LacrarVeiculoActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Toolbar toolbar;
     private EditText editTextPrefixo;
@@ -36,11 +32,7 @@ public class IniciarInspecaoActivity extends AppCompatActivity implements View.O
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_iniciar_inspecao);
-
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle(R.string.app_name);
-        setSupportActionBar(toolbar);
+        setContentView(R.layout.activity_lacrar_veiculo);
 
         editTextPrefixo = findViewById(R.id.editText_prefixo_inciarInpecao);
         botaoBuscarPrefixo = findViewById(R.id.botaoBuscarPrefixo);
@@ -54,7 +46,6 @@ public class IniciarInspecaoActivity extends AppCompatActivity implements View.O
                 finish();
             }
         });
-
     }
 
     @Override
@@ -73,7 +64,7 @@ public class IniciarInspecaoActivity extends AppCompatActivity implements View.O
     }
 
     public void startDialog(View v) {
-        Intent intent = new Intent(IniciarInspecaoActivity.this, DetalhesVeiculoActivity.class);
+        Intent intent = new Intent(LacrarVeiculoActivity.this, DetalhesVeiculoActivity.class);
         startActivity(intent);
     }
 
@@ -98,7 +89,7 @@ public class IniciarInspecaoActivity extends AppCompatActivity implements View.O
 
                                 Intent i = new Intent(getApplicationContext(),DetalhesVeiculoActivity.class);
                                 i.putExtra("veiculo", veiculo);
-                                i.putExtra("tela", "iniciarInspecao");
+                                i.putExtra("tela", "lacrarVeiculo");
                                 startActivity(i);
 
                             } else {

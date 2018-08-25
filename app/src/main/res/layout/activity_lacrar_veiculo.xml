@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LacrarVeiculoActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="46dp"
+        android:text="Lacrar Veículo VTP"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/botaoVoltarTelaPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editText_prefixo_inciarInpecao"
+        android:layout_marginBottom="174dp"
+        android:onClick="startDialog"
+        android:text="@string/botao_voltar"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="367dp" />
+
+    <Button
+        android:id="@+id/botaoBuscarPrefixo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/botaoVoltarTelaPrincipal"
+        android:layout_marginEnd="74dp"
+        android:text="@string/botao_proximo"
+        tools:layout_editor_absoluteX="204dp"
+        tools:layout_editor_absoluteY="367dp" />
+
+    <EditText
+        android:id="@+id/editText_prefixo_inciarInpecao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="196dp"
+        android:ems="10"
+        android:hint="@string/hint_prefixo"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="223dp" />
+
+    <TextView
+        android:id="@+id/textView_mensagem_iniciarInspecao"
+        android:layout_width="213dp"
+        android:layout_height="47dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="93dp"
+        android:text="@string/mensagem_iniciarInspecao"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="107dp" />
+
+
+</RelativeLayout>

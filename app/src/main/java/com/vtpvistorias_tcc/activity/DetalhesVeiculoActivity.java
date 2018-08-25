@@ -21,6 +21,7 @@ public class DetalhesVeiculoActivity extends Activity implements View.OnClickLis
     private Veiculo veiculo;
     private Button buttonSim, buttonNao;
     private Inspecao inspecao;
+    private String tela;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +40,7 @@ public class DetalhesVeiculoActivity extends Activity implements View.OnClickLis
         Intent i = getIntent();
 
         veiculo = (Veiculo) i.getSerializableExtra("veiculo");
+        tela = (String) i.getSerializableExtra("tela");
 
         labelPrefixo.setText(""+veiculo.getPrefixo());
         labelPlaca.setText(""+veiculo.getPlaca());
@@ -67,12 +69,23 @@ public class DetalhesVeiculoActivity extends Activity implements View.OnClickLis
 
                 finish();
 
-                inspecao = new Inspecao();
+                if(tela.equals("lacrarVeiculo")){
 
-                Intent intent = new Intent(getApplicationContext(),SelecionarFichaActivity.class);
-                intent.putExtra("inspecao", inspecao);
+                        Intent intent = new Intent(getApplicationContext(), EfetuarLacracaoVeiculoActivity.class);
+                        intent.putExtra("veiculo", veiculo);
 
-                startActivity(intent);
+                        startActivity(intent);
+
+                }else {
+
+                    inspecao = new Inspecao();
+                    inspecao.setVeiculo(veiculo);
+
+                    Intent intent = new Intent(getApplicationContext(), SelecionarFichaActivity.class);
+                    intent.putExtra("inspecao", inspecao);
+
+                    startActivity(intent);
+                }
 
                 break;
 

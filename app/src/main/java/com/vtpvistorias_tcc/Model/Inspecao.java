@@ -19,6 +19,7 @@ public class Inspecao implements Serializable {
     private GrupoB grupoB;
     private GrupoA1 grupoA1;
     private String titulo;
+    private Veiculo veiculo;
 
     public Inspecao(){
 
@@ -101,6 +102,14 @@ public class Inspecao implements Serializable {
 
     public void setTitulo(String titulo) {
         this.titulo = titulo;
+    }
+
+    public Veiculo getVeiculo() {
+        return veiculo;
+    }
+
+    public void setVeiculo(Veiculo veiculo) {
+        this.veiculo = veiculo;
     }
 }
 
