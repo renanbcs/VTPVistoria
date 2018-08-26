@@ -2,14 +2,11 @@ package com.vtpvistorias_tcc.activity;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.vtpvistorias_tcc.Model.Inspecao;
 import com.vtpvistorias_tcc.Model.Veiculo;
@@ -30,7 +27,7 @@ public class DetalhesVeiculoActivity extends Activity implements View.OnClickLis
         setContentView(R.layout.activity_detalhes_veiculo);
 
         labelPrefixo = findViewById(R.id.textView_Prefixo);
-        labelPlaca = findViewById(R.id.textView_Placa);
+        labelPlaca = findViewById(R.id.textView_PlacaLabel);
         labelChassi = findViewById(R.id.textView_Chassi);
         labelBloqueado = findViewById(R.id.textView_Bloqueado);
         labelEmpresa = findViewById(R.id.textView_Empresa);

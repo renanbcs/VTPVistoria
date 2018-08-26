@@ -20,6 +20,8 @@ public class Inspecao implements Serializable {
     private GrupoA1 grupoA1;
     private String titulo;
     private Veiculo veiculo;
+    private String justificativa;
+    private String resultado;
 
     public Inspecao(){
 
@@ -42,6 +44,8 @@ public class Inspecao implements Serializable {
 
         hashMapInspecao.put("idInspecao",getIdInspecao());
         hashMapInspecao.put("dataHoraRegistro",getDataHoraRegistro());
+        hashMapInspecao.put("justificativa", getJustificativa());
+        hashMapInspecao.put("resultado", getResultado());
 
         if(getGrupoA() != null){
             hashMapInspecao.put("grupoA",getGrupoA());
@@ -110,6 +114,22 @@ public class Inspecao implements Serializable {
 
     public void setVeiculo(Veiculo veiculo) {
         this.veiculo = veiculo;
+    }
+
+    public String getJustificativa() {
+        return justificativa;
+    }
+
+    public void setJustificativa(String justificativa) {
+        this.justificativa = justificativa;
+    }
+
+    public String getResultado() {
+        return resultado;
+    }
+
+    public void setResultado(String resultado) {
+        this.resultado = resultado;
     }
 }
 

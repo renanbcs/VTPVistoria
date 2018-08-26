@@ -55,13 +55,13 @@
         tools:layout_editor_absoluteY="223dp" />
 
     <TextView
-        android:id="@+id/textView_mensagem_iniciarInspecao"
+        android:id="@+id/textViewMensagem"
         android:layout_width="213dp"
         android:layout_height="47dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="93dp"
-        android:text="@string/mensagem_iniciarInspecao"
+        android:text="Insira o Prefixo do veículo para iniciar o processo de lacração"
         tools:layout_editor_absoluteX="73dp"
         tools:layout_editor_absoluteY="107dp" />
 

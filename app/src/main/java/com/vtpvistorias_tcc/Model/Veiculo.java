@@ -1,20 +1,26 @@
 package com.vtpvistorias_tcc.Model;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.vtpvistorias_tcc.R;
+import com.vtpvistorias_tcc.config.ConfiguracaoFirebase;
 
 import java.io.Serializable;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Veiculo implements Serializable{
 
     //Atributos
 
-    private int prefixo;
+    private String prefixo;
     private boolean bloqueado;
     private String chassi;
     private String empresa;
     private String placa;
+    private String id;
 
-    public Veiculo(int prefixo, boolean bloqueado, String chassi, String empresa, String placa) {
+    public Veiculo(String prefixo, boolean bloqueado, String chassi, String empresa, String placa) {
 
         this.prefixo = prefixo;
         this.bloqueado = bloqueado;
@@ -29,8 +35,13 @@ public class Veiculo implements Serializable{
 
     }
 
+    public void update(){
+        DatabaseReference referenciaFiReference = ConfiguracaoFirebase.getFirebase();
+        referenciaFiReference.child("Veiculos").child(getId()).setValue(this);
+    }
+
     //Get´s
-    public int getPrefixo() {
+    public String getPrefixo() {
         return prefixo;
     }
 
@@ -55,7 +66,10 @@ public class Veiculo implements Serializable{
 
     //Set's
 
-    public void setPrefixo(String prefixo) { this.prefixo = Integer.parseInt(prefixo); }
+
+    public void setPrefixo(String prefixo) {
+        this.prefixo = prefixo;
+    }
 
     public void setBloqueado(String bloqueado) {
 
@@ -73,5 +87,13 @@ public class Veiculo implements Serializable{
 
     public void setPlaca(String placa) {
         this.placa = placa;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }

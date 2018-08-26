@@ -15,6 +15,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.vtpvistorias_tcc.Model.Veiculo;
 import com.vtpvistorias_tcc.R;
@@ -26,8 +27,9 @@ public class LacrarVeiculoActivity extends AppCompatActivity implements View.OnC
     private Button botaoBuscarPrefixo;
     private Button botaoVoltarTelaPrincipal;
     private Button botaoConsultarInspecao;
-    private DatabaseReference firebase;
+    private DatabaseReference firebase =  FirebaseDatabase.getInstance().getReference();;
     private Veiculo veiculo;
+    private Query query;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +48,8 @@ public class LacrarVeiculoActivity extends AppCompatActivity implements View.OnC
                 finish();
             }
         });
+        firebase.keepSynced(true);
+
     }
 
     @Override

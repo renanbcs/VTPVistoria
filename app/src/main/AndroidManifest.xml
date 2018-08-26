@@ -83,7 +83,6 @@
             android:launchMode="singleTop" />
         <activity android:name=".activity.LacrarVeiculoActivity" />
         <activity android:name=".activity.EfetuarLacracaoVeiculoActivity" />
-        <activity android:name=".activity.DialogActivity"></activity>
     </application>
 
 </manifest>
