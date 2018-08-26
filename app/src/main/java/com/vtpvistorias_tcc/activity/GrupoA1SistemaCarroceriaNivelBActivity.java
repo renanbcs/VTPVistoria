@@ -12,6 +12,8 @@ import com.vtpvistorias_tcc.Model.GrupoA1;
 import com.vtpvistorias_tcc.Model.Inspecao;
 import com.vtpvistorias_tcc.R;
 
+import java.util.ArrayList;
+
 public class GrupoA1SistemaCarroceriaNivelBActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button botaoVoltarSelecionarFicha;
@@ -41,7 +43,6 @@ public class GrupoA1SistemaCarroceriaNivelBActivity extends AppCompatActivity im
     private CheckBox comunicacaoVisualInternaAdesivosInexistente;
     private CheckBox comunicacaoVisualInternaAdesivosConservacao;
     private CheckBox comunicacaoVisualInternaAdesivosForaPadrao;
-
 
 
     private DatabaseReference firebase;
@@ -86,6 +87,8 @@ public class GrupoA1SistemaCarroceriaNivelBActivity extends AppCompatActivity im
         comunicacaoVisualInternaAdesivosConservacao = (CheckBox)findViewById(R.id.comunicacaoVisualInternaAdesivosConservacao);
         comunicacaoVisualInternaAdesivosForaPadrao = (CheckBox)findViewById(R.id.comunicacaoVisualInternaAdesivosForaPadrao);
 
+
+        salvarDados();
         i = getIntent();
         inspecao = (Inspecao) i.getSerializableExtra("inspecao");
         grupoA1 = inspecao.getGrupoA1();
@@ -96,10 +99,17 @@ public class GrupoA1SistemaCarroceriaNivelBActivity extends AppCompatActivity im
         switch (view.getId()){
 
             case R.id.botaoVoltarSelecionarFicha:
+
                 finish();
+
                 break;
+
             case R.id.botaoProximo:
+
                 salvarDados();
+
+                inspecao.setGrupoA1(grupoA1);
+
                 Intent intent = new Intent(getApplicationContext(),GrupoA1SistemaAcessibilidadeMobilidadeNivelAActivity.class);
                 intent.putExtra("inspecao",inspecao);
                 startActivity(intent);
@@ -110,40 +120,104 @@ public class GrupoA1SistemaCarroceriaNivelBActivity extends AppCompatActivity im
 
     public void salvarDados(){
 
-        if(grupoA1 == null)
-            grupoA1 = new GrupoA1();
+        grupoA1 = new GrupoA1();
 
-        //grupoC.setIdFicha(1l);
-        grupoA1.setTacografoFalta(tacografoFalta.isChecked());
-        grupoA1.setTacografoFaltaLacre(tacografoFaltaLacre.isChecked());
-        grupoA1.setTacografoNaoFunciona(tacografoNaoFunciona.isChecked());
-        grupoA1.setTacografoEstadoConservacao(tacografoEstadoConservacao.isChecked());
-        grupoA1.setPisoLiso(pisoLiso.isChecked());
-        grupoA1.setPisoSujo(pisoSujo.isChecked());
-        grupoA1.setQuebraSolInexistente(quebraSolInexistente.isChecked());
-        grupoA1.setQuebraSolDesregulado(quebraSolDesregulado.isChecked());
-        grupoA1.setQuebraSolSolto(quebraSolSolto.isChecked());
-        grupoA1.setDesembacadorParaBrisaFalta(desembacadorParaBrisaFalta.isChecked());
-        grupoA1.setBancosAltosSimplesInexistentes(bancosAltosSimplesInexistentes.isChecked());
-        grupoA1.setBancosAltosSimplesConservacao(bancosAltosSimplesConservacao.isChecked());
-        grupoA1.setBancosAltosSimplesFixacao(bancosAltosSimplesFixacao.isChecked());
-        grupoA1.setRadioComunicacaoNaoFunciona(radioComunicacaoNaoFunciona.isChecked());
-        grupoA1.setRadioComunicacaoFixacao(radioComunicacaoFixacao.isChecked());
-        grupoA1.setRadioComunicacaoConservacao(radioComunicacaoConservacao.isChecked());
-        grupoA1.setRadioComunicacaoLenteDanificada(radioComunicacaoLenteDanificada.isChecked());
-        grupoA1.setBrakeLightInexistente(brakeLightInexistente.isChecked());
-        grupoA1.setBrakeLightSolto(brakeLightSolto.isChecked());
-        grupoA1.setComunicacaoVisualInternaAdesivosInexistente(comunicacaoVisualInternaAdesivosInexistente.isChecked());
-        grupoA1.setComunicacaoVisualInternaAdesivosConservacao(comunicacaoVisualInternaAdesivosConservacao.isChecked());
-        grupoA1.setComunicacaoVisualInternaAdesivosForaPadrao(comunicacaoVisualInternaAdesivosForaPadrao.isChecked());
+        if(tacografoFalta.isChecked()){
 
+            grupoA1.getTacografo().add("Em Falta");
+        }
+        if(tacografoFaltaLacre.isChecked()){
 
-        inspecao.setGrupoA1(grupoA1);
-        //grupoC.salvar();
+            grupoA1.getTacografo().add("Falta Lacre");
+        }
+        if(tacografoNaoFunciona.isChecked()){
+
+            grupoA1.getTacografo().add("Não Funciona");
+        }
+        if(tacografoEstadoConservacao.isChecked()){
+
+            grupoA1.getTacografo().add("Ruim");
+        }
+        if(pisoLiso.isChecked()){
+
+            grupoA1.getPiso().add("Liso");
+        }
+        if(pisoSujo.isChecked()){
+
+            grupoA1.getPiso().add("Sujo");
+        }
+        if(pisoDerrapante.isChecked()){
+
+            grupoA1.getPiso().add("Derrapante");
+        }
+        if(quebraSolInexistente.isChecked()){
+
+            grupoA1.getQuebraSol().add("Inexistente");
+        }
+        if(quebraSolDesregulado.isChecked()){
+
+            grupoA1.getQuebraSol().add("Desregulado");
+        }
+        if(quebraSolSolto.isChecked()){
+
+            grupoA1.getQuebraSol().add("Solto");
+        }
+        if(desembacadorParaBrisaFalta.isChecked()){
+
+            grupoA1.getDesembacadorParaBrisa().add("Em Falta");
+        }
+        if(desembacadorParaBrisaNaoFunciona.isChecked()){
+
+            //grupoA1.getDesembacadorParaBrisa().add("Não Funciona");
+        }
+        if(bancosAltosSimplesInexistentes.isChecked()){
+
+            grupoA1.getBancosAltosSimples().add("Inexistentes");
+        }
+        if(bancosAltosSimplesConservacao.isChecked()){
+
+            grupoA1.getBancosAltosSimples().add("Ruim");
+        }
+        if(bancosAltosSimplesFixacao.isChecked()){
+
+            grupoA1.getBancosAltosSimples().add("Não Fixado");
+        }
+        if(radioComunicacaoNaoFunciona.isChecked()){
+
+            grupoA1.getRadioComunicacao().add("Não Funciona");
+        }
+        if(radioComunicacaoFixacao.isChecked()){
+
+            grupoA1.getRadioComunicacao().add("Não Fixado");
+        }
+        if(radioComunicacaoConservacao.isChecked()){
+
+            grupoA1.getRadioComunicacao().add("Ruim");
+        }
+        if(radioComunicacaoLenteDanificada.isChecked()){
+
+            grupoA1.getRadioComunicacao().add("Danificado");
+        }
+        if(brakeLightInexistente.isChecked()){
+
+            grupoA1.getBrakeLight().add("Inexistente");
+        }
+        if(brakeLightSolto.isChecked()){
+
+            grupoA1.getBrakeLight().add("Solto");
+        }
+        if(comunicacaoVisualInternaAdesivosInexistente.isChecked()){
+
+            grupoA1.getComunicacaoVisualInternaAdesivos().add("Inexistente");
+        }
+        if(comunicacaoVisualInternaAdesivosConservacao.isChecked()){
+
+            grupoA1.getComunicacaoVisualInternaAdesivos().add("Ruim");
+        }
+        if(comunicacaoVisualInternaAdesivosForaPadrao.isChecked()){
+
+            grupoA1.getComunicacaoVisualInternaAdesivos().add("Fora do Padrão");
+        }
     }
 
-    @Override
-    public void onPause(){
-        super.onPause();
-    }
 }

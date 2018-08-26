@@ -46,8 +46,6 @@ public class GrupoA1SistemaAcessibilidadeMobilidadeNivelAActivity extends AppCom
     private CheckBox itensSegurancaTransporteDeficiente;
     private CheckBox itensSegurancaMaterialNaoResiliente;
 
-
-    private DatabaseReference firebase;
     private GrupoA1 grupoA1;
     private Intent i;
     private Inspecao inspecao;
@@ -57,10 +55,10 @@ public class GrupoA1SistemaAcessibilidadeMobilidadeNivelAActivity extends AppCom
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grupo_a1_sistema_acessibilidade_mobilidade_nivel_a);
 
-        botaoVoltarSelecionarFicha = (Button) findViewById(R.id.botaoVoltarSelecionarFicha);
+        botaoVoltarSelecionarFicha = findViewById(R.id.botaoVoltarSelecionarFicha);
         botaoVoltarSelecionarFicha.setOnClickListener(this);
 
-        botaoProximo = (Button) findViewById(R.id.botaoProximo);
+        botaoProximo = findViewById(R.id.botaoProximo);
         botaoProximo.setOnClickListener(this);
 
         areaCadeirasRodasMenorEspecificacao = (CheckBox)findViewById(R.id.areaCadeirasRodasMenorEspecificacao);
@@ -104,13 +102,21 @@ public class GrupoA1SistemaAcessibilidadeMobilidadeNivelAActivity extends AppCom
         switch (view.getId()){
 
             case R.id.botaoVoltarSelecionarFicha:
+
                 finish();
+
                 break;
+
             case R.id.botaoProximo:
+
                 salvarDados();
+
+                inspecao.setGrupoA1(grupoA1);
+
                 Intent intent = new Intent(getApplicationContext(),SelecionarFichaActivity.class);
                 intent.putExtra("inspecao",inspecao);
                 startActivity(intent);
+
                 break;
         }
 
@@ -118,46 +124,120 @@ public class GrupoA1SistemaAcessibilidadeMobilidadeNivelAActivity extends AppCom
 
     public void salvarDados(){
 
-        if(grupoA1 == null)
-            grupoA1 = new GrupoA1();
+        if(areaCadeirasRodasMenorEspecificacao.isChecked()){
 
-        //grupoC.setIdFicha(1l);
+            grupoA1.getAreaParaCadeiraDeRodas().add("Menor que a Especifição");
+        }
+        if(comunicacaoVisualInternaAdesivosObstaculos.isChecked()){
 
-        grupoA1.setAreaCadeirasRodasMenorEspecificacao(areaCadeirasRodasMenorEspecificacao.isChecked());
-        grupoA1.setComunicacaoVisualInternaAdesivosObstaculos(comunicacaoVisualInternaAdesivosObstaculos.isChecked());
-        grupoA1.setAreaManobrasObstaculos(areaManobrasObstaculos.isChecked());
-        grupoA1.setPortasFechamentoDeficiente(portasFechamentoDeficiente.isChecked());
-        grupoA1.setPortasConservacao(portasConservacao.isChecked());
-        grupoA1.setPortasNaoTrava(portasNaoTrava.isChecked());
-        grupoA1.setElevadorIncompativel(elevadorIncompativel.isChecked());
-        grupoA1.setElevadorVaoLivre(elevadorVaoLivre.isChecked());
-        grupoA1.setElevadorCursoIncompativel(elevadorCursoIncompativel.isChecked());
-        grupoA1.setElevadorSeparado(elevadorSeparado.isChecked());
-        grupoA1.setElevadorInacessivel(elevadorInacessivel.isChecked());
-        grupoA1.setElevadorInexistente(elevadorInexistente.isChecked());
-        grupoA1.setElevadorNaoFunciona(elevadorNaoFunciona.isChecked());
-        grupoA1.setElevadorPinturaForaPadrao(elevadorPinturaForaPadrao.isChecked());
-        grupoA1.setElevadorObstaculo(elevadorObstaculo.isChecked());
-        grupoA1.setElevadorRapido(elevadorRapido.isChecked());
-        grupoA1.setElevadorBrusco(elevadorBrusco.isChecked());
-        grupoA1.setElevadorBarulho(elevadorBarulho.isChecked());
-        grupoA1.setElevadorOutros(elevadorOutros.isChecked());
-        grupoA1.setElevadorBarulhoExcessivo(elevadorBarulhoExcessivo.isChecked());
-        grupoA1.setElevadorVazamento(elevadorVazamento.isChecked());
-        grupoA1.setElevadorInoperante(elevadorInoperante.isChecked());
-        grupoA1.setItensSegurancaInexistente(itensSegurancaInexistente.isChecked());
-        grupoA1.setItensSegurancaFuncionamento(itensSegurancaFuncionamento.isChecked());
-        grupoA1.setItensSegurancaInoperante(itensSegurancaInoperante.isChecked());
-        grupoA1.setItensSegurancaConservacao(itensSegurancaConservacao.isChecked());
-        grupoA1.setItensSegurancaTransporteDeficiente(itensSegurancaTransporteDeficiente.isChecked());
-        grupoA1.setItensSegurancaMaterialNaoResiliente(itensSegurancaMaterialNaoResiliente.isChecked());
+            grupoA1.getComunicacaoVisualInternaAdesivos().add("Com Obstaculos");
+        }
+        if(areaManobrasObstaculos.isChecked()){
 
-        inspecao.setGrupoA1(grupoA1);
-        //grupoC.salvar();
+            grupoA1.getAreaParaManobras().add("Com Obstaculos");
+        }
+        if(portasFechamentoDeficiente.isChecked()){
+
+            grupoA1.getPortas().add("Fechamento Deficiente");
+        }
+        if(portasConservacao.isChecked()){
+
+            grupoA1.getPortas().add("Ruim");
+        }
+        if(portasNaoTrava.isChecked()){
+
+            grupoA1.getPortas().add("Não Trava");
+        }
+        if(elevadorIncompativel.isChecked()){
+
+            grupoA1.getElevador().add("Incompativel");
+        }
+        if(elevadorCursoIncompativel.isChecked()){
+
+            grupoA1.getElevador().add("Curso Incompleto");
+        }
+        if(elevadorVaoLivre.isChecked()){
+
+            grupoA1.getElevador().add("Vão Livre Maior que o Permitido");
+        }
+        if(elevadorSeparado.isChecked()){
+
+            grupoA1.getElevador().add("Separado");
+        }
+        if(elevadorInacessivel.isChecked()){
+
+            grupoA1.getElevador().add("Inacessivel");
+        }
+        if(elevadorInexistente.isChecked()){
+
+            grupoA1.getElevador().add("Inexistente");
+        }
+        if(elevadorNaoFunciona.isChecked()){
+
+            grupoA1.getElevador().add("Não Funciona");
+        }
+        if(elevadorPinturaForaPadrao.isChecked()){
+
+            grupoA1.getElevador().add("Fora do padrão");
+        }
+        if(elevadorObstaculo.isChecked()){
+
+            grupoA1.getElevador().add("Com Obstaculos");
+        }
+        if(elevadorRapido.isChecked()){
+
+            grupoA1.getElevador().add("Rapido");
+        }
+        if(elevadorBrusco.isChecked()){
+
+            grupoA1.getElevador().add("Brucos");
+        }
+        if(elevadorBarulho.isChecked()){
+
+            grupoA1.getElevador().add("Com Barulho");
+        }
+        if(elevadorOutros.isChecked()){
+
+            grupoA1.getElevador().add("Com outros problemas");
+        }
+        if(elevadorBarulhoExcessivo.isChecked()){
+
+            grupoA1.getElevador().add("Excessivo");
+        }
+        if(elevadorVazamento.isChecked()){
+
+            grupoA1.getElevador().add("Vazando");
+        }
+        if(elevadorInoperante.isChecked()){
+
+            grupoA1.getElevador().add("Inoperante");
+        }
+        if(itensSegurancaInexistente.isChecked()){
+
+            grupoA1.getItensDeSeguranca().add("Inexistente");
+        }
+        if(itensSegurancaFuncionamento.isChecked()){
+
+            grupoA1.getItensDeSeguranca().add("Não Funcionando");
+        }
+        if(itensSegurancaInoperante.isChecked()){
+
+            grupoA1.getItensDeSeguranca().add("Inoperantes");
+        }
+        if(itensSegurancaConservacao.isChecked()){
+
+            grupoA1.getItensDeSeguranca().add("Ruim");
+        }
+        if(itensSegurancaTransporteDeficiente.isChecked()){
+
+            grupoA1.getItensDeSeguranca().add("Deficiente");
+        }
+        if(itensSegurancaMaterialNaoResiliente.isChecked()){
+
+            grupoA1.getItensDeSeguranca().add("Material Não resiliente");
+        }
+
     }
 
-    @Override
-    public void onPause(){
-        super.onPause();
-    }
+
 }
