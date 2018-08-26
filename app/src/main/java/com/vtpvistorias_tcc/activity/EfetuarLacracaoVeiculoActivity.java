@@ -21,6 +21,8 @@ import com.vtpvistorias_tcc.Model.Inspecao;
 import com.vtpvistorias_tcc.Model.Veiculo;
 import com.vtpvistorias_tcc.R;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -147,6 +149,10 @@ public class EfetuarLacracaoVeiculoActivity extends AppCompatActivity implements
                                 inspecao.salvar();
 
                                 veiculo.update();
+
+                                labelBloqueado.setText("Sim");
+
+                                botaoLacrar.setEnabled(false);
                                 Toast.makeText(getApplicationContext(), "Veículo Bloqueado com Sucesso", Toast.LENGTH_LONG).show();
                             }
                         })
@@ -160,10 +166,15 @@ public class EfetuarLacracaoVeiculoActivity extends AppCompatActivity implements
     }
 
     public String getPegaDataAtual() {
-        Calendar calendar = new GregorianCalendar();
+        DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         Date date = new Date();
-        calendar.setTime(date);
-        return "";
+        System.out.println(dateFormat.format(date)); //2016/11/16 12:08:43
+
+        //Calendar calendar = Calendar.getInstance();
+        //Date date = new Date();
+        //calendar.setTime(date);
+        //return calendar.getTime();
+        return dateFormat.format(date);
     }
 
 
