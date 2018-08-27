@@ -90,11 +90,6 @@ public class GrupoBSistemaCarroceriaActivity extends AppCompatActivity implement
     private CheckBox limpezaExterna;
     private CheckBox limpezaInferior;
 
-
-
-
-
-    private DatabaseReference firebase;
     private GrupoB grupoB;
     private Intent i;
     private Inspecao inspecao;
@@ -206,87 +201,219 @@ public class GrupoBSistemaCarroceriaActivity extends AppCompatActivity implement
 
     public void salvarDados(){
 
-        if(grupoB == null)
-            grupoB = new GrupoB();
+        if(parabrisaSolto.isChecked()){
 
-        //grupoB.setIdFicha(1l);
-        grupoB.setParabrisaSolto(parabrisaSolto.isChecked());
-        grupoB.setParabrisaTrincado(parabrisaTrincado.isChecked());
+            grupoB.getParaBrisa().add("Solto");
+        }
+        if(parabrisaTrincado.isChecked()){
 
-        grupoB.setVidroTraseiroFalta(vidroTraseiroFalta.isChecked());
-        grupoB.setVidroTraseiroQuebrado(vidroTraseiroQuebrado.isChecked());
-        grupoB.setVidroTraseiroSolto(vidroTraseiroSolto.isChecked());
-        grupoB.setVidroTraseiroTrincado(vidroTraseiroTrincado.isChecked());
-        grupoB.setVidroTraseiroOutro(vidroTraseiroOutro.isChecked());
+            grupoB.getParaBrisa().add("Trincado");
+        }
+        if(vidroTraseiroFalta.isChecked()){
 
-        grupoB.setEstruturaColunaDanificada(estruturaColunaDanificada.isChecked());
+            grupoB.getVidroTraseiro().add("Faltando");
+        }
+        if(vidroTraseiroQuebrado.isChecked()){
 
-        grupoB.setOculosTrincado(oculosTrincado.isChecked());
+            grupoB.getVidroTraseiro().add("Quebrado");
+        }
+        if(vidroTraseiroSolto.isChecked()){
 
-        grupoB.setRevestimentoExternoChapariaSolto(revestimentoExternoChapariaSolto.isChecked());
-        grupoB.setRevestimentoExternoChapariaDanificado(revestimentoExternoChapariaDanificado.isChecked());
+            grupoB.getVidroTraseiro().add("Solta");
+        }
+        if(vidroTraseiroTrincado.isChecked()){
 
-        grupoB.setBancosRasgado(bancosRasgado.isChecked());
-        grupoB.setBancosSolto(bancosSolto.isChecked());
-        grupoB.setBancosQuebrado(bancosQuebrado.isChecked());
-        grupoB.setBancosDanificado(bancosDanificado.isChecked());
-        grupoB.setBancosFalta(bancosFalta.isChecked());
+            grupoB.getVidroTraseiro().add("Trincado");
+        }
+        if(vidroTraseiroOutro.isChecked()){
 
-        grupoB.setBancosPassageirosRasgado(bancosPassageirosRasgado.isChecked());
-        grupoB.setBancosPassageirosSolto(bancosPassageirosSolto.isChecked());
-        grupoB.setBancosPassageirosQuebrado(bancosPassageirosQuebrado.isChecked());
-        grupoB.setBancosPassageirosDanificado(bancosPassageirosDanificado.isChecked());
-        grupoB.setBancosPassageirosFalta(bancosPassageirosFalta.isChecked());
+            grupoB.getVidroTraseiro().add("Outro");
+        }
+        if(estruturaColunaDanificada.isChecked()){
 
-        grupoB.setSistemasPortasMancalNaoFunciona(sistemasPortasMancalNaoFunciona.isChecked());
-        grupoB.setSistemasPortasMancalQuebrada(sistemasPortasMancalQuebrada.isChecked());
-        grupoB.setSistemasPortasMancalSolta(sistemasPortasMancalSolta.isChecked());
+            grupoB.getEstrutura().add("Danificada");
+        }
+        if(oculosTrincado.isChecked()){
 
-        grupoB.setFolhasPortasRevestimentoQuebrada(folhasPortasRevestimentoQuebrada.isChecked());
-        grupoB.setFolhasPortasRevestimentoDanificada(folhasPortasRevestimentoDanificada.isChecked());
-        grupoB.setFolhasPortasRevestimentoSolta(folhasPortasRevestimentoSolta.isChecked());
+            grupoB.getOculos().add("Trincado");
+        }
+        if(revestimentoExternoChapariaSolto.isChecked()){
 
-        grupoB.setBorrachaPortasFalta(borrachaPortasFalta.isChecked());
-        grupoB.setBorrachaPortasQuebrada(borrachaPortasQuebrada.isChecked());
+            grupoB.getRevestimentoExternoChaparia().add("Solto");
+        }
+        if(revestimentoExternoChapariaDanificado.isChecked()){
 
-        grupoB.setTampaoPistaoPortasFalta(tampaoPistaoPortasFalta.isChecked());
-        grupoB.setTampaoPistaoPortasQuebrada(tampaoPistaoPortasQuebrada.isChecked());
-        grupoB.setTampaoPistaoPortasSolta(tampaoPistaoPortasSolta.isChecked());
+            grupoB.getRevestimentoExternoChaparia().add("Danificado");
+        }
+        if(bancosRasgado.isChecked()){
 
-        grupoB.setCilindroPortasVazando(cilindroPortasVazando.isChecked());
-        grupoB.setCilindroPortasDanificada(cilindroPortasDanificada.isChecked());
-        grupoB.setCilindroPortasSolta(cilindroPortasSolta.isChecked());
+            grupoB.getBancos().add("Rasgado");
+        }
+        if(bancosSolto.isChecked()){
 
-        grupoB.setJanelaLateralMotoristaDanificada(janelaLateralMotoristaDanificada.isChecked());
-        grupoB.setJanelaLateralMotoristaEmpenada(janelaLateralMotoristaEmpenada.isChecked());
-        grupoB.setJanelaLateralMotoristaFalta(janelaLateralMotoristaFalta.isChecked());
+            grupoB.getBancos().add("Solto");
+        }
+        if(bancosQuebrado.isChecked()){
 
-        grupoB.setQuadroJanelaQuebrado(quadroJanelaQuebrado.isChecked());
-        grupoB.setQuadroJanelaSolto(quadroJanelaSolto.isChecked());
+            grupoB.getBancos().add("Quebrado");
+        }
+        if(bancosDanificado.isChecked()){
 
-        grupoB.setSeparadorLimitadorPuxadorFalta(separadorLimitadorPuxadorFalta.isChecked());
-        grupoB.setSeparadorLimitadorPuxadorDanificado(separadorLimitadorPuxadorDanificado.isChecked());
+            grupoB.getBancos().add("Danificado");
+        }
+        if(bancosFalta.isChecked()){
 
-        grupoB.setParachoquePonteiraDanificado(parachoquePonteiraDanificado.isChecked());
-        grupoB.setParachoquePonteiraFalta(parachoquePonteiraFalta.isChecked());
-        grupoB.setParachoquePonteiraSolta(parachoquePonteiraSolta.isChecked());
+            grupoB.getBancos().add("Falta");
+        }
+        if(bancosPassageirosRasgado.isChecked()){
 
-        grupoB.setEspelhosRetrovisoresConvexosFalta(espelhosRetrovisoresConvexosFalta.isChecked());
-        grupoB.setEspelhosRetrovisoresConvexosQuebrado(espelhosRetrovisoresConvexosQuebrado.isChecked());
-        grupoB.setEspelhosRetrovisoresConvexosSolto(espelhosRetrovisoresConvexosSolto.isChecked());
+            grupoB.getBancosPassageiros().add("Rasgado");
+        }
+        if(bancosPassageirosSolto.isChecked()){
 
-        grupoB.setLimpadorParaBrisaFalta(limpadorParaBrisaFalta.isChecked());
-        grupoB.setLimpadorParaBrisaNaoFunciona(limpadorParaBrisaNaoFunciona.isChecked());
+            grupoB.getBancosPassageiros().add("Solto");
+        }
+        if(bancosPassageirosQuebrado.isChecked()){
 
-        grupoB.setLimpezaInterna(limpezaInterna.isChecked());
-        grupoB.setLimpezaExterna(limpezaExterna.isChecked());
-        grupoB.setLimpezaInferior(limpezaInferior.isChecked());
+            grupoB.getBancosPassageiros().add("Quebrado");
+        }
+        if(bancosPassageirosDanificado.isChecked()){
 
+            grupoB.getBancosPassageiros().add("Danificado");
+        }
+        if(bancosPassageirosFalta.isChecked()){
 
+            grupoB.getBancosPassageiros().add("Falta");
+        }
+        if(sistemasPortasMancalNaoFunciona.isChecked()){
 
+            grupoB.getSistemasDePortasMancal().add("Não Funciona");
+        }
+        if(sistemasPortasMancalQuebrada.isChecked()){
 
-        inspecao.setGrupoB(grupoB);
-        //grupoB.salvar();
+            grupoB.getSistemasDePortasMancal().add("Quebrado");
+        }
+        if(sistemasPortasMancalSolta.isChecked()){
+
+            grupoB.getSistemasDePortasMancal().add("Solta");
+        }
+        if(folhasPortasRevestimentoQuebrada.isChecked()){
+
+            grupoB.getFolhasDasPortasRevestimento().add("Revestimento");
+        }
+        if(folhasPortasRevestimentoDanificada.isChecked()){
+
+            grupoB.getFolhasDasPortasRevestimento().add("Danificada");
+        }
+        if(folhasPortasRevestimentoSolta.isChecked()){
+
+            grupoB.getFolhasDasPortasRevestimento().add("Solta");
+        }
+        if(borrachaPortasFalta.isChecked()){
+
+            grupoB.getBorrachaDasPortas().add("Falta");
+        }
+        if(borrachaPortasQuebrada.isChecked()){
+
+            grupoB.getBorrachaDasPortas().add("Quebrada");
+        }
+        if(tampaoPistaoPortasFalta.isChecked()){
+
+            grupoB.getTampaoPistaoDasPortas().add("Falta");
+        }
+        if(tampaoPistaoPortasQuebrada.isChecked()){
+
+            grupoB.getTampaoPistaoDasPortas().add("Quebrada");
+        }
+        if(tampaoPistaoPortasSolta.isChecked()){
+
+            grupoB.getTampaoPistaoDasPortas().add("Solta");
+        }
+        if(cilindroPortasVazando.isChecked()){
+
+            grupoB.getCilindroDasPortas().add("Vazando");
+        }
+        if(cilindroPortasDanificada.isChecked()){
+
+            grupoB.getCilindroDasPortas().add("Danificada");
+        }
+        if(cilindroPortasSolta.isChecked()){
+
+            grupoB.getCilindroDasPortas().add("Solta");
+        }
+        if(janelaLateralMotoristaDanificada.isChecked()){
+
+            grupoB.getJanelaLateralDoMotorista().add("Danificada");
+        }
+        if(janelaLateralMotoristaEmpenada.isChecked()){
+
+            grupoB.getJanelaLateralDoMotorista().add("Empenada");
+        }
+        if(janelaLateralMotoristaFalta.isChecked()){
+
+            grupoB.getJanelaLateralDoMotorista().add("Falta");
+        }
+        if(quadroJanelaQuebrado.isChecked()){
+
+            grupoB.getQuadroDaJanela().add("Quebrado");
+        }
+        if(quadroJanelaSolto.isChecked()){
+
+            grupoB.getQuadroDaJanela().add("Solta");
+        }
+        if(separadorLimitadorPuxadorFalta.isChecked()){
+
+            grupoB.getSeparadorLimitadorPuxador().add("Falta");
+        }
+        if(separadorLimitadorPuxadorDanificado.isChecked()){
+
+            grupoB.getSeparadorLimitadorPuxador().add("Danificado");
+        }
+        if(parachoquePonteiraDanificado.isChecked()){
+
+            grupoB.getParachoquePonteira().add("Danificado");
+        }
+        if(parachoquePonteiraFalta.isChecked()){
+
+            grupoB.getParachoquePonteira().add("Falta");
+        }
+        if(parachoquePonteiraSolta.isChecked()){
+
+            grupoB.getParachoquePonteira().add("Solta");
+        }
+        if(espelhosRetrovisoresConvexosFalta.isChecked()){
+
+            grupoB.getEspelhosRetrovisoresConvexos().add("Falta");
+        }
+        if(espelhosRetrovisoresConvexosQuebrado.isChecked()){
+
+            grupoB.getEspelhosRetrovisoresConvexos().add("Quebrado");
+        }
+        if(espelhosRetrovisoresConvexosSolto.isChecked()){
+
+            grupoB.getEspelhosRetrovisoresConvexos().add("Solto");
+        }
+        if(limpadorParaBrisaFalta.isChecked()){
+
+            grupoB.getLimpadorParaBrisa().add("Falta");
+        }
+        if(limpadorParaBrisaNaoFunciona.isChecked()){
+
+            grupoB.getLimpadorParaBrisa().add("Não Funciona");
+        }
+        if(limpezaInterna.isChecked()){
+
+            grupoB.getLimpeza().add("Interna");
+        }
+        if(limpezaExterna.isChecked()){
+
+            grupoB.getLimpeza().add("Externa");
+        }
+        if(limpezaInferior.isChecked()){
+
+            grupoB.getLimpeza().add("Inferior");
+        }
+
     }
 
     @Override

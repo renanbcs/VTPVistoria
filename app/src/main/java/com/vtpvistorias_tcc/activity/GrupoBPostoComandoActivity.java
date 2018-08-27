@@ -74,25 +74,35 @@ public class GrupoBPostoComandoActivity extends AppCompatActivity implements Vie
 
     public void salvarDados(){
 
-        if(grupoB == null)
-            grupoB = new GrupoB();
+        if(comandoPainelManometroNaoFunciona.isChecked()){
 
-        //grupoB.setIdFicha(1l);
-        grupoB.setComandoPainelManometroNaoFunciona(comandoPainelManometroNaoFunciona.isChecked());
-        grupoB.setComandoPainelVelocimentoNaoFunciona(comandoPainelVelocimentoNaoFunciona.isChecked());
-        grupoB.setComandoPainelLuzesNaoAcende(comandoPainelLuzesNaoAcende.isChecked());
-        grupoB.setComandoPainelSistemaVentilacaoNaoFunciona(comandoPainelSistemaVentilacaoNaoFunciona.isChecked());
-        grupoB.setChaveSetaBuzinaNaoFunciona(chaveSetaBuzinaNaoFunciona.isChecked());
-        grupoB.setChaveSetaBuzinaDanificada(chaveSetaBuzinaDanificada.isChecked());
-        grupoB.setChaveSetaBuzinaFalta(chaveSetaBuzinaFalta.isChecked());
+            grupoB.getComandosDoPainel().add("Manometro Não Funciona");
+        }
+        if(comandoPainelVelocimentoNaoFunciona.isChecked()){
 
+            grupoB.getComandosDoPainel().add("Velecimetro Não Funciona");
+        }
+        if(comandoPainelLuzesNaoAcende.isChecked()){
 
-        inspecao.setGrupoB(grupoB);
-        //grupoB.salvar();
+            grupoB.getComandosDoPainel().add("Luzes Não Funciona");
+        }
+        if(comandoPainelSistemaVentilacaoNaoFunciona.isChecked()){
+
+            grupoB.getComandosDoPainel().add("Sistema de Ventilação não Funciona");
+        }
+        if(chaveSetaBuzinaNaoFunciona.isChecked()){
+
+            grupoB.getChaveDeSetaBuzina().add("Não Funciona");
+        }
+        if(chaveSetaBuzinaDanificada.isChecked()){
+
+            grupoB.getChaveDeSetaBuzina().add("Danificada");
+        }
+        if(chaveSetaBuzinaFalta.isChecked()){
+
+            grupoB.getChaveDeSetaBuzina().add("Falta");
+        }
     }
 
-    @Override
-    public void onPause(){
-        super.onPause();
-    }
+
 }

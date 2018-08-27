@@ -9,7 +9,16 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="e79404b4-b9a2-408e-bf50-536e55792d7a" name="Default" comment="" />
+=======
+    <list default="true" id="e79404b4-b9a2-408e-bf50-536e55792d7a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBIluminacaoInternaActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBIluminacaoInternaActivity.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBInteriorVeiculoActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBInteriorVeiculoActivity.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBPostoComandoActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBPostoComandoActivity.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBSistemaCarroceriaActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBSistemaCarroceriaActivity.java" />
+    </list>
+>>>>>>> Stashed changes
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +49,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
+<<<<<<< Updated upstream
     <leaf>
       <file leaf-file-name="GrupoBSistemaCarroceriaExternaActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBSistemaCarroceriaExternaActivity.java">
@@ -66,11 +76,20 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="296">
               <caret line="67" column="52" lean-forward="false" selection-start-line="67" selection-start-column="52" selection-end-line="67" selection-end-column="52" />
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="GrupoBInteriorVeiculoActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBInteriorVeiculoActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="244" column="5" lean-forward="true" selection-start-line="244" selection-start-column="5" selection-end-line="244" selection-end-column="5" />
+>>>>>>> Stashed changes
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file leaf-file-name="GrupoBIluminacaoExternaSinalizacaoActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBIluminacaoExternaSinalizacaoActivity.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -81,6 +100,8 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> Stashed changes
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -2153,10 +2174,22 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/Model/GrupoC.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_itens_ficha.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/ItensFichaActivity.java" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBSistemaCarroceriaActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBIluminacaoInternaActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBPostoComandoActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBInteriorVeiculoActivity.java" />
+=======
+        <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoASistemaSuspensaoActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoASistemaTracaoActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoASistemaRodanteActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoASistemaEixoDianteiroActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoAChassioPlataformaActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBIluminacaoExternaSinalizacaoActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBSistemaEletricoActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBEquipamentosSegurancaActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBSistemaCarroceriaExternaActivity.java" />
+>>>>>>> Stashed changes
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_selecionar_ficha.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/SelecionarFichaActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/SalvarActivity.java" />
@@ -2179,6 +2212,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/Model/GrupoB.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/Model/GrupoA1.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/Model/GrupoA.java" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoASistemaFreioActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoASistemaSuspensaoActivity.java" />
@@ -2190,6 +2224,12 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBEquipamentosSegurancaActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBSistemaEletricoActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBIluminacaoExternaSinalizacaoActivity.java" />
+=======
+        <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBSistemaCarroceriaActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBIluminacaoInternaActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBPostoComandoActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBInteriorVeiculoActivity.java" />
+>>>>>>> Stashed changes
       </list>
     </option>
   </component>
@@ -2245,7 +2285,11 @@
               <item name="activity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
+<<<<<<< Updated upstream
               <item name="VTPVistoria" type="1abcf292:AndroidViewProjectNode" />
+=======
+              <item name="VTPVistoriasTCC" type="1abcf292:AndroidViewProjectNode" />
+>>>>>>> Stashed changes
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
@@ -2512,6 +2556,10 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+<<<<<<< Updated upstream
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25113463" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> Stashed changes
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32597622" sideWeight="0.49462944" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2575,6 +2623,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_salvar.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -2605,6 +2654,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_grupo_b_iluminacao_interna.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -2612,6 +2663,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-13">
           <caret line="179" column="25" lean-forward="true" selection-start-line="179" selection-start-column="25" selection-end-line="179" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2690,13 +2742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBSistemaCarroceriaActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2394">
-          <caret line="198" column="73" lean-forward="false" selection-start-line="198" selection-start-column="73" selection-end-line="198" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_grupo_a1_sistema_carroceria_nivel_b.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -2715,9 +2760,12 @@
           <folding />
         </state>
       </provider>
+<<<<<<< Updated upstream
       <provider editor-type-id="android-manifest">
         <state />
       </provider>
+=======
+>>>>>>> Stashed changes
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_grupo_a_sistema_freio.xml">
       <provider editor-type-id="android-designer2">
@@ -2726,6 +2774,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-462">
           <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2839,6 +2888,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/Model/GrupoA1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2881,6 +2931,120 @@
             <element signature="e#3930#3931#0" expanded="true" />
             <element signature="e#3984#3985#0" expanded="true" />
             <element signature="e#4023#4024#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/Model/GrupoA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5146#5147#0" expanded="true" />
+            <element signature="e#5181#5182#0" expanded="true" />
+            <element signature="e#5347#5348#0" expanded="true" />
+            <element signature="e#5383#5384#0" expanded="true" />
+            <element signature="e#5561#5562#0" expanded="true" />
+            <element signature="e#5605#5606#0" expanded="true" />
+            <element signature="e#5811#5812#0" expanded="true" />
+            <element signature="e#5851#5852#0" expanded="true" />
+            <element signature="e#6050#6051#0" expanded="true" />
+            <element signature="e#6099#6100#0" expanded="true" />
+            <element signature="e#6321#6322#0" expanded="true" />
+            <element signature="e#6357#6358#0" expanded="true" />
+            <element signature="e#6526#6527#0" expanded="true" />
+            <element signature="e#6561#6562#0" expanded="true" />
+            <element signature="e#6734#6735#0" expanded="true" />
+            <element signature="e#6777#6778#0" expanded="true" />
+            <element signature="e#6974#6975#0" expanded="true" />
+            <element signature="e#7009#7010#0" expanded="true" />
+            <element signature="e#7176#7177#0" expanded="true" />
+            <element signature="e#7213#7214#0" expanded="true" />
+            <element signature="e#7388#7389#0" expanded="true" />
+            <element signature="e#7425#7426#0" expanded="true" />
+            <element signature="e#7600#7601#0" expanded="true" />
+            <element signature="e#7637#7638#0" expanded="true" />
+            <element signature="e#8099#8100#0" expanded="true" />
+            <element signature="e#8133#8134#0" expanded="true" />
+            <element signature="e#8198#8199#0" expanded="true" />
+            <element signature="e#8244#8245#0" expanded="true" />
+            <element signature="e#8302#8303#0" expanded="true" />
+            <element signature="e#8345#8346#0" expanded="true" />
+            <element signature="e#8548#8549#0" expanded="true" />
+            <element signature="e#8589#8590#0" expanded="true" />
+            <element signature="e#8778#8779#0" expanded="true" />
+            <element signature="e#8813#8814#0" expanded="true" />
+            <element signature="e#8979#8980#0" expanded="true" />
+            <element signature="e#9015#9016#0" expanded="true" />
+            <element signature="e#9187#9188#0" expanded="true" />
+            <element signature="e#9225#9226#0" expanded="true" />
+            <element signature="e#9404#9405#0" expanded="true" />
+            <element signature="e#9441#9442#0" expanded="true" />
+            <element signature="e#9617#9618#0" expanded="true" />
+            <element signature="e#9655#9656#0" expanded="true" />
+            <element signature="e#9826#9827#0" expanded="true" />
+            <element signature="e#9855#9856#0" expanded="true" />
+            <element signature="e#9910#9911#0" expanded="true" />
+            <element signature="e#9946#9947#0" expanded="true" />
+            <element signature="e#10003#10004#0" expanded="true" />
+            <element signature="e#10045#10046#0" expanded="true" />
+            <element signature="e#10240#10241#0" expanded="true" />
+            <element signature="e#10277#10278#0" expanded="true" />
+            <element signature="e#10768#10769#0" expanded="true" />
+            <element signature="e#10801#10802#0" expanded="true" />
+            <element signature="e#10864#10865#0" expanded="true" />
+            <element signature="e#10908#10909#0" expanded="true" />
+            <element signature="e#10960#10961#0" expanded="true" />
+            <element signature="e#10997#10998#0" expanded="true" />
+            <element signature="e#11177#11178#0" expanded="true" />
+            <element signature="e#11219#11220#0" expanded="true" />
+            <element signature="e#11426#11427#0" expanded="true" />
+            <element signature="e#11475#11476#0" expanded="true" />
+            <element signature="e#11694#11695#0" expanded="true" />
+            <element signature="e#11727#11728#0" expanded="true" />
+            <element signature="e#11790#11791#0" expanded="true" />
+            <element signature="e#11834#11835#0" expanded="true" />
+            <element signature="e#12178#12179#0" expanded="true" />
+            <element signature="e#12211#12212#0" expanded="true" />
+            <element signature="e#12274#12275#0" expanded="true" />
+            <element signature="e#12318#12319#0" expanded="true" />
+            <element signature="e#12361#12362#0" expanded="true" />
+            <element signature="e#12389#12390#0" expanded="true" />
+            <element signature="e#12442#12443#0" expanded="true" />
+            <element signature="e#12476#12477#0" expanded="true" />
+            <element signature="e#12519#12520#0" expanded="true" />
+            <element signature="e#12547#12548#0" expanded="true" />
+            <element signature="e#12600#12601#0" expanded="true" />
+            <element signature="e#12634#12635#0" expanded="true" />
+            <element signature="e#12686#12687#0" expanded="true" />
+            <element signature="e#12723#12724#0" expanded="true" />
+            <element signature="e#12898#12899#0" expanded="true" />
+            <element signature="e#12935#12936#0" expanded="true" />
+            <element signature="e#13116#13117#0" expanded="true" />
+            <element signature="e#13159#13160#0" expanded="true" />
+            <element signature="e#13362#13363#0" expanded="true" />
+            <element signature="e#13403#13404#0" expanded="true" />
+            <element signature="e#13593#13594#0" expanded="true" />
+            <element signature="e#13629#13630#0" expanded="true" />
+            <element signature="e#13808#13809#0" expanded="true" />
+            <element signature="e#13853#13854#0" expanded="true" />
+            <element signature="e#14070#14071#0" expanded="true" />
+            <element signature="e#14117#14118#0" expanded="true" />
+            <element signature="e#14338#14339#0" expanded="true" />
+            <element signature="e#14381#14382#0" expanded="true" />
+            <element signature="e#14587#14588#0" expanded="true" />
+            <element signature="e#14631#14632#0" expanded="true" />
+            <element signature="e#14838#14839#0" expanded="true" />
+            <element signature="e#14879#14880#0" expanded="true" />
+            <element signature="e#15076#15077#0" expanded="true" />
+            <element signature="e#15119#15120#0" expanded="true" />
+            <element signature="e#15323#15324#0" expanded="true" />
+            <element signature="e#15365#15366#0" expanded="true" />
+            <element signature="e#15566#15567#0" expanded="true" />
+            <element signature="e#15609#15610#0" expanded="true" />
+            <element signature="e#15813#15814#0" expanded="true" />
+            <element signature="e#15855#15856#0" expanded="true" />
+            <element signature="e#16054#16055#0" expanded="true" />
+            <element signature="e#16095#16096#0" expanded="true" />
+>>>>>>> Stashed changes
           </folding>
         </state>
       </provider>
@@ -3026,12 +3190,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoA1SistemaAcessibilidadeMobilidadeNivelAActivity.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="-1036">
+=======
+        <state relative-caret-position="341">
+>>>>>>> Stashed changes
           <caret line="60" column="55" lean-forward="false" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/Model/GrupoA.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1125">
@@ -3143,34 +3312,170 @@
             <element signature="e#15855#15856#0" expanded="false" />
             <element signature="e#16054#16055#0" expanded="false" />
             <element signature="e#16095#16096#0" expanded="false" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/Model/GrupoA1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="35" lean-forward="true" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1415#1416#0" expanded="true" />
+            <element signature="e#1447#1448#0" expanded="true" />
+            <element signature="e#1508#1509#0" expanded="true" />
+            <element signature="e#1550#1551#0" expanded="true" />
+            <element signature="e#1592#1593#0" expanded="true" />
+            <element signature="e#1619#1620#0" expanded="true" />
+            <element signature="e#1670#1671#0" expanded="true" />
+            <element signature="e#1702#1703#0" expanded="true" />
+            <element signature="e#1749#1750#0" expanded="true" />
+            <element signature="e#1781#1782#0" expanded="true" />
+            <element signature="e#1842#1843#0" expanded="true" />
+            <element signature="e#1884#1885#0" expanded="true" />
+            <element signature="e#1943#1944#0" expanded="true" />
+            <element signature="e#1987#1988#0" expanded="true" />
+            <element signature="e#2194#2195#0" expanded="true" />
+            <element signature="e#2235#2236#0" expanded="true" />
+            <element signature="e#2428#2429#0" expanded="true" />
+            <element signature="e#2467#2468#0" expanded="true" />
+            <element signature="e#2646#2647#0" expanded="true" />
+            <element signature="e#2679#2680#0" expanded="true" />
+            <element signature="e#2742#2743#0" expanded="true" />
+            <element signature="e#2786#2787#0" expanded="true" />
+            <element signature="e#3166#3167#0" expanded="true" />
+            <element signature="e#3211#3212#0" expanded="true" />
+            <element signature="e#3420#3421#0" expanded="true" />
+            <element signature="e#3459#3460#0" expanded="true" />
+            <element signature="e#3634#3635#0" expanded="true" />
+            <element signature="e#3663#3664#0" expanded="true" />
+            <element signature="e#3718#3719#0" expanded="true" />
+            <element signature="e#3754#3755#0" expanded="true" />
+            <element signature="e#3800#3801#0" expanded="true" />
+            <element signature="e#3831#3832#0" expanded="true" />
+            <element signature="e#3890#3891#0" expanded="true" />
+            <element signature="e#3930#3931#0" expanded="true" />
+            <element signature="e#3984#3985#0" expanded="true" />
+            <element signature="e#4023#4024#0" expanded="true" />
+>>>>>>> Stashed changes
           </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< Updated upstream
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="22" column="41" lean-forward="false" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBIluminacaoExternaSinalizacaoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="106" column="75" lean-forward="true" selection-start-line="106" selection-start-column="75" selection-end-line="106" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBSistemaCarroceriaExternaActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="87" column="72" lean-forward="false" selection-start-line="87" selection-start-column="72" selection-end-line="87" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBSistemaEletricoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="22" column="41" lean-forward="false" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+        <state relative-caret-position="442">
+          <caret line="26" column="69" lean-forward="false" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoAChassioPlataformaActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoASistemaFreioActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="107" column="89" lean-forward="false" selection-start-line="107" selection-start-column="89" selection-end-line="107" selection-end-column="89" />
+        <state relative-caret-position="68">
+          <caret line="14" column="65" lean-forward="false" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBEquipamentosSegurancaActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="64" column="90" lean-forward="false" selection-start-line="64" selection-start-column="90" selection-end-line="64" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoASistemaTracaoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoASistemaRodanteActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoASistemaSuspensaoActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="80" column="54" lean-forward="false" selection-start-line="80" selection-start-column="54" selection-end-line="80" selection-end-column="54" />
+        <state relative-caret-position="-34">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoASistemaEixoDianteiroActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+>>>>>>> Stashed changes
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoAChassioPlataformaActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
+        <state relative-caret-position="400">
+          <caret line="107" column="89" lean-forward="false" selection-start-line="107" selection-start-column="89" selection-end-line="107" selection-end-column="89" />
+=======
+        <state relative-caret-position="1037">
+          <caret line="72" column="73" lean-forward="false" selection-start-line="72" selection-start-column="73" selection-end-line="72" selection-end-column="73" />
+>>>>>>> Stashed changes
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< Updated upstream
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoASistemaSuspensaoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="80" column="54" lean-forward="false" selection-start-line="80" selection-start-column="54" selection-end-line="80" selection-end-column="54" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBSistemaCarroceriaActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1779">
+          <caret line="418" column="13" lean-forward="true" selection-start-line="418" selection-start-column="13" selection-end-line="418" selection-end-column="13" />
+>>>>>>> Stashed changes
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoASistemaFreioActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3975">
@@ -3217,22 +3522,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="521">
           <caret line="86" column="33" lean-forward="true" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBIluminacaoInternaActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="135" column="9" lean-forward="true" selection-start-line="135" selection-start-column="9" selection-end-line="135" selection-end-column="9" />
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBSistemaEletricoActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
           <caret line="67" column="52" lean-forward="false" selection-start-line="67" selection-start-column="52" selection-end-line="67" selection-end-column="52" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBPostoComandoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="104" column="5" lean-forward="true" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBIluminacaoExternaSinalizacaoActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="421">
           <caret line="194" column="5" lean-forward="true" selection-start-line="194" selection-start-column="5" selection-end-line="194" selection-end-column="5" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vtpvistorias_tcc/activity/GrupoBInteriorVeiculoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="244" column="5" lean-forward="true" selection-start-line="244" selection-start-column="5" selection-end-line="244" selection-end-column="5" />
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>

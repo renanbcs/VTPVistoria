@@ -86,28 +86,59 @@ public class GrupoBIluminacaoInternaActivity extends AppCompatActivity implement
 
     public void salvarDados(){
 
-        if(grupoB == null)
-            grupoB = new GrupoB();
+        if(caixaItinerarioIluminacaoInsulficiente.isChecked()){
 
-        //grupoB.setIdFicha(1l);
-        grupoB.setCaixaItinerarioIluminacaoInsulficiente(caixaItinerarioIluminacaoInsulficiente.isChecked());
-        grupoB.setCaixaItinerarioTampaSolta(caixaItinerarioTampaSolta.isChecked());
-        grupoB.setCaixaItinerarioMecanicaDefeito(caixaItinerarioMecanicaDefeito.isChecked());
-        grupoB.setCaixaItinerariaVidroQuebrado(caixaItinerariaVidroQuebrado.isChecked());
-        grupoB.setCaixaItinerarioFaltaBorracha(caixaItinerarioFaltaBorracha.isChecked());
-        grupoB.setIluminacaoSalaoInternaNaoFunciona(iluminacaoSalaoInternaNaoFunciona.isChecked());
-        grupoB.setIluminacaoSalaoInternaQuebrada(iluminacaoSalaoInternaQuebrada.isChecked());
-        grupoB.setIluminacaoSalaoInternaFalta(iluminacaoSalaoInternaFalta.isChecked());
-        grupoB.setSolicitacaoParadaLampadaQueimada(solicitacaoParadaLampadaQueimada.isChecked());
-        grupoB.setSolicitacaoParadaSonoroNaoFunciona(solicitacaoParadaSonoroNaoFunciona.isChecked());
-        grupoB.setSolicitacaoParadaSemCordao(solicitacaoParadaSemCordao.isChecked());
-        grupoB.setLuzDegrauFalta(luzDegrauFalta.isChecked());
-        grupoB.setLuzDegrauNaoFunciona(luzDegrauNaoFunciona.isChecked());
+            grupoB.getCaixaDeItinerario().add("Faltando");
+        }
+        if(caixaItinerarioTampaSolta.isChecked()){
 
+            grupoB.getCaixaDeItinerario().add("Solta");
+        }
+        if(caixaItinerarioMecanicaDefeito.isChecked()){
 
+            grupoB.getCaixaDeItinerario().add("Com Defeito");
+        }
+        if(caixaItinerariaVidroQuebrado.isChecked()){
 
-        inspecao.setGrupoB(grupoB);
-        //grupoB.salvar();
+            grupoB.getCaixaDeItinerario().add("Vidro Quebrado");
+        }
+        if(caixaItinerarioFaltaBorracha.isChecked()){
+
+            grupoB.getCaixaDeItinerario().add("Faltando Borracha");
+        }
+        if(iluminacaoSalaoInternaNaoFunciona.isChecked()){
+
+            grupoB.getIluminacaoSalaoInterna().add("Não Funciona");
+        }
+        if(iluminacaoSalaoInternaQuebrada.isChecked()){
+
+            grupoB.getIluminacaoSalaoInterna().add("Quebrada");
+        }
+        if(iluminacaoSalaoInternaFalta.isChecked()){
+
+            grupoB.getIluminacaoSalaoInterna().add("Faltando");
+        }
+        if(solicitacaoParadaLampadaQueimada.isChecked()){
+
+            grupoB.getSolicitacaoDeParada().add("Lampada Quebrada");
+        }
+        if(solicitacaoParadaSonoroNaoFunciona.isChecked()){
+
+            grupoB.getSolicitacaoDeParada().add("Não Funciona");
+        }
+        if(solicitacaoParadaSemCordao.isChecked()){
+
+            grupoB.getSolicitacaoDeParada().add("Sem Cordão");
+        }
+        if(luzDegrauFalta.isChecked()){
+
+            grupoB.getLuzDoDegrau().add("Falta");
+        }
+        if(luzDegrauNaoFunciona.isChecked()){
+
+            grupoB.getLuzDoDegrau().add("Não Funciona");
+        }
+
     }
 
     @Override

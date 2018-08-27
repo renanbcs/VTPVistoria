@@ -120,44 +120,123 @@ public class GrupoBInteriorVeiculoActivity extends AppCompatActivity implements 
 
     public void salvarDados(){
 
-        if(grupoB == null)
-            grupoB = new GrupoB();
+        if(degrausLiso.isChecked()){
 
-        //grupoB.setIdFicha(1l);
-        grupoB.setDegrausLiso(degrausLiso.isChecked());
-        grupoB.setDegrausDanificado(degrausDanificado.isChecked());
-        grupoB.setPisoLiso(pisoLiso.isChecked());
-        grupoB.setPisoDanificado(pisoDanificado.isChecked());
-        grupoB.setTampaInspecaoSolta(tampaInspecaoSolta.isChecked());
-        grupoB.setTampaInspecaoDanificada(tampaInspecaoDanificada.isChecked());
-        grupoB.setTampaInspecaoFaltaManutencao(tampaInspecaoFaltaManutencao.isChecked());
-        grupoB.setTampaMotorSolta(tampaMotorSolta.isChecked());
-        grupoB.setTampaMotorSemTrava(tampaMotorSemTrava.isChecked());
-        grupoB.setTampaMotorSemVedacao(tampaMotorSemVedacao.isChecked());
-        grupoB.setRevestimentoInternoSolto(revestimentoInternoSolto.isChecked());
-        grupoB.setRevestimentoInternoDanificada(revestimentoInternoDanificada.isChecked());
-        grupoB.setRevestimentoInternoFaltando(revestimentoInternoFaltando.isChecked());
-        grupoB.setRevestimentoInternoIrregular(revestimentoInternoIrregular.isChecked());
-        grupoB.setBalaustresSolto(balaustresSolto.isChecked());
-        grupoB.setBalaustresFalta(balaustresFalta.isChecked());
-        grupoB.setDerrapanteFalta(derrapanteFalta.isChecked());
-        grupoB.setDerrapanteSolto(derrapanteSolto.isChecked());
-        grupoB.setDerrapanteLiso(derrapanteLiso.isChecked());
-        grupoB.setPostoCobrancaDanificado(postoCobrancaDanificado.isChecked());
-        grupoB.setPostoCobrancaFalta(postoCobrancaFalta.isChecked());
-        grupoB.setPostoCobrancaSolto(postoCobrancaSolto.isChecked());
-        grupoB.setEscotilhasCupulasFalta(escotilhasCupulasFalta.isChecked());
-        grupoB.setEscotilhasCupulasDanificada(escotilhasCupulasDanificada.isChecked());
-        grupoB.setEscotilhasCupulasSolta(escotilhasCupulasSolta.isChecked());
-        grupoB.setEscotilhasCupulasTrincada(escotilhasCupulasTrincada.isChecked());
-        grupoB.setSaidaEmergenciaSemIdentificacao(saidaEmergenciaSemIdentificacao.isChecked());
-        grupoB.setSaidaEmergenciaSemLacre(saidaEmergenciaSemLacre.isChecked());
-        grupoB.setSaidaEmergenciaDanificada(saidaEmergenciaDanificada.isChecked());
+            grupoB.getDegraus().add("Liso");
+        }
+        if(degrausDanificado.isChecked()){
 
+            grupoB.getDegraus().add("Danificado");
+        }
+        if(pisoLiso.isChecked()){
 
+            grupoB.getPiso().add("Lisp");
+        }
+        if(pisoDanificado.isChecked()){
 
-        inspecao.setGrupoB(grupoB);
-        //grupoB.salvar();
+            grupoB.getPiso().add("Danificado");
+        }
+        if(tampaInspecaoSolta.isChecked()){
+
+            grupoB.getTampaDeInspecao().add("Solta");
+        }
+        if(tampaInspecaoDanificada.isChecked()){
+
+            grupoB.getTampaDeInspecao().add("Danificada");
+        }
+        if(tampaInspecaoFaltaManutencao.isChecked()){
+
+            grupoB.getTampaDeInspecao().add("Falta Manutenção");
+        }
+        if(tampaMotorSolta.isChecked()){
+
+            grupoB.getTampaDoMotor().add("Solta");
+        }
+        if(tampaMotorSemTrava.isChecked()){
+
+            grupoB.getTampaDoMotor().add("Sem Trava");
+        }
+        if(tampaMotorSemVedacao.isChecked()){
+
+            grupoB.getTampaDoMotor().add("Sem Vedação");
+        }
+        if(revestimentoInternoSolto.isChecked()){
+
+            grupoB.getRevestimentoInterno().add("Solto");
+        }
+        if(revestimentoInternoDanificada.isChecked()){
+
+            grupoB.getRevestimentoInterno().add("Danificada");
+        }
+        if(revestimentoInternoFaltando.isChecked()){
+
+            grupoB.getRevestimentoInterno().add("Faltando");
+        }
+        if(revestimentoInternoIrregular.isChecked()){
+
+            grupoB.getRevestimentoInterno().add("Irregular");
+        }
+        if(balaustresSolto.isChecked()){
+
+            grupoB.getBalaustres().add("Solto");
+        }
+        if(balaustresFalta.isChecked()){
+
+            grupoB.getBalaustres().add("Falta");
+        }
+        if(derrapanteFalta.isChecked()){
+
+            grupoB.getDerrapante().add("Falta");
+        }
+        if(derrapanteSolto.isChecked()){
+
+            grupoB.getDerrapante().add("Solto");
+        }
+        if(derrapanteLiso.isChecked()){
+
+            grupoB.getDerrapante().add("Liso");
+        }
+        if(postoCobrancaDanificado.isChecked()){
+
+            grupoB.getPostoDeCobranca().add("Danificado");
+        }
+        if(postoCobrancaFalta.isChecked()){
+
+            grupoB.getPostoDeCobranca().add("Falta");
+        }
+        if(postoCobrancaSolto.isChecked()){
+
+            grupoB.getPostoDeCobranca().add("Solto");
+        }
+        if(escotilhasCupulasFalta.isChecked()){
+
+            grupoB.getEscotilhasECupulas().add("Falta");
+        }
+        if(escotilhasCupulasDanificada.isChecked()){
+
+            grupoB.getEscotilhasECupulas().add("Danificada");
+        }
+        if(escotilhasCupulasSolta.isChecked()){
+
+            grupoB.getEscotilhasECupulas().add("Solta");
+        }
+        if(escotilhasCupulasTrincada.isChecked()){
+
+            grupoB.getEscotilhasECupulas().add("Trincada");
+        }
+        if(saidaEmergenciaSemIdentificacao.isChecked()){
+
+            grupoB.getSaidaDeEmergencia().add("Sem identificação");
+        }
+        if(saidaEmergenciaSemLacre.isChecked()){
+
+            grupoB.getSaidaDeEmergencia().add("Sem  Lacre");
+        }
+        if(saidaEmergenciaDanificada.isChecked()){
+
+            grupoB.getSaidaDeEmergencia().add("Danificada");
+        }
+
     }
 
     @Override
