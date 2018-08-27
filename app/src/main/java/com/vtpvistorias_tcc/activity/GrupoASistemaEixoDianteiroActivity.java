@@ -125,49 +125,81 @@ public class GrupoASistemaEixoDianteiroActivity extends AppCompatActivity implem
 
     public void salvarDados(){
 
-        if(grupoA == null)
-            grupoA = new GrupoA();
-
-        //grupoA.setIdFicha(1l);
-        grupoA.setCaixaDirecaoSolta(caixaDirecaoSolta.isChecked());
-        grupoA.setCaixaDirecaoVazamFlexEncanamento(caixaDirecaoVazamFlexEncanamento.isChecked());
-
-        grupoA.setSuporteCaixaTrincado(suporteCaixaTrincado.isChecked());
-        grupoA.setSuporteCaixaSolto(suporteCaixaSolto.isChecked());
-
-        grupoA.setBracoTerminalCaixaFolga(bracoTerminalCaixaFolga.isChecked());
-        grupoA.setBracoTerminalCaixaSolto(bracoTerminalCaixaSolto.isChecked());
-
-        grupoA.setAmortecedorDirecaoSolto(amortecedorDirecaoSolto.isChecked());
-        grupoA.setAmortecedorDirecaoVazando(amortecedorDirecaoVazando.isChecked());
-        grupoA.setAmortecedorDirecaoFalta(amortecedorDirecaoFalta.isChecked());
-
-        grupoA.setEixoDianteiroEmpenado(eixoDianteiroEmpenado.isChecked());
-        grupoA.setEixoDianteiroTrincado(eixoDianteiroTrincado.isChecked());
-
-        grupoA.setRolamentoMangaEixoDanificado(rolamentoMangaEixoDanificado.isChecked());
-        grupoA.setRolamentoMangaEixoFolga(rolamentoMangaEixoFolga.isChecked());
-
-        grupoA.setParafusoBatenteMangaFalta(parafusoBatenteMangaFalta.isChecked());
-        grupoA.setParafusoBatenteMangaSolto(parafusoBatenteMangaSolto.isChecked());
-
-        grupoA.setBracoEixoDianteiroSolto(bracoEixoDianteiroSolto.isChecked());
-        grupoA.setBracoEixoDianteiroDanificado(bracoEixoDianteiroDanificado.isChecked());
-
-        grupoA.setTerminaisBarraLongaSolto(terminaisBarraLongaSolto.isChecked());
-        grupoA.setTerminaisBarraLongaFolga(terminaisBarraLongaFolga.isChecked());
-
-        grupoA.setBracoIntermediarioSolto(bracoIntermediarioSolto.isChecked());
-        grupoA.setBracoIntermediarioFolga(bracoIntermediarioFolga.isChecked());
-
-        grupoA.setHasteSuporteReacaoEmpenada(hasteSuporteReacaoEmpenada.isChecked());
-        grupoA.setHasteSuporteReacaoFolga(hasteSuporteReacaoFolga.isChecked());
-        grupoA.setHasteSuporteReacaoSolta(hasteSuporteReacaoSolta.isChecked());
-        grupoA.setHasteSuporteReacaoQuebrada(hasteSuporteReacaoQuebrada.isChecked());
-
-
-        inspecao.setGrupoA(grupoA);
-        //grupoA.salvar();
+        if(caixaDirecaoSolta.isChecked()){
+            grupoA.getCaixaDeDirecao().add("Direção Solta");
+        }
+        if(caixaDirecaoVazamFlexEncanamento.isChecked()){
+            grupoA.getCaixaDeDirecao().add("Vazam Flex Encanamento");
+        }
+        if(suporteCaixaTrincado.isChecked()){
+            grupoA.getCaixaDeDirecao().add("Trincado");
+        }
+        if(suporteCaixaSolto.isChecked()){
+            grupoA.getCaixaDeDirecao().add("Solto");
+        }
+        if(bracoTerminalCaixaFolga.isChecked()){
+            grupoA.getBracoTerminalDaCaixa().add("Com Folga");
+        }
+        if(bracoTerminalCaixaSolto.isChecked()){
+            grupoA.getBracoTerminalDaCaixa().add("Solto");
+        }
+        if(amortecedorDirecaoSolto.isChecked()){
+            grupoA.getAmortecedorDirecao().add("Solto");
+        }
+        if(amortecedorDirecaoVazando.isChecked()){
+            grupoA.getAmortecedorDirecao().add("Vazando");
+        }
+        if(amortecedorDirecaoFalta.isChecked()){
+            grupoA.getAmortecedorDirecao().add("Faltando");
+        }
+        if(eixoDianteiroEmpenado.isChecked()){
+            grupoA.getEixoDianteiro().add("Empenado");
+        }
+        if(eixoDianteiroTrincado.isChecked()){
+            grupoA.getEixoDianteiro().add("Trincado");
+        }
+        if(rolamentoMangaEixoDanificado.isChecked()){
+            grupoA.getRolamentoDaMangaDoEixo().add("Danificado");
+        }
+        if(rolamentoMangaEixoFolga.isChecked()){
+            grupoA.getRolamentoDaMangaDoEixo().add("Folga");
+        }
+        if(parafusoBatenteMangaFalta.isChecked()){
+            grupoA.getParafusoDoBatenteDaManga().add("Faltando");
+        }
+        if(parafusoBatenteMangaSolto.isChecked()){
+            grupoA.getParafusoDoBatenteDaManga().add("Solto");
+        }
+        if(bracoEixoDianteiroSolto.isChecked()){
+            grupoA.getEixoDianteiro().add("Solto");
+        }
+        if(bracoEixoDianteiroDanificado.isChecked()){
+            grupoA.getBracoDoEixoDianteiro().add("Danificado");
+        }
+        if(terminaisBarraLongaSolto.isChecked()){
+            grupoA.getTerminaisDaBarraLonga().add("Solto");
+        }
+        if(terminaisBarraLongaFolga.isChecked()){
+            grupoA.getTerminaisDaBarraLonga().add("Com folga");
+        }
+        if(bracoIntermediarioSolto.isChecked()){
+            grupoA.getBracoIntermediario().add("Solto");
+        }
+        if(bracoIntermediarioFolga.isChecked()){
+            grupoA.getBracoIntermediario().add("Folga");
+        }
+        if(hasteSuporteReacaoEmpenada.isChecked()){
+            grupoA.getHasteSuporteDeReacao().add("Empenado");
+        }
+        if(hasteSuporteReacaoFolga.isChecked()){
+            grupoA.getHasteSuporteDeReacao().add("Com Folga");
+        }
+        if(hasteSuporteReacaoSolta.isChecked()){
+            grupoA.getHasteSuporteDeReacao().add("Solto");
+        }
+        if(hasteSuporteReacaoQuebrada.isChecked()){
+            grupoA.getHasteSuporteDeReacao().add("Quebrada");
+        }
     }
 
     @Override

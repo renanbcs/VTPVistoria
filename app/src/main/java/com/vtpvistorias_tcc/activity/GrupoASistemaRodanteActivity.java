@@ -76,21 +76,27 @@ public class GrupoASistemaRodanteActivity extends AppCompatActivity implements V
 
     public void salvarDados(){
 
-        if(grupoA == null)
-            grupoA = new GrupoA();
-
-        //grupoA.setIdFicha(1l);
-        grupoA.setPneuDesgastado(pneuDesgastado.isChecked());
-        grupoA.setPneuIrregular(pneuIrregular.isChecked());
-        grupoA.setPneuDanificado(pneuDanificado.isChecked());
-        grupoA.setPneuTalao(pneuTalao.isChecked());
-
-        grupoA.setRodaFaltaPorca(rodaFaltaPorca.isChecked());
-        grupoA.setRodaFaltaEspelho(rodaFaltaEspelho.isChecked());
-        grupoA.setRodaDanificada(rodaDanificada.isChecked());
-
-        inspecao.setGrupoA(grupoA);
-        //grupoA.salvar();
+        if(pneuDesgastado.isChecked()){
+            grupoA.getPneus().add("Desgastados");
+        }
+        if(pneuIrregular.isChecked()){
+            grupoA.getPneus().add("Irregular");
+        }
+        if(pneuDanificado.isChecked()){
+            grupoA.getPneus().add("Danificado");
+        }
+        if(pneuTalao.isChecked()){
+            grupoA.getPneus().add("Talão");
+        }
+        if(rodaFaltaPorca.isChecked()){
+            grupoA.getRodas().add("Falta Porca");
+        }
+        if(rodaFaltaEspelho.isChecked()){
+            grupoA.getRodas().add("Falta Espelho");
+        }
+        if(rodaDanificada.isChecked()){
+            grupoA.getRodas().add("Danificada");
+        }
     }
 
     @Override

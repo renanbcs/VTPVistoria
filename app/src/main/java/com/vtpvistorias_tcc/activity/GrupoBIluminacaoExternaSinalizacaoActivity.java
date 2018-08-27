@@ -114,39 +114,84 @@ public class GrupoBIluminacaoExternaSinalizacaoActivity extends AppCompatActivit
 
     public void salvarDados(){
 
-        if(grupoB == null)
-            grupoB = new GrupoB();
-
-        //grupoB.setIdFicha(1l);
-        grupoB.setFaroisOculosAlto(faroisOculosAlto.isChecked());
-        grupoB.setFaroisOculosBaixo(faroisOculosBaixo.isChecked());
-        grupoB.setFaroisOculosFalta(faroisOculosFalta.isChecked());
-        grupoB.setFaroisOculosSolto(faroisOculosSolto.isChecked());
-        grupoB.setFaroisOculosQuebrado(faroisOculosQuebrado.isChecked());
-        grupoB.setLuzesSetaEmergenciaDanificada(luzesSetaEmergenciaDanificada.isChecked());
-        grupoB.setLuzesSetaEmergenciaNaoFunciona	(luzesSetaEmergenciaNaoFunciona.isChecked());
-        grupoB.setLuzesSetaEmergenciaFalta(luzesSetaEmergenciaFalta.isChecked());
-        grupoB.setLuzesSetaEmergenciaQuebrada(luzesSetaEmergenciaQuebrada.isChecked());
-        grupoB.setLanternasLentesDanificada(lanternasLentesDanificada.isChecked());
-        grupoB.setLanternasLentesNaoFunciona(lanternasLentesNaoFunciona.isChecked());
-        grupoB.setLuzesDelimitadorasVigiasLentesFaltando	(luzesDelimitadorasVigiasLentesFaltando.isChecked());
-        grupoB.setLuzesDelimitadorasVigiasLentesNaoFunciona(luzesDelimitadorasVigiasLentesNaoFunciona.isChecked());
-        grupoB.setLuzFreioLentesConservacaoIrregular(luzFreioLentesDanificada.isChecked());
-        grupoB.setLuzFreioLentesNaoFunciona(luzFreioLentesNaoFunciona.isChecked());
-        grupoB.setLuzFreioLentesConservacaoIrregular(luzFreioLentesConservacaoIrregular.isChecked());
-        grupoB.setBrakeLightNaoFunciona(brakeLightNaoFunciona.isChecked());
-        grupoB.setBrakeLightFalta(brakeLightFalta.isChecked());
-        grupoB.setBrakeLightConservacaoIrregular(brakeLightConservacaoIrregular.isChecked());
-        grupoB.setLuzReFalta(luzReFalta.isChecked());
-        grupoB.setLuzReNaoFunciona(luzReNaoFunciona.isChecked());
-        grupoB.setLuzReSemLente(luzReSemLente.isChecked());
-        grupoB.setLuzReConservacaoIrregular(luzReConservacaoIrregular.isChecked());
-        grupoB.setLuzPlacaNaoFunciona(luzPlacaNaoFunciona.isChecked());
-        grupoB.setLuzPlacaFalta(luzPlacaFalta.isChecked());
-        grupoB.setLuzPlacaConservacaoIrregular(luzPlacaConservacaoIrregular.isChecked());
-
-        inspecao.setGrupoB(grupoB);
-        //grupoB.salvar();
+        if(faroisOculosAlto.isChecked()){
+            grupoB.getFaroisOculos().add("Farol Alto");
+        }
+        if(faroisOculosBaixo.isChecked()){
+            grupoB.getFaroisOculos().add("Farol Baixo");
+        }
+        if(faroisOculosFalta.isChecked()){
+            grupoB.getFaroisOculos().add("Farol Faltando");
+        }
+        if(faroisOculosSolto.isChecked()){
+            grupoB.getFaroisOculos().add("Farol Solto");
+        }
+        if(faroisOculosQuebrado.isChecked()){
+            grupoB.getFaroisOculos().add("Farol Quebrado");
+        }
+        if(luzesSetaEmergenciaDanificada.isChecked()){
+            grupoB.getLuzesDeSetaEDeEmergencia().add("Danificado");
+        }
+        if(luzesSetaEmergenciaNaoFunciona.isChecked()){
+            grupoB.getLuzesDeSetaEDeEmergencia().add("Não Funciona");
+        }
+        if(luzesSetaEmergenciaFalta.isChecked()){
+            grupoB.getLuzesDeSetaEDeEmergencia().add("Faltando");
+        }
+        if(luzesSetaEmergenciaQuebrada.isChecked()){
+            grupoB.getLuzesDeSetaEDeEmergencia().add("Quebrada");
+        }
+        if(lanternasLentesDanificada.isChecked()){
+            grupoB.getLanternasLentes().add("Lentes Danificadas");
+        }
+        if(lanternasLentesNaoFunciona.isChecked()){
+            grupoB.getLanternasLentes().add("Não Funciona");
+        }
+        if(luzesDelimitadorasVigiasLentesFaltando.isChecked()){
+            grupoB.getLuzesDelimitadorasVigiasLentes().add("Lentes Faltando");
+        }
+        if(luzesDelimitadorasVigiasLentesNaoFunciona.isChecked()){
+            grupoB.getLuzesDelimitadorasVigiasLentes().add("Lentes Não Funcionam");
+        }
+        if(luzFreioLentesDanificada.isChecked()){
+            grupoB.getLuzDoFreioLentes().add("Danificada");
+        }
+        if(luzFreioLentesNaoFunciona.isChecked()){
+            grupoB.getLuzDoFreioLentes().add("Não Funciona");
+        }
+        if(luzFreioLentesConservacaoIrregular.isChecked()){
+            grupoB.getLuzDoFreioLentes().add("Conservação Irregular");
+        }
+        if(brakeLightNaoFunciona.isChecked()){
+            grupoB.getBrakeLight().add("Não Funciona");
+        }
+        if(brakeLightFalta.isChecked()){
+            grupoB.getBrakeLight().add("Faltando");
+        }
+        if(brakeLightConservacaoIrregular.isChecked()){
+            grupoB.getBrakeLight().add("Conservação Irregular");
+        }
+        if(luzReFalta.isChecked()){
+            grupoB.getLuzDeRe().add("Faltando");
+        }
+        if(luzReNaoFunciona.isChecked()){
+            grupoB.getLuzDeRe().add("Não Funciona");
+        }
+        if(luzReSemLente.isChecked()){
+            grupoB.getLuzDeRe().add("Sem Lente");
+        }
+        if(luzReConservacaoIrregular.isChecked()){
+            grupoB.getLuzDeRe().add("Conservação Irregular");
+        }
+        if(luzPlacaNaoFunciona.isChecked()){
+            grupoB.getLuzDaPlaca().add("Não Funciona");
+        }
+        if(luzPlacaFalta.isChecked()){
+            grupoB.getLuzDaPlaca().add("Faltando");
+        }
+        if(luzPlacaConservacaoIrregular.isChecked()){
+            grupoB.getLuzDaPlaca().add("Conservação Irregular");
+        }
     }
 
     @Override

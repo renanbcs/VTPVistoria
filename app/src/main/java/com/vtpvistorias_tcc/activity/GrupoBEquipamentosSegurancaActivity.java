@@ -72,18 +72,24 @@ public class GrupoBEquipamentosSegurancaActivity extends AppCompatActivity imple
 
     public void salvarDados(){
 
-        if(grupoB == null)
-            grupoB = new GrupoB();
-
-        //grupoB.setIdFicha(1l);
-        grupoB.setExtintorIrregular(extintorIrregular.isChecked());
-        grupoB.setExtintorSuporteQuebrado(extintorSuporteQuebrado.isChecked());
-        grupoB.setExtintorSuporteSolto(extintorSuporteSolto.isChecked());
-        grupoB.setExtintorFalta(extintorFalta.isChecked());
-
-
-        inspecao.setGrupoB(grupoB);
-        //grupoB.salvar();
+        if(extintorIrregular.isChecked()){
+            grupoB.getExtintor().add("Irregular");
+        }
+        if(extintorSuporteQuebrado.isChecked()){
+            grupoB.getExtintor().add("Suporte Quebrado");
+        }
+        if(extintorSuporteSolto.isChecked()){
+            grupoB.getExtintor().add("Suporte Solto");
+        }
+        if(extintorFalta.isChecked()){
+            grupoB.getExtintor().add("Faltando");
+        }
+        if(trianguloFalta.isChecked()){
+            grupoB.getTriangulo().add("Faltando");
+        }
+        if(trianguloDanificado.isChecked()){
+            grupoB.getTriangulo().add("Danificado");
+        }
     }
 
     @Override

@@ -80,25 +80,33 @@ public class GrupoAChassioPlataformaActivity extends AppCompatActivity implement
 
     public void salvarDados(){
 
-        if(grupoA == null)
-            grupoA = new GrupoA();
-
-        //grupoA.setIdFicha(1l);
-        grupoA.setTanqueCombustivelVazando(tanqueCombustivelVazando.isChecked());
-        grupoA.setTanqueCombustivelSolto(tanqueCombustivelSolto.isChecked());
-
-        grupoA.setCintaSuporteTanqueFalta(cintaSuporteTanqueFalta.isChecked());
-        grupoA.setCintaSuporteTanqueQuebrada(cintaSuporteTanqueQuebrada.isChecked());
-
-        grupoA.setCharrisPlatTrincado(charrisPlatTrincado.isChecked());
-        grupoA.setCharrisPlatQuebrado(charrisPlatQuebrado.isChecked());
-        grupoA.setCharrisPlatReparoInadequado(charrisPlatReparoInadequado.isChecked());
-
-        grupoA.setSegCintoBloqueioPortasFalta(segCintoBloqueioPortasFalta.isChecked());
-        grupoA.setSegCintoBloqueioPortasNFunciona(segCintoBloqueioPortasNFunciona.isChecked());
-
-        inspecao.setGrupoA(grupoA);
-        //grupoA.salvar();
+        if(tanqueCombustivelVazando.isChecked()){
+            grupoA.getTanqueDeCombustivel().add("Vazando");
+        }
+        if(tanqueCombustivelSolto.isChecked()){
+            grupoA.getTanqueDeCombustivel().add("Solto");
+        }
+        if(cintaSuporteTanqueFalta.isChecked()){
+            grupoA.getCintaSuporteDoTanque().add("Falta");
+        }
+        if(cintaSuporteTanqueQuebrada.isChecked()){
+            grupoA.getCintaSuporteDoTanque().add("Quebrada");
+        }
+        if(charrisPlatTrincado.isChecked()){
+            grupoA.getChassisEPlataforma().add("Trincado");
+        }
+        if(charrisPlatQuebrado.isChecked()){
+            grupoA.getChassisEPlataforma().add("Quebrado");
+        }
+        if(charrisPlatReparoInadequado.isChecked()){
+            grupoA.getChassisEPlataforma().add("Reparo Inadequado");
+        }
+        if(segCintoBloqueioPortasFalta.isChecked()){
+            grupoA.getSistemaSegurancaDoCintoMotoristaEBloqueioPortas().add("Faltando");
+        }
+        if(segCintoBloqueioPortasNFunciona.isChecked()){
+            grupoA.getSistemaSegurancaDoCintoMotoristaEBloqueioPortas().add("Não Funciona");
+        }
     }
 
     @Override

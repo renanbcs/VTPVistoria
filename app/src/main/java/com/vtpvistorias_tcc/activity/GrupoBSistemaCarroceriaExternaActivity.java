@@ -95,30 +95,45 @@ public class GrupoBSistemaCarroceriaExternaActivity extends AppCompatActivity im
 
     public void salvarDados(){
 
-        if(grupoB == null)
-            grupoB = new GrupoB();
-
-        //grupoB.setIdFicha(1l);
-        grupoB.setSilenciosoDanificado(silenciosoDanificado.isChecked());
-        grupoB.setSilenciosoSolto(silenciosoSolto.isChecked());
-
-        grupoB.setTuboDescargaSolto(tuboDescargaSolto.isChecked());
-        grupoB.setTuboDescargaFalta(tuboDescargaFalta.isChecked());
-        grupoB.setTuboDescargaIrregular(tuboDescargaIrregular.isChecked());
-
-        grupoB.setProtecaoTuboDescargaFalta(protecaoTuboDescargaFalta.isChecked());
-        grupoB.setProtecaoTuboDescargaSolta(protecaoTuboDescargaSolta.isChecked());
-
-        grupoB.setArticulacaoSolto(articulacaoSolto.isChecked());
-        grupoB.setArticulacaoRasgado(articulacaoRasgado.isChecked());
-        grupoB.setArticulacaoFalta(articulacaoFalta.isChecked());
-        grupoB.setArticulacaoGasto(articulacaoGasto.isChecked());
-
-        grupoB.setVazamentoExcessivoMotor(vazamentoExcessivoMotor.isChecked());
-        grupoB.setVazamentoExcessivoCambio(vazamentoExcessivoCambio.isChecked());
-
-        inspecao.setGrupoB(grupoB);
-        //grupoB.salvar();
+        if(silenciosoDanificado.isChecked()){
+            grupoB.getSilencioso().add("Danificado");
+        }
+        if(silenciosoSolto.isChecked()){
+            grupoB.getSilencioso().add("Solto");
+        }
+        if(tuboDescargaSolto.isChecked()){
+            grupoB.getTuboDeDescarga().add("Solto");
+        }
+        if(tuboDescargaFalta.isChecked()){
+            grupoB.getTuboDeDescarga().add("Faltando");
+        }
+        if(tuboDescargaIrregular.isChecked()){
+            grupoB.getTuboDeDescarga().add("Irregular");
+        }
+        if(protecaoTuboDescargaFalta.isChecked()){
+            grupoB.getProtecaoTuboDescarga().add("Faltando");
+        }
+        if(protecaoTuboDescargaSolta.isChecked()){
+            grupoB.getProtecaoTuboDescarga().add("Solto");
+        }
+        if(articulacaoSolto.isChecked()){
+            grupoB.getArticulacao().add("Solto");
+        }
+        if(articulacaoRasgado.isChecked()){
+            grupoB.getArticulacao().add("Rasgado");
+        }
+        if(articulacaoFalta.isChecked()){
+            grupoB.getArticulacao().add("Faltando");
+        }
+        if(articulacaoGasto.isChecked()){
+            grupoB.getArticulacao().add("Gasto");
+        }
+        if(vazamentoExcessivoMotor.isChecked()){
+            grupoB.getVazamentoExcessivo().add("Vazamento Motor");
+        }
+        if(vazamentoExcessivoCambio.isChecked()){
+            grupoB.getVazamentoExcessivo().add("Vazamento Cambio");
+        }
     }
 
     @Override

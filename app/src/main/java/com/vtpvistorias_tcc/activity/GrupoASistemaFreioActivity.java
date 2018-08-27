@@ -56,7 +56,6 @@ public class GrupoASistemaFreioActivity extends AppCompatActivity implements Vie
     private CheckBox valvulaTubularReservatorioVazando;
     private CheckBox valvulaTubularReservatorioContaminada;
 
-    private DatabaseReference firebase;
     private GrupoA grupoA;
     private Intent i;
     private Inspecao inspecao;
@@ -140,55 +139,99 @@ public class GrupoASistemaFreioActivity extends AppCompatActivity implements Vie
 
     public void salvarDados(){
 
-        if(grupoA == null)
-            grupoA = new GrupoA();
-
-        //grupoA.setIdFicha(1l);
-        grupoA.setValvulaPedalVazando(valvulaPedalVazando.isChecked());
-        grupoA.setValvulaPedalContaminada(valvulaPedalContaminada.isChecked());
-
-        grupoA.setAlmofadaPedalFalta(almofadaPedalFalta.isChecked());
-        grupoA.setAlmofadaPedalGasta(almofadaPedalGasta.isChecked());
-
-        grupoA.setFreioEstacionamentoVazando(freioEstacionamentoVazando.isChecked());
-        grupoA.setFreioEstacionamentoNaoFunciona(freioEstacionamentoNaoFunciona.isChecked());
-
-        grupoA.setVaraoFreioMaoDespressurizada(varaoFreioMaoDespressurizada.isChecked());
-        grupoA.setVaraoFreioMaoSolta(varaoFreioMaoSolta.isChecked());
-        grupoA.setVaraoFreioMaoSemAcao(varaoFreioMaoSemAcao.isChecked());
-
-        grupoA.setCatracaFalta(catracaFalta.isChecked());
-
-        grupoA.setPinoCatracaFalta(pinoCatracaFalta.isChecked());
-
-        grupoA.setLonasFreioContaminada(lonasFreioContaminada.isChecked());
-        grupoA.setLonasFreioSolta(lonasFreioSolta.isChecked());
-        grupoA.setLonasFreioQuebrada(lonasFreioQuebrada.isChecked());
-        grupoA.setLonasFreioDesrregulada(lonasFreioDesrregulada.isChecked());
-        grupoA.setLonasFreioFina(lonasFreioFina.isChecked());
-
-        grupoA.setCilindrosPneumaticosVazando(almofadaPedalGasta.isChecked());
-        grupoA.setCilindrosPneumaticosDesativado(cilindrosPneumaticosDesativado.isChecked());
-
-        grupoA.setServoFreioVazando(servoFreioVazando.isChecked());
-        grupoA.setServoFreioSolto(servoFreioSolto.isChecked());
-
-        grupoA.setCilindroRodaVazando(cilindroRodaVazando.isChecked());
-        grupoA.setCilindroRodaSolto(cilindroRodaSolto.isChecked());
-
-        grupoA.setCilindroMestreVazando(cilindroMestreVazando.isChecked());
-        grupoA.setCilindroMestreSolto(cilindroMestreSolto.isChecked());
-
-        grupoA.setFlexivelRodaVazando(flexivelRodaVazando.isChecked());
-        grupoA.setFlexivelRodaDanificado(flexivelRodaDanificado.isChecked());
-        grupoA.setFlexivelRodaDesalinhado(flexivelRodaDesalinhado.isChecked());
-        grupoA.setFlexivelRodaIrregular(flexivelRodaIrregular.isChecked());
-
-        grupoA.setValvulaTubularReservatorioVazando(valvulaTubularReservatorioVazando.isChecked());
-        grupoA.setValvulaTubularReservatorioContaminada(valvulaTubularReservatorioContaminada.isChecked());
-
-        inspecao.setGrupoA(grupoA);
-       //grupoA.salvar();
+        if(valvulaPedalVazando.isChecked()){
+            grupoA.getValvulaPedal().add("Vazando");
+        }
+        if(valvulaPedalContaminada.isChecked()){
+            grupoA.getValvulaPedal().add("Contaminada");
+        }
+        if(almofadaPedalFalta.isChecked()){
+            grupoA.getAlmofadaPedal().add("Faltando");
+        }
+        if(almofadaPedalGasta.isChecked()){
+            grupoA.getAlmofadaPedal().add("Gasta");
+        }
+        if(freioEstacionamentoVazando.isChecked()){
+            grupoA.getFreioDeEstacionamento().add("Vazando");
+        }
+        if(freioEstacionamentoNaoFunciona.isChecked()){
+            grupoA.getFreioDeEstacionamento().add("Não Funciona");
+        }
+        if(varaoFreioMaoDespressurizada.isChecked()){
+            grupoA.getVaraoDoFreioDeMao().add("Despressurizado");
+        }
+        if(varaoFreioMaoSolta.isChecked()){
+            grupoA.getVaraoDoFreioDeMao().add("Solto");
+        }
+        if(varaoFreioMaoSemAcao.isChecked()){
+            grupoA.getVaraoDoFreioDeMao().add("Sem Ação");
+        }
+        if(catracaFalta.isChecked()){
+            grupoA.getCatracasAutomaticaMecanica().add("Faltando");
+        }
+        if(pinoCatracaFalta.isChecked()){
+            grupoA.getPinoDaCatraca().add("Faltando");
+        }
+        if(lonasFreioContaminada.isChecked()){
+            grupoA.getLonasDeFreio().add("Contaminado");
+        }
+        if(lonasFreioSolta.isChecked()){
+            grupoA.getLonasDeFreio().add("Solto");
+        }
+        if(lonasFreioQuebrada.isChecked()){
+            grupoA.getLonasDeFreio().add("Quebrado");
+        }
+        if(lonasFreioDesrregulada.isChecked()){
+            grupoA.getLonasDeFreio().add("Desrregulada");
+        }
+        if(lonasFreioFina.isChecked()){
+            grupoA.getLonasDeFreio().add("Fino");
+        }
+        if(almofadaPedalGasta.isChecked()){
+            grupoA.getAlmofadaPedal().add("Gasto");
+        }
+        if(cilindrosPneumaticosVazando.isChecked()){
+            grupoA.getCilindrosPneumaticos().add("Vazando");
+        }
+        if(cilindrosPneumaticosDesativado.isChecked()){
+            grupoA.getCilindrosPneumaticos().add("Desativados");
+        }
+        if(servoFreioVazando.isChecked()){
+            grupoA.getServoDoFreio().add("Vazando");
+        }
+        if(servoFreioSolto.isChecked()){
+            grupoA.getServoDoFreio().add("Solto");
+        }
+        if(cilindroRodaVazando.isChecked()){
+            grupoA.getCilindroDeRoda().add("Vazando");
+        }
+        if(cilindroRodaSolto.isChecked()){
+            grupoA.getCilindroDeRoda().add("Solto");
+        }
+        if(cilindroMestreVazando.isChecked()){
+            grupoA.getCilintroMestre().add("Vazando");
+        }
+        if(cilindroMestreSolto.isChecked()){
+            grupoA.getCilintroMestre().add("Solto");
+        }
+        if(flexivelRodaVazando.isChecked()){
+            grupoA.getFlexivelDaRoda().add("Vazando");
+        }
+        if(flexivelRodaDanificado.isChecked()){
+            grupoA.getFlexivelDaRoda().add("Danificado");
+        }
+        if(flexivelRodaDesalinhado.isChecked()){
+            grupoA.getFlexivelDaRoda().add("Desalinhado");
+        }
+        if(flexivelRodaIrregular.isChecked()){
+            grupoA.getFlexivelDaRoda().add("Irregular");
+        }
+        if(valvulaTubularReservatorioVazando.isChecked()){
+            grupoA.getValvulasTubularReservatorio().add("Vazando");
+        }
+        if(valvulaTubularReservatorioContaminada.isChecked()){
+            grupoA.getValvulasTubularReservatorio().add("Contaminado");
+        }
     }
 
     @Override

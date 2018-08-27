@@ -64,15 +64,9 @@ public class GrupoBSistemaEletricoActivity extends AppCompatActivity implements 
 
     public void salvarDados(){
 
-        if(grupoB == null)
-            grupoB = new GrupoB();
-
-        //grupoB.setIdFicha(1l);
-        grupoB.setPartidaNaoFunciona(partidaNaoFunciona.isChecked());
-
-
-        inspecao.setGrupoB(grupoB);
-        //grupoB.salvar();
+        if(partidaNaoFunciona.isChecked()){
+            grupoB.getPartida().add("Não Funciona");
+        }
     }
 
     @Override

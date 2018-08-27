@@ -68,18 +68,20 @@ public class GrupoASistemaSuspensaoActivity extends AppCompatActivity implements
 
     public void salvarDados(){
 
-        if(grupoA == null)
-            grupoA = new GrupoA();
+        if(amortecedorFaltando.isChecked()){
+            grupoA.getAmortecedor().add("Faltando");
+        }
+        if(amortecedorVazando.isChecked()){
+            grupoA.getAmortecedor().add("Vazando");
+        }
+        if(amortecedorSolto.isChecked()){
+            grupoA.getAmortecedor().add("Solto");
+        }
+        if(amortecedorDanificado.isChecked()){
+            grupoA.getAmortecedor().add("Danificado");
+        }
 
-        //grupoA.setIdFicha(1l);
-        grupoA.setAmortecedorFaltando(amortecedorFaltando.isChecked());
-        grupoA.setAmortecedorVazando(amortecedorVazando.isChecked());
-        grupoA.setAmortecedorSolto(amortecedorSolto.isChecked());
-        grupoA.setAmortecedorDanificado(amortecedorDanificado.isChecked());
 
-
-        inspecao.setGrupoA(grupoA);
-        //grupoA.salvar();
     }
 
     @Override

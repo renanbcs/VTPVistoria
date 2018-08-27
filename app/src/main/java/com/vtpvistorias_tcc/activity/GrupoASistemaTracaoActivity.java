@@ -67,18 +67,18 @@ public class GrupoASistemaTracaoActivity extends AppCompatActivity implements Vi
 
     public void salvarDados(){
 
-        if(grupoA == null)
-            grupoA = new GrupoA();
-
-        //grupoA.setIdFicha(1l);
-        grupoA.setEixoCardanFolga(eixoCardanFolga.isChecked());
-        grupoA.setEixoCardanDesalinhado(eixoCardanDesalinhado.isChecked());
-        grupoA.setEixoCardanSolto(eixoCardanSolto.isChecked());
-        grupoA.setEixoCardanBorrachaDanificada(eixoCardanBorrachaDanificada.isChecked());
-
-
-        inspecao.setGrupoA(grupoA);
-        //grupoA.salvar();
+        if(eixoCardanFolga.isChecked()){
+            grupoA.getEixoCardan().add("Folga");
+        }
+        if(eixoCardanDesalinhado.isChecked()){
+            grupoA.getEixoCardan().add("Desalinhado");
+        }
+        if(eixoCardanSolto.isChecked()){
+            grupoA.getEixoCardan().add("Solto");
+        }
+        if(eixoCardanBorrachaDanificada.isChecked()){
+            grupoA.getEixoCardan().add("Borracha Danificada");
+        }
     }
 
     @Override
