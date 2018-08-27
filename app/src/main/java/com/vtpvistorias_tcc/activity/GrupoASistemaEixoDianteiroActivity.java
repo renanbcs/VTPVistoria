@@ -114,7 +114,11 @@ public class GrupoASistemaEixoDianteiroActivity extends AppCompatActivity implem
                 finish();
                 break;
             case R.id.botaoProximo:
+
                 salvarDados();
+
+                inspecao.setGrupoA(grupoA);
+
                 Intent intent = new Intent(getApplicationContext(),GrupoAChassioPlataformaActivity.class);
                 intent.putExtra("inspecao",inspecao);
                 startActivity(intent);

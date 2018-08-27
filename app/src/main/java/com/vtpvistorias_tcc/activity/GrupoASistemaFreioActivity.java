@@ -128,16 +128,23 @@ public class GrupoASistemaFreioActivity extends AppCompatActivity implements Vie
                 finish();
                 break;
             case R.id.botaoProximo:
+
                 salvarDados();
+
+                inspecao.setGrupoA(grupoA);
+
                 Intent intent = new Intent(getApplicationContext(),GrupoASistemaSuspensaoActivity.class);
                 intent.putExtra("inspecao",inspecao);
                 startActivity(intent);
+
                 break;
         }
 
     }
 
     public void salvarDados(){
+
+        grupoA = new GrupoA();
 
         if(valvulaPedalVazando.isChecked()){
             grupoA.getValvulaPedal().add("Vazando");

@@ -75,10 +75,15 @@ public class GrupoBIluminacaoInternaActivity extends AppCompatActivity implement
                 finish();
                 break;
             case R.id.botaoProximo:
+
                 salvarDados();
+
+                inspecao.setGrupoB(grupoB);
+
                 Intent intent = new Intent(getApplicationContext(),GrupoBPostoComandoActivity.class);
                 intent.putExtra("inspecao",inspecao);
                 startActivity(intent);
+
                 break;
         }
 

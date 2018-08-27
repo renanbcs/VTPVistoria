@@ -190,16 +190,23 @@ public class GrupoBSistemaCarroceriaActivity extends AppCompatActivity implement
                 finish();
                 break;
             case R.id.botaoProximo:
+
                 salvarDados();
+
+                inspecao.setGrupoB(grupoB);
+
                 Intent intent = new Intent(getApplicationContext(),GrupoBIluminacaoInternaActivity.class);
                 intent.putExtra("inspecao",inspecao);
                 startActivity(intent);
+
                 break;
         }
 
     }
 
     public void salvarDados(){
+
+        grupoB = new GrupoB();
 
         if(parabrisaSolto.isChecked()){
 

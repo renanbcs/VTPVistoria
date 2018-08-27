@@ -69,10 +69,15 @@ public class GrupoAChassioPlataformaActivity extends AppCompatActivity implement
                 finish();
                 break;
             case R.id.botaoProximo:
+
                 salvarDados();
+
+                inspecao.setGrupoA(grupoA);
+
                 Intent intent = new Intent(getApplicationContext(),SelecionarFichaActivity.class);
                 intent.putExtra("inspecao",inspecao);
                 startActivity(intent);
+
                 break;
         }
 
@@ -109,8 +114,4 @@ public class GrupoAChassioPlataformaActivity extends AppCompatActivity implement
         }
     }
 
-    @Override
-    public void onPause(){
-        super.onPause();
-    }
 }

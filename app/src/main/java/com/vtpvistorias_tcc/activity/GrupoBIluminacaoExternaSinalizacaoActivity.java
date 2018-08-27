@@ -45,8 +45,6 @@ public class GrupoBIluminacaoExternaSinalizacaoActivity extends AppCompatActivit
     private CheckBox luzPlacaFalta;
     private CheckBox luzPlacaConservacaoIrregular;
 
-
-    private DatabaseReference firebase;
     private GrupoB grupoB;
     private Intent i;
     private Inspecao inspecao;
@@ -103,10 +101,15 @@ public class GrupoBIluminacaoExternaSinalizacaoActivity extends AppCompatActivit
                 finish();
                 break;
             case R.id.botaoProximo:
+
                 salvarDados();
+
+                inspecao.setGrupoB(grupoB);
+
                 Intent intent = new Intent(getApplicationContext(),GrupoBSistemaEletricoActivity.class);
                 intent.putExtra("inspecao",inspecao);
                 startActivity(intent);
+
                 break;
         }
 

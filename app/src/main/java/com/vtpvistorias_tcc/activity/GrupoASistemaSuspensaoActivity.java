@@ -57,10 +57,15 @@ public class GrupoASistemaSuspensaoActivity extends AppCompatActivity implements
                 finish();
                 break;
             case R.id.botaoProximo:
+
                 salvarDados();
+
+                inspecao.setGrupoA(grupoA);
+
                 Intent intent = new Intent(getApplicationContext(),GrupoASistemaTracaoActivity.class);
                 intent.putExtra("inspecao",inspecao);
                 startActivity(intent);
+
                 break;
         }
 
@@ -81,12 +86,6 @@ public class GrupoASistemaSuspensaoActivity extends AppCompatActivity implements
             grupoA.getAmortecedor().add("Danificado");
         }
 
-
-    }
-
-    @Override
-    public void onPause(){
-        super.onPause();
     }
 
 }

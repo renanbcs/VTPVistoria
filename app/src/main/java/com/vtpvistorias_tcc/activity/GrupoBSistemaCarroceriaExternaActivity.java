@@ -84,10 +84,15 @@ public class GrupoBSistemaCarroceriaExternaActivity extends AppCompatActivity im
                 finish();
                 break;
             case R.id.botaoProximo:
+
                 salvarDados();
+
+                inspecao.setGrupoB(grupoB);
+
                 Intent intent = new Intent(getApplicationContext(),SelecionarFichaActivity.class);
                 intent.putExtra("inspecao",inspecao);
                 startActivity(intent);
+
                 break;
         }
 

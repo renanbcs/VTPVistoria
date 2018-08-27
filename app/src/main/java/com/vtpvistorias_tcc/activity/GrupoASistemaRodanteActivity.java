@@ -65,7 +65,11 @@ public class GrupoASistemaRodanteActivity extends AppCompatActivity implements V
                 finish();
                 break;
             case R.id.botaoProximo:
+
                 salvarDados();
+
+                inspecao.setGrupoA(grupoA);
+
                 Intent intent = new Intent(getApplicationContext(),GrupoASistemaEixoDianteiroActivity.class);
                 intent.putExtra("inspecao",inspecao);
                 startActivity(intent);

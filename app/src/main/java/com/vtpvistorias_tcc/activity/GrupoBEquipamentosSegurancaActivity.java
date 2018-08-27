@@ -61,7 +61,11 @@ public class GrupoBEquipamentosSegurancaActivity extends AppCompatActivity imple
                 finish();
                 break;
             case R.id.botaoProximo:
+
                 salvarDados();
+
+                inspecao.setGrupoB(grupoB);
+
                 Intent intent = new Intent(getApplicationContext(),GrupoBSistemaCarroceriaExternaActivity.class);
                 intent.putExtra("inspecao",inspecao);
                 startActivity(intent);
@@ -92,8 +96,4 @@ public class GrupoBEquipamentosSegurancaActivity extends AppCompatActivity imple
         }
     }
 
-    @Override
-    public void onPause(){
-        super.onPause();
-    }
 }

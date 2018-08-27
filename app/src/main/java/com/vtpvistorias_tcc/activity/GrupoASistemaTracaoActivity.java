@@ -56,7 +56,11 @@ public class GrupoASistemaTracaoActivity extends AppCompatActivity implements Vi
                 finish();
                 break;
             case R.id.botaoProximo:
+
                 salvarDados();
+
+                inspecao.setGrupoA(grupoA);
+
                 Intent intent = new Intent(getApplicationContext(),GrupoASistemaRodanteActivity.class);
                 intent.putExtra("inspecao",inspecao);
                 startActivity(intent);
@@ -81,8 +85,4 @@ public class GrupoASistemaTracaoActivity extends AppCompatActivity implements Vi
         }
     }
 
-    @Override
-    public void onPause(){
-        super.onPause();
-    }
 }
