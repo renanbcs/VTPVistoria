@@ -149,7 +149,7 @@
                 android:id="@+id/feixeMolasDanificado"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Solto" />
+                android:text="Danificado" />
 
             <CheckBox
                 android:id="@+id/feixeMolasSolta"
@@ -327,6 +327,18 @@
                 tools:layout_marginLeft="30dp"
                 tools:style="@android:style/Widget.DeviceDefault.TextView" />
 
+            <CheckBox
+                android:id="@+id/molaHelicoidalQuebrada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quebrada" />
+
+            <CheckBox
+                android:id="@+id/molaHelicoidalSolta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solta" />
+
             <TextView
                 android:id="@+id/textViewSuporteParafusoMolaHelicoidal"
                 android:layout_width="match_parent"
@@ -342,13 +354,13 @@
                 tools:style="@android:style/Widget.DeviceDefault.TextView" />
 
             <CheckBox
-                android:id="@+id/molaHelicoidalQuebrada"
+                android:id="@+id/suporteMolaHelicoidalQuebrada"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Quebrada" />
 
             <CheckBox
-                android:id="@+id/molaHelicoidalSolta"
+                android:id="@+id/suporteMolaHelicoidalSolto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Solto" />

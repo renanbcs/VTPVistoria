@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/VTPVistoriasTCC.iml" filepath="$PROJECT_DIR$/VTPVistoriasTCC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VTPVistoria.iml" filepath="$PROJECT_DIR$/VTPVistoria.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
