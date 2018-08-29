@@ -22,8 +22,6 @@ public class SalvarActivity extends AppCompatActivity implements View.OnClickLis
 
     private Button botaoSalvar;
 
-    private DatabaseReference firebase;
-    private GrupoA grupoA;
     private Intent i;
     private Inspecao inspecao;
 
@@ -37,7 +35,7 @@ public class SalvarActivity extends AppCompatActivity implements View.OnClickLis
 
         i = getIntent();
         inspecao = (Inspecao) i.getSerializableExtra("inspecao");
-        grupoA = inspecao.getGrupoA();
+
     }
 
     @Override

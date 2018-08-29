@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.vtpvistorias_tcc.DetalhesVistoriaActivity;
 import com.vtpvistorias_tcc.Model.GrupoA;
 import com.vtpvistorias_tcc.Model.GrupoA1;
 import com.vtpvistorias_tcc.Model.GrupoB;
@@ -19,6 +20,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.Locale;
 
 public class SelecionarFichaActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -51,9 +53,6 @@ public class SelecionarFichaActivity extends AppCompatActivity implements View.O
         botaoSalvar = (Button) findViewById(R.id.botaoSalvar);
         botaoSalvar.setOnClickListener(this);
 
-        grupoA = inspecao.getGrupoA();
-        grupoA1 = inspecao.getGrupoA1();
-        grupoB = inspecao.getGrupoB();
 
 
     }
@@ -98,43 +97,23 @@ public class SelecionarFichaActivity extends AppCompatActivity implements View.O
 
             case R.id.botaoSalvar:
 
-                if(inspecao.getGrupoA() == null && grupoA1 == null && grupoB == null)
+                if(inspecao.getGrupoA() == null && inspecao.getGrupoA1() == null && inspecao.getGrupoB() == null)
+
                     Toast.makeText(getApplicationContext(), "Preencha pelo menos uma ficha!", Toast.LENGTH_SHORT).show();
+
                 else {
-                    salvarDados();
 
-                    Toast.makeText(getApplicationContext(), "Salvo Com Sucesso", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getApplicationContext(), "Salvo Com Sucesso", Toast.LENGTH_SHORT).show();
 
-                    Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                    Intent i = new Intent(getApplicationContext(), DetalhesVistoriaActivity.class);
+
+                    i.putExtra("inspecao",inspecao);
+
                     startActivity(i);
                 }
 
                 break;
         }
 
-    }
-
-    public void salvarDados(){
-
-        //grupoA.setIdFicha(1l);
-
-        //inspecao.setGrupoA(grupoA);
-        //grupoA.salvar();
-
-        inspecao.setDataHoraRegistro(getPegaDataAtual());
-
-        inspecao.salvar();
-    }
-
-    public String getPegaDataAtual() {
-        DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-        Date date = new Date();
-        System.out.println(dateFormat.format(date)); //2016/11/16 12:08:43
-
-        //Calendar calendar = Calendar.getInstance();
-        //Date date = new Date();
-        //calendar.setTime(date);
-        //return calendar.getTime();
-        return dateFormat.format(date);
     }
 }

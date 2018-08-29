@@ -1,13 +1,9 @@
 package com.vtpvistorias_tcc.Model;
 
-import android.text.method.DateTimeKeyListener;
-
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.Exclude;
 import com.vtpvistorias_tcc.config.ConfiguracaoFirebase;
-
 import java.io.Serializable;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -18,7 +14,6 @@ public class Inspecao implements Serializable {
     private GrupoA grupoA;
     private GrupoB grupoB;
     private GrupoA1 grupoA1;
-    private String titulo;
     private Veiculo veiculo;
     private String justificativa;
     private String resultado;
@@ -33,31 +28,10 @@ public class Inspecao implements Serializable {
     }
 
     public void salvar(){
+
         DatabaseReference referenciaFiReference = ConfiguracaoFirebase.getFirebase();
         referenciaFiReference.child("Inspecao").push().setValue(this);
-    }
 
-    @Exclude
-
-    public Map<String, Object> toMap(){
-        HashMap<String, Object> hashMapInspecao = new HashMap<>();
-
-        hashMapInspecao.put("idInspecao",getIdInspecao());
-        hashMapInspecao.put("dataHoraRegistro",getDataHoraRegistro());
-        hashMapInspecao.put("justificativa", getJustificativa());
-        hashMapInspecao.put("resultado", getResultado());
-
-        if(getGrupoA() != null){
-            hashMapInspecao.put("grupoA",getGrupoA());
-        }
-        if(getGrupoB() != null){
-            hashMapInspecao.put("grupoB",getGrupoB());
-        }
-        if(getGrupoA1() != null){
-            hashMapInspecao.put("grupoA1",getGrupoA1());
-        }
-
-        return hashMapInspecao;
     }
 
     public Long getIdInspecao(){
@@ -98,14 +72,6 @@ public class Inspecao implements Serializable {
 
     public GrupoA1 getGrupoA1() {
         return grupoA1;
-    }
-
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
     }
 
     public Veiculo getVeiculo() {

@@ -30,59 +30,31 @@
         <activity
             android:name=".activity.ItensFichaActivity"
             android:theme="@android:style/Theme.Holo.Dialog" />
-        <activity
-            android:name=".activity.GrupoASistemaFreioActivity"
-            android:launchMode="singleTop" />
+        <activity android:name=".activity.GrupoASistemaFreioActivity" />
         <activity
             android:name=".activity.GrupoBSistemaCarroceriaActivity"
             android:label="@string/title_activity_grupo_b"
-            android:launchMode="singleTop"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".activity.GrupoASistemaSuspensaoActivity"
-            android:launchMode="singleTop" />
-        <activity
-            android:name=".activity.GrupoASistemaTracaoActivity"
-            android:launchMode="singleTop" />
-        <activity
-            android:name=".activity.GrupoASistemaRodanteActivity"
-            android:launchMode="singleTop" />
+        <activity android:name=".activity.GrupoASistemaSuspensaoActivity" />
+        <activity android:name=".activity.GrupoASistemaTracaoActivity" />
+        <activity android:name=".activity.GrupoASistemaRodanteActivity" />
         <activity
             android:name=".activity.GrupoASistemaEixoDianteiroActivity"
             android:launchMode="singleTop" />
-        <activity
-            android:name=".activity.GrupoAChassioPlataformaActivity"
-            android:launchMode="singleTop" />
+        <activity android:name=".activity.GrupoAChassioPlataformaActivity" />
         <activity android:name=".activity.SalvarActivity" />
-        <activity
-            android:name=".activity.GrupoA1SistemaCarroceriaNivelBActivity"
-            android:launchMode="singleInstance" />
-        <activity
-            android:name=".activity.GrupoA1SistemaAcessibilidadeMobilidadeNivelAActivity"
-            android:launchMode="singleInstance" />
-        <activity
-            android:name=".activity.GrupoBEquipamentosSegurancaActivity"
-            android:launchMode="singleTop" />
-        <activity
-            android:name=".activity.GrupoBIluminacaoExternaSinalizacaoActivity"
-            android:launchMode="singleTop" />
-        <activity
-            android:name=".activity.GrupoBIluminacaoInternaActivity"
-            android:launchMode="singleTop" />
-        <activity
-            android:name=".activity.GrupoBInteriorVeiculoActivity"
-            android:launchMode="singleTop" />
-        <activity
-            android:name=".activity.GrupoBPostoComandoActivity"
-            android:launchMode="singleTop" />
-        <activity
-            android:name=".activity.GrupoBSistemaEletricoActivity"
-            android:launchMode="singleTop" />
-        <activity
-            android:name=".activity.GrupoBSistemaCarroceriaExternaActivity"
-            android:launchMode="singleTop" />
+        <activity android:name=".activity.GrupoA1SistemaCarroceriaNivelBActivity" />
+        <activity android:name=".activity.GrupoA1SistemaAcessibilidadeMobilidadeNivelAActivity" />
+        <activity android:name=".activity.GrupoBEquipamentosSegurancaActivity" />
+        <activity android:name=".activity.GrupoBIluminacaoExternaSinalizacaoActivity" />
+        <activity android:name=".activity.GrupoBIluminacaoInternaActivity" />
+        <activity android:name=".activity.GrupoBInteriorVeiculoActivity" />
+        <activity android:name=".activity.GrupoBPostoComandoActivity" />
+        <activity android:name=".activity.GrupoBSistemaEletricoActivity" />
+        <activity android:name=".activity.GrupoBSistemaCarroceriaExternaActivity" />
         <activity android:name=".activity.LacrarVeiculoActivity" />
         <activity android:name=".activity.EfetuarLacracaoVeiculoActivity" />
+        <activity android:name=".DetalhesVistoriaActivity"></activity>
     </application>
 
 </manifest>
