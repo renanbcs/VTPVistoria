@@ -1,14 +1,16 @@
-package com.vtpvistorias_tcc;
+package com.vtpvistorias_tcc.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.vtpvistorias_tcc.Model.Inspecao;
+import com.vtpvistorias_tcc.R;
 import com.vtpvistorias_tcc.activity.SelecionarFichaActivity;
 
 import java.text.DateFormat;
@@ -29,6 +31,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
         setContentView(R.layout.activity_detalhes_vistoria);
 
         detalhesVistoriaTextView = findViewById(R.id.detalhesVistoriaTextView);
+        detalhesVistoriaTextView.setMovementMethod(new ScrollingMovementMethod());
         salvarButton = findViewById(R.id.salvarButton);
 
         Intent i = getIntent();

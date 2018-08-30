@@ -7,20 +7,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.vtpvistorias_tcc.DetalhesVistoriaActivity;
 import com.vtpvistorias_tcc.Model.GrupoA;
 import com.vtpvistorias_tcc.Model.GrupoA1;
 import com.vtpvistorias_tcc.Model.GrupoB;
 import com.vtpvistorias_tcc.Model.Inspecao;
-import com.vtpvistorias_tcc.Model.Veiculo;
 import com.vtpvistorias_tcc.R;
-
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
-import java.util.Locale;
 
 public class SelecionarFichaActivity extends AppCompatActivity implements View.OnClickListener{
 

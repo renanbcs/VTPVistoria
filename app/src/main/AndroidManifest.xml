@@ -54,7 +54,7 @@
         <activity android:name=".activity.GrupoBSistemaCarroceriaExternaActivity" />
         <activity android:name=".activity.LacrarVeiculoActivity" />
         <activity android:name=".activity.EfetuarLacracaoVeiculoActivity" />
-        <activity android:name=".DetalhesVistoriaActivity"></activity>
+        <activity android:name=".activity.DetalhesVistoriaActivity"></activity>
     </application>
 
 </manifest>
