@@ -13,11 +13,7 @@
             android:name=".activity.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".activity.IniciarInspecaoActivity"
@@ -54,7 +50,14 @@
         <activity android:name=".activity.GrupoBSistemaCarroceriaExternaActivity" />
         <activity android:name=".activity.LacrarVeiculoActivity" />
         <activity android:name=".activity.EfetuarLacracaoVeiculoActivity" />
-        <activity android:name=".activity.DetalhesVistoriaActivity"></activity>
+        <activity android:name=".activity.DetalhesVistoriaActivity" />
+        <activity android:name=".activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
