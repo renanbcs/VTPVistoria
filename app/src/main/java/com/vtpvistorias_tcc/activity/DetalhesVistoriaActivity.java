@@ -60,7 +60,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             if(inspecao.getGrupoA1().getTacografo().size()>=1) {
 
                 //Coloca no Text View o titulo do item
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Tacografo:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nTacografo:\n");
 
                 //percorre o Array do item para preencher o Text View
                 for (int a = 0;a<inspecao.getGrupoA1().getTacografo().size();a++){
@@ -77,7 +77,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             if(inspecao.getGrupoA1().getPiso().size()>=1) {
 
                 //Coloca no Text View o titulo do item
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Piso:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nPiso:\n");
 
                 //percorre o Array do item para preencher o Text View
                 for (int a = 0;a<inspecao.getGrupoA1().getPiso().size();a++){
@@ -94,7 +94,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             if(inspecao.getGrupoA1().getQuebraSol().size()>=1) {
 
                 //Coloca no Text View o titulo do item
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Quebra-sol:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nQuebra-sol:\n");
 
                 //percorre o Array do item para preencher o Text View
                 for (int a = 0;a<inspecao.getGrupoA1().getQuebraSol().size();a++){
@@ -111,7 +111,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             if(inspecao.getGrupoA1().getDesembacadorParaBrisa().size()>=1) {
 
                 //Coloca no Text View o titulo do item
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Desembaçador Para-Brisa:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nDesembaçador Para-Brisa:\n");
 
                 //percorre o Array do item para preencher o Text View
                 for (int a = 0;a<inspecao.getGrupoA1().getDesembacadorParaBrisa().size();a++){
@@ -128,7 +128,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             if(inspecao.getGrupoA1().getBancosAltosSimples().size()>=1) {
 
                 //Coloca no Text View o titulo do item
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Bancos Altos simples:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nBancos Altos simples:\n");
 
                 //percorre o Array do item para preencher o Text View
                 for (int a = 0;a<inspecao.getGrupoA1().getBancosAltosSimples().size();a++){
@@ -145,7 +145,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             if(inspecao.getGrupoA1().getRadioComunicacao().size()>=1) {
 
                 //Coloca no Text View o titulo do item
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Rádio comunicação:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nRádio comunicação:\n");
 
                 //percorre o Array do item para preencher o Text View
                 for (int a = 0;a<inspecao.getGrupoA1().getRadioComunicacao().size();a++){
@@ -162,7 +162,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             if(inspecao.getGrupoA1().getBrakeLight().size()>=1) {
 
                 //Coloca no Text View o titulo do item
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Brake Light:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nBrake Light:\n");
 
                 //percorre o Array do item para preencher o Text View
                 for (int a = 0;a<inspecao.getGrupoA1().getBrakeLight().size();a++){
@@ -179,7 +179,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             if(inspecao.getGrupoA1().getComunicacaoVisualInternaAdesivos().size()>=1) {
 
                 //Coloca no Text View o titulo do item
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Comunicação visual interna/adesivos:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nComunicação visual interna/adesivos:\n");
 
                 //percorre o Array do item para preencher o Text View
                 for (int a = 0;a<inspecao.getGrupoA1().getComunicacaoVisualInternaAdesivos().size();a++){
@@ -197,7 +197,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             if(inspecao.getGrupoA1().getAreaParaCadeiraDeRodas().size()>=1) {
 
                 //Coloca no Text View o titulo do item
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Área para cadeira de rodas:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nÁrea para cadeira de rodas:\n");
 
                 //percorre o Array do item para preencher o Text View
                 for (int a = 0;a<inspecao.getGrupoA1().getAreaParaCadeiraDeRodas().size();a++){
@@ -214,7 +214,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             if(inspecao.getGrupoA1().getAreaParaManobras().size()>=1) {
 
                 //Coloca no Text View o titulo do item
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Área para manobras:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nÁrea para manobras:\n");
 
                 //percorre o Array do item para preencher o Text View
                 for (int a = 0;a<inspecao.getGrupoA1().getAreaParaManobras().size();a++){
@@ -231,7 +231,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             if(inspecao.getGrupoA1().getPortas().size()>=1) {
 
                 //Coloca no Text View o titulo do item
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Portas:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nPortas:\n");
 
                 //percorre o Array do item para preencher o Text View
                 for (int a = 0;a<inspecao.getGrupoA1().getPortas().size();a++){
@@ -248,7 +248,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             if(inspecao.getGrupoA1().getElevador().size()>=1) {
 
                 //Coloca no Text View o titulo do item
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Elevador:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nElevador:\n");
 
                 //percorre o Array do item para preencher o Text View
                 for (int a = 0;a<inspecao.getGrupoA1().getElevador().size();a++){
@@ -265,7 +265,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             if(inspecao.getGrupoA1().getItensDeSeguranca().size()>=1) {
 
                 //Coloca no Text View o titulo do item
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Itens de segurança:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nItens de segurança:\n");
 
                 //percorre o Array do item para preencher o Text View
                 for (int a = 0;a<inspecao.getGrupoA1().getItensDeSeguranca().size();a++){
@@ -288,7 +288,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //VALVULA PEDAL
             if(inspecao.getGrupoA().getValvulaPedal().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Valvula Pedal:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nValvula Pedal:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getValvulaPedal().size();a++){
 
@@ -301,7 +301,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //ALMOFADA PEDAL
             if(inspecao.getGrupoA().getAlmofadaPedal().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Almofada Pedal:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nAlmofada Pedal:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getAlmofadaPedal().size();a++){
 
@@ -314,7 +314,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //FREIO DE ESTACIONAMENTO
             if(inspecao.getGrupoA().getFreioDeEstacionamento().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Freio de estacionamento:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nFreio de estacionamento:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getFreioDeEstacionamento().size();a++){
 
@@ -327,7 +327,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //VARÃO DO FREIO DE MÃO
             if(inspecao.getGrupoA().getVaraoDoFreioDeMao().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Varão freio de mão:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nVarão freio de mão:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getVaraoDoFreioDeMao().size();a++){
 
@@ -340,7 +340,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //CATRACAS AUTOMATICA/MECANICA
             if(inspecao.getGrupoA().getCatracasAutomaticaMecanica().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Catracas Automatica/Mecanica:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nCatracas Automatica/Mecanica:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getCatracasAutomaticaMecanica().size();a++){
 
@@ -353,7 +353,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //PINO DA CATRACA
             if(inspecao.getGrupoA().getPinoDaCatraca().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Pino da catraca:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nPino da catraca:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getPinoDaCatraca().size();a++){
 
@@ -366,7 +366,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //LONAS DE FREIO
             if(inspecao.getGrupoA().getLonasDeFreio().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Lonas de freio:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nLonas de freio:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getLonasDeFreio().size();a++){
 
@@ -379,7 +379,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //CILINDRO PNEUMATICOS
             if(inspecao.getGrupoA().getCilindrosPneumaticos().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Cilindros pneumaticos:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nCilindros pneumaticos:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getCilindrosPneumaticos().size();a++){
 
@@ -392,7 +392,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //SERVO DO FREIO
             if(inspecao.getGrupoA().getServoDoFreio().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Servo do freio:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nServo do freio:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getServoDoFreio().size();a++){
 
@@ -405,7 +405,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //CILINDRO DE RODA
             if(inspecao.getGrupoA().getCilindroDeRoda().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Cilindro de roda:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nCilindro de roda:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getCilindroDeRoda().size();a++){
 
@@ -418,7 +418,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //CILINDRO MESTRE
             if(inspecao.getGrupoA().getCilintroMestre().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Cilindro mestre:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nCilindro mestre:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getCilintroMestre().size();a++){
 
@@ -431,7 +431,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //FLEXIVEL DA RODA
             if(inspecao.getGrupoA().getFlexivelDaRoda().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Flexível da roda:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nFlexível da roda:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getFlexivelDaRoda().size();a++){
 
@@ -444,7 +444,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //VALVULAS TUBULAR RESERVATÓRIO
             if(inspecao.getGrupoA().getValvulasTubularReservatorio().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Valvulas tubular reservatório:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nValvulas tubular reservatório:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getValvulasTubularReservatorio().size();a++){
 
@@ -457,7 +457,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //AMORTECEDOR
             if(inspecao.getGrupoA().getAmortecedor().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Amortecedor:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nAmortecedor:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getAmortecedor().size();a++){
 
@@ -470,7 +470,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //SUPORTE DO AMORTECEDOR
             if(inspecao.getGrupoA().getSuporteDoAmortecedor().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Suporte do amortecedor:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nSuporte do amortecedor:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getSuporteDoAmortecedor().size();a++){
 
@@ -483,7 +483,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //BUCHA DO AMORTECEDOR
             if(inspecao.getGrupoA().getBuchaDoAmortecedor().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Bucha do amortecedor:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nBucha do amortecedor:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getBuchaDoAmortecedor().size();a++){
 
@@ -496,7 +496,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //FEIXE DE MOLAS
             if(inspecao.getGrupoA().getFeixeDeMolas().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Feixe de molas:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nFeixe de molas:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getFeixeDeMolas().size();a++){
 
@@ -509,7 +509,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //BUCHA DAS MOLAS
             if(inspecao.getGrupoA().getBuchaDasMolas().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Bucha das molas:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nBucha das molas:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getBuchaDasMolas().size();a++){
 
@@ -522,7 +522,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //ESPIGÃO DAS MOLAS
             if(inspecao.getGrupoA().getEspigaoDasMolas().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Espigão das molas:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nEspigão das molas:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getEspigaoDasMolas().size();a++){
 
@@ -535,7 +535,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //GRAMPO DAS MOLAS
             if(inspecao.getGrupoA().getGrampoDasMolas().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Grampo das molas:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nGrampo das molas:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getGrampoDasMolas().size();a++){
 
@@ -548,7 +548,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //SUPORTE DAS MOLAS
             if(inspecao.getGrupoA().getSuporteDasMolas().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Suporte das molas:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nSuporte das molas:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getSuporteDasMolas().size();a++){
 
@@ -561,7 +561,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //ALGEMA (JUMELO)
             if(inspecao.getGrupoA().getAlgema().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Algema (jumelo):\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nAlgema (jumelo):\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getAlgema().size();a++){
 
@@ -574,7 +574,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //PINO DO SUPORTE DA MOLA
             if(inspecao.getGrupoA().getPinoDoSuporteDaMola().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Pino do suporte da mola:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nPino do suporte da mola:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getPinoDoSuporteDaMola().size();a++){
 
@@ -587,7 +587,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //MOLA HELICOIDAL
             if(inspecao.getGrupoA().getMolaHelicoidal().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Mola Helicoidal:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nMola Helicoidal:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getMolaHelicoidal().size();a++){
 
@@ -600,7 +600,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //SUPORTE E PARAFUSO DA MOLA HELICOIDAL
             if(inspecao.getGrupoA().getSuporteEParafusoDaMolaHelicoidal().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Suporte e parafuso da mola helicoidal:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nSuporte e parafuso da mola helicoidal:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getSuporteEParafusoDaMolaHelicoidal().size();a++){
 
@@ -613,7 +613,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //BOLSÃO DE AR
             if(inspecao.getGrupoA().getBolsaoDeAr().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Bolsão de Ar:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nBolsão de Ar:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getBolsaoDeAr().size();a++){
 
@@ -626,7 +626,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //VALVULA DE NÍVEL
             if(inspecao.getGrupoA().getValvulaDeNivel().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Valvula de nível:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nValvula de nível:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getValvulaDeNivel().size();a++){
 
@@ -639,7 +639,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //BARRA ESTABILIZADORA
             if(inspecao.getGrupoA().getBarraEstabilizadora().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Barra estabilizadora:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nBarra estabilizadora:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getBarraEstabilizadora().size();a++){
 
@@ -652,7 +652,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //BUCHA DA BARRA ESTABILIZADORA
             if(inspecao.getGrupoA().getBuchaDaBarraEstabilizadora().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Bucha da barra estabilizadora:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nBucha da barra estabilizadora:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getBuchaDaBarraEstabilizadora().size();a++){
 
@@ -665,7 +665,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //BANANA BEAN
             if(inspecao.getGrupoA().getBananaBean().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Banana Bean:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nBanana Bean:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getBananaBean().size();a++){
 
@@ -678,7 +678,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //HASTE/SUPORTE DE REAÇÃO TRASEIRA
             if(inspecao.getGrupoA().getHasteSuporteDeReacaoTraseira().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Haste/Suporte de reação traseira:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nHaste/Suporte de reação traseira:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getHasteSuporteDeReacaoTraseira().size();a++){
 
@@ -691,7 +691,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //EIXO CARDAN
             if(inspecao.getGrupoA().getEixoCardan().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Eixo Cardan:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nEixo Cardan:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getEixoCardan().size();a++){
 
@@ -704,7 +704,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //PNEUS
             if(inspecao.getGrupoA().getPneus().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Pneus:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nPneus:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getPneus().size();a++){
 
@@ -717,7 +717,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //RODAS
             if(inspecao.getGrupoA().getRodas().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Rodas:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nRodas:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getRodas().size();a++){
 
@@ -730,7 +730,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //CAIXA DE DIREÇÃO
             if(inspecao.getGrupoA().getCaixaDeDirecao().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Caixa de direção:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nCaixa de direção:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getCaixaDeDirecao().size();a++){
 
@@ -743,7 +743,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //SUPORTE DA CAIXA
             if(inspecao.getGrupoA().getSuporteDaCaixa().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Suporte da caixa:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nSuporte da caixa:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getSuporteDaCaixa().size();a++){
 
@@ -756,7 +756,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //BRAÇO TERMINAL DA CAIXA
             if(inspecao.getGrupoA().getBracoTerminalDaCaixa().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Braço terminal da caixa:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nBraço terminal da caixa:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getAmortecedor().size();a++){
 
@@ -769,7 +769,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //AMORTECEDOR/DIREÇÃO
             if(inspecao.getGrupoA().getAmortecedorDirecao().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Amortecedor Direção:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nAmortecedor Direção:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getAmortecedorDirecao().size();a++){
 
@@ -782,7 +782,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //EIXO DIANTEIRO (VIGA)
             if(inspecao.getGrupoA().getEixoDianteiro().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Eixo dianteiro (viga):\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nEixo dianteiro (viga):\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getEixoDianteiro().size();a++){
 
@@ -795,7 +795,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //ROLAMENTO DE MANGA DO EIXO
             if(inspecao.getGrupoA().getRolamentoDaMangaDoEixo().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Rolamento de manga do eixo:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nRolamento de manga do eixo:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getRolamentoDaMangaDoEixo().size();a++){
 
@@ -808,7 +808,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //PARAFUSO DO BATENTE DA MANGA
             if(inspecao.getGrupoA().getParafusoDoBatenteDaManga().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Parafuso do batente da manga:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nParafuso do batente da manga:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getParafusoDoBatenteDaManga().size();a++){
 
@@ -821,7 +821,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //BRAÇO DO EIXO DIANTEIRO
             if(inspecao.getGrupoA().getBracoDoEixoDianteiro().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Braço do eixo dianteiro:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nBraço do eixo dianteiro:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getBracoDoEixoDianteiro().size();a++){
 
@@ -834,7 +834,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //TERMINAIS DA BARRA LONGA
             if(inspecao.getGrupoA().getTerminaisDaBarraLonga().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Terminais da barra longa:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nTerminais da barra longa:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getTerminaisDaBarraLonga().size();a++){
 
@@ -847,7 +847,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //BRAÇO INTERMEDIARIO
             if(inspecao.getGrupoA().getBracoIntermediario().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Braço intermediario:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nBraço intermediario:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getBracoIntermediario().size();a++){
 
@@ -860,7 +860,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //HASTE/SUPORTE DE REAÇÃO
             if(inspecao.getGrupoA().getHasteSuporteDeReacao().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Haster/Suporte de reação:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nHaster/Suporte de reação:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getHasteSuporteDeReacao().size();a++){
 
@@ -874,7 +874,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //TANQUE DE COMBUSTÍVEL
             if(inspecao.getGrupoA().getTanqueDeCombustivel().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Tanque de combustível:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nTanque de combustível:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getTanqueDeCombustivel().size();a++){
 
@@ -887,7 +887,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //CINTA/SUPORTE DO TANQUE
             if(inspecao.getGrupoA().getCintaSuporteDoTanque().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Cinta/Suporte do tanque:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nCinta/Suporte do tanque:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getCintaSuporteDoTanque().size();a++){
 
@@ -900,7 +900,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //ESTRUTURA DOS DEGRAUS
             if(inspecao.getGrupoA().getEstruturaDosDegraus().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Estrutura dos degraus:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nEstrutura dos degraus:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getEstruturaDosDegraus().size();a++){
 
@@ -913,7 +913,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //CHASSIS E PLATAFORMA
             if(inspecao.getGrupoA().getChassisEPlataforma().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Chassi e Plataforma:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nChassi e Plataforma:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getChassisEPlataforma().size();a++){
 
@@ -926,7 +926,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //SISTEMA DE SEGURANÇA DO CINTO DO MOTORISTA E BLOQUEIO PORTAS
             if(inspecao.getGrupoA().getSistemaSegurancaDoCintoMotoristaEBloqueioPortas().size()>=1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Sistema de segurança do cinto do motorista e bloqueio de portas:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nSistema de segurança do cinto do motorista e bloqueio de portas:\n");
 
                 for (int a = 0;a<inspecao.getGrupoA().getSistemaSegurancaDoCintoMotoristaEBloqueioPortas().size();a++){
 
@@ -945,7 +945,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
 
             if (inspecao.getGrupoB().getParaBrisa().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Para Brisa:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nPara Brisa:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getParaBrisa().size(); a++) {
 
@@ -958,7 +958,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //VIDRO TRASEIRO
             if (inspecao.getGrupoB().getVidroTraseiro().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Vidro traseiro:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nVidro traseiro:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getVidroTraseiro().size(); a++) {
 
@@ -971,7 +971,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //ESTRUTURA
             if (inspecao.getGrupoB().getEstrutura().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Estrutura:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nEstrutura:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getEstrutura().size(); a++) {
 
@@ -984,7 +984,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //ÓCULOS
             if (inspecao.getGrupoB().getOculos().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Óculos:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nÓculos:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getOculos().size(); a++) {
 
@@ -997,7 +997,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //REVESTIMENTO EXTERNO/CHAPARIA
             if (inspecao.getGrupoB().getRevestimentoExternoChaparia().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Revestimento externo/chaparia:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nRevestimento externo/chaparia:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getRevestimentoExternoChaparia().size(); a++) {
 
@@ -1010,7 +1010,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //BANCOS
             if (inspecao.getGrupoB().getBancos().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Bancos:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nBancos:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getBancos().size(); a++) {
 
@@ -1023,7 +1023,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //BANCOS PASSAGEIROS
             if (inspecao.getGrupoB().getBancosPassageiros().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Bancos dos passageiros:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nBancos dos passageiros:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getBancosPassageiros().size(); a++) {
 
@@ -1036,7 +1036,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //SISTEMAS DE PORTA MANCAL
             if (inspecao.getGrupoB().getSistemasDePortasMancal().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Sistemas de portas mancal:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nSistemas de portas mancal:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getSistemasDePortasMancal().size(); a++) {
 
@@ -1049,7 +1049,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //FOLHA DAS PORTAS/REVESTIMENTOS
             if (inspecao.getGrupoB().getFolhasDasPortasRevestimento().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Folha das portas/revestimento:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nFolha das portas/revestimento:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getFolhasDasPortasRevestimento().size(); a++) {
 
@@ -1062,7 +1062,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //BORRACHA DAS PORTAS
             if (inspecao.getGrupoB().getBorrachaDasPortas().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Borracha das portas:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nBorracha das portas:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getBorrachaDasPortas().size(); a++) {
 
@@ -1075,7 +1075,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //TAMPÃO PISTÃO DAS PORTAS
             if (inspecao.getGrupoB().getTampaoPistaoDasPortas().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Tampão e pistão das portas:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nTampão e pistão das portas:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getTampaoPistaoDasPortas().size(); a++) {
 
@@ -1088,7 +1088,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //CILINDRO DAS PORTAS
             if (inspecao.getGrupoB().getCilindroDasPortas().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Cilindro das portas:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nCilindro das portas:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getCilindroDasPortas().size(); a++) {
 
@@ -1101,7 +1101,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //JANELA LATERAL DO MOTORISTA
             if (inspecao.getGrupoB().getJanelaLateralDoMotorista().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Janela lateral do motorista:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nJanela lateral do motorista:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getJanelaLateralDoMotorista().size(); a++) {
 
@@ -1114,7 +1114,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //QUADRO DA JANELA
             if (inspecao.getGrupoB().getQuadroDaJanela().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Quadro da janela:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nQuadro da janela:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getQuadroDaJanela().size(); a++) {
 
@@ -1127,7 +1127,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //SEPARADOR/LIMITADOR/PUXADOR
             if (inspecao.getGrupoB().getSeparadorLimitadorPuxador().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Separador/Limitador/Puxador:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nSeparador/Limitador/Puxador:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getSeparadorLimitadorPuxador().size(); a++) {
 
@@ -1140,7 +1140,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //PARA-CHOQUE/PONTEIRA
             if (inspecao.getGrupoB().getParachoquePonteira().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Para-choque/Ponteira:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nPara-choque/Ponteira:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getParachoquePonteira().size(); a++) {
 
@@ -1153,7 +1153,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //ESPELHOS RETROVISORES CONVEXOS
             if (inspecao.getGrupoB().getEspelhosRetrovisoresConvexos().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Espelho retrovisores convexos:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nEspelho retrovisores convexos:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getEspelhosRetrovisoresConvexos().size(); a++) {
 
@@ -1166,7 +1166,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //LIMPADOR PARA-BRISA
             if (inspecao.getGrupoB().getLimpadorParaBrisa().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Limpador/Para-brisa:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nLimpador/Para-brisa:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getLimpadorParaBrisa().size(); a++) {
 
@@ -1179,7 +1179,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //LIMPEZA
             if (inspecao.getGrupoB().getLimpeza().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Limpeza:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nLimpeza:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getLimpeza().size(); a++) {
 
@@ -1193,7 +1193,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //CAIXA DE ITINERÁRIO
             if (inspecao.getGrupoB().getCaixaDeItinerario().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Caixa de itinerário:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nCaixa de itinerário:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getCaixaDeItinerario().size(); a++) {
 
@@ -1206,7 +1206,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //ILUMINAÇÃO SALÃO/INTERNA
             if (inspecao.getGrupoB().getIluminacaoSalaoInterna().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Iluminação salão/interna:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nIluminação salão/interna:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getIluminacaoSalaoInterna().size(); a++) {
 
@@ -1219,7 +1219,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //SOLICITAÇÃO DE PARADA
             if (inspecao.getGrupoB().getSolicitacaoDeParada().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Solicitação de parada:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nSolicitação de parada:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getSolicitacaoDeParada().size(); a++) {
 
@@ -1232,7 +1232,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //LUZ DO DEGRAU
             if (inspecao.getGrupoB().getLuzDoDegrau().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Luz do degrau:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nLuz do degrau:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getLuzDoDegrau().size(); a++) {
 
@@ -1246,7 +1246,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //COMANDOS DO PAINEL
             if (inspecao.getGrupoB().getComandosDoPainel().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Comandos do painel:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nComandos do painel:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getComandosDoPainel().size(); a++) {
 
@@ -1259,7 +1259,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //CHAVE DE SETA/BUZINA
             if (inspecao.getGrupoB().getChaveDeSetaBuzina().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Chave de seta/buzina:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nChave de seta/buzina:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getChaveDeSetaBuzina().size(); a++) {
 
@@ -1273,7 +1273,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //DEGRAUS
             if (inspecao.getGrupoB().getDegraus().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Degraus:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nDegraus:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getDegraus().size(); a++) {
 
@@ -1286,7 +1286,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //PISO
             if (inspecao.getGrupoB().getPiso().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Piso:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nPiso:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getPiso().size(); a++) {
 
@@ -1299,7 +1299,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //TAMPA DE INSPEÇÃO
             if (inspecao.getGrupoB().getTampaDeInspecao().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Tampa de inspeção:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nTampa de inspeção:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getTampaDeInspecao().size(); a++) {
 
@@ -1312,7 +1312,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //TAMPA DO MOTOR
             if (inspecao.getGrupoB().getTampaDoMotor().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Tampa do motor:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nTampa do motor:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getTampaDoMotor().size(); a++) {
 
@@ -1325,7 +1325,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //REVESTIMENTO INTERNO
             if (inspecao.getGrupoB().getRevestimentoInterno().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Revestimento interno:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nRevestimento interno:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getRevestimentoInterno().size(); a++) {
 
@@ -1338,7 +1338,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //BALAÚSTRES
             if (inspecao.getGrupoB().getBalaustres().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Balaústres:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nBalaústres:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getBalaustres().size(); a++) {
 
@@ -1351,7 +1351,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //DERRAPANTE
             if (inspecao.getGrupoB().getDerrapante().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Derrapante:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nDerrapante:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getDerrapante().size(); a++) {
 
@@ -1364,7 +1364,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //POSTO DE COBRANÇA
             if (inspecao.getGrupoB().getPostoDeCobranca().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Posto de cobrança:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nPosto de cobrança:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getPostoDeCobranca().size(); a++) {
 
@@ -1377,7 +1377,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //ESCOTILHAS E CUPULAS
             if (inspecao.getGrupoB().getEscotilhasECupulas().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Escotilhas e cúpulas:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nEscotilhas e cúpulas:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getEscotilhasECupulas().size(); a++) {
 
@@ -1390,7 +1390,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //SAÍDA DE EMERGENCIA
             if (inspecao.getGrupoB().getSaidaDeEmergencia().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Saída de emergência:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nSaída de emergência:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getSaidaDeEmergencia().size(); a++) {
 
@@ -1404,7 +1404,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //FARÓIS/ÓCULOS
             if (inspecao.getGrupoB().getFaroisOculos().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Faróis/Óculos:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nFaróis/Óculos:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getFaroisOculos().size(); a++) {
 
@@ -1417,7 +1417,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //LUZES DE SETA E DE EMERGÊNCIA
             if (inspecao.getGrupoB().getLuzesDeSetaEDeEmergencia().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Luzes de seta e emergência:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nLuzes de seta e emergência:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getLuzesDeSetaEDeEmergencia().size(); a++) {
 
@@ -1430,7 +1430,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //LANTERNAS/LENTES
             if (inspecao.getGrupoB().getLanternasLentes().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Lanternas/lentes:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nLanternas/lentes:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getLanternasLentes().size(); a++) {
 
@@ -1444,7 +1444,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //LUZES DELIMITADORAS/VIGIAS/LENTES
             if (inspecao.getGrupoB().getLuzesDelimitadorasVigiasLentes().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Luzes delimitadoras/vigias/lentes:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nLuzes delimitadoras/vigias/lentes:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getLuzesDelimitadorasVigiasLentes().size(); a++) {
 
@@ -1457,7 +1457,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //LUZ DO FREIO/LENTES
             if (inspecao.getGrupoB().getLuzDoFreioLentes().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Luz do freio/lentes:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nLuz do freio/lentes:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getLuzDoFreioLentes().size(); a++) {
 
@@ -1470,7 +1470,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //BRAKE-LIGHT
             if (inspecao.getGrupoB().getBrakeLight().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Brake-Light:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nBrake-Light:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getBrakeLight().size(); a++) {
 
@@ -1483,7 +1483,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //LUZ DE RÉ
             if (inspecao.getGrupoB().getLuzDeRe().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Luz de ré:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nLuz de ré:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getLuzDeRe().size(); a++) {
 
@@ -1496,7 +1496,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //LUZ DA PLACA
             if (inspecao.getGrupoB().getLuzDaPlaca().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Luz da placa:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nLuz da placa:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getLuzDaPlaca().size(); a++) {
 
@@ -1510,7 +1510,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //PARTIDA
             if (inspecao.getGrupoB().getPartida().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Partida:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nPartida:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getPartida().size(); a++) {
 
@@ -1524,7 +1524,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //EXTINTOR
             if (inspecao.getGrupoB().getExtintor().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Extintor:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nExtintor:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getExtintor().size(); a++) {
 
@@ -1537,7 +1537,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //TRIÂNGULO
             if (inspecao.getGrupoB().getTriangulo().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Triângulo:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nTriângulo:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getTriangulo().size(); a++) {
 
@@ -1551,7 +1551,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //SILENCIOSO
             if (inspecao.getGrupoB().getSilencioso().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Silencioso:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nSilencioso:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getSilencioso().size(); a++) {
 
@@ -1564,7 +1564,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //TUBO DE DESCARGA
             if (inspecao.getGrupoB().getTuboDeDescarga().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Tubo de descarga:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nTubo de descarga:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getTuboDeDescarga().size(); a++) {
 
@@ -1577,7 +1577,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //PROTEÇÃO TUBO DESCARGA
             if (inspecao.getGrupoB().getProtecaoTuboDescarga().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Proteção tubo descarga:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nProteção tubo descarga:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getProtecaoTuboDescarga().size(); a++) {
 
@@ -1590,7 +1590,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //ARTICULAÇÃO
             if (inspecao.getGrupoB().getArticulacao().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Articulação:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nArticulação:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getArticulacao().size(); a++) {
 
@@ -1603,7 +1603,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
             //VAZAMENTO EXCESSIVO
             if (inspecao.getGrupoB().getVazamentoExcessivo().size() >= 1) {
 
-                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "Vazamento excessivo:\n\n");
+                detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nVazamento excessivo:\n");
 
                 for (int a = 0; a < inspecao.getGrupoB().getVazamentoExcessivo().size(); a++) {
 
