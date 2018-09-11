@@ -7,10 +7,6 @@
     tools:context=".activity.IniciarInspecaoActivity"
     tools:layout_editor_absoluteY="25dp">
 
-    <include
-        android:id="@+id/toolbar"
-        layout="@layout/toolbar" />
-
     <Button
         android:id="@+id/botaoVoltarTelaPrincipal"
         android:layout_width="wrap_content"

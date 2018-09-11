@@ -1,6 +1,8 @@
 package com.vtpvistorias_tcc.activity;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -15,6 +17,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.vtpvistorias_tcc.Model.Inspecao;
 import com.vtpvistorias_tcc.Model.Usuarios;
 import com.vtpvistorias_tcc.R;
 import com.vtpvistorias_tcc.config.ConfiguracaoFirebase;
@@ -24,7 +27,7 @@ public class LoginActivity extends AppCompatActivity  {
     private EditText edtEmail;
     private EditText edtSenha;
     private Button btnLogar;
-    private TextView textCadastroLogin;
+    private TextView textEsqueciSenha;
     private FirebaseAuth autenticacao;
     private Usuarios usuario;
 
@@ -36,7 +39,7 @@ public class LoginActivity extends AppCompatActivity  {
         edtEmail = (EditText) findViewById(R.id.edtEmail);
         edtSenha = (EditText) findViewById(R.id.edtSenha);
         btnLogar = (Button) findViewById(R.id.btnLogar);
-        textCadastroLogin = (TextView) findViewById(R.id.textCadastroLogin);
+        textEsqueciSenha = (TextView) findViewById(R.id.textEsqueciSenha);
 
         btnLogar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +57,13 @@ public class LoginActivity extends AppCompatActivity  {
                 else{
                     Toast.makeText(LoginActivity.this,"Preencha os campos de login e senha!", Toast.LENGTH_LONG).show();
                 }
+            }
+        });
+
+        textEsqueciSenha.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                esqueciSenha();
             }
         });
 
@@ -81,5 +91,19 @@ public class LoginActivity extends AppCompatActivity  {
     private void abrirTelaPrincipal(){
         Intent intentAbrirTelaPrincipal = new Intent(LoginActivity.this, MainActivity.class);
         startActivity(intentAbrirTelaPrincipal);
+    }
+
+    private void esqueciSenha(){
+        new AlertDialog.Builder(this)
+                .setTitle("Esqueci minha senha")
+                .setMessage("Por favor entre em contato com o administrador para troca de senha.")
+                .setPositiveButton("OK",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+
+                            }
+                        })
+                .show();
     }
 }

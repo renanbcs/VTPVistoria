@@ -8,10 +8,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.vtpvistorias_tcc.R;
+import com.vtpvistorias_tcc.config.ConfiguracaoFirebase;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private Button botaoNovaInspecao;
     private Button botaoLacharVeiculo;
     private Button botaoConsultarInspecao;
+    private FirebaseAuth usuarioFirebase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
         botaoNovaInspecao = (Button) findViewById(R.id.botaoNovaInspecao);
         botaoLacharVeiculo = (Button) findViewById(R.id.botaoLacharVeiculo);
         botaoConsultarInspecao = (Button) findViewById(R.id.botaoConsultarInspecao);
+
+        usuarioFirebase = ConfiguracaoFirebase.getFirebaseAutenticacao();
 
         botaoNovaInspecao.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,5 +73,31 @@ public class MainActivity extends AppCompatActivity {
         inflater.inflate(R.menu.menu_main,menu);
 
         return true ;
+    }
+
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.item_sair) {
+            deslogarUsuario();
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+
+    private void deslogarUsuario(){
+        usuarioFirebase.signOut();
+        Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+        finish();
     }
 }

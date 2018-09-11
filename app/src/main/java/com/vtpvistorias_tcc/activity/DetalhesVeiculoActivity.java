@@ -60,7 +60,7 @@ public class DetalhesVeiculoActivity extends Activity implements View.OnClickLis
 
                 finish();
 
-            break;
+                break;
 
             case R.id.button_Sim:
 
@@ -68,10 +68,10 @@ public class DetalhesVeiculoActivity extends Activity implements View.OnClickLis
 
                 if(tela.equals("lacrarVeiculo")){
 
-                        Intent intent = new Intent(getApplicationContext(), EfetuarLacracaoVeiculoActivity.class);
-                        intent.putExtra("veiculo", veiculo);
+                    Intent intent = new Intent(getApplicationContext(), EfetuarLacracaoVeiculoActivity.class);
+                    intent.putExtra("veiculo", veiculo);
 
-                        startActivity(intent);
+                    startActivity(intent);
 
                 }else {
 

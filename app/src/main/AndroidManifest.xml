@@ -16,9 +16,7 @@
 
         </activity>
         <activity
-            android:name=".activity.IniciarInspecaoActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name=".activity.IniciarInspecaoActivity" />
         <activity
             android:name=".activity.DetalhesVeiculoActivity"
             android:theme="@android:style/Theme.Holo.Dialog" />

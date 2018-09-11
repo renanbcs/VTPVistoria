@@ -41,10 +41,10 @@
         android:text="LOGIN" />
 
     <TextView
-        android:id="@+id/textCadastroLogin"
+        android:id="@+id/textEsqueciSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Não tem cadastro? Clique aqui"
+        android:text="Esqueci minha senha"
         android:layout_marginTop="10dp"
         android:textSize="15sp"
         android:gravity="center"/>

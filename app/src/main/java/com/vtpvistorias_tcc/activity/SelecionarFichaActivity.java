@@ -3,15 +3,20 @@ package com.vtpvistorias_tcc.activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.vtpvistorias_tcc.Model.GrupoA;
 import com.vtpvistorias_tcc.Model.GrupoA1;
 import com.vtpvistorias_tcc.Model.GrupoB;
 import com.vtpvistorias_tcc.Model.Inspecao;
 import com.vtpvistorias_tcc.R;
+import com.vtpvistorias_tcc.config.ConfiguracaoFirebase;
 
 public class SelecionarFichaActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -23,10 +28,14 @@ public class SelecionarFichaActivity extends AppCompatActivity implements View.O
     private GrupoB grupoB;
     private GrupoA1 grupoA1;
 
+    private FirebaseAuth usuarioFirebase;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selecionar_ficha);
+
+        usuarioFirebase = ConfiguracaoFirebase.getFirebaseAutenticacao();
 
         fichaA = findViewById(R.id.botaoGrupoA);
         fichaA1 = findViewById(R.id.botaoGrupoA1);
@@ -106,5 +115,42 @@ public class SelecionarFichaActivity extends AppCompatActivity implements View.O
                 break;
         }
 
+    }
+
+    //metodo para criar os menus
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        //exiir os menus
+        MenuInflater inflater = getMenuInflater();
+
+        inflater.inflate(R.menu.menu_main,menu);
+
+        return true ;
+    }
+
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.item_sair) {
+            deslogarUsuario();
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+
+    private void deslogarUsuario(){
+        usuarioFirebase.signOut();
+        Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+        finish();
     }
 }
