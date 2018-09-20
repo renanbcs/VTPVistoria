@@ -1,4 +1,4 @@
-package com.vtpvistorias_tcc.activity;
+package com.vtpvistorias_tcc.activity.GrupoB;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -11,11 +11,10 @@ import android.widget.Button;
 import android.widget.CheckBox;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DatabaseReference;
-import com.vtpvistorias_tcc.Model.GrupoA;
 import com.vtpvistorias_tcc.Model.GrupoB;
 import com.vtpvistorias_tcc.Model.Inspecao;
 import com.vtpvistorias_tcc.R;
+import com.vtpvistorias_tcc.activity.LoginActivity;
 import com.vtpvistorias_tcc.config.ConfiguracaoFirebase;
 
 public class GrupoBSistemaCarroceriaActivity extends AppCompatActivity implements View.OnClickListener {

@@ -14,6 +14,12 @@
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
         </activity>
         <activity
             android:name=".activity.IniciarInspecaoActivity" />
@@ -24,37 +30,33 @@
         <activity
             android:name=".activity.ItensFichaActivity"
             android:theme="@android:style/Theme.Holo.Dialog" />
-        <activity android:name=".activity.GrupoASistemaFreioActivity" />
+        <activity android:name=".activity.GrupoA.GrupoASistemaFreioActivity" />
         <activity
-            android:name=".activity.GrupoBSistemaCarroceriaActivity"
+            android:name=".activity.GrupoB.GrupoBSistemaCarroceriaActivity"
             android:label="@string/title_activity_grupo_b"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activity.GrupoASistemaSuspensaoActivity" />
-        <activity android:name=".activity.GrupoASistemaTracaoActivity" />
-        <activity android:name=".activity.GrupoASistemaRodanteActivity" />
+        <activity android:name=".activity.GrupoA.GrupoASistemaSuspensaoActivity" />
+        <activity android:name=".activity.GrupoA.GrupoASistemaTracaoActivity" />
+        <activity android:name=".activity.GrupoA.GrupoASistemaRodanteActivity" />
         <activity
-            android:name=".activity.GrupoASistemaEixoDianteiroActivity"
+            android:name=".activity.GrupoA.GrupoASistemaEixoDianteiroActivity"
             android:launchMode="singleTop" />
-        <activity android:name=".activity.GrupoAChassioPlataformaActivity" />
+        <activity android:name=".activity.GrupoA.GrupoAChassioPlataformaActivity" />
         <activity android:name=".activity.SalvarActivity" />
-        <activity android:name=".activity.GrupoA1SistemaCarroceriaNivelBActivity" />
-        <activity android:name=".activity.GrupoA1SistemaAcessibilidadeMobilidadeNivelAActivity" />
-        <activity android:name=".activity.GrupoBEquipamentosSegurancaActivity" />
-        <activity android:name=".activity.GrupoBIluminacaoExternaSinalizacaoActivity" />
-        <activity android:name=".activity.GrupoBIluminacaoInternaActivity" />
-        <activity android:name=".activity.GrupoBInteriorVeiculoActivity" />
-        <activity android:name=".activity.GrupoBPostoComandoActivity" />
-        <activity android:name=".activity.GrupoBSistemaEletricoActivity" />
-        <activity android:name=".activity.GrupoBSistemaCarroceriaExternaActivity" />
+        <activity android:name=".activity.GrupoA1.GrupoA1SistemaCarroceriaNivelBActivity" />
+        <activity android:name=".activity.GrupoA1.GrupoA1SistemaAcessibilidadeMobilidadeNivelAActivity" />
+        <activity android:name=".activity.GrupoB.GrupoBEquipamentosSegurancaActivity" />
+        <activity android:name=".activity.GrupoB.GrupoBIluminacaoExternaSinalizacaoActivity" />
+        <activity android:name=".activity.GrupoB.GrupoBIluminacaoInternaActivity" />
+        <activity android:name=".activity.GrupoB.GrupoBInteriorVeiculoActivity" />
+        <activity android:name=".activity.GrupoB.GrupoBPostoComandoActivity" />
+        <activity android:name=".activity.GrupoB.GrupoBSistemaEletricoActivity" />
+        <activity android:name=".activity.GrupoB.GrupoBSistemaCarroceriaExternaActivity" />
         <activity android:name=".activity.LacrarVeiculoActivity" />
         <activity android:name=".activity.EfetuarLacracaoVeiculoActivity" />
         <activity android:name=".activity.DetalhesVistoriaActivity" />
         <activity android:name=".activity.LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

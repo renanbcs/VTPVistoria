@@ -1,4 +1,4 @@
-package com.vtpvistorias_tcc.activity;
+package com.vtpvistorias_tcc.activity.GrupoA;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -15,21 +15,18 @@ import com.google.firebase.database.DatabaseReference;
 import com.vtpvistorias_tcc.Model.GrupoA;
 import com.vtpvistorias_tcc.Model.Inspecao;
 import com.vtpvistorias_tcc.R;
+import com.vtpvistorias_tcc.activity.LoginActivity;
 import com.vtpvistorias_tcc.config.ConfiguracaoFirebase;
 
-public class GrupoASistemaRodanteActivity extends AppCompatActivity implements View.OnClickListener {
+public class GrupoASistemaSuspensaoActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button botaoVoltarSelecionarFicha;
     private Button botaoProximo;
 
-    private CheckBox pneuDesgastado;
-    private CheckBox pneuIrregular;
-    private CheckBox pneuDanificado;
-    private CheckBox pneuTalao;
-
-    private CheckBox rodaFaltaPorca;
-    private CheckBox rodaFaltaEspelho;
-    private CheckBox rodaDanificada;
+    private CheckBox amortecedorFaltando;
+    private CheckBox amortecedorVazando;
+    private CheckBox amortecedorSolto;
+    private CheckBox amortecedorDanificado;
 
     private DatabaseReference firebase;
     private GrupoA grupoA;
@@ -41,7 +38,7 @@ public class GrupoASistemaRodanteActivity extends AppCompatActivity implements V
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_grupo_a_sistema_rodante);
+        setContentView(R.layout.activity_grupo_asistema_suspensao);
 
         usuarioFirebase = ConfiguracaoFirebase.getFirebaseAutenticacao();
 
@@ -51,14 +48,10 @@ public class GrupoASistemaRodanteActivity extends AppCompatActivity implements V
         botaoProximo = (Button) findViewById(R.id.botaoProximo);
         botaoProximo.setOnClickListener(this);
 
-        pneuDesgastado = (CheckBox)findViewById(R.id.pneuDesgastado);
-        pneuIrregular = (CheckBox)findViewById(R.id.pneuIrregular);
-        pneuDanificado = (CheckBox)findViewById(R.id.pneuDanificado);
-        pneuTalao = (CheckBox)findViewById(R.id.pneuTalao);
-
-        rodaFaltaPorca = (CheckBox)findViewById(R.id.rodaFaltaPorca);
-        rodaFaltaEspelho = (CheckBox)findViewById(R.id.rodaFaltaEspelho);
-        rodaDanificada = (CheckBox)findViewById(R.id.rodaDanificada);
+        amortecedorFaltando = (CheckBox)findViewById(R.id.amortecedorFaltando);
+        amortecedorVazando = (CheckBox)findViewById(R.id.amortecedorVazando);
+        amortecedorSolto = (CheckBox)findViewById(R.id.amortecedorSolto);
+        amortecedorDanificado = (CheckBox)findViewById(R.id.amortecedorDanificado);
 
         i = getIntent();
         inspecao = (Inspecao) i.getSerializableExtra("inspecao");
@@ -79,9 +72,10 @@ public class GrupoASistemaRodanteActivity extends AppCompatActivity implements V
 
                 inspecao.setGrupoA(grupoA);
 
-                Intent intent = new Intent(getApplicationContext(),GrupoASistemaEixoDianteiroActivity.class);
+                Intent intent = new Intent(getApplicationContext(),GrupoASistemaTracaoActivity.class);
                 intent.putExtra("inspecao",inspecao);
                 startActivity(intent);
+
                 break;
         }
 
@@ -89,32 +83,19 @@ public class GrupoASistemaRodanteActivity extends AppCompatActivity implements V
 
     public void salvarDados(){
 
-        if(pneuDesgastado.isChecked()){
-            grupoA.getPneus().add("Desgastados");
+        if(amortecedorFaltando.isChecked()){
+            grupoA.getAmortecedor().add("Faltando");
         }
-        if(pneuIrregular.isChecked()){
-            grupoA.getPneus().add("Irregular");
+        if(amortecedorVazando.isChecked()){
+            grupoA.getAmortecedor().add("Vazando");
         }
-        if(pneuDanificado.isChecked()){
-            grupoA.getPneus().add("Danificado");
+        if(amortecedorSolto.isChecked()){
+            grupoA.getAmortecedor().add("Solto");
         }
-        if(pneuTalao.isChecked()){
-            grupoA.getPneus().add("Talão");
+        if(amortecedorDanificado.isChecked()){
+            grupoA.getAmortecedor().add("Danificado");
         }
-        if(rodaFaltaPorca.isChecked()){
-            grupoA.getRodas().add("Falta Porca");
-        }
-        if(rodaFaltaEspelho.isChecked()){
-            grupoA.getRodas().add("Falta Espelho");
-        }
-        if(rodaDanificada.isChecked()){
-            grupoA.getRodas().add("Danificada");
-        }
-    }
 
-    @Override
-    public void onPause(){
-        super.onPause();
     }
 
     //metodo para criar os menus
@@ -153,4 +134,5 @@ public class GrupoASistemaRodanteActivity extends AppCompatActivity implements V
         startActivity(intent);
         finish();
     }
+
 }

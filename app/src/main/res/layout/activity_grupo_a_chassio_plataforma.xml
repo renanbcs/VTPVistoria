@@ -9,7 +9,7 @@
     android:layout_marginRight="16dp"
     android:layout_marginTop="16dp"
     android:orientation="vertical"
-    tools:context=".activity.GrupoAChassioPlataformaActivity">
+    tools:context=".activity.GrupoA.GrupoAChassioPlataformaActivity">
 
     <ScrollView
         android:layout_width="match_parent"

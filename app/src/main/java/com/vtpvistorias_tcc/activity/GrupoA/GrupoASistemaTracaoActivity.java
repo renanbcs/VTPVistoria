@@ -1,4 +1,4 @@
-package com.vtpvistorias_tcc.activity;
+package com.vtpvistorias_tcc.activity.GrupoA;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -15,29 +15,29 @@ import com.google.firebase.database.DatabaseReference;
 import com.vtpvistorias_tcc.Model.GrupoA;
 import com.vtpvistorias_tcc.Model.Inspecao;
 import com.vtpvistorias_tcc.R;
+import com.vtpvistorias_tcc.activity.LoginActivity;
 import com.vtpvistorias_tcc.config.ConfiguracaoFirebase;
 
-public class GrupoASistemaSuspensaoActivity extends AppCompatActivity implements View.OnClickListener {
+public class GrupoASistemaTracaoActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button botaoVoltarSelecionarFicha;
     private Button botaoProximo;
 
-    private CheckBox amortecedorFaltando;
-    private CheckBox amortecedorVazando;
-    private CheckBox amortecedorSolto;
-    private CheckBox amortecedorDanificado;
+    private CheckBox eixoCardanFolga;
+    private CheckBox eixoCardanDesalinhado;
+    private CheckBox eixoCardanSolto;
+    private CheckBox eixoCardanBorrachaDanificada;
 
     private DatabaseReference firebase;
     private GrupoA grupoA;
     private Intent i;
     private Inspecao inspecao;
-
     private FirebaseAuth usuarioFirebase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_grupo_asistema_suspensao);
+        setContentView(R.layout.activity_grupo_a_sistema_tracao);
 
         usuarioFirebase = ConfiguracaoFirebase.getFirebaseAutenticacao();
 
@@ -47,15 +47,14 @@ public class GrupoASistemaSuspensaoActivity extends AppCompatActivity implements
         botaoProximo = (Button) findViewById(R.id.botaoProximo);
         botaoProximo.setOnClickListener(this);
 
-        amortecedorFaltando = (CheckBox)findViewById(R.id.amortecedorFaltando);
-        amortecedorVazando = (CheckBox)findViewById(R.id.amortecedorVazando);
-        amortecedorSolto = (CheckBox)findViewById(R.id.amortecedorSolto);
-        amortecedorDanificado = (CheckBox)findViewById(R.id.amortecedorDanificado);
+        eixoCardanFolga = (CheckBox)findViewById(R.id.eixoCardanFolga);
+        eixoCardanDesalinhado = (CheckBox)findViewById(R.id.eixoCardanDesalinhado);
+        eixoCardanSolto = (CheckBox)findViewById(R.id.eixoCardanSolto);
+        eixoCardanBorrachaDanificada = (CheckBox)findViewById(R.id.eixoCardanBorrachaDanificada);
 
         i = getIntent();
         inspecao = (Inspecao) i.getSerializableExtra("inspecao");
         grupoA = inspecao.getGrupoA();
-
     }
 
     @Override
@@ -71,10 +70,9 @@ public class GrupoASistemaSuspensaoActivity extends AppCompatActivity implements
 
                 inspecao.setGrupoA(grupoA);
 
-                Intent intent = new Intent(getApplicationContext(),GrupoASistemaTracaoActivity.class);
+                Intent intent = new Intent(getApplicationContext(),GrupoASistemaRodanteActivity.class);
                 intent.putExtra("inspecao",inspecao);
                 startActivity(intent);
-
                 break;
         }
 
@@ -82,21 +80,19 @@ public class GrupoASistemaSuspensaoActivity extends AppCompatActivity implements
 
     public void salvarDados(){
 
-        if(amortecedorFaltando.isChecked()){
-            grupoA.getAmortecedor().add("Faltando");
+        if(eixoCardanFolga.isChecked()){
+            grupoA.getEixoCardan().add("Folga");
         }
-        if(amortecedorVazando.isChecked()){
-            grupoA.getAmortecedor().add("Vazando");
+        if(eixoCardanDesalinhado.isChecked()){
+            grupoA.getEixoCardan().add("Desalinhado");
         }
-        if(amortecedorSolto.isChecked()){
-            grupoA.getAmortecedor().add("Solto");
+        if(eixoCardanSolto.isChecked()){
+            grupoA.getEixoCardan().add("Solto");
         }
-        if(amortecedorDanificado.isChecked()){
-            grupoA.getAmortecedor().add("Danificado");
+        if(eixoCardanBorrachaDanificada.isChecked()){
+            grupoA.getEixoCardan().add("Borracha Danificada");
         }
-
     }
-
     //metodo para criar os menus
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -133,5 +129,6 @@ public class GrupoASistemaSuspensaoActivity extends AppCompatActivity implements
         startActivity(intent);
         finish();
     }
+
 
 }

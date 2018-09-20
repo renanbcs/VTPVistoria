@@ -9,7 +9,7 @@
     android:layout_marginRight="16dp"
     android:layout_marginTop="16dp"
     android:orientation="vertical"
-    tools:context=".activity.GrupoA1SistemaAcessibilidadeMobilidadeNivelAActivity">
+    tools:context=".activity.GrupoA1.GrupoA1SistemaAcessibilidadeMobilidadeNivelAActivity">
 
     <ScrollView
         android:layout_width="match_parent"

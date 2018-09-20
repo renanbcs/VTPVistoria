@@ -1,4 +1,4 @@
-package com.vtpvistorias_tcc.activity;
+package com.vtpvistorias_tcc.activity.GrupoA;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -15,6 +15,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.vtpvistorias_tcc.Model.GrupoA;
 import com.vtpvistorias_tcc.Model.Inspecao;
 import com.vtpvistorias_tcc.R;
+import com.vtpvistorias_tcc.activity.LoginActivity;
+import com.vtpvistorias_tcc.activity.SelecionarFichaActivity;
 import com.vtpvistorias_tcc.config.ConfiguracaoFirebase;
 
 public class GrupoAChassioPlataformaActivity extends AppCompatActivity implements View.OnClickListener {

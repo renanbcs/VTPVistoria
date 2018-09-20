@@ -11,6 +11,9 @@ import android.widget.TextView;
 
 import com.vtpvistorias_tcc.Model.Inspecao;
 import com.vtpvistorias_tcc.R;
+import com.vtpvistorias_tcc.activity.GrupoA.GrupoASistemaFreioActivity;
+import com.vtpvistorias_tcc.activity.GrupoA1.GrupoA1SistemaCarroceriaNivelBActivity;
+import com.vtpvistorias_tcc.activity.GrupoB.GrupoBSistemaCarroceriaActivity;
 
 public class ItensFichaActivity extends Activity  implements View.OnClickListener {
 

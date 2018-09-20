@@ -1,4 +1,4 @@
-package com.vtpvistorias_tcc.activity;
+package com.vtpvistorias_tcc.activity.GrupoA;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -15,28 +15,34 @@ import com.google.firebase.database.DatabaseReference;
 import com.vtpvistorias_tcc.Model.GrupoA;
 import com.vtpvistorias_tcc.Model.Inspecao;
 import com.vtpvistorias_tcc.R;
+import com.vtpvistorias_tcc.activity.LoginActivity;
 import com.vtpvistorias_tcc.config.ConfiguracaoFirebase;
 
-public class GrupoASistemaTracaoActivity extends AppCompatActivity implements View.OnClickListener {
+public class GrupoASistemaRodanteActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button botaoVoltarSelecionarFicha;
     private Button botaoProximo;
 
-    private CheckBox eixoCardanFolga;
-    private CheckBox eixoCardanDesalinhado;
-    private CheckBox eixoCardanSolto;
-    private CheckBox eixoCardanBorrachaDanificada;
+    private CheckBox pneuDesgastado;
+    private CheckBox pneuIrregular;
+    private CheckBox pneuDanificado;
+    private CheckBox pneuTalao;
+
+    private CheckBox rodaFaltaPorca;
+    private CheckBox rodaFaltaEspelho;
+    private CheckBox rodaDanificada;
 
     private DatabaseReference firebase;
     private GrupoA grupoA;
     private Intent i;
     private Inspecao inspecao;
+
     private FirebaseAuth usuarioFirebase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_grupo_a_sistema_tracao);
+        setContentView(R.layout.activity_grupo_a_sistema_rodante);
 
         usuarioFirebase = ConfiguracaoFirebase.getFirebaseAutenticacao();
 
@@ -46,14 +52,19 @@ public class GrupoASistemaTracaoActivity extends AppCompatActivity implements Vi
         botaoProximo = (Button) findViewById(R.id.botaoProximo);
         botaoProximo.setOnClickListener(this);
 
-        eixoCardanFolga = (CheckBox)findViewById(R.id.eixoCardanFolga);
-        eixoCardanDesalinhado = (CheckBox)findViewById(R.id.eixoCardanDesalinhado);
-        eixoCardanSolto = (CheckBox)findViewById(R.id.eixoCardanSolto);
-        eixoCardanBorrachaDanificada = (CheckBox)findViewById(R.id.eixoCardanBorrachaDanificada);
+        pneuDesgastado = (CheckBox)findViewById(R.id.pneuDesgastado);
+        pneuIrregular = (CheckBox)findViewById(R.id.pneuIrregular);
+        pneuDanificado = (CheckBox)findViewById(R.id.pneuDanificado);
+        pneuTalao = (CheckBox)findViewById(R.id.pneuTalao);
+
+        rodaFaltaPorca = (CheckBox)findViewById(R.id.rodaFaltaPorca);
+        rodaFaltaEspelho = (CheckBox)findViewById(R.id.rodaFaltaEspelho);
+        rodaDanificada = (CheckBox)findViewById(R.id.rodaDanificada);
 
         i = getIntent();
         inspecao = (Inspecao) i.getSerializableExtra("inspecao");
         grupoA = inspecao.getGrupoA();
+
     }
 
     @Override
@@ -69,7 +80,7 @@ public class GrupoASistemaTracaoActivity extends AppCompatActivity implements Vi
 
                 inspecao.setGrupoA(grupoA);
 
-                Intent intent = new Intent(getApplicationContext(),GrupoASistemaRodanteActivity.class);
+                Intent intent = new Intent(getApplicationContext(),GrupoASistemaEixoDianteiroActivity.class);
                 intent.putExtra("inspecao",inspecao);
                 startActivity(intent);
                 break;
@@ -79,19 +90,34 @@ public class GrupoASistemaTracaoActivity extends AppCompatActivity implements Vi
 
     public void salvarDados(){
 
-        if(eixoCardanFolga.isChecked()){
-            grupoA.getEixoCardan().add("Folga");
+        if(pneuDesgastado.isChecked()){
+            grupoA.getPneus().add("Desgastados");
         }
-        if(eixoCardanDesalinhado.isChecked()){
-            grupoA.getEixoCardan().add("Desalinhado");
+        if(pneuIrregular.isChecked()){
+            grupoA.getPneus().add("Irregular");
         }
-        if(eixoCardanSolto.isChecked()){
-            grupoA.getEixoCardan().add("Solto");
+        if(pneuDanificado.isChecked()){
+            grupoA.getPneus().add("Danificado");
         }
-        if(eixoCardanBorrachaDanificada.isChecked()){
-            grupoA.getEixoCardan().add("Borracha Danificada");
+        if(pneuTalao.isChecked()){
+            grupoA.getPneus().add("Talão");
+        }
+        if(rodaFaltaPorca.isChecked()){
+            grupoA.getRodas().add("Falta Porca");
+        }
+        if(rodaFaltaEspelho.isChecked()){
+            grupoA.getRodas().add("Falta Espelho");
+        }
+        if(rodaDanificada.isChecked()){
+            grupoA.getRodas().add("Danificada");
         }
     }
+
+    @Override
+    public void onPause(){
+        super.onPause();
+    }
+
     //metodo para criar os menus
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -128,6 +154,4 @@ public class GrupoASistemaTracaoActivity extends AppCompatActivity implements Vi
         startActivity(intent);
         finish();
     }
-
-
 }

@@ -40,6 +40,21 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
 
         pegarDados();
 
+
+        if(inspecao.getGrupoA()!=null || inspecao.getGrupoB()!=null){
+
+
+
+            detalhesVistoriaTextView.setText("O veiculo foi reprovado \nEle será automaticamento bloqueado \n\n" + detalhesVistoriaTextView.getText());
+
+        }else{
+
+
+
+            detalhesVistoriaTextView.setText("O veiculo foi aprovado \nEstá apto para rodar \n\n" + detalhesVistoriaTextView.getText());
+
+        }
+
         salvarButton.setOnClickListener(this);
 
 
@@ -220,7 +235,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
                 for (int a = 0;a<inspecao.getGrupoA1().getAreaParaManobras().size();a++){
 
                     //preenche o text view com o item selecionado
-                    detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+inspecao.getGrupoA1().getAreaParaCadeiraDeRodas().get(a)+"\n");
+                    detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+inspecao.getGrupoA1().getAreaParaManobras().get(a)+"\n");
 
                 }//fim for
 
@@ -1646,14 +1661,35 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
 
             case R.id.salvarButton:
 
+                //verifica qual ficha foi preenchida e bloqueia o veiculo ou desbloqueia.
+
+                if(inspecao.getGrupoA()!=null || inspecao.getGrupoB()!=null) {
+
+                    if (inspecao.getVeiculo().isBloqueado().equals("Não")) {
+
+                        inspecao.getVeiculo().setBloqueado("Sim");
+                        inspecao.getVeiculo().update();
+
+                    }
+                }else {
+
+                    if (inspecao.getVeiculo().isBloqueado().equals("Sim")) {
+
+                        inspecao.getVeiculo().setBloqueado("Não");
+                        inspecao.getVeiculo().update();
+
+                    }
+
+                }
+
                 salvarDados();
 
                 Toast.makeText(getApplicationContext(), "Salvo Com Sucesso", Toast.LENGTH_SHORT).show();
 
-                Intent i = new Intent(getApplicationContext(), SelecionarFichaActivity.class);
-
+                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(i);
-
+                finish();
 
                 break;
         }
