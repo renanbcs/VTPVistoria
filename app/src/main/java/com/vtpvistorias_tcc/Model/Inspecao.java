@@ -17,6 +17,7 @@ public class Inspecao implements Serializable {
     private Veiculo veiculo;
     private String justificativa;
     private String resultado;
+    private Inspetor inspetor;
 
     public Inspecao(){
 
@@ -96,6 +97,14 @@ public class Inspecao implements Serializable {
 
     public void setResultado(String resultado) {
         this.resultado = resultado;
+    }
+
+    public Inspetor getInspetor() {
+        return inspetor;
+    }
+
+    public void setInspetor(Inspetor inspetor) {
+        this.inspetor = inspetor;
     }
 }
 

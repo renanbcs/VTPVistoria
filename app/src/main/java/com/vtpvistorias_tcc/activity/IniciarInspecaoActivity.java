@@ -106,6 +106,7 @@ public class IniciarInspecaoActivity extends AppCompatActivity implements View.O
                         }
                     });
 
+
                 }else {
                     Toast.makeText(getApplicationContext(), "Digite um valor válido", Toast.LENGTH_SHORT).show();
                 }

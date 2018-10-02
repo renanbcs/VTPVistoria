@@ -11,6 +11,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.vtpvistorias_tcc.R;
@@ -38,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
         botaoConsultarInspecao = (Button) findViewById(R.id.botaoConsultarInspecao);
 
         usuarioFirebase = ConfiguracaoFirebase.getFirebaseAutenticacao();
+
+        //Toast.makeText(this, ""+usuarioFirebase.getCurrentUser().getUid(),Toast.LENGTH_SHORT).show();
 
         botaoNovaInspecao.setOnClickListener(new View.OnClickListener() {
             @Override

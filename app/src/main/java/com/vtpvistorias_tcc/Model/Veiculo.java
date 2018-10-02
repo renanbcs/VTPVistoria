@@ -96,4 +96,5 @@ public class Veiculo implements Serializable{
     public void setId(String id) {
         this.id = id;
     }
+
 }
