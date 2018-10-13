@@ -106,13 +106,17 @@ public class DetalhesVeiculoActivity extends Activity implements View.OnClickLis
 
                             inspetor = dataSnapshot.getValue(Inspetor.class);
 
+                            inspecao.setInspetor(inspetor);
                             //esse Toast Funciona
-                            Toast.makeText(getApplicationContext(), ""+inspetor.getNome(), Toast.LENGTH_SHORT).show();
+                            //Toast.makeText(getApplicationContext(), ""+inspetor.getNome(), Toast.LENGTH_SHORT).show();
+
+                            Intent intent = new Intent(getApplicationContext(), SelecionarFichaActivity.class);
+                            intent.putExtra("inspecao", inspecao);
+
+                            startActivity(intent);
                         }
                         @Override
                         public void onCancelled(DatabaseError databaseError) {
-
-
 
                         }
 
@@ -125,10 +129,7 @@ public class DetalhesVeiculoActivity extends Activity implements View.OnClickLis
                     //gostaria de colocar o objeto inspetor como um atributo de uma
                     // Inspeção, para no futuro salvar o usuario que realiozou a inspeção
 
-                    Intent intent = new Intent(getApplicationContext(), SelecionarFichaActivity.class);
-                    intent.putExtra("inspecao", inspecao);
 
-                    startActivity(intent);
                 }
 
                 break;

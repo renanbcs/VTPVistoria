@@ -20,7 +20,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.vtpvistorias_tcc.Model.Inspecao;
+import com.vtpvistorias_tcc.Model.Inspetor;
 import com.vtpvistorias_tcc.Model.Veiculo;
 import com.vtpvistorias_tcc.R;
 import com.vtpvistorias_tcc.config.ConfiguracaoFirebase;
@@ -41,11 +47,14 @@ public class EfetuarLacracaoVeiculoActivity extends AppCompatActivity implements
     final Context context = this;
     private String justificativa;
     private FirebaseAuth usuarioFirebase;
+    private DatabaseReference firebase;
+    private Inspetor inspetor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_efetuar_lacracao_veiculo);
+        pegarInspetor();
 
         usuarioFirebase = ConfiguracaoFirebase.getFirebaseAutenticacao();
 
@@ -150,6 +159,9 @@ public class EfetuarLacracaoVeiculoActivity extends AppCompatActivity implements
                                 inspecao.setDataHoraRegistro(getPegaDataAtual());
                                 inspecao.setResultado("Reprovado");
                                 inspecao.setVeiculo(veiculo);
+                                inspecao.setInspetor(inspetor);
+
+
                                 inspecao.salvar();
 
                                 veiculo.update();
@@ -217,6 +229,33 @@ public class EfetuarLacracaoVeiculoActivity extends AppCompatActivity implements
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
         finish();
+    }
+
+    public void pegarInspetor(){
+
+        //Pega referencia do usuario na classe Configuração Firebase
+        usuarioFirebase = ConfiguracaoFirebase.getFirebaseAutenticacao();
+
+        String x = usuarioFirebase.getCurrentUser().getUid();
+
+        //cria referencia do firebase
+        firebase = FirebaseDatabase.getInstance().getReference().child("Inspetor").child(x);
+
+        //busca no banco de dados
+        firebase.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+
+                inspetor = dataSnapshot.getValue(Inspetor.class);
+
+            }
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+
+        });
+
     }
 
 

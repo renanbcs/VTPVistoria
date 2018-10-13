@@ -54,7 +54,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.BuscarPorInspetor.ListaInspetoresActivity" />
-        <activity android:name=".activity.TipoInspecaoActivity"></activity>
+        <activity android:name=".activity.TipoBuscaActivity" />
+        <activity android:name=".activity.BuscarPorInspetor.ListaInspecaoActivity" />
+        <activity android:name=".activity.InspecaoActivity" />
+        <activity android:name=".activity.BuscarPorVeiculo.ListaVeiculoActivity" />
+        <activity android:name=".activity.BuscarPorVeiculo.ListaInspecaoVeiculosActivity"></activity>
     </application>
 
 </manifest>

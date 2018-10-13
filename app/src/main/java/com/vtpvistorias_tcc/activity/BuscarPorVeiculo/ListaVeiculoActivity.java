@@ -1,4 +1,4 @@
-package com.vtpvistorias_tcc.activity.BuscarPorInspetor;
+package com.vtpvistorias_tcc.activity.BuscarPorVeiculo;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -14,22 +14,22 @@ import android.widget.Toast;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.GenericTypeIndicator;
 import com.google.firebase.database.ValueEventListener;
 import com.vtpvistorias_tcc.Model.Inspecao;
 import com.vtpvistorias_tcc.Model.Inspetor;
+import com.vtpvistorias_tcc.Model.Veiculo;
 import com.vtpvistorias_tcc.R;
+import com.vtpvistorias_tcc.activity.BuscarPorInspetor.ListaInspecaoActivity;
 import com.vtpvistorias_tcc.config.ConfiguracaoFirebase;
 
 import java.util.ArrayList;
 import java.util.List;
 
-
-public class ListaInspetoresActivity extends AppCompatActivity implements View.OnClickListener {
+public class ListaVeiculoActivity extends AppCompatActivity implements View.OnClickListener {
 
     private DatabaseReference firebase;
-    private List<Inspetor> listaInspetor;
-    private Inspecao inspecao;
+    private List<Veiculo> listaVeiculo;
+    private Veiculo veiculo;
     private ListView listView;
     private FloatingActionButton botaoBuscar;
     private Inspetor inspetor;
@@ -38,38 +38,40 @@ public class ListaInspetoresActivity extends AppCompatActivity implements View.O
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lista_inspetores);
+        setContentView(R.layout.activity_lista_veiculo);
 
-        listView = findViewById(R.id.listViewInspetores);
+        listView = findViewById(R.id.listViewVeiculos);
 
-        listaInspetor = new ArrayList<>();
+        listaVeiculo = new ArrayList<>();
 
-        botaoBuscar = findViewById(R.id.floatingActionButtonBuscarInspetor);
+        botaoBuscar = findViewById(R.id.floatingActionButtonBuscarVeiculo);
 
         botaoBuscar.setOnClickListener(this);
 
-        firebase = ConfiguracaoFirebase.getFirebase().child("Inspetor");
+
+        firebase = ConfiguracaoFirebase.getFirebase().child("Veiculos");
 
         firebase.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
 
-                List<String> nomes = new ArrayList<>();
+                List<String> dadosVeiculos = new ArrayList<>();
 
                 for(DataSnapshot child : dataSnapshot.getChildren()){
 
-                    listaInspetor.add(child.getValue(Inspetor.class));
+                    listaVeiculo.add(child.getValue(Veiculo.class));
 
                 }
 
-                for(int a = 0;a<listaInspetor.size();a++){
+                for(int a = 0;a<listaVeiculo.size();a++){
 
-                    nomes.add(listaInspetor.get(a).getNome());
+                    dadosVeiculos.add("Prefixo: "+listaVeiculo.get(a).getPrefixo()+
+                    "\nPlaca: "+ listaVeiculo.get(a).getPlaca());
 
                 }
 
-                ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, nomes);
+                ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, dadosVeiculos);
                 listView.setAdapter(adapter);
 
 
@@ -81,18 +83,15 @@ public class ListaInspetoresActivity extends AppCompatActivity implements View.O
             }
         });
 
-
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int indice, long l) {
 
-                inspetor = listaInspetor.get(indice);
+                veiculo = listaVeiculo.get(indice);
 
-                //Toast.makeText(getApplicationContext(),""+ inspetor.getNome(),Toast.LENGTH_SHORT).show();
+                i = new Intent(getApplicationContext(),ListaInspecaoVeiculosActivity.class);
 
-                i = new Intent(getApplicationContext(),ListaInspecaoActivity.class);
-
-                i.putExtra("inspetor",inspetor);
+                i.putExtra("veiculo",veiculo);
 
                 startActivity(i);
 
@@ -104,18 +103,6 @@ public class ListaInspetoresActivity extends AppCompatActivity implements View.O
 
     @Override
     public void onClick(View view) {
-
-        switch (view.getId()){
-
-            case R.id.floatingActionButtonBuscarInspetor:
-
-
-
-
-                break;
-
-
-        }
 
     }
 }

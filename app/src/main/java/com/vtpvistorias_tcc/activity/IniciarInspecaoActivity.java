@@ -78,7 +78,7 @@ public class IniciarInspecaoActivity extends AppCompatActivity implements View.O
 
                 if (!editTextPrefixo.getText().toString().equals("")) {
 
-                    firebase = FirebaseDatabase.getInstance().getReference().child("Veiculos").child(editTextPrefixo.getText().toString());
+                    firebase = ConfiguracaoFirebase.getFirebase().child("Veiculos").child(editTextPrefixo.getText().toString());
 
                     firebase.addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override

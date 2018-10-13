@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class Inspecao implements Serializable {
     //Atributos
-    private Long idInspecao;
+    private String idInspecao;
     private String dataHoraRegistro;
     private GrupoA grupoA;
     private GrupoB grupoB;
@@ -23,7 +23,7 @@ public class Inspecao implements Serializable {
 
     }
 
-    public Inspecao(Long idInspecao, String dataHoraRegistro){
+    public Inspecao(String idInspecao, String dataHoraRegistro){
         this.idInspecao=idInspecao;
         this.dataHoraRegistro=dataHoraRegistro;
     }
@@ -35,11 +35,11 @@ public class Inspecao implements Serializable {
 
     }
 
-    public Long getIdInspecao(){
+    public String getIdInspecao(){
         return idInspecao;
     }
 
-    public void setIdInspecao(Long idInspecao){
+    public void setIdInspecao(String idInspecao){
         this.idInspecao=idInspecao;
     }
 

@@ -14,6 +14,12 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.vtpvistorias_tcc.Model.Inspetor;
 import com.vtpvistorias_tcc.R;
 import com.vtpvistorias_tcc.config.ConfiguracaoFirebase;
 
@@ -57,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+
+
                 startActivity(
                         new Intent(MainActivity.this, LacrarVeiculoActivity.class)
                 );
@@ -64,6 +72,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        botaoConsultarInspecao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(
+                        new Intent(MainActivity.this, TipoBuscaActivity.class)
+                );
+
+            }
+        });
 
     }
 
@@ -103,4 +121,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
+
 }

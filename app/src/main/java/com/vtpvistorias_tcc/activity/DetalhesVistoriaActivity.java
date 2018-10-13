@@ -43,21 +43,15 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
 
         if(inspecao.getGrupoA()!=null || inspecao.getGrupoB()!=null){
 
-
-
             detalhesVistoriaTextView.setText("O veiculo foi reprovado \nEle será automaticamento bloqueado \n\n" + detalhesVistoriaTextView.getText());
 
         }else{
-
-
 
             detalhesVistoriaTextView.setText("O veiculo foi aprovado \nEstá apto para rodar \n\n" + detalhesVistoriaTextView.getText());
 
         }
 
         salvarButton.setOnClickListener(this);
-
-
 
     }
 
@@ -68,8 +62,8 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
         if (inspecao.getGrupoA1()!=null){
 
             //Coloca no Text View o titulo da Ficha
-            detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Grupo A1:\n\n");
-            //1 - SISTEMA E CARROCERIA NÍVEL B
+            detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"Grupo A1:\n");
+
             //TACOGRAFO
             //verifica se algo foi preenchido para o item
             if(inspecao.getGrupoA1().getTacografo().size()>=1) {
@@ -298,7 +292,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
         //inicio ficha A mesmo aspectos do item acima
         if (inspecao.getGrupoA()!=null){
 
-            detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nGrupo A:\n\n");
+            detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+"\nGrupo A:\n");
             //1 - SISTEMA DE FREIO
             //VALVULA PEDAL
             if(inspecao.getGrupoA().getValvulaPedal().size()>=1) {
@@ -956,7 +950,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
 
         if (inspecao.getGrupoB()!=null) {
 
-            detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nGrupo :B\n\n");
+            detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText() + "\nGrupo B:\n");
 
             if (inspecao.getGrupoB().getParaBrisa().size() >= 1) {
 
@@ -1665,6 +1659,8 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
 
                 if(inspecao.getGrupoA()!=null || inspecao.getGrupoB()!=null) {
 
+                    inspecao.setResultado("Reprovado");
+
                     if (inspecao.getVeiculo().isBloqueado().equals("Não")) {
 
                         inspecao.getVeiculo().setBloqueado("Sim");
@@ -1672,6 +1668,8 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
 
                     }
                 }else {
+
+                    inspecao.setResultado("Aprovado");
 
                     if (inspecao.getVeiculo().isBloqueado().equals("Sim")) {
 

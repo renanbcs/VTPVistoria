@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.BuscarPorInspetor.ListaInspetoresActivity"
+    tools:context=".activity.BuscarPorVeiculo.ListaVeiculoActivity"
     tools:layout_editor_absoluteY="81dp">
 
     <ListView
-        android:id="@+id/listViewInspetores"
+        android:id="@+id/listViewVeiculos"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
@@ -21,13 +21,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButtonBuscarInspetor"
+        android:id="@+id/floatingActionButtonBuscarVeiculo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="@+id/listViewInspetores"
-        app:layout_constraintEnd_toEndOf="@+id/listViewInspetores"
-        app:srcCompat="@drawable/ic_search_black_24dp"
-        android:focusable="true" />
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_search_black_24dp" />
 
 </android.support.constraint.ConstraintLayout>
