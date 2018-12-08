@@ -1,5 +1,6 @@
 package com.vtpvistorias_tcc.activity.BuscarPorInspetor;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
@@ -19,13 +20,14 @@ import com.google.firebase.database.ValueEventListener;
 import com.vtpvistorias_tcc.Model.Inspecao;
 import com.vtpvistorias_tcc.Model.Inspetor;
 import com.vtpvistorias_tcc.R;
+import com.vtpvistorias_tcc.config.AdapterPersonalizado;
 import com.vtpvistorias_tcc.config.ConfiguracaoFirebase;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class ListaInspetoresActivity extends AppCompatActivity implements View.OnClickListener {
+public class ListaInspetoresActivity extends AppCompatActivity {
 
     private DatabaseReference firebase;
     private List<Inspetor> listaInspetor;
@@ -34,6 +36,7 @@ public class ListaInspetoresActivity extends AppCompatActivity implements View.O
     private FloatingActionButton botaoBuscar;
     private Inspetor inspetor;
     private Intent i;
+    private Activity act = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,10 +46,6 @@ public class ListaInspetoresActivity extends AppCompatActivity implements View.O
         listView = findViewById(R.id.listViewInspetores);
 
         listaInspetor = new ArrayList<>();
-
-        botaoBuscar = findViewById(R.id.floatingActionButtonBuscarInspetor);
-
-        botaoBuscar.setOnClickListener(this);
 
         firebase = ConfiguracaoFirebase.getFirebase().child("Inspetor");
 
@@ -69,7 +68,8 @@ public class ListaInspetoresActivity extends AppCompatActivity implements View.O
 
                 }
 
-                ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, nomes);
+                AdapterPersonalizado adapter = new AdapterPersonalizado(listaInspetor,act);
+                //ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, nomes);
                 listView.setAdapter(adapter);
 
 
@@ -102,20 +102,4 @@ public class ListaInspetoresActivity extends AppCompatActivity implements View.O
 
     }
 
-    @Override
-    public void onClick(View view) {
-
-        switch (view.getId()){
-
-            case R.id.floatingActionButtonBuscarInspetor:
-
-
-
-
-                break;
-
-
-        }
-
-    }
 }

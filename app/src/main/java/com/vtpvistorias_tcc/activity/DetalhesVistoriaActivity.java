@@ -942,9 +942,7 @@ public class DetalhesVistoriaActivity extends AppCompatActivity implements View.
                     detalhesVistoriaTextView.setText(detalhesVistoriaTextView.getText()+inspecao.getGrupoA().getSistemaSegurancaDoCintoMotoristaEBloqueioPortas().get(a)+"\n");
 
                 }
-
             }
-
 
         }
 

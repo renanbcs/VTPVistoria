@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.vtpvistorias_tcc.Model.Inspecao;
 import com.vtpvistorias_tcc.R;
@@ -41,10 +42,12 @@ public class InspecaoActivity extends AppCompatActivity {
                 tvInspecao.setText(tvInspecao.getText()+
                         "\n\nGrupo A1");
 
-                if(inspecao.getGrupoA1().getTacografo()!=null) {
+                //TACOGRAFO
+                //verifica se algo foi preenchido para o item
+                if(inspecao.getGrupoA1().getTacografo().size()>=1) {
 
                     //Coloca no Text View o titulo do item
-                    tvInspecao.setText(tvInspecao.getText()+"\n\nTacografo:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nTacografo:\n");
 
                     //percorre o Array do item para preencher o Text View
                     for (int a = 0;a<inspecao.getGrupoA1().getTacografo().size();a++){
@@ -56,10 +59,12 @@ public class InspecaoActivity extends AppCompatActivity {
 
                 }//fim if do item
 
-                if(inspecao.getGrupoA1().getPiso()!=null) {
+                //PISO
+                //verifica se algo foi preenchido para o item
+                if(inspecao.getGrupoA1().getPiso().size()>=1) {
 
                     //Coloca no Text View o titulo do item
-                    tvInspecao.setText(tvInspecao.getText()+"\n\nPiso:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nPiso:\n");
 
                     //percorre o Array do item para preencher o Text View
                     for (int a = 0;a<inspecao.getGrupoA1().getPiso().size();a++){
@@ -71,10 +76,12 @@ public class InspecaoActivity extends AppCompatActivity {
 
                 }//fim if do item
 
-                if(inspecao.getGrupoA1().getQuebraSol()!=null) {
+                //QUEBRA SOL
+                //verifica se algo foi preenchido para o item
+                if(inspecao.getGrupoA1().getQuebraSol().size()>=1) {
 
                     //Coloca no Text View o titulo do item
-                    tvInspecao.setText(tvInspecao.getText()+"\n\nQuebra-Sol:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nQuebra-sol:\n");
 
                     //percorre o Array do item para preencher o Text View
                     for (int a = 0;a<inspecao.getGrupoA1().getQuebraSol().size();a++){
@@ -86,10 +93,12 @@ public class InspecaoActivity extends AppCompatActivity {
 
                 }//fim if do item
 
-                if(inspecao.getGrupoA1().getDesembacadorParaBrisa()!=null) {
+                //DESEMBAÇADOR PARA-BRISA
+                //verifica se algo foi preenchido para o item
+                if(inspecao.getGrupoA1().getDesembacadorParaBrisa().size()>=1) {
 
                     //Coloca no Text View o titulo do item
-                    tvInspecao.setText(tvInspecao.getText()+"\n\nDesembaçador Para Brisa:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nDesembaçador Para-Brisa:\n");
 
                     //percorre o Array do item para preencher o Text View
                     for (int a = 0;a<inspecao.getGrupoA1().getDesembacadorParaBrisa().size();a++){
@@ -101,10 +110,12 @@ public class InspecaoActivity extends AppCompatActivity {
 
                 }//fim if do item
 
-                if(inspecao.getGrupoA1().getBancosAltosSimples()!=null) {
+                //BANCOS ALTOS SIMPLES
+                //verifica se algo foi preenchido para o item
+                if(inspecao.getGrupoA1().getBancosAltosSimples().size()>=1) {
 
                     //Coloca no Text View o titulo do item
-                    tvInspecao.setText(tvInspecao.getText()+"\n\nBancos Altos Simples:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nBancos Altos simples:\n");
 
                     //percorre o Array do item para preencher o Text View
                     for (int a = 0;a<inspecao.getGrupoA1().getBancosAltosSimples().size();a++){
@@ -116,10 +127,12 @@ public class InspecaoActivity extends AppCompatActivity {
 
                 }//fim if do item
 
-                if(inspecao.getGrupoA1().getRadioComunicacao()!=null) {
+                //RADIO COMUNICAÇÃO
+                //verifica se algo foi preenchido para o item
+                if(inspecao.getGrupoA1().getRadioComunicacao().size()>=1) {
 
                     //Coloca no Text View o titulo do item
-                    tvInspecao.setText(tvInspecao.getText()+"\n\nRadio Comunicação:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nRádio comunicação:\n");
 
                     //percorre o Array do item para preencher o Text View
                     for (int a = 0;a<inspecao.getGrupoA1().getRadioComunicacao().size();a++){
@@ -131,10 +144,12 @@ public class InspecaoActivity extends AppCompatActivity {
 
                 }//fim if do item
 
-                if(inspecao.getGrupoA1().getBrakeLight()!=null) {
+                //BRAKE LIGHT
+                //verifica se algo foi preenchido para o item
+                if(inspecao.getGrupoA1().getBrakeLight().size()>=1) {
 
                     //Coloca no Text View o titulo do item
-                    tvInspecao.setText(tvInspecao.getText()+"\n\nBrake Light:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nBrake Light:\n");
 
                     //percorre o Array do item para preencher o Text View
                     for (int a = 0;a<inspecao.getGrupoA1().getBrakeLight().size();a++){
@@ -146,10 +161,12 @@ public class InspecaoActivity extends AppCompatActivity {
 
                 }//fim if do item
 
-                if(inspecao.getGrupoA1().getComunicacaoVisualInternaAdesivos()!=null) {
+                //COMUNICAÇÃO VISUAL INTERNA/ADESIVOS
+                //verifica se algo foi preenchido para o item
+                if(inspecao.getGrupoA1().getComunicacaoVisualInternaAdesivos().size()>=1) {
 
                     //Coloca no Text View o titulo do item
-                    tvInspecao.setText(tvInspecao.getText()+"\n\nComunicação Visual Interna Adesivos:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nComunicação visual interna/adesivos:\n");
 
                     //percorre o Array do item para preencher o Text View
                     for (int a = 0;a<inspecao.getGrupoA1().getComunicacaoVisualInternaAdesivos().size();a++){
@@ -161,10 +178,13 @@ public class InspecaoActivity extends AppCompatActivity {
 
                 }//fim if do item
 
-                if(inspecao.getGrupoA1().getAreaParaCadeiraDeRodas()!=null) {
+                //2 - ACESSIBILIDADE E MOBILIDADE NÍVEL A
+                //AREA PARA CADEIRA DE RODAS
+                //verifica se algo foi preenchido para o item
+                if(inspecao.getGrupoA1().getAreaParaCadeiraDeRodas().size()>=1) {
 
                     //Coloca no Text View o titulo do item
-                    tvInspecao.setText(tvInspecao.getText()+"\n\nArea para cadeira de rodas:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nÁrea para cadeira de rodas:\n");
 
                     //percorre o Array do item para preencher o Text View
                     for (int a = 0;a<inspecao.getGrupoA1().getAreaParaCadeiraDeRodas().size();a++){
@@ -176,10 +196,12 @@ public class InspecaoActivity extends AppCompatActivity {
 
                 }//fim if do item
 
-                if(inspecao.getGrupoA1().getAreaParaManobras()!=null) {
+                //AREA PARA MANOBRAS
+                //verifica se algo foi preenchido para o item
+                if(inspecao.getGrupoA1().getAreaParaManobras().size()>=1) {
 
                     //Coloca no Text View o titulo do item
-                    tvInspecao.setText(tvInspecao.getText()+"\n\nArea para manobras:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nÁrea para manobras:\n");
 
                     //percorre o Array do item para preencher o Text View
                     for (int a = 0;a<inspecao.getGrupoA1().getAreaParaManobras().size();a++){
@@ -191,10 +213,12 @@ public class InspecaoActivity extends AppCompatActivity {
 
                 }//fim if do item
 
-                if(inspecao.getGrupoA1().getPortas()!=null) {
+                //PORTAS
+                //verifica se algo foi preenchido para o item
+                if(inspecao.getGrupoA1().getPortas().size()>=1) {
 
                     //Coloca no Text View o titulo do item
-                    tvInspecao.setText(tvInspecao.getText()+"\n\nPortas:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nPortas:\n");
 
                     //percorre o Array do item para preencher o Text View
                     for (int a = 0;a<inspecao.getGrupoA1().getPortas().size();a++){
@@ -206,10 +230,12 @@ public class InspecaoActivity extends AppCompatActivity {
 
                 }//fim if do item
 
-                if(inspecao.getGrupoA1().getElevador()!=null) {
+                //ELEVADOR
+                //verifica se algo foi preenchido para o item
+                if(inspecao.getGrupoA1().getElevador().size()>=1) {
 
                     //Coloca no Text View o titulo do item
-                    tvInspecao.setText(tvInspecao.getText()+"\n\nElevador:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nElevador:\n");
 
                     //percorre o Array do item para preencher o Text View
                     for (int a = 0;a<inspecao.getGrupoA1().getElevador().size();a++){
@@ -221,10 +247,12 @@ public class InspecaoActivity extends AppCompatActivity {
 
                 }//fim if do item
 
-                if(inspecao.getGrupoA1().getItensDeSeguranca()!=null) {
+                // ITENS DE SEGURANÇA
+                //verifica se algo foi preenchido para o item
+                if(inspecao.getGrupoA1().getItensDeSeguranca().size()>=1) {
 
                     //Coloca no Text View o titulo do item
-                    tvInspecao.setText(tvInspecao.getText()+"\n\nItens de Segurança:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nItens de segurança:\n");
 
                     //percorre o Array do item para preencher o Text View
                     for (int a = 0;a<inspecao.getGrupoA1().getItensDeSeguranca().size();a++){
@@ -236,8 +264,6 @@ public class InspecaoActivity extends AppCompatActivity {
 
                 }//fim if do item
 
-                //demais itens A1
-
             }
 
             if(inspecao.getGrupoA()!= null){
@@ -245,608 +271,655 @@ public class InspecaoActivity extends AppCompatActivity {
                 tvInspecao.setText(tvInspecao.getText()+"\nGrupo A:\n");
                 //1 - SISTEMA DE FREIO
                 //VALVULA PEDAL
-                if(inspecao.getGrupoA().getValvulaPedal()!=null) {
+                if(inspecao.getGrupoA().getValvulaPedal().size()>=1) {
 
-                    tvInspecao.setText(tvInspecao.getText() + "\nValvula Pedal:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nValvula Pedal:\n");
 
-                    for (int a = 0; a < inspecao.getGrupoA().getValvulaPedal().size(); a++) {
+                    for (int a = 0;a<inspecao.getGrupoA().getValvulaPedal().size();a++){
 
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getValvulaPedal().get(a) + "\n");
-
-                    }
-
-                }
-
-                if(inspecao.getGrupoA().getAlmofadaPedal()!=null) {
-
-                    tvInspecao.setText(tvInspecao.getText() + "\nAlmofada Pedal:\n");
-
-                    for (int a = 0; a < inspecao.getGrupoA().getAlmofadaPedal().size(); a++) {
-
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getAlmofadaPedal().get(a) + "\n");
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getValvulaPedal().get(a)+"\n");
 
                     }
 
                 }
 
-                if(inspecao.getGrupoA().getFreioDeEstacionamento()!=null) {
+                //ALMOFADA PEDAL
+                if(inspecao.getGrupoA().getAlmofadaPedal().size()>=1) {
 
-                    tvInspecao.setText(tvInspecao.getText() + "\nFreio de Estacionamento:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nAlmofada Pedal:\n");
 
-                    for (int a = 0; a < inspecao.getGrupoA().getFreioDeEstacionamento().size(); a++) {
+                    for (int a = 0;a<inspecao.getGrupoA().getAlmofadaPedal().size();a++){
 
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getFreioDeEstacionamento().get(a) + "\n");
-
-                    }
-
-                }
-
-                if(inspecao.getGrupoA().getVaraoDoFreioDeMao()!=null) {
-
-                    tvInspecao.setText(tvInspecao.getText() + "\nVarão do Freio de Mão:\n");
-
-                    for (int a = 0; a < inspecao.getGrupoA().getVaraoDoFreioDeMao().size(); a++) {
-
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getVaraoDoFreioDeMao().get(a) + "\n");
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getAlmofadaPedal().get(a)+"\n");
 
                     }
 
                 }
 
-                if(inspecao.getGrupoA().getCatracasAutomaticaMecanica()!=null) {
+                //FREIO DE ESTACIONAMENTO
+                if(inspecao.getGrupoA().getFreioDeEstacionamento().size()>=1) {
 
-                    tvInspecao.setText(tvInspecao.getText() + "\nCatracas Automatica Mecanica:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nFreio de estacionamento:\n");
 
-                    for (int a = 0; a < inspecao.getGrupoA().getCatracasAutomaticaMecanica().size(); a++) {
+                    for (int a = 0;a<inspecao.getGrupoA().getFreioDeEstacionamento().size();a++){
 
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getCatracasAutomaticaMecanica().get(a) + "\n");
-
-                    }
-
-                }
-
-                if(inspecao.getGrupoA().getPinoDaCatraca()!=null) {
-
-                    tvInspecao.setText(tvInspecao.getText() + "\nPino da Catraca:\n");
-
-                    for (int a = 0; a < inspecao.getGrupoA().getPinoDaCatraca().size(); a++) {
-
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getPinoDaCatraca().get(a) + "\n");
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getFreioDeEstacionamento().get(a)+"\n");
 
                     }
 
                 }
 
-                if(inspecao.getGrupoA().getLonasDeFreio()!=null) {
+                //VARÃO DO FREIO DE MÃO
+                if(inspecao.getGrupoA().getVaraoDoFreioDeMao().size()>=1) {
 
-                    tvInspecao.setText(tvInspecao.getText() + "\nLonas de Freio:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nVarão freio de mão:\n");
 
-                    for (int a = 0; a < inspecao.getGrupoA().getLonasDeFreio().size(); a++) {
+                    for (int a = 0;a<inspecao.getGrupoA().getVaraoDoFreioDeMao().size();a++){
 
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getLonasDeFreio().get(a) + "\n");
-
-                    }
-
-                }
-
-                if(inspecao.getGrupoA().getCilindrosPneumaticos()!=null) {
-
-                    tvInspecao.setText(tvInspecao.getText() + "\nCilindros Pneumaticos:\n");
-
-                    for (int a = 0; a < inspecao.getGrupoA().getCilindrosPneumaticos().size(); a++) {
-
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getCilindrosPneumaticos().get(a) + "\n");
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getVaraoDoFreioDeMao().get(a)+"\n");
 
                     }
 
                 }
 
-                if(inspecao.getGrupoA().getServoDoFreio()!=null) {
+                //CATRACAS AUTOMATICA/MECANICA
+                if(inspecao.getGrupoA().getCatracasAutomaticaMecanica().size()>=1) {
 
-                    tvInspecao.setText(tvInspecao.getText() + "\nServo do Freio:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nCatracas Automatica/Mecanica:\n");
 
-                    for (int a = 0; a < inspecao.getGrupoA().getServoDoFreio().size(); a++) {
+                    for (int a = 0;a<inspecao.getGrupoA().getCatracasAutomaticaMecanica().size();a++){
 
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getServoDoFreio().get(a) + "\n");
-
-                    }
-
-                }
-
-                if(inspecao.getGrupoA().getCilindroDeRoda()!=null) {
-
-                    tvInspecao.setText(tvInspecao.getText() + "\nCilindro de Roda:\n");
-
-                    for (int a = 0; a < inspecao.getGrupoA().getCilindroDeRoda().size(); a++) {
-
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getCilindroDeRoda().get(a) + "\n");
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getCatracasAutomaticaMecanica().get(a)+"\n");
 
                     }
 
                 }
 
-                if(inspecao.getGrupoA().getCilintroMestre()!=null) {
+                //PINO DA CATRACA
+                if(inspecao.getGrupoA().getPinoDaCatraca().size()>=1) {
 
-                    tvInspecao.setText(tvInspecao.getText() + "\nCilindro Mestre:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nPino da catraca:\n");
 
-                    for (int a = 0; a < inspecao.getGrupoA().getCilintroMestre().size(); a++) {
+                    for (int a = 0;a<inspecao.getGrupoA().getPinoDaCatraca().size();a++){
 
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getCilintroMestre().get(a) + "\n");
-
-                    }
-
-                }
-
-                if(inspecao.getGrupoA().getFlexivelDaRoda()!=null) {
-
-                    tvInspecao.setText(tvInspecao.getText() + "\nFlexivel da Roda:\n");
-
-                    for (int a = 0; a < inspecao.getGrupoA().getFlexivelDaRoda().size(); a++) {
-
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getFlexivelDaRoda().get(a) + "\n");
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getPinoDaCatraca().get(a)+"\n");
 
                     }
 
                 }
 
-                if(inspecao.getGrupoA().getValvulasTubularReservatorio()!=null) {
+                //LONAS DE FREIO
+                if(inspecao.getGrupoA().getLonasDeFreio().size()>=1) {
 
-                    tvInspecao.setText(tvInspecao.getText() + "\nValvula Tubular Reservatório:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nLonas de freio:\n");
 
-                    for (int a = 0; a < inspecao.getGrupoA().getValvulasTubularReservatorio().size(); a++) {
+                    for (int a = 0;a<inspecao.getGrupoA().getLonasDeFreio().size();a++){
 
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getValvulasTubularReservatorio().get(a) + "\n");
-
-                    }
-
-                }
-
-                if(inspecao.getGrupoA().getAmortecedor()!=null) {
-
-                    tvInspecao.setText(tvInspecao.getText() + "\nAmortecedor:\n");
-
-                    for (int a = 0; a < inspecao.getGrupoA().getAmortecedor().size(); a++) {
-
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getAmortecedor().get(a) + "\n");
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getLonasDeFreio().get(a)+"\n");
 
                     }
 
                 }
 
-                if(inspecao.getGrupoA().getSuporteDoAmortecedor()!=null) {
+                //CILINDRO PNEUMATICOS
+                if(inspecao.getGrupoA().getCilindrosPneumaticos().size()>=1) {
 
-                    tvInspecao.setText(tvInspecao.getText() + "\nSuporte do Amortecedor:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nCilindros pneumaticos:\n");
 
-                    for (int a = 0; a < inspecao.getGrupoA().getSuporteDoAmortecedor().size(); a++) {
+                    for (int a = 0;a<inspecao.getGrupoA().getCilindrosPneumaticos().size();a++){
 
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getSuporteDoAmortecedor().get(a) + "\n");
-
-                    }
-
-                }
-
-                if(inspecao.getGrupoA().getBuchaDoAmortecedor()!=null) {
-
-                    tvInspecao.setText(tvInspecao.getText() + "\nBucha do Amortecedor:\n");
-
-                    for (int a = 0; a < inspecao.getGrupoA().getBuchaDoAmortecedor().size(); a++) {
-
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getBuchaDoAmortecedor().get(a) + "\n");
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getCilindrosPneumaticos().get(a)+"\n");
 
                     }
 
                 }
 
-                if(inspecao.getGrupoA().getFeixeDeMolas()!=null) {
+                //SERVO DO FREIO
+                if(inspecao.getGrupoA().getServoDoFreio().size()>=1) {
 
-                    tvInspecao.setText(tvInspecao.getText() + "\nFeixe de Molas:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nServo do freio:\n");
 
-                    for (int a = 0; a < inspecao.getGrupoA().getFeixeDeMolas().size(); a++) {
+                    for (int a = 0;a<inspecao.getGrupoA().getServoDoFreio().size();a++){
 
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getFeixeDeMolas().get(a) + "\n");
-
-                    }
-
-                }
-
-                if(inspecao.getGrupoA().getBuchaDasMolas()!=null) {
-
-                    tvInspecao.setText(tvInspecao.getText() + "\nBucha das Molas:\n");
-
-                    for (int a = 0; a < inspecao.getGrupoA().getBuchaDasMolas().size(); a++) {
-
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getBuchaDasMolas().get(a) + "\n");
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getServoDoFreio().get(a)+"\n");
 
                     }
 
                 }
 
-                if(inspecao.getGrupoA().getEspigaoDasMolas()!=null) {
+                //CILINDRO DE RODA
+                if(inspecao.getGrupoA().getCilindroDeRoda().size()>=1) {
 
-                    tvInspecao.setText(tvInspecao.getText() + "\nEspigão das Molas:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nCilindro de roda:\n");
 
-                    for (int a = 0; a < inspecao.getGrupoA().getEspigaoDasMolas().size(); a++) {
+                    for (int a = 0;a<inspecao.getGrupoA().getCilindroDeRoda().size();a++){
 
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getEspigaoDasMolas().get(a) + "\n");
-
-                    }
-
-                }
-
-                if(inspecao.getGrupoA().getGrampoDasMolas()!=null) {
-
-                    tvInspecao.setText(tvInspecao.getText() + "\nGrampo das Molas:\n");
-
-                    for (int a = 0; a < inspecao.getGrupoA().getGrampoDasMolas().size(); a++) {
-
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getGrampoDasMolas().get(a) + "\n");
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getCilindroDeRoda().get(a)+"\n");
 
                     }
 
                 }
 
-                if(inspecao.getGrupoA().getSuporteDasMolas()!=null) {
+                //CILINDRO MESTRE
+                if(inspecao.getGrupoA().getCilintroMestre().size()>=1) {
 
-                    tvInspecao.setText(tvInspecao.getText() + "\nSuporte das Molas:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nCilindro mestre:\n");
 
-                    for (int a = 0; a < inspecao.getGrupoA().getSuporteDasMolas().size(); a++) {
+                    for (int a = 0;a<inspecao.getGrupoA().getCilintroMestre().size();a++){
 
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getSuporteDasMolas().get(a) + "\n");
-
-                    }
-
-                }
-
-                if(inspecao.getGrupoA().getAlgema()!=null) {
-
-                    tvInspecao.setText(tvInspecao.getText() + "\nAlgema:\n");
-
-                    for (int a = 0; a < inspecao.getGrupoA().getAlgema().size(); a++) {
-
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getAlgema().get(a) + "\n");
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getCilintroMestre().get(a)+"\n");
 
                     }
 
                 }
 
-                if(inspecao.getGrupoA().getPinoDoSuporteDaMola()!=null) {
+                //FLEXIVEL DA RODA
+                if(inspecao.getGrupoA().getFlexivelDaRoda().size()>=1) {
 
-                    tvInspecao.setText(tvInspecao.getText() + "\nPino do Suporte da Mola:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nFlexível da roda:\n");
 
-                    for (int a = 0; a < inspecao.getGrupoA().getPinoDoSuporteDaMola().size(); a++) {
+                    for (int a = 0;a<inspecao.getGrupoA().getFlexivelDaRoda().size();a++){
 
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getPinoDoSuporteDaMola().get(a) + "\n");
-
-                    }
-
-                }
-
-                if(inspecao.getGrupoA().getMolaHelicoidal()!=null) {
-
-                    tvInspecao.setText(tvInspecao.getText() + "\nMola Helicoidal:\n");
-
-                    for (int a = 0; a < inspecao.getGrupoA().getMolaHelicoidal().size(); a++) {
-
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getMolaHelicoidal().get(a) + "\n");
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getFlexivelDaRoda().get(a)+"\n");
 
                     }
 
                 }
 
-                if(inspecao.getGrupoA().getSuporteEParafusoDaMolaHelicoidal()!=null) {
+                //VALVULAS TUBULAR RESERVATÓRIO
+                if(inspecao.getGrupoA().getValvulasTubularReservatorio().size()>=1) {
 
-                    tvInspecao.setText(tvInspecao.getText() + "\nSuporte e Parafuso da Mola Helicoidal:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nValvulas tubular reservatório:\n");
 
-                    for (int a = 0; a < inspecao.getGrupoA().getSuporteEParafusoDaMolaHelicoidal().size(); a++) {
+                    for (int a = 0;a<inspecao.getGrupoA().getValvulasTubularReservatorio().size();a++){
 
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getSuporteEParafusoDaMolaHelicoidal().get(a) + "\n");
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getValvulasTubularReservatorio().get(a)+"\n");
+
+                    }
+
+                }
+                //2 - SISTEMA DE SUSPENSÃO
+                //AMORTECEDOR
+                if(inspecao.getGrupoA().getAmortecedor().size()>=1) {
+
+                    tvInspecao.setText(tvInspecao.getText()+"\nAmortecedor:\n");
+
+                    for (int a = 0;a<inspecao.getGrupoA().getAmortecedor().size();a++){
+
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getAmortecedor().get(a)+"\n");
 
                     }
 
                 }
 
-                if(inspecao.getGrupoA().getBolsaoDeAr()!=null) {
+                //SUPORTE DO AMORTECEDOR
+                if(inspecao.getGrupoA().getSuporteDoAmortecedor().size()>=1) {
 
-                    tvInspecao.setText(tvInspecao.getText() + "\nBolsão de Ar:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nSuporte do amortecedor:\n");
 
-                    for (int a = 0; a < inspecao.getGrupoA().getBolsaoDeAr().size(); a++) {
+                    for (int a = 0;a<inspecao.getGrupoA().getSuporteDoAmortecedor().size();a++){
 
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getBolsaoDeAr().get(a) + "\n");
-
-                    }
-
-                }
-
-                if(inspecao.getGrupoA().getValvulaDeNivel()!=null) {
-
-                    tvInspecao.setText(tvInspecao.getText() + "\nValvula de Nível:\n");
-
-                    for (int a = 0; a < inspecao.getGrupoA().getValvulaDeNivel().size(); a++) {
-
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getValvulaDeNivel().get(a) + "\n");
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getSuporteDoAmortecedor().get(a)+"\n");
 
                     }
 
                 }
 
-                if(inspecao.getGrupoA().getBarraEstabilizadora()!=null) {
+                //BUCHA DO AMORTECEDOR
+                if(inspecao.getGrupoA().getBuchaDoAmortecedor().size()>=1) {
 
-                    tvInspecao.setText(tvInspecao.getText() + "\nBarra Estabilizadora:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nBucha do amortecedor:\n");
 
-                    for (int a = 0; a < inspecao.getGrupoA().getBarraEstabilizadora().size(); a++) {
+                    for (int a = 0;a<inspecao.getGrupoA().getBuchaDoAmortecedor().size();a++){
 
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getBarraEstabilizadora().get(a) + "\n");
-
-                    }
-
-                }
-
-                if(inspecao.getGrupoA().getBuchaDaBarraEstabilizadora()!=null) {
-
-                    tvInspecao.setText(tvInspecao.getText() + "\nBucha da Barra Estabilizadora:\n");
-
-                    for (int a = 0; a < inspecao.getGrupoA().getBuchaDaBarraEstabilizadora().size(); a++) {
-
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getBuchaDaBarraEstabilizadora().get(a) + "\n");
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getBuchaDoAmortecedor().get(a)+"\n");
 
                     }
 
                 }
 
-                if(inspecao.getGrupoA().getBananaBean()!=null) {
+                //FEIXE DE MOLAS
+                if(inspecao.getGrupoA().getFeixeDeMolas().size()>=1) {
 
-                    tvInspecao.setText(tvInspecao.getText() + "\nBanana Bean:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nFeixe de molas:\n");
 
-                    for (int a = 0; a < inspecao.getGrupoA().getBananaBean().size(); a++) {
+                    for (int a = 0;a<inspecao.getGrupoA().getFeixeDeMolas().size();a++){
 
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getBananaBean().get(a) + "\n");
-
-                    }
-
-                }
-
-                if(inspecao.getGrupoA().getHasteSuporteDeReacaoTraseira()!=null) {
-
-                    tvInspecao.setText(tvInspecao.getText() + "\nHaste Suporte de Reação Traseira:\n");
-
-                    for (int a = 0; a < inspecao.getGrupoA().getHasteSuporteDeReacaoTraseira().size(); a++) {
-
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getHasteSuporteDeReacaoTraseira().get(a) + "\n");
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getFeixeDeMolas().get(a)+"\n");
 
                     }
 
                 }
 
-                if(inspecao.getGrupoA().getEixoCardan()!=null) {
+                //BUCHA DAS MOLAS
+                if(inspecao.getGrupoA().getBuchaDasMolas().size()>=1) {
 
-                    tvInspecao.setText(tvInspecao.getText() + "\nEixo Cardan:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nBucha das molas:\n");
 
-                    for (int a = 0; a < inspecao.getGrupoA().getEixoCardan().size(); a++) {
+                    for (int a = 0;a<inspecao.getGrupoA().getBuchaDasMolas().size();a++){
 
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getEixoCardan().get(a) + "\n");
-
-                    }
-
-                }
-
-                if(inspecao.getGrupoA().getPneus()!=null) {
-
-                    tvInspecao.setText(tvInspecao.getText() + "\nPneus:\n");
-
-                    for (int a = 0; a < inspecao.getGrupoA().getPneus().size(); a++) {
-
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getPneus().get(a) + "\n");
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getBuchaDasMolas().get(a)+"\n");
 
                     }
 
                 }
 
-                if(inspecao.getGrupoA().getRodas()!=null) {
+                //ESPIGÃO DAS MOLAS
+                if(inspecao.getGrupoA().getEspigaoDasMolas().size()>=1) {
 
-                    tvInspecao.setText(tvInspecao.getText() + "\nRodas:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nEspigão das molas:\n");
 
-                    for (int a = 0; a < inspecao.getGrupoA().getRodas().size(); a++) {
+                    for (int a = 0;a<inspecao.getGrupoA().getEspigaoDasMolas().size();a++){
 
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getRodas().get(a) + "\n");
-
-                    }
-
-                }
-
-                if(inspecao.getGrupoA().getCaixaDeDirecao()!=null) {
-
-                    tvInspecao.setText(tvInspecao.getText() + "\nCaixa de Direção:\n");
-
-                    for (int a = 0; a < inspecao.getGrupoA().getCaixaDeDirecao().size(); a++) {
-
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getCaixaDeDirecao().get(a) + "\n");
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getEspigaoDasMolas().get(a)+"\n");
 
                     }
 
                 }
 
-                if(inspecao.getGrupoA().getSuporteDaCaixa()!=null) {
+                //GRAMPO DAS MOLAS
+                if(inspecao.getGrupoA().getGrampoDasMolas().size()>=1) {
 
-                    tvInspecao.setText(tvInspecao.getText() + "\nSuporte da Caixa:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nGrampo das molas:\n");
 
-                    for (int a = 0; a < inspecao.getGrupoA().getSuporteDaCaixa().size(); a++) {
+                    for (int a = 0;a<inspecao.getGrupoA().getGrampoDasMolas().size();a++){
 
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getSuporteDaCaixa().get(a) + "\n");
-
-                    }
-
-                }
-
-                if(inspecao.getGrupoA().getBracoTerminalDaCaixa()!=null) {
-
-                    tvInspecao.setText(tvInspecao.getText() + "\nBraço Terminal da Caixa:\n");
-
-                    for (int a = 0; a < inspecao.getGrupoA().getBracoTerminalDaCaixa().size(); a++) {
-
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getBracoTerminalDaCaixa().get(a) + "\n");
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getGrampoDasMolas().get(a)+"\n");
 
                     }
 
                 }
 
-                if(inspecao.getGrupoA().getAmortecedorDirecao()!=null) {
+                //SUPORTE DAS MOLAS
+                if(inspecao.getGrupoA().getSuporteDasMolas().size()>=1) {
 
-                    tvInspecao.setText(tvInspecao.getText() + "\nAmortecedor Direção:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nSuporte das molas:\n");
 
-                    for (int a = 0; a < inspecao.getGrupoA().getAmortecedorDirecao().size(); a++) {
+                    for (int a = 0;a<inspecao.getGrupoA().getSuporteDasMolas().size();a++){
 
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getAmortecedorDirecao().get(a) + "\n");
-
-                    }
-
-                }
-
-                if(inspecao.getGrupoA().getEixoDianteiro()!=null) {
-
-                    tvInspecao.setText(tvInspecao.getText() + "\nEixo Dianteiro:\n");
-
-                    for (int a = 0; a < inspecao.getGrupoA().getEixoDianteiro().size(); a++) {
-
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getEixoDianteiro().get(a) + "\n");
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getSuporteDasMolas().get(a)+"\n");
 
                     }
 
                 }
 
-                if(inspecao.getGrupoA().getRolamentoDaMangaDoEixo()!=null) {
+                //ALGEMA (JUMELO)
+                if(inspecao.getGrupoA().getAlgema().size()>=1) {
 
-                    tvInspecao.setText(tvInspecao.getText() + "\nRolamento da Manga do Eixo:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nAlgema (jumelo):\n");
 
-                    for (int a = 0; a < inspecao.getGrupoA().getRolamentoDaMangaDoEixo().size(); a++) {
+                    for (int a = 0;a<inspecao.getGrupoA().getAlgema().size();a++){
 
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getRolamentoDaMangaDoEixo().get(a) + "\n");
-
-                    }
-
-                }
-
-                if(inspecao.getGrupoA().getParafusoDoBatenteDaManga()!=null) {
-
-                    tvInspecao.setText(tvInspecao.getText() + "\nParafuso do Batente da Manga:\n");
-
-                    for (int a = 0; a < inspecao.getGrupoA().getParafusoDoBatenteDaManga().size(); a++) {
-
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getParafusoDoBatenteDaManga().get(a) + "\n");
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getAlgema().get(a)+"\n");
 
                     }
 
                 }
 
-                if(inspecao.getGrupoA().getBracoDoEixoDianteiro()!=null) {
+                //PINO DO SUPORTE DA MOLA
+                if(inspecao.getGrupoA().getPinoDoSuporteDaMola().size()>=1) {
 
-                    tvInspecao.setText(tvInspecao.getText() + "\nBraço do Eixo Dianteiro:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nPino do suporte da mola:\n");
 
-                    for (int a = 0; a < inspecao.getGrupoA().getBracoDoEixoDianteiro().size(); a++) {
+                    for (int a = 0;a<inspecao.getGrupoA().getPinoDoSuporteDaMola().size();a++){
 
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getBracoDoEixoDianteiro().get(a) + "\n");
-
-                    }
-
-                }
-
-                if(inspecao.getGrupoA().getTerminaisDaBarraLonga()!=null) {
-
-                    tvInspecao.setText(tvInspecao.getText() + "\nTerminais da Barra Longa:\n");
-
-                    for (int a = 0; a < inspecao.getGrupoA().getTerminaisDaBarraLonga().size(); a++) {
-
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getTerminaisDaBarraLonga().get(a) + "\n");
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getPinoDoSuporteDaMola().get(a)+"\n");
 
                     }
 
                 }
 
-                if(inspecao.getGrupoA().getBracoIntermediario()!=null) {
+                //MOLA HELICOIDAL
+                if(inspecao.getGrupoA().getMolaHelicoidal().size()>=1) {
 
-                    tvInspecao.setText(tvInspecao.getText() + "\nBraço Intermediário:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nMola Helicoidal:\n");
 
-                    for (int a = 0; a < inspecao.getGrupoA().getBracoIntermediario().size(); a++) {
+                    for (int a = 0;a<inspecao.getGrupoA().getMolaHelicoidal().size();a++){
 
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getBracoIntermediario().get(a) + "\n");
-
-                    }
-
-                }
-
-                if(inspecao.getGrupoA().getHasteSuporteDeReacao()!=null) {
-
-                    tvInspecao.setText(tvInspecao.getText() + "\nHaste Suporte de Reação:\n");
-
-                    for (int a = 0; a < inspecao.getGrupoA().getHasteSuporteDeReacao().size(); a++) {
-
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getHasteSuporteDeReacao().get(a) + "\n");
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getMolaHelicoidal().get(a)+"\n");
 
                     }
 
                 }
 
-                if(inspecao.getGrupoA().getTanqueDeCombustivel()!=null) {
+                //SUPORTE E PARAFUSO DA MOLA HELICOIDAL
+                if(inspecao.getGrupoA().getSuporteEParafusoDaMolaHelicoidal().size()>=1) {
 
-                    tvInspecao.setText(tvInspecao.getText() + "\nTanque de Combustível:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nSuporte e parafuso da mola helicoidal:\n");
 
-                    for (int a = 0; a < inspecao.getGrupoA().getTanqueDeCombustivel().size(); a++) {
+                    for (int a = 0;a<inspecao.getGrupoA().getSuporteEParafusoDaMolaHelicoidal().size();a++){
 
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getTanqueDeCombustivel().get(a) + "\n");
-
-                    }
-
-                }
-
-                if(inspecao.getGrupoA().getCintaSuporteDoTanque()!=null) {
-
-                    tvInspecao.setText(tvInspecao.getText() + "\nCinta Suporte do Tanque:\n");
-
-                    for (int a = 0; a < inspecao.getGrupoA().getCintaSuporteDoTanque().size(); a++) {
-
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getCintaSuporteDoTanque().get(a) + "\n");
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getSuporteEParafusoDaMolaHelicoidal().get(a)+"\n");
 
                     }
 
                 }
 
-                if(inspecao.getGrupoA().getEstruturaDosDegraus()!=null) {
+                //BOLSÃO DE AR
+                if(inspecao.getGrupoA().getBolsaoDeAr().size()>=1) {
 
-                    tvInspecao.setText(tvInspecao.getText() + "\nEstrutura dos Degraus:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nBolsão de Ar:\n");
 
-                    for (int a = 0; a < inspecao.getGrupoA().getEstruturaDosDegraus().size(); a++) {
+                    for (int a = 0;a<inspecao.getGrupoA().getBolsaoDeAr().size();a++){
 
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getEstruturaDosDegraus().get(a) + "\n");
-
-                    }
-
-                }
-
-                if(inspecao.getGrupoA().getChassisEPlataforma()!=null) {
-
-                    tvInspecao.setText(tvInspecao.getText() + "\nChassis e Plataforma:\n");
-
-                    for (int a = 0; a < inspecao.getGrupoA().getChassisEPlataforma().size(); a++) {
-
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getChassisEPlataforma().get(a) + "\n");
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getBolsaoDeAr().get(a)+"\n");
 
                     }
 
                 }
 
-                if(inspecao.getGrupoA().getSistemaSegurancaDoCintoMotoristaEBloqueioPortas()!=null) {
+                //VALVULA DE NÍVEL
+                if(inspecao.getGrupoA().getValvulaDeNivel().size()>=1) {
 
-                    tvInspecao.setText(tvInspecao.getText() + "\nSistema Segurança do Cinto do Motorista e Bloqueio Portas:\n");
+                    tvInspecao.setText(tvInspecao.getText()+"\nValvula de nível:\n");
 
-                    for (int a = 0; a < inspecao.getGrupoA().getSistemaSegurancaDoCintoMotoristaEBloqueioPortas().size(); a++) {
+                    for (int a = 0;a<inspecao.getGrupoA().getValvulaDeNivel().size();a++){
 
-                        tvInspecao.setText(tvInspecao.getText() + inspecao.getGrupoA().getSistemaSegurancaDoCintoMotoristaEBloqueioPortas().get(a) + "\n");
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getValvulaDeNivel().get(a)+"\n");
 
                     }
 
                 }
 
-                //demais itens A
+                //BARRA ESTABILIZADORA
+                if(inspecao.getGrupoA().getBarraEstabilizadora().size()>=1) {
 
+                    tvInspecao.setText(tvInspecao.getText()+"\nBarra estabilizadora:\n");
+
+                    for (int a = 0;a<inspecao.getGrupoA().getBarraEstabilizadora().size();a++){
+
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getBarraEstabilizadora().get(a)+"\n");
+
+                    }
+
+                }
+
+                //BUCHA DA BARRA ESTABILIZADORA
+                if(inspecao.getGrupoA().getBuchaDaBarraEstabilizadora().size()>=1) {
+
+                    tvInspecao.setText(tvInspecao.getText()+"\nBucha da barra estabilizadora:\n");
+
+                    for (int a = 0;a<inspecao.getGrupoA().getBuchaDaBarraEstabilizadora().size();a++){
+
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getBuchaDaBarraEstabilizadora().get(a)+"\n");
+
+                    }
+
+                }
+
+                //BANANA BEAN
+                if(inspecao.getGrupoA().getBananaBean().size()>=1) {
+
+                    tvInspecao.setText(tvInspecao.getText()+"\nBanana Bean:\n");
+
+                    for (int a = 0;a<inspecao.getGrupoA().getBananaBean().size();a++){
+
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getBananaBean().get(a)+"\n");
+
+                    }
+
+                }
+
+                //HASTE/SUPORTE DE REAÇÃO TRASEIRA
+                if(inspecao.getGrupoA().getHasteSuporteDeReacaoTraseira().size()>=1) {
+
+                    tvInspecao.setText(tvInspecao.getText()+"\nHaste/Suporte de reação traseira:\n");
+
+                    for (int a = 0;a<inspecao.getGrupoA().getHasteSuporteDeReacaoTraseira().size();a++){
+
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getHasteSuporteDeReacaoTraseira().get(a)+"\n");
+
+                    }
+
+                }
+                //3 - SISTEMA DE TRAÇÃO
+                //EIXO CARDAN
+                if(inspecao.getGrupoA().getEixoCardan().size()>=1) {
+
+                    tvInspecao.setText(tvInspecao.getText()+"\nEixo Cardan:\n");
+
+                    for (int a = 0;a<inspecao.getGrupoA().getEixoCardan().size();a++){
+
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getEixoCardan().get(a)+"\n");
+
+                    }
+
+                }
+                //4 - SISTEMA RODANTE
+                //PNEUS
+                if(inspecao.getGrupoA().getPneus().size()>=1) {
+
+                    tvInspecao.setText(tvInspecao.getText()+"\nPneus:\n");
+
+                    for (int a = 0;a<inspecao.getGrupoA().getPneus().size();a++){
+
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getPneus().get(a)+"\n");
+
+                    }
+
+                }
+
+                //RODAS
+                if(inspecao.getGrupoA().getRodas().size()>=1) {
+
+                    tvInspecao.setText(tvInspecao.getText()+"\nRodas:\n");
+
+                    for (int a = 0;a<inspecao.getGrupoA().getRodas().size();a++){
+
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getRodas().get(a)+"\n");
+
+                    }
+
+                }
+                //5 - SISTEMA DE EIXO DIANTEIRO/DIREÇÃO
+                //CAIXA DE DIREÇÃO
+                if(inspecao.getGrupoA().getCaixaDeDirecao().size()>=1) {
+
+                    tvInspecao.setText(tvInspecao.getText()+"\nCaixa de direção:\n");
+
+                    for (int a = 0;a<inspecao.getGrupoA().getCaixaDeDirecao().size();a++){
+
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getCaixaDeDirecao().get(a)+"\n");
+
+                    }
+
+                }
+
+                //SUPORTE DA CAIXA
+                if(inspecao.getGrupoA().getSuporteDaCaixa().size()>=1) {
+
+                    tvInspecao.setText(tvInspecao.getText()+"\nSuporte da caixa:\n");
+
+                    for (int a = 0;a<inspecao.getGrupoA().getSuporteDaCaixa().size();a++){
+
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getSuporteDaCaixa().get(a)+"\n");
+
+                    }
+
+                }
+
+                //BRAÇO TERMINAL DA CAIXA
+                if(inspecao.getGrupoA().getBracoTerminalDaCaixa().size()>=1) {
+
+                    tvInspecao.setText(tvInspecao.getText()+"\nBraço terminal da caixa:\n");
+
+                    for (int a = 0;a<inspecao.getGrupoA().getAmortecedor().size();a++){
+
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getAmortecedor().get(a)+"\n");
+
+                    }
+
+                }
+
+                //AMORTECEDOR/DIREÇÃO
+                if(inspecao.getGrupoA().getAmortecedorDirecao().size()>=1) {
+
+                    tvInspecao.setText(tvInspecao.getText()+"\nAmortecedor Direção:\n");
+
+                    for (int a = 0;a<inspecao.getGrupoA().getAmortecedorDirecao().size();a++){
+
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getAmortecedorDirecao().get(a)+"\n");
+
+                    }
+
+                }
+
+                //EIXO DIANTEIRO (VIGA)
+                if(inspecao.getGrupoA().getEixoDianteiro().size()>=1) {
+
+                    tvInspecao.setText(tvInspecao.getText()+"\nEixo dianteiro (viga):\n");
+
+                    for (int a = 0;a<inspecao.getGrupoA().getEixoDianteiro().size();a++){
+
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getEixoDianteiro().get(a)+"\n");
+
+                    }
+
+                }
+
+                //ROLAMENTO DE MANGA DO EIXO
+                if(inspecao.getGrupoA().getRolamentoDaMangaDoEixo().size()>=1) {
+
+                    tvInspecao.setText(tvInspecao.getText()+"\nRolamento de manga do eixo:\n");
+
+                    for (int a = 0;a<inspecao.getGrupoA().getRolamentoDaMangaDoEixo().size();a++){
+
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getRolamentoDaMangaDoEixo().get(a)+"\n");
+
+                    }
+
+                }
+
+                //PARAFUSO DO BATENTE DA MANGA
+                if(inspecao.getGrupoA().getParafusoDoBatenteDaManga().size()>=1) {
+
+                    tvInspecao.setText(tvInspecao.getText()+"\nParafuso do batente da manga:\n");
+
+                    for (int a = 0;a<inspecao.getGrupoA().getParafusoDoBatenteDaManga().size();a++){
+
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getParafusoDoBatenteDaManga().get(a)+"\n");
+
+                    }
+
+                }
+
+                //BRAÇO DO EIXO DIANTEIRO
+                if(inspecao.getGrupoA().getBracoDoEixoDianteiro().size()>=1) {
+
+                    tvInspecao.setText(tvInspecao.getText()+"\nBraço do eixo dianteiro:\n");
+
+                    for (int a = 0;a<inspecao.getGrupoA().getBracoDoEixoDianteiro().size();a++){
+
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getBracoDoEixoDianteiro().get(a)+"\n");
+
+                    }
+
+                }
+
+                //TERMINAIS DA BARRA LONGA
+                if(inspecao.getGrupoA().getTerminaisDaBarraLonga().size()>=1) {
+
+                    tvInspecao.setText(tvInspecao.getText()+"\nTerminais da barra longa:\n");
+
+                    for (int a = 0;a<inspecao.getGrupoA().getTerminaisDaBarraLonga().size();a++){
+
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getTerminaisDaBarraLonga().get(a)+"\n");
+
+                    }
+
+                }
+
+                //BRAÇO INTERMEDIARIO
+                if(inspecao.getGrupoA().getBracoIntermediario().size()>=1) {
+
+                    tvInspecao.setText(tvInspecao.getText()+"\nBraço intermediario:\n");
+
+                    for (int a = 0;a<inspecao.getGrupoA().getBracoIntermediario().size();a++){
+
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getBracoIntermediario().get(a)+"\n");
+
+                    }
+
+                }
+
+                //HASTE/SUPORTE DE REAÇÃO
+                if(inspecao.getGrupoA().getHasteSuporteDeReacao().size()>=1) {
+
+                    tvInspecao.setText(tvInspecao.getText()+"\nHaster/Suporte de reação:\n");
+
+                    for (int a = 0;a<inspecao.getGrupoA().getHasteSuporteDeReacao().size();a++){
+
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getHasteSuporteDeReacao().get(a)+"\n");
+
+                    }
+
+                }
+
+                //6 - SISTEMA CHASSI-PLATAFORMA
+                //TANQUE DE COMBUSTÍVEL
+                if(inspecao.getGrupoA().getTanqueDeCombustivel().size()>=1) {
+
+                    tvInspecao.setText(tvInspecao.getText()+"\nTanque de combustível:\n");
+
+                    for (int a = 0;a<inspecao.getGrupoA().getTanqueDeCombustivel().size();a++){
+
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getTanqueDeCombustivel().get(a)+"\n");
+
+                    }
+
+                }
+
+                //CINTA/SUPORTE DO TANQUE
+                if(inspecao.getGrupoA().getCintaSuporteDoTanque().size()>=1) {
+
+                    tvInspecao.setText(tvInspecao.getText()+"\nCinta/Suporte do tanque:\n");
+
+                    for (int a = 0;a<inspecao.getGrupoA().getCintaSuporteDoTanque().size();a++){
+
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getCintaSuporteDoTanque().get(a)+"\n");
+
+                    }
+
+                }
+
+                //ESTRUTURA DOS DEGRAUS
+                if(inspecao.getGrupoA().getEstruturaDosDegraus().size()>=1) {
+
+                    tvInspecao.setText(tvInspecao.getText()+"\nEstrutura dos degraus:\n");
+
+                    for (int a = 0;a<inspecao.getGrupoA().getEstruturaDosDegraus().size();a++){
+
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getEstruturaDosDegraus().get(a)+"\n");
+
+                    }
+
+                }
+
+                //CHASSIS E PLATAFORMA
+                if(inspecao.getGrupoA().getChassisEPlataforma().size()>=1) {
+
+                    tvInspecao.setText(tvInspecao.getText()+"\nChassi e Plataforma:\n");
+
+                    for (int a = 0;a<inspecao.getGrupoA().getChassisEPlataforma().size();a++){
+
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getChassisEPlataforma().get(a)+"\n");
+
+                    }
+
+                }
+
+                //SISTEMA DE SEGURANÇA DO CINTO DO MOTORISTA E BLOQUEIO PORTAS
+                if(inspecao.getGrupoA().getSistemaSegurancaDoCintoMotoristaEBloqueioPortas().size()>=1) {
+
+                    tvInspecao.setText(tvInspecao.getText()+"\nSistema de segurança do cinto do motorista e bloqueio de portas:\n");
+
+                    for (int a = 0;a<inspecao.getGrupoA().getSistemaSegurancaDoCintoMotoristaEBloqueioPortas().size();a++){
+
+                        tvInspecao.setText(tvInspecao.getText()+inspecao.getGrupoA().getSistemaSegurancaDoCintoMotoristaEBloqueioPortas().get(a)+"\n");
+
+                    }
+
+                }
             }
 
             if (inspecao.getGrupoB()!=null) {
@@ -1478,10 +1551,6 @@ public class InspecaoActivity extends AppCompatActivity {
 
 
         }
-
-
-
-
 
     }
 }

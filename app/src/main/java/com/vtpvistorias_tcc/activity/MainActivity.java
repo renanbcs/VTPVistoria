@@ -11,6 +11,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -26,10 +27,8 @@ import com.vtpvistorias_tcc.config.ConfiguracaoFirebase;
 public class MainActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
-    private Button botaoNovaInspecao;
-    private Button botaoLacharVeiculo;
-    private Button botaoConsultarInspecao;
     private FirebaseAuth usuarioFirebase;
+    private ImageButton imageButtonBuscarInspecao, imageButtonIniciarNovaInspecao, imageButtonLacrarVeiculo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,15 +39,16 @@ public class MainActivity extends AppCompatActivity {
             toolbar.setTitle(R.string.app_name);
             setSupportActionBar(toolbar);
 
-        botaoNovaInspecao = (Button) findViewById(R.id.botaoNovaInspecao);
-        botaoLacharVeiculo = (Button) findViewById(R.id.botaoLacharVeiculo);
-        botaoConsultarInspecao = (Button) findViewById(R.id.botaoConsultarInspecao);
+
+        imageButtonBuscarInspecao = findViewById(R.id.imageButtonBuscarInspecao);
+        imageButtonIniciarNovaInspecao = findViewById(R.id.imageButtonIniciarNovaInspecao);
+        imageButtonLacrarVeiculo = findViewById(R.id.imageButtonLacrarVeiculo);
 
         usuarioFirebase = ConfiguracaoFirebase.getFirebaseAutenticacao();
 
         //Toast.makeText(this, ""+usuarioFirebase.getCurrentUser().getUid(),Toast.LENGTH_SHORT).show();
 
-        botaoNovaInspecao.setOnClickListener(new View.OnClickListener() {
+        imageButtonIniciarNovaInspecao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        botaoLacharVeiculo.setOnClickListener(new View.OnClickListener() {
+        imageButtonLacrarVeiculo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -72,7 +72,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        botaoConsultarInspecao.setOnClickListener(new View.OnClickListener() {
+
+        imageButtonBuscarInspecao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -82,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
 
     }
 

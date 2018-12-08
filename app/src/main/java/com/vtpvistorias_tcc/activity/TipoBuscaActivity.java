@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.vtpvistorias_tcc.R;
@@ -13,18 +14,19 @@ import com.vtpvistorias_tcc.activity.BuscarPorVeiculo.ListaVeiculoActivity;
 
 public class TipoBuscaActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button porVeiculo,porInnspetor;
+    private ImageButton imageButtonPorVeiculo,imageButtonPorInspetor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tipo_busca);
 
-        porInnspetor = findViewById(R.id.buttonPorInspetor);
-        porVeiculo = findViewById(R.id.buttonPorVeiculo);
+        imageButtonPorInspetor = findViewById(R.id.imageButtonPorInspetor);
+        imageButtonPorVeiculo = findViewById(R.id.imageButtonPorVeiculo);
 
-        porInnspetor.setOnClickListener(this);
-        porVeiculo.setOnClickListener(this);
+
+        imageButtonPorVeiculo.setOnClickListener(this);
+        imageButtonPorInspetor.setOnClickListener(this);
 
 
     }
@@ -34,7 +36,7 @@ public class TipoBuscaActivity extends AppCompatActivity implements View.OnClick
 
         switch (view.getId()){
 
-            case R.id.buttonPorInspetor:
+            case R.id.imageButtonPorInspetor:
 
                 startActivity(
                         new Intent(TipoBuscaActivity.this, ListaInspetoresActivity.class));
@@ -42,7 +44,7 @@ public class TipoBuscaActivity extends AppCompatActivity implements View.OnClick
                 break;
 
 
-            case R.id.buttonPorVeiculo:
+            case R.id.imageButtonPorVeiculo:
 
 
 

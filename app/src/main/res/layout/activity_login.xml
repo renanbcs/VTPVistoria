@@ -1,52 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.LoginActivity"
-    android:layout_margin="16dp"
+    android:background="#58C3BF"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".activity.LoginActivity"
+    tools:layout_editor_absoluteY="81dp">
 
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="VTP Vistoria"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title"
-        android:textSize="24sp"
-        android:gravity="center"
-        android:layout_marginBottom="40dp"/>
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="274dp"
+        android:layout_height="184dp"
+        app:layout_constraintBottom_toTopOf="@+id/edtEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 
     <EditText
         android:id="@+id/edtEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="346dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="32dp"
+        android:background="#E0FFFF"
+        android:hint="E-MAIL"
         android:inputType="textEmailAddress"
-        android:hint="E-MAIL"/>
+        app:layout_constraintBottom_toTopOf="@+id/edtSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"/>
 
     <EditText
         android:id="@+id/edtSenha"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="346dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="31dp"
+        android:background="#E0FFFF"
+        android:hint="SENHA"
         android:inputType="textPassword"
-        android:hint="SENHA"/>
+        app:layout_constraintBottom_toTopOf="@+id/btnLogar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
 
     <Button
         android:id="@+id/btnLogar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="LOGIN" />
+        android:layout_width="0dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="16dp"
+        android:background="#E0FFFF"
+        android:text="LOGIN"
+        app:layout_constraintBottom_toTopOf="@+id/textEsqueciSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtSenha" />
 
     <TextView
         android:id="@+id/textEsqueciSenha"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="102dp"
+        android:gravity="center"
         android:text="Esqueci minha senha"
-        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
         android:textSize="15sp"
-        android:gravity="center"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogar" />
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>

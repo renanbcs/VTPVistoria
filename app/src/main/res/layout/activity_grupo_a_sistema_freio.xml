@@ -4,10 +4,6 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
         android:orientation="vertical"
         tools:context=".activity.GrupoA.GrupoASistemaFreioActivity">
 
@@ -20,388 +16,499 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textViewTituloGrupoA"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:gravity="center"
-                    android:text="Grupo A"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
+                    android:layout_height="match_parent"
+                    android:background="@color/fundoimpar"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textViewSistemaFreio"
+                    <TextView
+                        android:id="@+id/textViewTituloGrupoA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Grupo A"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewSistemaFreio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="1 - Sistemas de Freio"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:gravity="center"
-                    android:text="1 - Sistemas de Freio"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                    android:textSize="15sp" />
+                    android:layout_height="match_parent"
+                    android:background="@color/fundopar"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textViewValvulaPedal"
+                    <TextView
+                        android:id="@+id/textViewValvulaPedal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="fill_horizontal|center"
+                        android:text="Válvula Pedal"
+                        android:textColor="#111"
+                        android:textIsSelectable="false"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                    <CheckBox
+                        android:id="@+id/valvulaPedalVazando"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vazando" />
+
+                    <CheckBox
+                        android:id="@+id/valvulaPedalContaminada"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Contaminada" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginTop="10dp"
-                    android:gravity="fill_horizontal|center"
-                    android:text="Válvula Pedal"
-                    android:textIsSelectable="false"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    tools:layout_marginLeft="30dp"
-                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+                    android:layout_height="match_parent"
+                    android:background="@color/fundoimpar"
+                    android:orientation="vertical">
 
-                <CheckBox
-                    android:id="@+id/valvulaPedalVazando"
+                    <TextView
+                        android:id="@+id/textViewAlmofadaPedal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="fill_horizontal|center"
+                        android:text="Almofada Pedal"
+                        android:textColor="#111"
+                        android:textIsSelectable="false"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                    <CheckBox
+                        android:id="@+id/almofadaPedalGasta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gasta" />
+
+                    <CheckBox
+                        android:id="@+id/almofadaPedalFalta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Falta" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Vazando" />
+                    android:layout_height="match_parent"
+                    android:background="@color/fundopar"
+                    android:orientation="vertical">
 
-                <CheckBox
-                    android:id="@+id/valvulaPedalContaminada"
+                    <TextView
+                        android:id="@+id/textViewFreioEstacionamento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="fill_horizontal|center"
+                        android:text="Freio de Estacionamento"
+                        android:textColor="#111"
+                        android:textIsSelectable="false"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                    <CheckBox
+                        android:id="@+id/freioEstacionamentoNaoFunciona"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Não Funciona" />
+
+                    <CheckBox
+                        android:id="@+id/freioEstacionamentoVazando"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vazando" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Contaminada" />
+                    android:layout_height="match_parent"
+                    android:background="@color/fundoimpar"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textViewAlmofadaPedal"
+                    <TextView
+                        android:id="@+id/textViewVaraoFreioMao"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="fill_horizontal|center"
+                        android:text="Varão do Freio de Mão"
+                        android:textColor="#111"
+                        android:textIsSelectable="false"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                    <CheckBox
+                        android:id="@+id/varaoFreioMaoSemAcao"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sem Ação" />
+
+                    <CheckBox
+                        android:id="@+id/varaoFreioMaoSolta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Solta" />
+
+                    <CheckBox
+                        android:id="@+id/varaoFreioMaoDespressurizada"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Despressurizada" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginTop="10dp"
-                    android:gravity="fill_horizontal|center"
-                    android:text="Almofada Pedal"
-                    android:textIsSelectable="false"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    tools:layout_marginLeft="30dp"
-                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+                    android:layout_height="match_parent"
+                    android:background="@color/fundopar"
+                    android:orientation="vertical">
 
-                <CheckBox
-                    android:id="@+id/almofadaPedalGasta"
+                    <TextView
+                        android:id="@+id/textViewCatracas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="fill_horizontal|center"
+                        android:text="Catracas Automática/Mecânica"
+                        android:textColor="#111"
+                        android:textIsSelectable="false"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                    <CheckBox
+                        android:id="@+id/catracaFalta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Falta" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Gasta" />
+                    android:layout_height="match_parent"
+                    android:background="@color/fundoimpar"
+                    android:orientation="vertical">
 
-                <CheckBox
-                    android:id="@+id/almofadaPedalFalta"
+                    <TextView
+                        android:id="@+id/textViewPinoCatraca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="fill_horizontal|center"
+                        android:text="Pino da Catraca"
+                        android:textColor="#111"
+                        android:textIsSelectable="false"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                    <CheckBox
+                        android:id="@+id/pinoCatracaFalta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Falta" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Falta" />
+                    android:layout_height="match_parent"
+                    android:background="@color/fundopar"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textViewFreioEstacionamento"
+                    <TextView
+                        android:id="@+id/textViewLonasFreio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="fill_horizontal|center"
+                        android:text="Lonas de Freio"
+                        android:textColor="#111"
+                        android:textIsSelectable="false"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                    <CheckBox
+                        android:id="@+id/lonasFreioQuebrada"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Quebrada" />
+
+                    <CheckBox
+                        android:id="@+id/lonasFreioContaminada"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Contaminada" />
+
+                    <CheckBox
+                        android:id="@+id/lonasFreioFina"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fina" />
+
+                    <CheckBox
+                        android:id="@+id/lonasFreioSolta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Solta" />
+
+                    <CheckBox
+                        android:id="@+id/lonasFreioDesrregulada"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Desrregulada" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginTop="10dp"
-                    android:gravity="fill_horizontal|center"
-                    android:text="Freio de Estacionamento"
-                    android:textIsSelectable="false"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    tools:layout_marginLeft="30dp"
-                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+                    android:layout_height="match_parent"
+                    android:background="@color/fundoimpar"
+                    android:orientation="vertical">
 
-                <CheckBox
-                    android:id="@+id/freioEstacionamentoVazando"
+                    <TextView
+                        android:id="@+id/textViewCilindrosPneumaticos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="fill_horizontal|center"
+                        android:text="Cilindros Pneumáticos"
+                        android:textColor="#111"
+                        android:textIsSelectable="false"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                    <CheckBox
+                        android:id="@+id/cilindrosPneumaticosVazando"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vazando" />
+
+                    <CheckBox
+                        android:id="@+id/cilindrosPneumaticosDesativado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Desativado" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Vazando" />
+                    android:layout_height="match_parent"
+                    android:background="@color/fundopar"
+                    android:orientation="vertical">
 
-                <CheckBox
-                    android:id="@+id/freioEstacionamentoNaoFunciona"
+                    <TextView
+                        android:id="@+id/textViewServoFreio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="fill_horizontal|center"
+                        android:text="Servo do Freio"
+                        android:textColor="#111"
+                        android:textIsSelectable="false"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                    <CheckBox
+                        android:id="@+id/servoFreioVazando"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vazando" />
+
+                    <CheckBox
+                        android:id="@+id/servoFreioSolto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Solto" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Não Funciona" />
+                    android:layout_height="match_parent"
+                    android:background="@color/fundoimpar"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textViewVaraoFreioMao"
+                    <TextView
+                        android:id="@+id/textViewCilindroRoda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="fill_horizontal|center"
+                        android:text="Cilindro de Roda"
+                        android:textColor="#111"
+                        android:textIsSelectable="false"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                    <CheckBox
+                        android:id="@+id/cilindroRodaSolto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Solto" />
+
+                    <CheckBox
+                        android:id="@+id/cilindroRodaVazando"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vazando" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginTop="10dp"
-                    android:gravity="fill_horizontal|center"
-                    android:text="Varão do Freio de Mão"
-                    android:textIsSelectable="false"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    tools:layout_marginLeft="30dp"
-                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+                    android:layout_height="match_parent"
+                    android:background="@color/fundopar"
+                    android:orientation="vertical">
 
-                <CheckBox
-                    android:id="@+id/varaoFreioMaoDespressurizada"
+                    <TextView
+                        android:id="@+id/textViewCilindroMestre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="fill_horizontal|center"
+                        android:text="Cilindro Mestre"
+                        android:textColor="#111"
+                        android:textIsSelectable="false"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                    <CheckBox
+                        android:id="@+id/cilindroMestreVazando"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vazando" />
+
+                    <CheckBox
+                        android:id="@+id/cilindroMestreSolto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Solto" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Despressurizada" />
+                    android:layout_height="match_parent"
+                    android:background="@color/fundoimpar"
+                    android:orientation="vertical">
 
-                <CheckBox
-                    android:id="@+id/varaoFreioMaoSolta"
+                    <TextView
+                        android:id="@+id/textViewFlexivelRoda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="fill_horizontal|center"
+                        android:text="Flexível da Roda"
+                        android:textColor="#111"
+                        android:textIsSelectable="false"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                    <CheckBox
+                        android:id="@+id/flexivelRodaDanificado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Danificado" />
+
+                    <CheckBox
+                        android:id="@+id/flexivelRodaDesalinhado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Desalinhado" />
+
+                    <CheckBox
+                        android:id="@+id/flexivelRodaVazando"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vazando" />
+
+                    <CheckBox
+                        android:id="@+id/flexivelRodaIrregular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Irregular" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Solta" />
+                    android:layout_height="match_parent"
+                    android:background="@color/fundopar"
+                    android:orientation="vertical">
 
-                <CheckBox
-                    android:id="@+id/varaoFreioMaoSemAcao"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Sem Ação" />
+                    <TextView
+                        android:id="@+id/textViewValvulaTubularReservatorio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="fill_horizontal|center"
+                        android:text="Válvulas Tubular Reservatório"
+                        android:textColor="#111"
+                        android:textIsSelectable="false"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:style="@android:style/Widget.DeviceDefault.TextView" />
 
-                <TextView
-                    android:id="@+id/textViewCatracas"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginTop="10dp"
-                    android:gravity="fill_horizontal|center"
-                    android:text="Catracas Automática/Mecânica"
-                    android:textIsSelectable="false"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    tools:layout_marginLeft="30dp"
-                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+                    <CheckBox
+                        android:id="@+id/valvulaTubularReservatorioVazando"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vazando" />
 
-                <CheckBox
-                    android:id="@+id/catracaFalta"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Falta" />
-
-                <TextView
-                    android:id="@+id/textViewPinoCatraca"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginTop="10dp"
-                    android:gravity="fill_horizontal|center"
-                    android:text="Pino da Catraca"
-                    android:textIsSelectable="false"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    tools:layout_marginLeft="30dp"
-                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-                <CheckBox
-                    android:id="@+id/pinoCatracaFalta"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Falta" />
-
-                <TextView
-                    android:id="@+id/textViewLonasFreio"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginTop="10dp"
-                    android:gravity="fill_horizontal|center"
-                    android:text="Lonas de Freio"
-                    android:textIsSelectable="false"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    tools:layout_marginLeft="30dp"
-                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-                <CheckBox
-                    android:id="@+id/lonasFreioContaminada"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Contaminada" />
-
-                <CheckBox
-                    android:id="@+id/lonasFreioSolta"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Solta" />
-
-                <CheckBox
-                    android:id="@+id/lonasFreioQuebrada"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Quebrada" />
-
-                <CheckBox
-                    android:id="@+id/lonasFreioDesrregulada"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Desrregulada" />
-
-                <CheckBox
-                    android:id="@+id/lonasFreioFina"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Fina" />
-
-                <TextView
-                    android:id="@+id/textViewCilindrosPneumaticos"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginTop="10dp"
-                    android:gravity="fill_horizontal|center"
-                    android:text="Cilindros Pneumáticos"
-                    android:textIsSelectable="false"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    tools:layout_marginLeft="30dp"
-                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-                <CheckBox
-                    android:id="@+id/cilindrosPneumaticosVazando"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Vazando" />
-
-                <CheckBox
-                    android:id="@+id/cilindrosPneumaticosDesativado"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Desativado" />
-
-                <TextView
-                    android:id="@+id/textViewServoFreio"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginTop="10dp"
-                    android:gravity="fill_horizontal|center"
-                    android:text="Servo do Freio"
-                    android:textIsSelectable="false"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    tools:layout_marginLeft="30dp"
-                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-                <CheckBox
-                    android:id="@+id/servoFreioVazando"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Vazando" />
-
-                <CheckBox
-                    android:id="@+id/servoFreioSolto"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Solto" />
-
-                <TextView
-                android:id="@+id/textViewCilindroRoda"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Cilindro de Roda"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-                <CheckBox
-                    android:id="@+id/cilindroRodaVazando"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Vazando" />
-
-                <CheckBox
-                    android:id="@+id/cilindroRodaSolto"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Solto" />
-
-                <TextView
-                    android:id="@+id/textViewCilindroMestre"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginTop="10dp"
-                    android:gravity="fill_horizontal|center"
-                    android:text="Cilindro Mestre"
-                    android:textIsSelectable="false"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    tools:layout_marginLeft="30dp"
-                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-                <CheckBox
-                    android:id="@+id/cilindroMestreVazando"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Vazando" />
-
-                <CheckBox
-                    android:id="@+id/cilindroMestreSolto"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Solto" />
-
-                <TextView
-                    android:id="@+id/textViewFlexivelRoda"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginTop="10dp"
-                    android:gravity="fill_horizontal|center"
-                    android:text="Flexível da Roda"
-                    android:textIsSelectable="false"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    tools:layout_marginLeft="30dp"
-                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-                <CheckBox
-                    android:id="@+id/flexivelRodaVazando"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Vazando" />
-
-                <CheckBox
-                    android:id="@+id/flexivelRodaDanificado"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Danificado" />
-
-                <CheckBox
-                    android:id="@+id/flexivelRodaDesalinhado"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Desalinhado" />
-
-                <CheckBox
-                    android:id="@+id/flexivelRodaIrregular"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Irregular" />
-
-                <TextView
-                    android:id="@+id/textViewValvulaTubularReservatorio"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginTop="10dp"
-                    android:gravity="fill_horizontal|center"
-                    android:text="Válvulas Tubular Reservatório"
-                    android:textIsSelectable="false"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    tools:layout_marginLeft="30dp"
-                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-                <CheckBox
-                    android:id="@+id/valvulaTubularReservatorioVazando"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Vazando" />
-
-                <CheckBox
-                    android:id="@+id/valvulaTubularReservatorioContaminada"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Contaminada" />
+                    <CheckBox
+                        android:id="@+id/valvulaTubularReservatorioContaminada"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Contaminada" />
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"

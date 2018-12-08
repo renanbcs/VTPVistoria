@@ -1,12 +1,6 @@
 package com.vtpvistorias_tcc.Model;
 
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.Exclude;
-import com.vtpvistorias_tcc.config.ConfiguracaoFirebase;
-
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 public class GrupoB extends Inspecao {
 
@@ -29,15 +23,12 @@ public class GrupoB extends Inspecao {
     private ArrayList<String> espelhosRetrovisoresConvexos ;
     private ArrayList<String> limpadorParaBrisa ;
     private ArrayList<String> limpeza ;
-
     private ArrayList<String> caixaDeItinerario ;
     private ArrayList<String> iluminacaoSalaoInterna ;
     private ArrayList<String> solicitacaoDeParada ;
     private ArrayList<String> luzDoDegrau ;
-
     private ArrayList<String> comandosDoPainel ;
     private ArrayList<String> chaveDeSetaBuzina ;
-
     private ArrayList<String> degraus ;
     private ArrayList<String> piso ;
     private ArrayList<String> tampaDeInspecao ;
@@ -48,7 +39,6 @@ public class GrupoB extends Inspecao {
     private ArrayList<String> postoDeCobranca ;
     private ArrayList<String> escotilhasECupulas ;
     private ArrayList<String> saidaDeEmergencia ;
-
     private ArrayList<String> faroisOculos ;
     private ArrayList<String> luzesDeSetaEDeEmergencia ;
     private ArrayList<String> lanternasLentes ;
@@ -57,18 +47,14 @@ public class GrupoB extends Inspecao {
     private ArrayList<String> brakeLight ;
     private ArrayList<String> luzDeRe ;
     private ArrayList<String> luzDaPlaca ;
-
     private ArrayList<String> partida ;
-
     private ArrayList<String> extintor ;
     private ArrayList<String> triangulo ;
-
     private ArrayList<String> silencioso ;
     private ArrayList<String> tuboDeDescarga ;
     private ArrayList<String> protecaoTuboDescarga ;
     private ArrayList<String> articulacao ;
     private ArrayList<String> vazamentoExcessivo ;
-
 
     public GrupoB(){
 
@@ -91,15 +77,12 @@ public class GrupoB extends Inspecao {
         espelhosRetrovisoresConvexos  = new ArrayList<>();
         limpadorParaBrisa  = new ArrayList<>();
         limpeza  = new ArrayList<>();
-
         caixaDeItinerario  = new ArrayList<>();
         iluminacaoSalaoInterna  = new ArrayList<>();
         solicitacaoDeParada  = new ArrayList<>();
         luzDoDegrau  = new ArrayList<>();
-
         comandosDoPainel  = new ArrayList<>();
         chaveDeSetaBuzina  = new ArrayList<>();
-
         degraus  = new ArrayList<>();
         piso  = new ArrayList<>();
         tampaDeInspecao  = new ArrayList<>();
@@ -110,7 +93,6 @@ public class GrupoB extends Inspecao {
         postoDeCobranca  = new ArrayList<>();
         escotilhasECupulas  = new ArrayList<>();
         saidaDeEmergencia  = new ArrayList<>();
-
         faroisOculos  = new ArrayList<>();
         luzesDeSetaEDeEmergencia  = new ArrayList<>();
         lanternasLentes  = new ArrayList<>();
@@ -119,12 +101,9 @@ public class GrupoB extends Inspecao {
         brakeLight  = new ArrayList<>();
         luzDeRe  = new ArrayList<>();
         luzDaPlaca  = new ArrayList<>();
-
         partida  = new ArrayList<>();
-
         extintor  = new ArrayList<>();
         triangulo  = new ArrayList<>();
-
         silencioso  = new ArrayList<>();
         tuboDeDescarga  = new ArrayList<>();
         protecaoTuboDescarga  = new ArrayList<>();
@@ -145,9 +124,7 @@ public class GrupoB extends Inspecao {
         return vidroTraseiro;
     }
 
-    public void setVidroTraseiro(ArrayList<String> vidroTraseiro) {
-        this.vidroTraseiro = vidroTraseiro;
-    }
+    public void setVidroTraseiro(ArrayList<String> vidroTraseiro) { this.vidroTraseiro = vidroTraseiro; }
 
     public ArrayList<String> getEstrutura() {
         return estrutura;
@@ -165,9 +142,7 @@ public class GrupoB extends Inspecao {
         this.oculos = oculos;
     }
 
-    public ArrayList<String> getRevestimentoExternoChaparia() {
-        return revestimentoExternoChaparia;
-    }
+    public ArrayList<String> getRevestimentoExternoChaparia() { return revestimentoExternoChaparia; }
 
     public void setRevestimentoExternoChaparia(ArrayList<String> revestimentoExternoChaparia) {
         this.revestimentoExternoChaparia = revestimentoExternoChaparia;

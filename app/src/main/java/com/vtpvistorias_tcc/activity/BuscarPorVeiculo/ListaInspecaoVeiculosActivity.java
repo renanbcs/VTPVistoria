@@ -1,5 +1,6 @@
 package com.vtpvistorias_tcc.activity.BuscarPorVeiculo;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -19,6 +20,7 @@ import com.vtpvistorias_tcc.Model.Inspetor;
 import com.vtpvistorias_tcc.Model.Veiculo;
 import com.vtpvistorias_tcc.R;
 import com.vtpvistorias_tcc.activity.InspecaoActivity;
+import com.vtpvistorias_tcc.config.AdapterPersonalizado;
 import com.vtpvistorias_tcc.config.ConfiguracaoFirebase;
 
 import java.util.ArrayList;
@@ -33,6 +35,7 @@ public class ListaInspecaoVeiculosActivity extends AppCompatActivity {
     private List<Inspecao> listaInspecaoPorVeiculo;
     private List<String> viewInspecao;
     private Inspecao inspecao;
+    private Activity act = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,10 +87,14 @@ public class ListaInspecaoVeiculosActivity extends AppCompatActivity {
 
                 }
 
-                ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, viewInspecao);
+                //ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, viewInspecao);
+                //inspecaoListView.setAdapter(adapter);
+
+                AdapterPersonalizado adapter = new AdapterPersonalizado(listaInspecaoPorVeiculo,act,1);
                 inspecaoListView.setAdapter(adapter);
 
             }
+
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {

@@ -1,5 +1,6 @@
 package com.vtpvistorias_tcc.activity.BuscarPorVeiculo;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
@@ -20,6 +21,7 @@ import com.vtpvistorias_tcc.Model.Inspetor;
 import com.vtpvistorias_tcc.Model.Veiculo;
 import com.vtpvistorias_tcc.R;
 import com.vtpvistorias_tcc.activity.BuscarPorInspetor.ListaInspecaoActivity;
+import com.vtpvistorias_tcc.config.AdapterPersonalizado;
 import com.vtpvistorias_tcc.config.ConfiguracaoFirebase;
 
 import java.util.ArrayList;
@@ -34,6 +36,7 @@ public class ListaVeiculoActivity extends AppCompatActivity implements View.OnCl
     private FloatingActionButton botaoBuscar;
     private Inspetor inspetor;
     private Intent i;
+    private Activity act = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,9 +47,9 @@ public class ListaVeiculoActivity extends AppCompatActivity implements View.OnCl
 
         listaVeiculo = new ArrayList<>();
 
-        botaoBuscar = findViewById(R.id.floatingActionButtonBuscarVeiculo);
 
-        botaoBuscar.setOnClickListener(this);
+
+
 
 
         firebase = ConfiguracaoFirebase.getFirebase().child("Veiculos");
@@ -71,9 +74,8 @@ public class ListaVeiculoActivity extends AppCompatActivity implements View.OnCl
 
                 }
 
-                ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, dadosVeiculos);
+                AdapterPersonalizado adapter = new AdapterPersonalizado(listaVeiculo,act,"E");
                 listView.setAdapter(adapter);
-
 
             }
 

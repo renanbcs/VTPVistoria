@@ -1,5 +1,6 @@
 package com.vtpvistorias_tcc.activity.BuscarPorInspetor;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
@@ -19,6 +20,7 @@ import com.vtpvistorias_tcc.Model.Inspecao;
 import com.vtpvistorias_tcc.Model.Inspetor;
 import com.vtpvistorias_tcc.R;
 import com.vtpvistorias_tcc.activity.InspecaoActivity;
+import com.vtpvistorias_tcc.config.AdapterPersonalizado;
 import com.vtpvistorias_tcc.config.ConfiguracaoFirebase;
 
 import java.util.ArrayList;
@@ -33,6 +35,7 @@ public class ListaInspecaoActivity extends AppCompatActivity {
     private List<Inspecao> listaInspecaoPorInspetor;
     private List<String> viewInspecao;
     private Inspecao inspecao;
+    private Activity act = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,7 +87,9 @@ public class ListaInspecaoActivity extends AppCompatActivity {
 
                 }
 
-                ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, viewInspecao);
+                AdapterPersonalizado adapter = new AdapterPersonalizado(listaInspecaoPorInspetor,act,1);
+
+                //ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, viewInspecao);
                 inspecaoListView.setAdapter(adapter);
 
             }

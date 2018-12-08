@@ -4,10 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="16dp"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
-    android:layout_marginTop="16dp"
     android:orientation="vertical"
     tools:context=".activity.GrupoA.GrupoAChassioPlataformaActivity">
 
@@ -20,177 +16,240 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textViewTituloGrupoA"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:text="Grupo A"
-                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                android:layout_height="match_parent"
+                android:background="@color/fundoimpar"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textViewSistemaFreio"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:text="6 - Sistema Chassio-Plataforma"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/textViewTituloGrupoA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Grupo A"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textViewTanqueCombustivel"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Tanque de Combustível"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+                <TextView
+                    android:id="@+id/textViewSistemaFreio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="6 - Sistema Chassio-Plataforma"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="15sp" />
 
-            <CheckBox
-                android:id="@+id/tanqueCombustivelVazando"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Vazando" />
+            </LinearLayout>
 
-            <CheckBox
-                android:id="@+id/tanqueCombustivelSolto"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Solto" />
+                android:layout_height="match_parent"
+                android:background="@color/fundopar"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textViewCintaSuporteTanque"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Cinta/Suporte do Tanque"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
 
-            <CheckBox
-                android:id="@+id/cintaSuporteTanqueFalta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Falta" />
+                <TextView
+                    android:id="@+id/textViewTanqueCombustivel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Tanque de Combustível"
+                    android:textIsSelectable="false"
+                    android:textColor="#111"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="30dp"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
 
-            <CheckBox
-                android:id="@+id/cintaSuporteTanqueQuebrada"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Quebrada" />
+                <CheckBox
+                    android:id="@+id/tanqueCombustivelSolto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Solto" />
 
-            <TextView
-                android:id="@+id/textViewEstruturaDegraus"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Estrutura dos Degraus"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+                <CheckBox
+                    android:id="@+id/tanqueCombustivelVazando"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Vazando" />
+            </LinearLayout>
 
-            <CheckBox
-                android:id="@+id/estruturaDegrausSolta"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Solta" />
+                android:layout_height="match_parent"
+                android:background="@color/fundoimpar"
+                android:orientation="vertical">
 
-            <CheckBox
-                android:id="@+id/estruturaDegrausAlturaIrregular"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Altura Irregular" />
+                <TextView
+                    android:id="@+id/textViewCintaSuporteTanque"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Cinta/Suporte do Tanque"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
 
-            <CheckBox
-                android:id="@+id/estruturaDegrausQuebrada"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Quebrada" />
+                <CheckBox
+                    android:id="@+id/cintaSuporteTanqueFalta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Falta" />
 
-            <TextView
-                android:id="@+id/textViewCharrisPlataforma"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Charris e Plataforma"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+                <CheckBox
+                    android:id="@+id/cintaSuporteTanqueQuebrada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Quebrada" />
+            </LinearLayout>
 
-            <CheckBox
-                android:id="@+id/charrisPlatTrincado"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Trincado" />
+                android:layout_height="match_parent"
+                android:background="@color/fundopar"
+                android:orientation="vertical">
 
-            <CheckBox
-                android:id="@+id/charrisPlatQuebrado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Quebrado" />
+                <TextView
+                    android:id="@+id/textViewEstruturaDegraus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Estrutura dos Degraus"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
 
-            <CheckBox
-                android:id="@+id/charrisPlatReparoInadequado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Reparo Inadequado" />
+                <CheckBox
+                    android:id="@+id/estruturaDegrausAlturaIrregular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Altura Irregular" />
 
-            <TextView
-                android:id="@+id/textViewSistemaSegurancaCintoMotoristaBloqueioPortas"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Sistema Segurança do Cinto Motorista e Bloqueio Portas"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+                <CheckBox
+                    android:id="@+id/estruturaDegrausSolta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Solta" />
 
-            <CheckBox
-                android:id="@+id/segCintoBloqueioPortasNFunciona"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Não Funciona" />
+                <CheckBox
+                    android:id="@+id/estruturaDegrausQuebrada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Quebrada" />
+            </LinearLayout>
 
-            <CheckBox
-                android:id="@+id/segCintoBloqueioPortasFalta"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Falta" />
+                android:layout_height="match_parent"
+                android:background="@color/fundoimpar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewCharrisPlataforma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Charris e Plataforma"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/charrisPlatTrincado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Trincado" />
+
+                <CheckBox
+                    android:id="@+id/charrisPlatReparoInadequado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Reparo Inadequado" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundopar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewSistemaSegurancaCintoMotoristaBloqueioPortas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Sistema Segurança do Cinto Motorista e Bloqueio Portas"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/charrisPlatQuebrado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Quebrado" />
+
+                <CheckBox
+                    android:id="@+id/segCintoBloqueioPortasNFunciona"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Não Funciona" />
+
+                <CheckBox
+                    android:id="@+id/segCintoBloqueioPortasFalta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Falta" />
+            </LinearLayout>
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
                 android:orientation="horizontal">
 
                 <Button
@@ -199,16 +258,15 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
                     android:text="Voltar"
-                    tools:layout_marginLeft="50dp" />
+                    android:layout_marginLeft="50dp"/>
 
                 <Button
                     android:id="@+id/botaoProximo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:gravity="center_vertical|end"
+                    android:gravity="right"
                     android:text="Próximo"
-                    tools:layout_marginLeft="50dp" />
+                    android:layout_marginLeft="50dp"/>
 
             </LinearLayout>
 

@@ -4,10 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="16dp"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
-    android:layout_marginTop="16dp"
     android:orientation="vertical"
     tools:context=".activity.GrupoA1.GrupoA1SistemaCarroceriaNivelBActivity">
 
@@ -20,311 +16,425 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textViewTituloGrupoA1"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:text="Grupo A1"
-                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                android:layout_height="match_parent"
+                android:background="@color/fundoimpar"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textViewSistemaCarroceriaNivelB"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:text="1 - Sistema e Carrorecia Nível B"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/textViewTituloGrupoA1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Grupo A1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textViewTacografo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Tacógrafo"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/tacografoFaltaLacre"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Falta Lacre tacógrafo" />
-
-            <CheckBox
-                android:id="@+id/tacografoFalta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Falta tacógrafo" />
-
-            <CheckBox
-                android:id="@+id/tacografoNaoFunciona"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Tacógrafo não funciona" />
-
-            <CheckBox
-                android:id="@+id/tacografoEstadoConservacao"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Estado de conservação ruim" />
-
-            <TextView
-                android:id="@+id/textViewPiso"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Piso"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/pisoLiso"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Piso Liso" />
-
-            <CheckBox
-                android:id="@+id/pisoSujo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Piso Sujo" />
-
-            <CheckBox
-                android:id="@+id/pisoDerrapante"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Piso Derrapante" />
-
-            <TextView
-                android:id="@+id/textViewQuebraSol"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Quebra-Sol"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/quebraSolInexistente"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Quebra-Sol Inexistente" />
-
-            <CheckBox
-                android:id="@+id/quebraSolDesregulado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Quebra-Sol Desregulado" />
-
-            <CheckBox
-                android:id="@+id/quebraSolSolto"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Quebra-Sol Solto" />
-
-            <TextView
-                android:id="@+id/textViewDesembacadorParaBrisa"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Desembaçador Para-Brisa"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/desembacadorParaBrisaNaoFunciona"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Desembaçador não funciona" />
-
-            <CheckBox
-                android:id="@+id/desembacadorParaBrisaFalta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Falta desembaçador para-brisa" />
-
-            <TextView
-                android:id="@+id/textViewBancosAltosSimples"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Bancos Altos Simples"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/bancosAltosSimplesInexistentes"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Bancos Simples Inexistentes" />
-
-            <CheckBox
-                android:id="@+id/bancosAltosSimplesConservacao"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Bancos Simples sem conservação" />
-
-            <CheckBox
-                android:id="@+id/bancosAltosSimplesFixacao"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Bancos Simples sem fixação" />
-
-            <TextView
-                android:id="@+id/textViewRadioComunicacao"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Radio comunicação"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/radioComunicacaoNaoFunciona"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Rádio comunicação não funciona" />
-
-            <CheckBox
-                android:id="@+id/radioComunicacaoFixacao"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Rádio comunicação fixação" />
-
-            <CheckBox
-                android:id="@+id/radioComunicacaoConservacao"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Rádio comunicação conservação" />
-
-            <CheckBox
-                android:id="@+id/radioComunicacaoLenteDanificada"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Rádio comunicação danificada" />
-
-            <TextView
-                android:id="@+id/textViewBrakeLight"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Brake Light"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/brakeLightInexistente"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Brake Light Inexistente" />
-
-            <CheckBox
-                android:id="@+id/brakeLightSolto"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Brake Light Solto" />
-
-            <TextView
-                android:id="@+id/textViewComunicacaoVisualInternaAdesivos"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Comunicação visual interna/adesivos"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/comunicacaoVisualInternaAdesivosInexistente"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Comunicação Visual Inexistente interna de adesivos" />
-
-            <CheckBox
-                android:id="@+id/comunicacaoVisualInternaAdesivosConservacao"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Comunicação Visual Interna Conservação" />
-
-            <CheckBox
-                android:id="@+id/comunicacaoVisualInternaAdesivosForaPadrao"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Comunicação Visual fora do padrão" />
+                <TextView
+                    android:id="@+id/textViewSistemaCarroceriaNivelB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="1 - Sistema e Carrorecia Nível B"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="15sp" />
+            </LinearLayout>
 
 
             <LinearLayout
                 android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundopar"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textViewTacografo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Tacógrafo"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/tacografoFalta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Falta tacógrafo" />
+
+                <CheckBox
+                    android:id="@+id/tacografoNaoFunciona"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Tacógrafo não funciona" />
+
+                <CheckBox
+                    android:id="@+id/tacografoEstadoConservacao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Estado de conservação ruim" />
+
+                <CheckBox
+                    android:id="@+id/tacografoFaltaLacre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Falta Lacre tacógrafo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundoimpar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewPiso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Piso"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/pisoLiso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Piso Liso" />
+
+                <CheckBox
+                    android:id="@+id/pisoSujo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Piso Sujo" />
+
+                <CheckBox
+                    android:id="@+id/pisoDerrapante"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Piso Derrapante" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundopar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewQuebraSol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Quebra-Sol"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/quebraSolDesregulado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Quebra-Sol Desregulado" />
+
+                <CheckBox
+                    android:id="@+id/quebraSolInexistente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Quebra-Sol Inexistente" />
+
+                <CheckBox
+                    android:id="@+id/quebraSolSolto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Quebra-Sol Solto" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundoimpar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewDesembacadorParaBrisa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Desembaçador Para-Brisa"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/desembacadorParaBrisaFalta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Falta desembaçador para-brisa" />
+
+                <CheckBox
+                    android:id="@+id/desembacadorParaBrisaNaoFunciona"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Desembaçador não funciona" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundopar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewBancosAltosSimples"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Bancos Altos Simples"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/bancosAltosSimplesFixacao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Bancos Simples sem fixação" />
+
+                <CheckBox
+                    android:id="@+id/bancosAltosSimplesConservacao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Bancos Simples sem conservação" />
+
+                <CheckBox
+                    android:id="@+id/bancosAltosSimplesInexistentes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Bancos Simples Inexistentes" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundoimpar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewRadioComunicacao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Radio comunicação"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/radioComunicacaoFixacao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Rádio comunicação fixação" />
+
+                <CheckBox
+                    android:id="@+id/radioComunicacaoNaoFunciona"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Rádio comunicação não funciona" />
+
+                <CheckBox
+                    android:id="@+id/radioComunicacaoLenteDanificada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Rádio comunicação danificada" />
+
+                <CheckBox
+                    android:id="@+id/radioComunicacaoConservacao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Rádio comunicação conservação" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundopar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewBrakeLight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Brake Light"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/brakeLightInexistente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Brake Light Inexistente" />
+
+                <CheckBox
+                    android:id="@+id/brakeLightSolto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Brake Light Solto" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundoimpar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewComunicacaoVisualInternaAdesivos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Comunicação visual interna/adesivos"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/comunicacaoVisualInternaAdesivosInexistente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Comunicação Visual Inexistente interna de adesivos" />
+
+                <CheckBox
+                    android:id="@+id/comunicacaoVisualInternaAdesivosForaPadrao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Comunicação Visual fora do padrão" />
+
+                <CheckBox
+                    android:id="@+id/comunicacaoVisualInternaAdesivosConservacao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Comunicação Visual Interna Conservação" />
+            </LinearLayout>
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
                 android:layout_marginTop="16dp"
-                android:orientation="horizontal">
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp">
 
                 <Button
                     android:id="@+id/botaoVoltarSelecionarFicha"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="left"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
                     android:text="Voltar"
-                    tools:layout_marginLeft="50dp" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.142"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.333" />
 
                 <Button
                     android:id="@+id/botaoProximo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:gravity="center_vertical|end"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="11dp"
+                    android:layout_marginBottom="8dp"
                     android:text="Próximo"
-                    tools:layout_marginLeft="50dp" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.892"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
 
-            </LinearLayout>
+
+            </android.support.constraint.ConstraintLayout>
 
         </LinearLayout>
 
