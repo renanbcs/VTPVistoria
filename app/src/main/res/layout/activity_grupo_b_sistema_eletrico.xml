@@ -4,10 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="16dp"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
-    android:layout_marginTop="16dp"
     android:orientation="vertical"
     tools:context=".activity.GrupoB.GrupoBSistemaEletricoActivity">
 
@@ -20,54 +16,72 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textViewTituloGrupoB"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:text="Grupo B"
-                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                android:layout_height="match_parent"
+                android:background="@color/fundoimpar"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textViewSistemaEletrico"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:text="6 - Sistema Elétrico"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/textViewTituloGrupoB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Grupo B"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textViewPartida"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Partida"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+                <TextView
+                    android:id="@+id/textViewSistemaEletrico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="6 - Sistema Elétrico"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="15sp" />
 
-            <CheckBox
-                android:id="@+id/partidaNaoFunciona"
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Partida não funciona" />
+                android:layout_height="match_parent"
+                android:background="@color/fundopar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewPartida"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Partida"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/partidaNaoFunciona"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Partida não funciona" />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/fundoimpar"
                 android:orientation="horizontal">
 
                 <Button

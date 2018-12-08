@@ -4,10 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="16dp"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
-    android:layout_marginTop="16dp"
     android:orientation="vertical"
     tools:context=".activity.GrupoB.GrupoBSistemaCarroceriaActivity">
 
@@ -20,630 +16,843 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textViewTituloGrupoB"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:text="Grupo B"
-                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                android:textSize="15sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textViewSistemaCarroceria"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:text="1 - Sistemas Carroceria"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textSize="15sp" />
-
-            <TextView
-                android:id="@+id/textViewParaBrisa"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Pára-Brisa"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/parabrisaQuebrado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Quebrado" />
-
-            <CheckBox
-                android:id="@+id/parabrisaSolto"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Solto" />
-
-            <CheckBox
-                android:id="@+id/parabrisaTrincado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Trincado" />
-
-            <TextView
-                android:id="@+id/textViewVidroTraseiro"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Vidro Traseiro"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/vidroTraseiroFalta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Falta" />
-
-            <CheckBox
-                android:id="@+id/vidroTraseiroQuebrado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Quebrado" />
-
-            <CheckBox
-                android:id="@+id/vidroTraseiroSolto"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Solto" />
-
-            <CheckBox
-                android:id="@+id/vidroTraseiroTrincado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Trincado" />
-
-            <CheckBox
-                android:id="@+id/vidroTraseiroOutro"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Outro" />
-
-            <TextView
-                android:id="@+id/textViewEstrutura"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Estrutura"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/estruturaColunaDanificada"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Coluna Danificada" />
-
-            <TextView
-                android:id="@+id/textViewOculos"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Oculos"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/oculosTrincado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Trincado" />
-
-            <TextView
-                android:id="@+id/textViewRevestimentoExternoChaparia"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Revestimento Externo/Chaparia"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/revestimentoExternoChapariaSolto"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Solto" />
-
-            <CheckBox
-                android:id="@+id/revestimentoExternoChapariaDanificado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Danificado" />
-
-            <TextView
-                android:id="@+id/textViewBancos"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Bancos"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/bancosRasgado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Rasgado" />
-
-            <CheckBox
-                android:id="@+id/bancosSolto"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Solto" />
-
-            <CheckBox
-                android:id="@+id/bancosQuebrado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Quebrado" />
-
-            <CheckBox
-                android:id="@+id/bancosDanificado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Danificado" />
-
-            <CheckBox
-                android:id="@+id/bancosFalta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Falta" />
-
-            <TextView
-                android:id="@+id/textViewBancosPassageiros"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Bancos Passageiros"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/bancosPassageirosRasgado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Rasgado" />
-
-            <CheckBox
-                android:id="@+id/bancosPassageirosSolto"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Solto" />
-
-            <CheckBox
-                android:id="@+id/bancosPassageirosQuebrado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Quebrado" />
-
-            <CheckBox
-                android:id="@+id/bancosPassageirosDanificado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Danificado" />
-
-            <CheckBox
-                android:id="@+id/bancosPassageirosFalta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Falta" />
-
-            <TextView
-                android:id="@+id/textViewSistemasDePortasMancal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Sistemas de portas Mancal"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/sistemasPortasMancalNaoFunciona"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Não funciona" />
-
-            <CheckBox
-                android:id="@+id/sistemasPortasMancalQuebrada"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Quebrada" />
-
-            <CheckBox
-                android:id="@+id/sistemasPortasMancalSolta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Solta" />
-
-            <TextView
-                android:id="@+id/textViewFolhasDasPortasRevestimento"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Folha das portas/revestimentos"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/folhasPortasRevestimentoQuebrada"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Quebrada" />
-
-            <CheckBox
-                android:id="@+id/folhasPortasRevestimentoDanificada"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Danificada" />
-
-            <CheckBox
-                android:id="@+id/folhasPortasRevestimentoSolta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Solta" />
-
-            <TextView
-                android:id="@+id/textViewBorrachaDasPortas"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Borracha das portas"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/borrachaPortasFalta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Falta" />
-
-            <CheckBox
-                android:id="@+id/borrachaPortasQuebrada"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Quebrada" />
-
-            <TextView
-                android:id="@+id/textViewTampaoPistaoDasPortas"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Tampão pistão das portas"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/tampaoPistaoPortasFalta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Falta" />
-
-            <CheckBox
-                android:id="@+id/tampaoPistaoPortasQuebrada"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Quebrada" />
-
-            <CheckBox
-                android:id="@+id/tampaoPistaoPortasSolta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Solta" />
-
-            <TextView
-                android:id="@+id/textViewCilindroDasPortas"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Cilindro das portas"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/cilindroPortasVazando"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Vazando" />
-
-            <CheckBox
-                android:id="@+id/cilindroPortasDanificada"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Danificada" />
-
-            <CheckBox
-                android:id="@+id/cilindroPortasSolta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Solta" />
-
-            <TextView
-                android:id="@+id/textViewJanelaLateralMotorista"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Janela Lateral do Motorista"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/janelaLateralMotoristaDanificada"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Danificada" />
-
-            <CheckBox
-                android:id="@+id/janelaLateralMotoristaEmpenada"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Empenada" />
-
-            <CheckBox
-                android:id="@+id/janelaLateralMotoristaFalta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Falta" />
-
-            <TextView
-                android:id="@+id/textViewQuadroDaJanela"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Quadro da Janela"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/quadroJanelaSolto"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Solto" />
-
-            <CheckBox
-                android:id="@+id/quadroJanelaQuebrado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Quebrado" />
-
-            <TextView
-                android:id="@+id/textViewSeparadorLimitadorPuxador"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Separador /Limitador/Puxador"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/separadorLimitadorPuxadorFalta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Falta" />
-
-            <CheckBox
-                android:id="@+id/separadorLimitadorPuxadorDanificado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Danificado" />
-
-            <TextView
-                android:id="@+id/textViewParaChoquePonteira"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Para-choque/Ponteira"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/parachoquePonteiraFalta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Falta" />
-
-            <CheckBox
-                android:id="@+id/parachoquePonteiraSolta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Solta" />
-
-            <CheckBox
-                android:id="@+id/parachoquePonteiraDanificado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Danificado" />
-
-            <TextView
-                android:id="@+id/textViewEspelhosRetrovisoresConvexos"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Espelhos Retrovisores Convexos"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/espelhosRetrovisoresConvexosFalta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Falta" />
-
-            <CheckBox
-                android:id="@+id/espelhosRetrovisoresConvexosQuebrado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Quebrado" />
-
-            <CheckBox
-                android:id="@+id/espelhosRetrovisoresConvexosSolto"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Solto" />
-
-            <TextView
-                android:id="@+id/textViewLimpadorParaBrisa"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Limpador Pára-Brisa"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/limpadorParaBrisaNaoFunciona"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Não Funciona" />
-
-            <CheckBox
-                android:id="@+id/limpadorParaBrisaFalta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Falta" />
-
-            <TextView
-                android:id="@+id/textViewLimpeza"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Limpeza"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/limpezaInterna"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Interna" />
-
-            <CheckBox
-                android:id="@+id/limpezaExterna"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Externa" />
-
-            <CheckBox
-                android:id="@+id/limpezaInferior"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Inferior" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundoimpar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewTituloGrupoB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Grupo B"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewSistemaCarroceria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="1 - Sistemas Carroceria"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundopar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewParaBrisa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Pára-Brisa"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/parabrisaQuebrado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Quebrado" />
+
+                <CheckBox
+                    android:id="@+id/parabrisaSolto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Solto" />
+
+                <CheckBox
+                    android:id="@+id/parabrisaTrincado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Trincado" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundoimpar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewVidroTraseiro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Vidro Traseiro"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/vidroTraseiroQuebrado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Quebrado" />
+
+                <CheckBox
+                    android:id="@+id/vidroTraseiroTrincado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Trincado" />
+
+                <CheckBox
+                    android:id="@+id/vidroTraseiroSolto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Solto" />
+
+                <CheckBox
+                    android:id="@+id/vidroTraseiroOutro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Outro" />
+
+                <CheckBox
+                    android:id="@+id/vidroTraseiroFalta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Falta" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundopar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewEstrutura"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Estrutura"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/estruturaColunaDanificada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Coluna Danificada" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundoimpar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewOculos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Oculos"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/oculosTrincado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Trincado" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundopar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewRevestimentoExternoChaparia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Revestimento Externo/Chaparia"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/revestimentoExternoChapariaDanificado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Danificado" />
+
+                <CheckBox
+                    android:id="@+id/revestimentoExternoChapariaSolto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Solto" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundoimpar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewBancos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Bancos"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/bancosDanificado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Danificado" />
+
+                <CheckBox
+                    android:id="@+id/bancosQuebrado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Quebrado" />
+
+                <CheckBox
+                    android:id="@+id/bancosSolto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Solto" />
+
+                <CheckBox
+                    android:id="@+id/bancosRasgado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Rasgado" />
+
+                <CheckBox
+                    android:id="@+id/bancosFalta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Falta" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundopar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewBancosPassageiros"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Bancos Passageiros"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/bancosPassageirosDanificado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Danificado" />
+
+                <CheckBox
+                    android:id="@+id/bancosPassageirosSolto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Solto" />
+
+                <CheckBox
+                    android:id="@+id/bancosPassageirosFalta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Falta" />
+
+                <CheckBox
+                    android:id="@+id/bancosPassageirosRasgado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Rasgado" />
+
+                <CheckBox
+                    android:id="@+id/bancosPassageirosQuebrado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Quebrado" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundoimpar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewSistemasDePortasMancal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Sistemas de portas Mancal"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/sistemasPortasMancalNaoFunciona"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Não funciona" />
+
+                <CheckBox
+                    android:id="@+id/sistemasPortasMancalSolta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Solta" />
+
+                <CheckBox
+                    android:id="@+id/sistemasPortasMancalQuebrada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Quebrada" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundopar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewFolhasDasPortasRevestimento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Folha das portas/revestimentos"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/folhasPortasRevestimentoQuebrada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Quebrada" />
+
+                <CheckBox
+                    android:id="@+id/folhasPortasRevestimentoDanificada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Danificada" />
+
+                <CheckBox
+                    android:id="@+id/folhasPortasRevestimentoSolta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Solta" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundoimpar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewBorrachaDasPortas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Borracha das portas"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/borrachaPortasQuebrada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Quebrada" />
+
+                <CheckBox
+                    android:id="@+id/borrachaPortasFalta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Falta" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundopar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewTampaoPistaoDasPortas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Tampão pistão das portas"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/tampaoPistaoPortasSolta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Solta" />
+
+                <CheckBox
+                    android:id="@+id/tampaoPistaoPortasFalta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Falta" />
+
+                <CheckBox
+                    android:id="@+id/tampaoPistaoPortasQuebrada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Quebrada" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundoimpar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewCilindroDasPortas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Cilindro das portas"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/cilindroPortasVazando"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Vazando" />
+
+                <CheckBox
+                    android:id="@+id/cilindroPortasSolta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Solta" />
+
+                <CheckBox
+                    android:id="@+id/cilindroPortasDanificada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Danificada" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundopar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewJanelaLateralMotorista"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Janela Lateral do Motorista"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/janelaLateralMotoristaDanificada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Danificada" />
+
+                <CheckBox
+                    android:id="@+id/janelaLateralMotoristaFalta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Falta" />
+
+                <CheckBox
+                    android:id="@+id/janelaLateralMotoristaEmpenada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Empenada" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundoimpar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewQuadroDaJanela"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Quadro da Janela"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/quadroJanelaSolto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Solto" />
+
+                <CheckBox
+                    android:id="@+id/quadroJanelaQuebrado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Quebrado" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundopar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewSeparadorLimitadorPuxador"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Separador /Limitador/Puxador"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/separadorLimitadorPuxadorFalta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Falta" />
+
+                <CheckBox
+                    android:id="@+id/separadorLimitadorPuxadorDanificado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Danificado" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundoimpar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewParaChoquePonteira"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Para-choque/Ponteira"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/parachoquePonteiraFalta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Falta" />
+
+                <CheckBox
+                    android:id="@+id/parachoquePonteiraDanificado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Danificado" />
+
+                <CheckBox
+                    android:id="@+id/parachoquePonteiraSolta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Solta" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundopar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewEspelhosRetrovisoresConvexos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Espelhos Retrovisores Convexos"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/espelhosRetrovisoresConvexosQuebrado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Quebrado" />
+
+                <CheckBox
+                    android:id="@+id/espelhosRetrovisoresConvexosFalta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Falta" />
+
+                <CheckBox
+                    android:id="@+id/espelhosRetrovisoresConvexosSolto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Solto" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundoimpar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewLimpadorParaBrisa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Limpador Pára-Brisa"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/limpadorParaBrisaFalta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Falta" />
+
+                <CheckBox
+                    android:id="@+id/limpadorParaBrisaNaoFunciona"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Não Funciona" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fundopar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewLimpeza"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Limpeza"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/limpezaInterna"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Interna" />
+
+                <CheckBox
+                    android:id="@+id/limpezaInferior"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Inferior" />
+
+                <CheckBox
+                    android:id="@+id/limpezaExterna"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Externa" />
+            </LinearLayout>
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/fundoimpar"
                 android:orientation="horizontal">
 
 
-
-            <Button
+                <Button
                     android:id="@+id/botaoVoltarSelecionarFicha"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

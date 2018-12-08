@@ -4,10 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="16dp"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
-    android:layout_marginTop="16dp"
     android:orientation="vertical"
     tools:context=".activity.GrupoB.GrupoBIluminacaoExternaSinalizacaoActivity">
 
@@ -20,303 +16,402 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textViewTituloGrupoB"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:text="Grupo B"
-                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                android:layout_height="match_parent"
+                android:background="@color/fundoimpar"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textViewIluminacaoExternaSinalizacao"
+                <TextView
+                    android:id="@+id/textViewTituloGrupoB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Grupo B"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewIluminacaoExternaSinalizacao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="5 - Iluminação Externa/Sinalização"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:text="5 - Iluminação Externa/Sinalização"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textSize="15sp" />
+                android:layout_height="match_parent"
+                android:background="@color/fundopar"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textViewFaroisOculos"
+                <TextView
+                    android:id="@+id/textViewFaroisOculos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Faróis / Óculos"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/faroisOculosQuebrado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Quebrado" />
+
+                <CheckBox
+                    android:id="@+id/faroisOculosSolto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Solto" />
+
+                <CheckBox
+                    android:id="@+id/faroisOculosBaixo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Baixo não funciona" />
+
+                <CheckBox
+                    android:id="@+id/faroisOculosAlto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Alto não funciona" />
+
+                <CheckBox
+                    android:id="@+id/faroisOculosFalta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Falta" />
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Faróis / Óculos"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+                android:layout_height="match_parent"
+                android:background="@color/fundoimpar"
+                android:orientation="vertical">
 
-            <CheckBox
-                android:id="@+id/faroisOculosAlto"
+                <TextView
+                    android:id="@+id/textViewLuzesSetaEmergencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Luzes de Seta e de Emergência"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/luzesSetaEmergenciaNaoFunciona"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Não funciona" />
+
+                <CheckBox
+                    android:id="@+id/luzesSetaEmergenciaFalta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Falta" />
+
+                <CheckBox
+                    android:id="@+id/luzesSetaEmergenciaQuebrada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Quebrada" />
+
+                <CheckBox
+                    android:id="@+id/luzesSetaEmergenciaDanificada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Danificada" />
+            </LinearLayout>
+
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Alto não funciona" />
+                android:layout_height="match_parent"
+                android:background="@color/fundopar"
+                android:orientation="vertical">
 
-            <CheckBox
-                android:id="@+id/faroisOculosBaixo"
+                <TextView
+                    android:id="@+id/textViewLanternasLentes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Lanternas / Lentes"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/lanternasLentesNaoFunciona"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Não funciona" />
+
+                <CheckBox
+                    android:id="@+id/lanternasLentesDanificada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Danificada" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Baixo não funciona" />
+                android:layout_height="match_parent"
+                android:background="@color/fundoimpar"
+                android:orientation="vertical">
 
-            <CheckBox
-                android:id="@+id/faroisOculosFalta"
+                <TextView
+                    android:id="@+id/textViewLuzesDelimitadorasVigiasLentes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Luzes Delimitadoras – Vigias / Lentes"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/luzesDelimitadorasVigiasLentesFaltando"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Faltando" />
+
+                <CheckBox
+                    android:id="@+id/luzesDelimitadorasVigiasLentesNaoFunciona"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Não funciona" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Falta" />
+                android:layout_height="match_parent"
+                android:background="@color/fundopar"
+                android:orientation="vertical">
 
-            <CheckBox
-                android:id="@+id/faroisOculosSolto"
+                <TextView
+                    android:id="@+id/textViewLuzFreioLentes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Luz do Freio / Lentes"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/luzFreioLentesNaoFunciona"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Não funciona" />
+
+                <CheckBox
+                    android:id="@+id/luzFreioLentesDanificada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Danificada" />
+
+                <CheckBox
+                    android:id="@+id/luzFreioLentesConservacaoIrregular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Conservação Irregular" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Solto" />
+                android:layout_height="match_parent"
+                android:background="@color/fundoimpar"
+                android:orientation="vertical">
 
-            <CheckBox
-                android:id="@+id/faroisOculosQuebrado"
+                <TextView
+                    android:id="@+id/textViewBrakeLight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Brake - Light"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/brakeLightConservacaoIrregular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Conservação Irregular" />
+
+                <CheckBox
+                    android:id="@+id/brakeLightNaoFunciona"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Não funciona" />
+
+                <CheckBox
+                    android:id="@+id/brakeLightFalta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Falta" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Quebrado" />
+                android:layout_height="match_parent"
+                android:background="@color/fundopar"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textViewLuzesSetaEmergencia"
+                <TextView
+                    android:id="@+id/textViewLuzRe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Luz de ré"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/luzReConservacaoIrregular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Conservação Irregular" />
+
+                <CheckBox
+                    android:id="@+id/luzReSemLente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Sem lente" />
+
+                <CheckBox
+                    android:id="@+id/luzReNaoFunciona"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Não funciona" />
+
+                <CheckBox
+                    android:id="@+id/luzReFalta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Falta" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Luzes de Seta e de Emergência"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+                android:layout_height="match_parent"
+                android:background="@color/fundoimpar"
+                android:orientation="vertical">
 
-            <CheckBox
-                android:id="@+id/luzesSetaEmergenciaDanificada"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Danificada" />
+                <TextView
+                    android:id="@+id/textViewLuzPlaca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Luz da placa"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
 
-            <CheckBox
-                android:id="@+id/luzesSetaEmergenciaNaoFunciona"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Não funciona" />
+                <CheckBox
+                    android:id="@+id/luzPlacaConservacaoIrregular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Conservação Irregular" />
 
-            <CheckBox
-                android:id="@+id/luzesSetaEmergenciaFalta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Falta" />
+                <CheckBox
+                    android:id="@+id/luzPlacaFalta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Falta" />
 
-
-            <CheckBox
-                android:id="@+id/luzesSetaEmergenciaQuebrada"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Quebrada" />
-
-            <TextView
-                android:id="@+id/textViewLanternasLentes"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Lanternas / Lentes"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/lanternasLentesDanificada"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Danificada" />
-
-            <CheckBox
-                android:id="@+id/lanternasLentesNaoFunciona"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Não funciona" />
-
-            <TextView
-                android:id="@+id/textViewLuzesDelimitadorasVigiasLentes"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Luzes Delimitadoras – Vigias / Lentes"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/luzesDelimitadorasVigiasLentesFaltando"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Faltando" />
-
-            <CheckBox
-                android:id="@+id/luzesDelimitadorasVigiasLentesNaoFunciona"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Não funciona" />
-
-            <TextView
-                android:id="@+id/textViewLuzFreioLentes"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Luz do Freio / Lentes"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/luzFreioLentesConservacaoIrregular"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Conservação Irregular" />
-
-            <CheckBox
-                android:id="@+id/luzFreioLentesDanificada"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Danificada" />
-
-            <CheckBox
-                android:id="@+id/luzFreioLentesNaoFunciona"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Não funciona" />
-
-            <TextView
-                android:id="@+id/textViewBrakeLight"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Brake - Light"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/brakeLightNaoFunciona"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Não funciona" />
-
-            <CheckBox
-                android:id="@+id/brakeLightFalta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Falta" />
-
-            <CheckBox
-                android:id="@+id/brakeLightConservacaoIrregular"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Conservação Irregular" />
-
-            <TextView
-                android:id="@+id/textViewLuzRe"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Luz de ré"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/luzReFalta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Falta" />
-
-            <CheckBox
-                android:id="@+id/luzReNaoFunciona"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Não funciona" />
-
-            <CheckBox
-                android:id="@+id/luzReSemLente"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Sem lente" />
-
-            <CheckBox
-                android:id="@+id/luzReConservacaoIrregular"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Conservação Irregular" />
-
-            <TextView
-                android:id="@+id/textViewLuzPlaca"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Luz da placa"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-            <CheckBox
-                android:id="@+id/luzPlacaNaoFunciona"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Não funciona" />
-
-            <CheckBox
-                android:id="@+id/luzPlacaFalta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Falta" />
-
-            <CheckBox
-                android:id="@+id/luzPlacaConservacaoIrregular"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Conservação Irregular" />
+                <CheckBox
+                    android:id="@+id/luzPlacaNaoFunciona"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Não funciona" />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/fundopar"
                 android:orientation="horizontal">
 
                 <Button

@@ -4,10 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="16dp"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
-    android:layout_marginTop="16dp"
     android:orientation="vertical"
     tools:context=".activity.GrupoB.GrupoBPostoComandoActivity">
 
@@ -20,104 +16,135 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textViewTituloGrupoB"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:text="Grupo B"
-                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                android:layout_height="match_parent"
+                android:background="@color/fundoimpar"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textViewPostoComando"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:text="3 - Posto de comando"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/textViewTituloGrupoB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Grupo B"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textViewComandosPainel"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Comandos do painel"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+                <TextView
+                    android:id="@+id/textViewPostoComando"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="3 - Posto de comando"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="15sp" />
+            </LinearLayout>
 
-            <CheckBox
-                android:id="@+id/comandoPainelManometroNaoFunciona"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Manômetro não funciona" />
+                android:layout_height="match_parent"
+                android:background="@color/fundopar"
+                android:orientation="vertical">
 
-            <CheckBox
-                android:id="@+id/comandoPainelVelocimentoNaoFunciona"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Velocimentro não funciona" />
+                <TextView
+                    android:id="@+id/textViewComandosPainel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Comandos do painel"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
 
-            <CheckBox
-                android:id="@+id/comandoPainelLuzesNaoAcende"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Luzes não acendem" />
+                <CheckBox
+                    android:id="@+id/comandoPainelSistemaVentilacaoNaoFunciona"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Sistema de ventilação não funciona" />
 
-            <CheckBox
-                android:id="@+id/comandoPainelSistemaVentilacaoNaoFunciona"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Sistema de ventilação não funciona" />
+                <CheckBox
+                    android:id="@+id/comandoPainelLuzesNaoAcende"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Luzes não acendem" />
 
-            <TextView
-                android:id="@+id/textViewChaveSetaBuzina"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="10dp"
-                android:gravity="fill_horizontal|center"
-                android:text="Chave de seta/Buzina"
-                android:textIsSelectable="false"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:layout_marginLeft="30dp"
-                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+                <CheckBox
+                    android:id="@+id/comandoPainelManometroNaoFunciona"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Manômetro não funciona" />
 
-            <CheckBox
-                android:id="@+id/chaveSetaBuzinaNaoFunciona"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Não funciona" />
+                <CheckBox
+                    android:id="@+id/comandoPainelVelocimentoNaoFunciona"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Velocimentro não funciona" />
+            </LinearLayout>
 
-            <CheckBox
-                android:id="@+id/chaveSetaBuzinaDanificada"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Danificada" />
+                android:layout_height="match_parent"
+                android:background="@color/fundoimpar"
+                android:orientation="vertical">
 
-            <CheckBox
-                android:id="@+id/chaveSetaBuzinaFalta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Falta" />
+                <TextView
+                    android:id="@+id/textViewChaveSetaBuzina"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="fill_horizontal|center"
+                    android:text="Chave de seta/Buzina"
+                    android:textColor="#111"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+                <CheckBox
+                    android:id="@+id/chaveSetaBuzinaFalta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Falta" />
+
+                <CheckBox
+                    android:id="@+id/chaveSetaBuzinaDanificada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Danificada" />
+
+                <CheckBox
+                    android:id="@+id/chaveSetaBuzinaNaoFunciona"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Não funciona" />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/fundopar"
                 android:orientation="horizontal">
 
                 <Button
