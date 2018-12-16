@@ -227,29 +227,25 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp"
                 android:background="@color/fundopar"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:gravity="center">
 
                 <Button
                     android:id="@+id/botaoVoltarSelecionarFicha"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="left"
                     android:text="Voltar"
-                    tools:layout_marginLeft="50dp" />
+                    android:background="@color/fundoimpar"
+                    android:layout_margin="10dp"/>
 
                 <Button
                     android:id="@+id/botaoProximo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:gravity="center_vertical|end"
                     android:text="Próximo"
-                    tools:layout_marginLeft="50dp" />
+                    android:background="@color/fundoimpar"
+                    android:layout_margin="10dp"/>
 
             </LinearLayout>
 

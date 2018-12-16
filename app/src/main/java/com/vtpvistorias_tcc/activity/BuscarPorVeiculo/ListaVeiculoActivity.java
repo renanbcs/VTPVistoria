@@ -33,7 +33,6 @@ public class ListaVeiculoActivity extends AppCompatActivity implements View.OnCl
     private List<Veiculo> listaVeiculo;
     private Veiculo veiculo;
     private ListView listView;
-    private FloatingActionButton botaoBuscar;
     private Inspetor inspetor;
     private Intent i;
     private Activity act = this;
@@ -47,30 +46,22 @@ public class ListaVeiculoActivity extends AppCompatActivity implements View.OnCl
 
         listaVeiculo = new ArrayList<>();
 
-
-
-
-
-
         firebase = ConfiguracaoFirebase.getFirebase().child("Veiculos");
+
+        List<String> dadosVeiculos = new ArrayList<>();
+        dadosVeiculos.add("Carregando...");
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, dadosVeiculos);
+        listView.setAdapter(adapter);
 
         firebase.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
 
-                List<String> dadosVeiculos = new ArrayList<>();
-
                 for(DataSnapshot child : dataSnapshot.getChildren()){
 
                     listaVeiculo.add(child.getValue(Veiculo.class));
-
-                }
-
-                for(int a = 0;a<listaVeiculo.size();a++){
-
-                    dadosVeiculos.add("Prefixo: "+listaVeiculo.get(a).getPrefixo()+
-                    "\nPlaca: "+ listaVeiculo.get(a).getPlaca());
 
                 }
 

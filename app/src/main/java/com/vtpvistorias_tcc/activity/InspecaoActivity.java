@@ -35,7 +35,7 @@ public class InspecaoActivity extends AppCompatActivity {
         if(inspecao.getGrupoA()!= null || inspecao.getGrupoA1() != null || inspecao.getGrupoB() != null){
 
             tvInspecao.setText(tvInspecao.getText()+
-            "\n\nDetalhes: ");
+            "\n\nObservação: "+inspecao.getJustificativa());
 
             if(inspecao.getGrupoA1()!= null){
 
@@ -1546,8 +1546,7 @@ public class InspecaoActivity extends AppCompatActivity {
         }else{
 
             tvInspecao.setText(tvInspecao.getText()+
-            "\n\nObservações: "+
-            "\nJustifica: "+ inspecao.getJustificativa());
+            "\n\nObservações: "+inspecao.getJustificativa());
 
 
         }

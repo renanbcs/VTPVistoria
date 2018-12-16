@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#58C3BF"
     tools:context=".activity.IniciarInspecaoActivity"
     tools:layout_editor_absoluteY="25dp">
 
@@ -13,6 +14,9 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/editText_prefixo_inciarInpecao"
         android:layout_alignTop="@+id/botaoBuscarPrefixo"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="#E0FFFF"
         android:onClick="startDialog"
         android:text="@string/botao_voltar"
         tools:layout_editor_absoluteX="68dp"
@@ -24,16 +28,22 @@
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/editText_prefixo_inciarInpecao"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="122dp"
-        android:text="@string/botao_proximo"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="81dp"
+        android:background="#E0FFFF"
+        android:text="Buscar"
         tools:layout_editor_absoluteX="204dp"
         tools:layout_editor_absoluteY="367dp" />
 
     <EditText
         android:id="@+id/editText_prefixo_inciarInpecao"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="263dp"
+        android:layout_marginEnd="71dp"
+        android:background="#E0FFFF"
         android:ems="10"
         android:hint="@string/hint_prefixo"
         android:inputType="number"
@@ -42,14 +52,31 @@
 
     <TextView
         android:id="@+id/textView_mensagem_iniciarInspecao"
-        android:layout_width="213dp"
-        android:layout_height="47dp"
+        android:layout_width="251dp"
+        android:layout_height="114dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="142dp"
-        android:text="@string/mensagem_iniciarInspecao"
+        android:layout_marginTop="127dp"
+        android:text="Para iniciar uma inspeção é\nnecessario escolher um veiculo\n\nInsira seu prefixo no campo \na baixo para realizar a busca"
+        android:textAlignment="center"
+        android:textColor="@color/branco"
+        android:textSize="17dp"
         tools:layout_editor_absoluteX="73dp"
         tools:layout_editor_absoluteY="107dp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="61dp"
+        android:text="Iniciar Nova Inspeção"
+        android:textColor="@color/branco"
+        android:textSize="24sp" />
 
 
 </RelativeLayout>

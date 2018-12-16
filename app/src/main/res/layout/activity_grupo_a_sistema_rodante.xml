@@ -4,10 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="16dp"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
-    android:layout_marginTop="16dp"
     android:orientation="vertical"
     tools:context=".activity.GrupoA.GrupoASistemaRodanteActivity">
 
@@ -20,122 +16,150 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textViewTituloGrupoA"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:text="Grupo A"
-        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-        android:textSize="15sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textViewSistemaFreio"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:text="4 - Sistemas Rodante"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="15sp" />
-
-        <TextView
-        android:id="@+id/textViewPneu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:layout_marginTop="10dp"
-        android:gravity="fill_horizontal|center"
-        android:text="Pneu"
-        android:textIsSelectable="false"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        tools:layout_marginLeft="30dp"
-        tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-        <CheckBox
-            android:id="@+id/pneuDesgastado"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Desgastado" />
+            android:layout_height="match_parent"
+            android:background="@color/fundoimpar"
+            android:orientation="vertical">
 
-        <CheckBox
-            android:id="@+id/pneuIrregular"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Irregular" />
+            <TextView
+                android:id="@+id/textViewTituloGrupoA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Grupo A"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
-        <CheckBox
-            android:id="@+id/pneuDanificado"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Danificado" />
-
-        <CheckBox
-            android:id="@+id/pneuTalao"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Talao" />
-
-        <TextView
-            android:id="@+id/textViewRoda"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="10dp"
-            android:gravity="fill_horizontal|center"
-            android:text="Roda"
-            android:textIsSelectable="false"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            tools:layout_marginLeft="30dp"
-            tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-        <CheckBox
-            android:id="@+id/rodaFaltaPorca"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Falta Porca" />
-
-        <CheckBox
-            android:id="@+id/rodaFaltaEspelho"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="FaltaEspelho" />
-
-        <CheckBox
-            android:id="@+id/rodaDanificada"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Danificada" />
+            <TextView
+                android:id="@+id/textViewSistemaFreio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="4 - Sistemas Rodante"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="15sp" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="16dp"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:background="@color/fundopar"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewPneu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Pneu"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView"
+                android:textColor="#111"/>
+
+            <CheckBox
+                android:id="@+id/pneuTalao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Talao" />
+
+            <CheckBox
+                android:id="@+id/pneuDanificado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Danificado" />
+
+            <CheckBox
+                android:id="@+id/pneuDesgastado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Desgastado" />
+
+            <CheckBox
+                android:id="@+id/pneuIrregular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Irregular" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/fundoimpar"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewRoda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Roda"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView"
+                android:textColor="#111"/>
+
+            <CheckBox
+                android:id="@+id/rodaDanificada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Danificada" />
+
+            <CheckBox
+                android:id="@+id/rodaFaltaPorca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Falta Porca" />
+
+            <CheckBox
+                android:id="@+id/rodaFaltaEspelho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="FaltaEspelho" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/fundopar">
 
             <Button
                 android:id="@+id/botaoVoltarSelecionarFicha"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:text="Voltar"
-                tools:layout_marginLeft="50dp" />
+                android:layout_margin="10dp"
+                android:background="@color/fundoimpar"
+                android:text="Voltar" />
 
             <Button
                 android:id="@+id/botaoProximo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:gravity="center_vertical|end"
-                android:text="Próximo"
-                tools:layout_marginLeft="50dp" />
+                android:layout_margin="10dp"
+                android:background="@color/fundoimpar"
+                android:text="Próximo" />
 
         </LinearLayout>
 

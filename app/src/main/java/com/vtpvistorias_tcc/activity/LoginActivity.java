@@ -81,12 +81,11 @@ public class LoginActivity extends AppCompatActivity {
 
                     abrirTelaPrincipal();
 
-                    btnLogar.setText("Logar");
-                    btnLogar.setClickable(true);
+
 
                     Toast.makeText(LoginActivity.this, "Login efetuado com sucesso!", Toast.LENGTH_LONG).show();
                 } else {
-                    btnLogar.setText("Logar");
+                    btnLogar.setText("LOGIN");
                     btnLogar.setClickable(true);
                     Toast.makeText(LoginActivity.this, "Email e/ou Senha incorreto(s)!", Toast.LENGTH_LONG).show();
                 }
@@ -97,6 +96,8 @@ public class LoginActivity extends AppCompatActivity {
     private void abrirTelaPrincipal() {
         Intent intentAbrirTelaPrincipal = new Intent(LoginActivity.this, MainActivity.class);
         startActivity(intentAbrirTelaPrincipal);
+        btnLogar.setText("LOGIN");
+        btnLogar.setClickable(true);
     }
 
     private void esqueciSenha() {

@@ -78,6 +78,9 @@ public class IniciarInspecaoActivity extends AppCompatActivity implements View.O
 
                 if (!editTextPrefixo.getText().toString().equals("")) {
 
+                    botaoBuscarPrefixo.setText("Aguarde...");
+                    botaoBuscarPrefixo.setEnabled(false);
+
                     firebase = ConfiguracaoFirebase.getFirebase().child("Veiculos").child(editTextPrefixo.getText().toString());
 
                     firebase.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -92,8 +95,12 @@ public class IniciarInspecaoActivity extends AppCompatActivity implements View.O
                                 i.putExtra("veiculo", veiculo);
                                 i.putExtra("tela", "iniciarInspecao");
                                 startActivity(i);
+                                botaoBuscarPrefixo.setText("Buscar");
+                                botaoBuscarPrefixo.setEnabled(true);
 
                             } else {
+                                botaoBuscarPrefixo.setText("Buscar");
+                                botaoBuscarPrefixo.setEnabled(true);
 
                                 Toast.makeText(getApplicationContext(), "Número Invalido", Toast.LENGTH_SHORT).show();
 

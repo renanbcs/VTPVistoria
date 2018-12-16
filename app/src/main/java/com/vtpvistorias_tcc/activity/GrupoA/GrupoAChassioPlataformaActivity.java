@@ -34,6 +34,8 @@ public class GrupoAChassioPlataformaActivity extends AppCompatActivity implement
     private CheckBox segCintoBloqueioPortasNFunciona;
     private CheckBox segCintoBloqueioPortasFalta;
 
+    private CheckBox estruturaDegrausAlturaIrregular,estruturaDegrausSolta,estruturaDegrausQuebrada;
+
     private DatabaseReference firebase;
     private GrupoA grupoA;
     private Intent i;
@@ -66,6 +68,10 @@ public class GrupoAChassioPlataformaActivity extends AppCompatActivity implement
 
         segCintoBloqueioPortasNFunciona = (CheckBox)findViewById(R.id.segCintoBloqueioPortasNFunciona);
         segCintoBloqueioPortasFalta = (CheckBox)findViewById(R.id.segCintoBloqueioPortasFalta);
+
+        estruturaDegrausAlturaIrregular = (CheckBox)findViewById(R.id.estruturaDegrausAlturaIrregular);
+        estruturaDegrausSolta = (CheckBox)findViewById(R.id.estruturaDegrausSolta);
+        estruturaDegrausQuebrada = (CheckBox)findViewById(R.id.estruturaDegrausQuebrada);
 
         i = getIntent();
         inspecao = (Inspecao) i.getSerializableExtra("inspecao");
@@ -122,6 +128,18 @@ public class GrupoAChassioPlataformaActivity extends AppCompatActivity implement
         }
         if(segCintoBloqueioPortasNFunciona.isChecked()){
             grupoA.getSistemaSegurancaDoCintoMotoristaEBloqueioPortas().add("Não Funciona");
+        }
+
+        if(estruturaDegrausAlturaIrregular.isChecked()){
+            grupoA.getEstruturaDosDegraus().add("Altura Irregular");
+        }
+
+        if(estruturaDegrausQuebrada.isChecked()){
+            grupoA.getEstruturaDosDegraus().add("Quebrada");
+        }
+
+        if(estruturaDegrausSolta.isChecked()){
+            grupoA.getEstruturaDosDegraus().add("Solta");
         }
     }
 

@@ -26,7 +26,10 @@ public class GrupoASistemaSuspensaoActivity extends AppCompatActivity implements
     private CheckBox amortecedorFaltando;
     private CheckBox amortecedorVazando;
     private CheckBox amortecedorSolto;
-    private CheckBox amortecedorDanificado;
+    private CheckBox amortecedorDanificado,suporteAmortecedorDanificado	,	buchaAmortecedorDanificada,	feixeMolasDanificado,	buchaMolasFolga,	espigaoMolasCortado,	grampoMolasDanificado,	suporteMolasDanificado,	algemaDanificado,	pinoSuporteMolaSolto,	molaHelicoidalQuebrada,	suporteMolaHelicoidalQuebrada,	bolsaoDeArDanificada,	valculaNivelDanificada,	barraEstabilizadoraSolta,	buchaBarraEstabilizadoraFalta,	bananaBeanSolta,hasteSuporteReacaoTraseiraEmpenada;
+    private CheckBox suporteAmortecedorSolto	, buchaAmortecedorSolta	, feixeMolasSolta	, espigaoMolasQuebrado	, grampoMolasSolto	, suporteMolasSolto	, algemaSolto	, pinoSuporteMolaQuebrado	, molaHelicoidalSolta	, suporteMolaHelicoidalSolto	, bolsaoDeArSolto	, valculaNivelSolta	, barraEstabilizadoraFalta	, buchaBarraEstabilizadoraFolga	, bananaBeanDanificada	, hasteSuporteReacaoTraseiraFolga	;
+    private CheckBox pinoSuporteMolaFalta	, bolsaoDeArVazando	, valculaNivelVazando	, barraEstabilizadoraFolga	, bananaBeanDesalinhada	, hasteSuporteReacaoTraseiraSolta	;
+    private CheckBox barraEstabilizadoraQuebrada,bananaBeanFolga,hasteSuporteReacaoTraseiraQuebrada;
 
     private DatabaseReference firebase;
     private GrupoA grupoA;
@@ -52,6 +55,50 @@ public class GrupoASistemaSuspensaoActivity extends AppCompatActivity implements
         amortecedorVazando = (CheckBox)findViewById(R.id.amortecedorVazando);
         amortecedorSolto = (CheckBox)findViewById(R.id.amortecedorSolto);
         amortecedorDanificado = (CheckBox)findViewById(R.id.amortecedorDanificado);
+        suporteAmortecedorDanificado=findViewById(R.id.suporteAmortecedorDanificado);
+        buchaAmortecedorDanificada=findViewById(R.id.buchaAmortecedorDanificada);
+        feixeMolasDanificado=findViewById(R.id.feixeMolasDanificado);
+        buchaMolasFolga=findViewById(R.id.buchaMolasFolga);
+        espigaoMolasCortado=findViewById(R.id.espigaoMolasCortado);
+        grampoMolasDanificado=findViewById(R.id.grampoMolasDanificado);
+        suporteMolasDanificado=findViewById(R.id.suporteMolasDanificado);
+        algemaDanificado=findViewById(R.id.algemaDanificado);
+        pinoSuporteMolaSolto=findViewById(R.id.pinoSuporteMolaSolto);
+        molaHelicoidalQuebrada=findViewById(R.id.molaHelicoidalQuebrada);
+        suporteMolaHelicoidalQuebrada=findViewById(R.id.suporteMolaHelicoidalQuebrada);
+        bolsaoDeArDanificada=findViewById(R.id.bolsaoDeArDanificada);
+        valculaNivelDanificada=findViewById(R.id.valculaNivelDanificada);
+        barraEstabilizadoraSolta=findViewById(R.id.barraEstabilizadoraSolta);
+        buchaBarraEstabilizadoraFalta=findViewById(R.id.buchaBarraEstabilizadoraFalta);
+        bananaBeanSolta=findViewById(R.id.bananaBeanSolta);
+        hasteSuporteReacaoTraseiraEmpenada=findViewById(R.id.hasteSuporteReacaoTraseiraEmpenada);
+        suporteAmortecedorSolto=findViewById(R.id.suporteAmortecedorSolto);
+        buchaAmortecedorSolta=findViewById(R.id.buchaAmortecedorSolta);
+        feixeMolasSolta=findViewById(R.id.feixeMolasSolta);
+        espigaoMolasQuebrado=findViewById(R.id.espigaoMolasQuebrado);
+        grampoMolasSolto=findViewById(R.id.grampoMolasSolto);
+        suporteMolasSolto=findViewById(R.id.suporteMolasSolto);
+        algemaSolto=findViewById(R.id.algemaSolto);
+        pinoSuporteMolaQuebrado=findViewById(R.id.pinoSuporteMolaQuebrado);
+        molaHelicoidalSolta=findViewById(R.id.molaHelicoidalSolta);
+        suporteMolaHelicoidalSolto=findViewById(R.id.suporteMolaHelicoidalSolto);
+        bolsaoDeArSolto=findViewById(R.id.bolsaoDeArSolto);
+        valculaNivelSolta=findViewById(R.id.valculaNivelSolta);
+        barraEstabilizadoraFalta=findViewById(R.id.barraEstabilizadoraFalta);
+        buchaBarraEstabilizadoraFolga=findViewById(R.id.buchaBarraEstabilizadoraFolga);
+        bananaBeanDanificada=findViewById(R.id.bananaBeanDanificada);
+        hasteSuporteReacaoTraseiraFolga=findViewById(R.id.hasteSuporteReacaoTraseiraFolga);
+
+        pinoSuporteMolaFalta=findViewById(R.id.pinoSuporteMolaFalta);
+        bolsaoDeArVazando=findViewById(R.id.bolsaoDeArVazando);
+        valculaNivelVazando=findViewById(R.id.valculaNivelVazando);
+        barraEstabilizadoraFolga=findViewById(R.id.barraEstabilizadoraFolga);
+        bananaBeanDesalinhada=findViewById(R.id.bananaBeanDesalinhada);
+        hasteSuporteReacaoTraseiraSolta=findViewById(R.id.hasteSuporteReacaoTraseiraSolta);
+
+        barraEstabilizadoraQuebrada=findViewById(R.id.pinoSuporteMolaFalta);
+        bananaBeanFolga=findViewById(R.id.bolsaoDeArVazando);
+        hasteSuporteReacaoTraseiraQuebrada=findViewById(R.id.valculaNivelVazando);
 
         i = getIntent();
         inspecao = (Inspecao) i.getSerializableExtra("inspecao");
@@ -96,6 +143,52 @@ public class GrupoASistemaSuspensaoActivity extends AppCompatActivity implements
             grupoA.getAmortecedor().add("Danificado");
         }
 
+        if(suporteAmortecedorDanificado.isChecked()){grupoA.getSuporteDoAmortecedor().add("Danificada");}
+        if(buchaAmortecedorDanificada.isChecked()){grupoA.getBuchaDoAmortecedor().add("Danificada");}
+        if(feixeMolasDanificado.isChecked()){grupoA.getFeixeDeMolas().add("Danificada");}
+        if(buchaMolasFolga.isChecked()){grupoA.getBuchaDasMolas().add("Com Folga");}
+        if(espigaoMolasCortado.isChecked()){grupoA.getEspigaoDasMolas().add("Cortado");}
+        if(grampoMolasDanificado.isChecked()){grupoA.getGrampoDasMolas().add("Danificada");}
+        if(suporteMolasDanificado.isChecked()){grupoA.getSuporteDasMolas().add("Danificada");}
+        if(algemaDanificado.isChecked()){grupoA.getAlgema().add("Danificada");}
+        if(pinoSuporteMolaSolto.isChecked()){grupoA.getPinoDoSuporteDaMola().add("Solto");}
+        if(molaHelicoidalQuebrada.isChecked()){grupoA.getMolaHelicoidal().add("Quebrada");}
+        if(suporteMolaHelicoidalQuebrada.isChecked()){grupoA.getSuporteEParafusoDaMolaHelicoidal().add("Quebrada");}
+        if(bolsaoDeArDanificada.isChecked()){grupoA.getBolsaoDeAr().add("Danificada");}
+        if(valculaNivelDanificada.isChecked()){grupoA.getValvulaDeNivel().add("Danificada");}
+        if(barraEstabilizadoraSolta.isChecked()){grupoA.getBarraEstabilizadora().add("Solto");}
+        if(buchaBarraEstabilizadoraFalta.isChecked()){grupoA.getBuchaDaBarraEstabilizadora().add("Falta");}
+        if(bananaBeanSolta.isChecked()){grupoA.getBananaBean().add("Solto");}
+        if(hasteSuporteReacaoTraseiraEmpenada.isChecked()){grupoA.getHasteSuporteDeReacaoTraseira().add("Empenada");}
+
+        if(suporteAmortecedorSolto.isChecked()){grupoA.getSuporteDoAmortecedor().add("Solto");}
+        if(buchaAmortecedorSolta.isChecked()){grupoA.getBuchaDoAmortecedor().add("Solto");}
+        if(feixeMolasSolta.isChecked()){grupoA.getFeixeDeMolas().add("Solto");}
+
+        if(espigaoMolasQuebrado.isChecked()){grupoA.getEspigaoDasMolas().add("Quebrado");}
+        if(grampoMolasSolto.isChecked()){grupoA.getGrampoDasMolas().add("Solto");}
+        if(suporteMolasSolto.isChecked()){grupoA.getSuporteDasMolas().add("Solto");}
+        if(algemaSolto.isChecked()){grupoA.getAlgema().add("Solto");}
+        if(pinoSuporteMolaQuebrado.isChecked()){grupoA.getPinoDoSuporteDaMola().add("Quebrado");}
+        if(molaHelicoidalSolta.isChecked()){grupoA.getMolaHelicoidal().add("Solto");}
+        if(suporteMolaHelicoidalSolto.isChecked()){grupoA.getSuporteEParafusoDaMolaHelicoidal().add("Solto");}
+        if(bolsaoDeArSolto.isChecked()){grupoA.getBolsaoDeAr().add("Solto");}
+        if(valculaNivelSolta.isChecked()){grupoA.getValvulaDeNivel().add("Solto");}
+        if(barraEstabilizadoraFalta.isChecked()){grupoA.getBarraEstabilizadora().add("Em Falta");}
+        if(buchaBarraEstabilizadoraFolga.isChecked()){grupoA.getBuchaDaBarraEstabilizadora().add("Com Folga");}
+        if(bananaBeanDanificada.isChecked()){grupoA.getBananaBean().add("Danificada");}
+        if(hasteSuporteReacaoTraseiraFolga.isChecked()){grupoA.getHasteSuporteDeReacaoTraseira().add("Com Folga");}
+
+        if(pinoSuporteMolaFalta.isChecked()){grupoA.getPinoDoSuporteDaMola().add("Em Falta");}
+        if(bolsaoDeArVazando.isChecked()){grupoA.getBolsaoDeAr().add("Vazando");}
+        if(valculaNivelVazando.isChecked()){grupoA.getValvulaDeNivel().add("Vazando");}
+        if(barraEstabilizadoraFolga.isChecked()){grupoA.getBarraEstabilizadora().add("Com Folga");}
+        if(bananaBeanDesalinhada.isChecked()){grupoA.getBananaBean().add("Desalinhada");}
+        if(hasteSuporteReacaoTraseiraSolta.isChecked()){grupoA.getHasteSuporteDeReacaoTraseira().add("Solta");}
+
+        if(barraEstabilizadoraQuebrada.isChecked()){grupoA.getBarraEstabilizadora().add("Quebrada");}
+        if(bananaBeanFolga.isChecked()){grupoA.getBananaBean().add("Com Folga");}
+        if(hasteSuporteReacaoTraseiraQuebrada.isChecked()){grupoA.getHasteSuporteDeReacaoTraseira().add("Quebrada");}
     }
 
     //metodo para criar os menus

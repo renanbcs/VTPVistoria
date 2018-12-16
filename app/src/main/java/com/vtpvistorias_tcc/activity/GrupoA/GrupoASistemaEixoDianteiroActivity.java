@@ -146,10 +146,10 @@ public class GrupoASistemaEixoDianteiroActivity extends AppCompatActivity implem
             grupoA.getCaixaDeDirecao().add("Vazam Flex Encanamento");
         }
         if(suporteCaixaTrincado.isChecked()){
-            grupoA.getCaixaDeDirecao().add("Trincado");
+            grupoA.getSuporteDaCaixa().add("Trincado");
         }
         if(suporteCaixaSolto.isChecked()){
-            grupoA.getCaixaDeDirecao().add("Solto");
+            grupoA.getSuporteDaCaixa().add("Solto");
         }
         if(bracoTerminalCaixaFolga.isChecked()){
             grupoA.getBracoTerminalDaCaixa().add("Com Folga");

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">VTPVistorias-TCC</string>
+    <string name="app_name">VTPVistorias</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="item_sair">Sair</string>
     <string name="item_configuracao">Configuração</string>

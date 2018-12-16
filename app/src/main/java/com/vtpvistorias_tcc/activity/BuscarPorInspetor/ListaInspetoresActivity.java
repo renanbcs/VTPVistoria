@@ -26,7 +26,6 @@ import com.vtpvistorias_tcc.config.ConfiguracaoFirebase;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class ListaInspetoresActivity extends AppCompatActivity {
 
     private DatabaseReference firebase;
@@ -47,6 +46,11 @@ public class ListaInspetoresActivity extends AppCompatActivity {
 
         listaInspetor = new ArrayList<>();
 
+        List<String> nomes = new ArrayList<>();
+        nomes.add("Carregando...");
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, nomes);
+        listView.setAdapter(adapter);
+
         firebase = ConfiguracaoFirebase.getFirebase().child("Inspetor");
 
         firebase.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -54,24 +58,14 @@ public class ListaInspetoresActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
 
-                List<String> nomes = new ArrayList<>();
-
                 for(DataSnapshot child : dataSnapshot.getChildren()){
 
                     listaInspetor.add(child.getValue(Inspetor.class));
 
                 }
 
-                for(int a = 0;a<listaInspetor.size();a++){
-
-                    nomes.add(listaInspetor.get(a).getNome());
-
-                }
-
                 AdapterPersonalizado adapter = new AdapterPersonalizado(listaInspetor,act);
-                //ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, nomes);
                 listView.setAdapter(adapter);
-
 
             }
 
@@ -81,14 +75,11 @@ public class ListaInspetoresActivity extends AppCompatActivity {
             }
         });
 
-
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int indice, long l) {
 
                 inspetor = listaInspetor.get(indice);
-
-                //Toast.makeText(getApplicationContext(),""+ inspetor.getNome(),Toast.LENGTH_SHORT).show();
 
                 i = new Intent(getApplicationContext(),ListaInspecaoActivity.class);
 

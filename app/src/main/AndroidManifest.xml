@@ -9,29 +9,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
             android:name=".activity.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity android:name=".activity.IniciarInspecaoActivity" />
+
         <activity
             android:name=".activity.DetalhesVeiculoActivity"
             android:theme="@android:style/Theme.Holo.Dialog" />
         <activity android:name=".activity.SelecionarFichaActivity" />
+
         <activity
             android:name=".activity.ItensFichaActivity"
             android:theme="@android:style/Theme.Holo.Dialog" />
+
         <activity android:name=".activity.GrupoA.GrupoASistemaFreioActivity" />
-        <activity
-            android:name=".activity.GrupoB.GrupoBSistemaCarroceriaActivity"
-            android:label="@string/title_activity_grupo_b"
-            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.GrupoB.GrupoBSistemaCarroceriaActivity"/>
         <activity android:name=".activity.GrupoA.GrupoASistemaSuspensaoActivity" />
         <activity android:name=".activity.GrupoA.GrupoASistemaTracaoActivity" />
         <activity android:name=".activity.GrupoA.GrupoASistemaRodanteActivity" />
-        <activity
-            android:name=".activity.GrupoA.GrupoASistemaEixoDianteiroActivity"
-            android:launchMode="singleTop" />
+        <activity android:name=".activity.GrupoA.GrupoASistemaEixoDianteiroActivity"/>
         <activity android:name=".activity.GrupoA.GrupoAChassioPlataformaActivity" />
         <activity android:name=".activity.SalvarActivity" />
         <activity android:name=".activity.GrupoA1.GrupoA1SistemaCarroceriaNivelBActivity" />
@@ -58,7 +58,7 @@
         <activity android:name=".activity.BuscarPorInspetor.ListaInspecaoActivity" />
         <activity android:name=".activity.InspecaoActivity" />
         <activity android:name=".activity.BuscarPorVeiculo.ListaVeiculoActivity" />
-        <activity android:name=".activity.BuscarPorVeiculo.ListaInspecaoVeiculosActivity"></activity>
+        <activity android:name=".activity.BuscarPorVeiculo.ListaInspecaoVeiculosActivity"/>
     </application>
 
 </manifest>

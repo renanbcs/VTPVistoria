@@ -84,7 +84,10 @@ public class Inspecao implements Serializable {
     }
 
     public String getJustificativa() {
-        return justificativa;
+
+        if(justificativa!=null)return justificativa;
+        else return "Não há nenhuma informação";
+
     }
 
     public void setJustificativa(String justificativa) {

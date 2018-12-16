@@ -4,10 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="16dp"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
-    android:layout_marginTop="16dp"
     android:orientation="vertical"
     tools:context=".activity.GrupoA.GrupoASistemaEixoDianteiroActivity">
 
@@ -20,357 +16,476 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textViewTituloGrupoA"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:text="Grupo A"
-        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-        android:textSize="15sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textViewSistemaFreio"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:text="5 - Sistema de Eixo dianteiro -Direção"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="15sp" />
-
-    <TextView
-        android:id="@+id/textViewCaixaDirecao"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:layout_marginTop="10dp"
-        android:gravity="fill_horizontal|center"
-        android:text="Caixa de Direção"
-        android:textIsSelectable="false"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        tools:layout_marginLeft="30dp"
-        tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-    <CheckBox
-        android:id="@+id/caixaDirecaoSolta"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Solta" />
-
-        <CheckBox
-            android:id="@+id/caixaDirecaoVazamFlexEncanamento"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Vazam em flexiveis encanamentos" />
+            android:layout_height="match_parent"
+            android:background="@color/fundoimpar"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textViewSuporteCaixa"
+            <TextView
+                android:id="@+id/textViewTituloGrupoA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Grupo A"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewSistemaFreio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="5 - Sistema de Eixo dianteiro -Direção"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="10dp"
-            android:gravity="fill_horizontal|center"
-            android:text="Suporte da Caixa"
-            android:textIsSelectable="false"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            tools:layout_marginLeft="30dp"
-            tools:style="@android:style/Widget.DeviceDefault.TextView" />
+            android:layout_height="match_parent"
+            android:background="@color/fundopar"
+            android:orientation="vertical">
 
-        <CheckBox
-            android:id="@+id/suporteCaixaSolto"
+            <TextView
+                android:id="@+id/textViewCaixaDirecao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Caixa de Direção"
+                android:textColor="#111"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/caixaDirecaoSolta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Solta" />
+
+            <CheckBox
+                android:id="@+id/caixaDirecaoVazamFlexEncanamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Vazam em flexiveis encanamentos" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Solto" />
+            android:layout_height="match_parent"
+            android:background="@color/fundoimpar"
+            android:orientation="vertical">
 
-        <CheckBox
-            android:id="@+id/suporteCaixaTrincado"
+            <TextView
+                android:id="@+id/textViewSuporteCaixa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Suporte da Caixa"
+                android:textColor="#111"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/suporteCaixaSolto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Solto" />
+
+            <CheckBox
+                android:id="@+id/suporteCaixaTrincado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Trincado" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Trincado" />
+            android:layout_height="match_parent"
+            android:background="@color/fundopar"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textViewBracoTerminalCaixa"
+            <TextView
+                android:id="@+id/textViewBracoTerminalCaixa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Braço Terminal da Caixa"
+                android:textColor="#111"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/bracoTerminalCaixaFolga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Folga" />
+
+            <CheckBox
+                android:id="@+id/bracoTerminalCaixaSolto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Solto" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="10dp"
-            android:gravity="fill_horizontal|center"
-            android:text="Braço Terminal da Caixa"
-            android:textIsSelectable="false"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            tools:layout_marginLeft="30dp"
-            tools:style="@android:style/Widget.DeviceDefault.TextView" />
+            android:layout_height="match_parent"
+            android:background="@color/fundoimpar"
+            android:orientation="vertical">
 
-        <CheckBox
-            android:id="@+id/bracoTerminalCaixaFolga"
+            <TextView
+                android:id="@+id/textViewAmortecedorDirecao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Amortecedor de Direção"
+                android:textColor="#111"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/amortecedorDirecaoFalta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Falta" />
+
+            <CheckBox
+                android:id="@+id/amortecedorDirecaoSolto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Solto" />
+
+            <CheckBox
+                android:id="@+id/amortecedorDirecaoVazando"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Vazando" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Folga" />
+            android:layout_height="match_parent"
+            android:background="@color/fundopar"
+            android:orientation="vertical">
 
-        <CheckBox
-            android:id="@+id/bracoTerminalCaixaSolto"
+            <TextView
+                android:id="@+id/textViewEixoDianteiro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Eixo Dianteiro"
+                android:textColor="#111"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/eixoDianteiroTrincado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Trincado" />
+
+            <CheckBox
+                android:id="@+id/eixoDianteiroEmpenado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Empenado" />
+        </LinearLayout>
+
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Solto" />
+            android:layout_height="match_parent"
+            android:background="@color/fundoimpar"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textViewAmortecedorDirecao"
+            <TextView
+                android:id="@+id/textViewRolamentoMangaEixo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Rolamento da Manga do Eixo"
+                android:textColor="#111"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/rolamentoMangaEixoDanificado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Danificado" />
+
+            <CheckBox
+                android:id="@+id/rolamentoMangaEixoFolga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Folga" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="10dp"
-            android:gravity="fill_horizontal|center"
-            android:text="Amortecedor de Direção"
-            android:textIsSelectable="false"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            tools:layout_marginLeft="30dp"
-            tools:style="@android:style/Widget.DeviceDefault.TextView" />
+            android:layout_height="match_parent"
+            android:background="@color/fundopar"
+            android:orientation="vertical">
 
-        <CheckBox
-            android:id="@+id/amortecedorDirecaoSolto"
+            <TextView
+                android:id="@+id/textViewParafusoBatenteManga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Parafuso do Batente Manga"
+                android:textColor="#111"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/parafusoBatenteMangaFalta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Falta" />
+
+            <CheckBox
+                android:id="@+id/parafusoBatenteMangaSolto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Solto" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Solto" />
+            android:layout_height="match_parent"
+            android:background="@color/fundoimpar"
+            android:orientation="vertical">
 
-        <CheckBox
-            android:id="@+id/amortecedorDirecaoVazando"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Vazando" />
+            <TextView
+                android:id="@+id/textViewBraçoEixoDianteiro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Braço do Eixo Dianteiro"
+                android:textColor="#111"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
 
-        <CheckBox
-            android:id="@+id/amortecedorDirecaoFalta"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Falta" />
+            <CheckBox
+                android:id="@+id/bracoEixoDianteiroDanificado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Danificado" />
 
-        <TextView
-            android:id="@+id/textViewEixoDianteiro"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="10dp"
-            android:gravity="fill_horizontal|center"
-            android:text="Eixo Dianteiro"
-            android:textIsSelectable="false"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            tools:layout_marginLeft="30dp"
-            tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-        <CheckBox
-            android:id="@+id/eixoDianteiroEmpenado"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Empenado" />
-
-        <CheckBox
-            android:id="@+id/eixoDianteiroTrincado"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Trincado" />
-
-        <TextView
-            android:id="@+id/textViewRolamentoMangaEixo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="10dp"
-            android:gravity="fill_horizontal|center"
-            android:text="Rolamento da Manga do Eixo"
-            android:textIsSelectable="false"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            tools:layout_marginLeft="30dp"
-            tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-
-        <CheckBox
-            android:id="@+id/rolamentoMangaEixoDanificado"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Danificado" />
-
-        <CheckBox
-            android:id="@+id/rolamentoMangaEixoFolga"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Folga" />
-
-        <TextView
-            android:id="@+id/textViewParafusoBatenteManga"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="10dp"
-            android:gravity="fill_horizontal|center"
-            android:text="Parafuso do Batente Manga"
-            android:textIsSelectable="false"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            tools:layout_marginLeft="30dp"
-            tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-        <CheckBox
-            android:id="@+id/parafusoBatenteMangaFalta"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Falta" />
-
-        <CheckBox
-            android:id="@+id/parafusoBatenteMangaSolto"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Solto" />
-
-        <TextView
-            android:id="@+id/textViewBraçoEixoDianteiro"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="10dp"
-            android:gravity="fill_horizontal|center"
-            android:text="Braço do Eixo Dianteiro"
-            android:textIsSelectable="false"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            tools:layout_marginLeft="30dp"
-            tools:style="@android:style/Widget.DeviceDefault.TextView" />
-
-        <CheckBox
+            <CheckBox
                 android:id="@+id/bracoEixoDianteiroSolto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
                 android:text="Solto" />
-        <CheckBox
-            android:id="@+id/bracoEixoDianteiroDanificado"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Danificado" />
+        </LinearLayout>
 
-        <TextView
-            android:id="@+id/textViewTerminaisBarraLonga"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="10dp"
-            android:gravity="fill_horizontal|center"
-            android:text="Terminais da Barra Longa"
-            android:textIsSelectable="false"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            tools:layout_marginLeft="30dp"
-            tools:style="@android:style/Widget.DeviceDefault.TextView" />
+            android:layout_height="match_parent"
+            android:background="@color/fundopar"
+            android:orientation="vertical">
 
-        <CheckBox
-            android:id="@+id/terminaisBarraLongaSolto"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Solto" />
+            <TextView
+                android:id="@+id/textViewTerminaisBarraLonga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Terminais da Barra Longa"
+                android:textColor="#111"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
 
-        <CheckBox
-            android:id="@+id/terminaisBarraLongaFolga"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Com Folga" />
+            <CheckBox
+                android:id="@+id/terminaisBarraLongaSolto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Solto" />
+
+            <CheckBox
+                android:id="@+id/terminaisBarraLongaFolga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Com Folga" />
+        </LinearLayout>
 
 
-        <TextView
-            android:id="@+id/textViewBracoIntermediario"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="10dp"
-            android:gravity="fill_horizontal|center"
-            android:text="Braço Intermediario"
-            android:textIsSelectable="false"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            tools:layout_marginLeft="30dp"
-            tools:style="@android:style/Widget.DeviceDefault.TextView" />
+            android:layout_height="match_parent"
+            android:background="@color/fundoimpar"
+            android:orientation="vertical">
 
-        <CheckBox
-            android:id="@+id/bracoIntermediarioSolto"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Solto" />
+            <TextView
+                android:id="@+id/textViewBracoIntermediario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Braço Intermediario"
+                android:textColor="#111"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
 
-        <CheckBox
-            android:id="@+id/bracoIntermediarioFolga"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Com Folga" />
+            <CheckBox
+                android:id="@+id/bracoIntermediarioSolto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Solto" />
 
-        <TextView
-            android:id="@+id/textViewHasteSuporteReação"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="10dp"
-            android:gravity="fill_horizontal|center"
-            android:text="Haste/Suporte de Reação"
-            android:textIsSelectable="false"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            tools:layout_marginLeft="30dp"
-            tools:style="@android:style/Widget.DeviceDefault.TextView" />
+            <CheckBox
+                android:id="@+id/bracoIntermediarioFolga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Com Folga" />
+        </LinearLayout>
 
-        			hasteSuporteReacaoQuebrada
-        <CheckBox
-            android:id="@+id/hasteSuporteReacaoEmpenada"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Empenada" />
+            android:layout_height="match_parent"
+            android:background="@color/fundopar"
+            android:orientation="vertical">
 
-        <CheckBox
-            android:id="@+id/hasteSuporteReacaoFolga"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Com Folga" />
-        <CheckBox
-            android:id="@+id/hasteSuporteReacaoSolta"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Solta" />
-        <CheckBox
-            android:id="@+id/hasteSuporteReacaoQuebrada"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Quebrada" />
+            <TextView
+                android:id="@+id/textViewHasteSuporteReação"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Haste/Suporte de Reação"
+                android:textColor="#111"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/hasteSuporteReacaoEmpenada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Empenada" />
+
+            <CheckBox
+                android:id="@+id/hasteSuporteReacaoSolta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Solta" />
+
+            <CheckBox
+                android:id="@+id/hasteSuporteReacaoFolga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Com Folga" />
+
+            <CheckBox
+                android:id="@+id/hasteSuporteReacaoQuebrada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Quebrada" />
+        </LinearLayout>
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="16dp"
-            android:orientation="horizontal">
+            android:background="@color/fundopar"
+            android:orientation="horizontal"
+            android:gravity="center">
 
             <Button
                 android:id="@+id/botaoVoltarSelecionarFicha"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="left"
                 android:text="Voltar"
-                tools:layout_marginLeft="50dp" />
+                android:background="@color/fundoimpar"
+                android:layout_margin="10dp"/>
 
             <Button
                 android:id="@+id/botaoProximo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:gravity="center_vertical|end"
                 android:text="Próximo"
-                tools:layout_marginLeft="50dp" />
+                android:background="@color/fundoimpar"
+                android:layout_margin="10dp"/>
 
         </LinearLayout>
 

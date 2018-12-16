@@ -3,147 +3,161 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="@dimen/altura_dialogos"
-    tools:context=".activity.DetalhesVeiculoActivity"
-    android:background="@color/branco"
-    android:orientation="vertical">
+    android:background="#58C3BF"
+    android:orientation="vertical"
+    tools:context=".activity.DetalhesVeiculoActivity">
 
     <TableRow
-        android:layout_height="wrap_content"
         android:layout_width="fill_parent"
-        android:gravity="center_horizontal"
-        android:layout_margin="10dp">
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal">
 
         <TextView
             android:id="@+id/textView_mensagemDetalhesVeiculo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/mensagem_detalhesVeiculo"
-            android:textColor="@color/preto"/>
+            android:textColor="@color/preto" />
     </TableRow>
 
     <TableRow
-        android:layout_height="wrap_content"
         android:layout_width="fill_parent"
-        android:gravity="center"
-        android:layout_margin="10dp">
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center">
 
         <TextView
             android:id="@+id/textView_labelPrefixo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:text="@string/label_prefixo"
-            android:layout_margin="10dp"/>
+            android:textColor="@color/branco" />
 
         <TextView
             android:id="@+id/textView_Prefixo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"/>
+            android:layout_margin="10dp"
+            android:textColor="@color/branco" />
     </TableRow>
 
 
     <TableRow
-        android:layout_height="wrap_content"
         android:layout_width="fill_parent"
-        android:gravity="center_horizontal"
-        android:layout_margin="10dp">
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal">
 
         <TextView
             android:id="@+id/textView_labelPlaca"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:text="@string/label_placa"
-            android:layout_margin="10dp"/>
+            android:textColor="@color/branco" />
 
         <TextView
             android:id="@+id/textView_PlacaLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"/>
+            android:layout_margin="10dp"
+            android:textColor="@color/branco" />
     </TableRow>
 
 
     <TableRow
-        android:layout_height="wrap_content"
         android:layout_width="fill_parent"
-        android:gravity="center_horizontal"
-        android:layout_margin="10dp">
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal">
 
         <TextView
             android:id="@+id/textView_labelChassi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:text="@string/label_chassi"
-            android:layout_margin="10dp"/>
+            android:textColor="@color/branco" />
 
         <TextView
             android:id="@+id/textView_Chassi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"/>
+            android:layout_margin="10dp"
+            android:textColor="@color/branco" />
     </TableRow>
 
 
     <TableRow
-        android:layout_height="wrap_content"
         android:layout_width="fill_parent"
-        android:gravity="center_horizontal"
-        android:layout_margin="10dp">
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal">
 
         <TextView
             android:id="@+id/textView_labelEmpresa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:text="@string/label_empresa"
-            android:layout_margin="10dp"/>
+            android:textColor="@color/branco" />
 
         <TextView
             android:id="@+id/textView_Empresa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"/>
+            android:layout_margin="10dp"
+            android:textColor="@color/branco" />
     </TableRow>
 
     <TableRow
-        android:layout_height="wrap_content"
         android:layout_width="fill_parent"
-        android:gravity="center_horizontal"
-        android:layout_margin="10dp">
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal">
 
         <TextView
             android:id="@+id/textView_labelBloqueado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:text="@string/label_bloqueado"
-            android:layout_margin="10dp"/>
+            android:textColor="@color/branco" />
 
         <TextView
             android:id="@+id/textView_Bloqueado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"/>
+            android:layout_margin="10dp"
+            android:textColor="@color/branco" />
     </TableRow>
 
 
     <TableRow
-        android:layout_height="wrap_content"
         android:layout_width="fill_parent"
-        android:gravity="center_horizontal"
-        android:layout_margin="10dp">
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal">
 
         <Button
             android:id="@+id/button_Não"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="@string/não" />
+            android:background="#E0FFFF"
+            android:text="@string/não"
+            android:textColor="@color/preto" />
 
         <Button
             android:id="@+id/button_Sim"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="@string/sim" />
+            android:background="#E0FFFF"
+            android:text="@string/sim"
+            android:textColor="@color/preto" />
     </TableRow>
 
 

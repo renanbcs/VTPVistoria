@@ -69,13 +69,15 @@
                         android:id="@+id/valvulaPedalVazando"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Vazando" />
+                        android:text="Vazando"
+                        android:layout_marginLeft="15dp"/>
 
                     <CheckBox
                         android:id="@+id/valvulaPedalContaminada"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Contaminada" />
+                        android:text="Contaminada"
+                        android:layout_marginLeft="15dp"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -103,13 +105,15 @@
                         android:id="@+id/almofadaPedalGasta"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Gasta" />
+                        android:text="Gasta"
+                        android:layout_marginLeft="15dp"/>
 
                     <CheckBox
                         android:id="@+id/almofadaPedalFalta"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Falta" />
+                        android:text="Falta"
+                        android:layout_marginLeft="15dp"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -137,13 +141,15 @@
                         android:id="@+id/freioEstacionamentoNaoFunciona"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Não Funciona" />
+                        android:text="Não Funciona"
+                        android:layout_marginLeft="15dp"/>
 
                     <CheckBox
                         android:id="@+id/freioEstacionamentoVazando"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Vazando" />
+                        android:text="Vazando"
+                        android:layout_marginLeft="15dp"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -171,19 +177,22 @@
                         android:id="@+id/varaoFreioMaoSemAcao"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Sem Ação" />
+                        android:text="Sem Ação"
+                        android:layout_marginLeft="15dp"/>
 
                     <CheckBox
                         android:id="@+id/varaoFreioMaoSolta"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Solta" />
+                        android:text="Solta"
+                        android:layout_marginLeft="15dp"/>
 
                     <CheckBox
                         android:id="@+id/varaoFreioMaoDespressurizada"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Despressurizada" />
+                        android:text="Despressurizada"
+                        android:layout_marginLeft="15dp"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -211,7 +220,8 @@
                         android:id="@+id/catracaFalta"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Falta" />
+                        android:text="Falta"
+                        android:layout_marginLeft="15dp"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -239,7 +249,8 @@
                         android:id="@+id/pinoCatracaFalta"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Falta" />
+                        android:text="Falta"
+                        android:layout_marginLeft="15dp"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -267,31 +278,36 @@
                         android:id="@+id/lonasFreioQuebrada"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Quebrada" />
+                        android:text="Quebrada"
+                        android:layout_marginLeft="15dp"/>
 
                     <CheckBox
                         android:id="@+id/lonasFreioContaminada"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Contaminada" />
+                        android:text="Contaminada"
+                        android:layout_marginLeft="15dp"/>
 
                     <CheckBox
                         android:id="@+id/lonasFreioFina"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Fina" />
+                        android:text="Fina"
+                        android:layout_marginLeft="15dp"/>
 
                     <CheckBox
                         android:id="@+id/lonasFreioSolta"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Solta" />
+                        android:text="Solta"
+                        android:layout_marginLeft="15dp"/>
 
                     <CheckBox
                         android:id="@+id/lonasFreioDesrregulada"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Desrregulada" />
+                        android:text="Desrregulada"
+                        android:layout_marginLeft="15dp"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -319,13 +335,15 @@
                         android:id="@+id/cilindrosPneumaticosVazando"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Vazando" />
+                        android:text="Vazando"
+                        android:layout_marginLeft="15dp"/>
 
                     <CheckBox
                         android:id="@+id/cilindrosPneumaticosDesativado"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Desativado" />
+                        android:text="Desativado"
+                        android:layout_marginLeft="15dp"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -353,13 +371,15 @@
                         android:id="@+id/servoFreioVazando"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Vazando" />
+                        android:text="Vazando"
+                        android:layout_marginLeft="15dp"/>
 
                     <CheckBox
                         android:id="@+id/servoFreioSolto"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Solto" />
+                        android:text="Solto"
+                        android:layout_marginLeft="15dp"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -387,13 +407,15 @@
                         android:id="@+id/cilindroRodaSolto"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Solto" />
+                        android:text="Solto"
+                        android:layout_marginLeft="15dp"/>
 
                     <CheckBox
                         android:id="@+id/cilindroRodaVazando"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Vazando" />
+                        android:text="Vazando"
+                        android:layout_marginLeft="15dp"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -421,13 +443,15 @@
                         android:id="@+id/cilindroMestreVazando"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Vazando" />
+                        android:text="Vazando"
+                        android:layout_marginLeft="15dp"/>
 
                     <CheckBox
                         android:id="@+id/cilindroMestreSolto"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Solto" />
+                        android:text="Solto"
+                        android:layout_marginLeft="15dp"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -455,25 +479,29 @@
                         android:id="@+id/flexivelRodaDanificado"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Danificado" />
+                        android:text="Danificado"
+                        android:layout_marginLeft="15dp"/>
 
                     <CheckBox
                         android:id="@+id/flexivelRodaDesalinhado"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Desalinhado" />
+                        android:text="Desalinhado"
+                        android:layout_marginLeft="15dp"/>
 
                     <CheckBox
                         android:id="@+id/flexivelRodaVazando"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Vazando" />
+                        android:text="Vazando"
+                        android:layout_marginLeft="15dp"/>
 
                     <CheckBox
                         android:id="@+id/flexivelRodaIrregular"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Irregular" />
+                        android:text="Irregular"
+                        android:layout_marginLeft="15dp"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -501,40 +529,39 @@
                         android:id="@+id/valvulaTubularReservatorioVazando"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Vazando" />
+                        android:text="Vazando"
+                        android:layout_marginLeft="15dp"/>
 
                     <CheckBox
                         android:id="@+id/valvulaTubularReservatorioContaminada"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Contaminada" />
+                        android:text="Contaminada"
+                        android:layout_marginLeft="15dp"/>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:background="@color/fundopar"
                     android:orientation="horizontal">
 
                     <Button
                         android:id="@+id/botaoVoltarSelecionarFicha"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="left"
                         android:text="Voltar"
-                        tools:layout_marginLeft="50dp" />
+                        android:background="@color/fundoimpar"
+                        android:layout_margin="10dp"/>
 
                     <Button
                         android:id="@+id/botaoProximo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="right"
-                        android:gravity="center_vertical|end"
                         android:text="Próximo"
-                        tools:layout_marginLeft="50dp" />
+                        android:background="@color/fundoimpar"
+                        android:layout_margin="10dp"/>
 
                 </LinearLayout>
 

@@ -60,9 +60,11 @@ public class AdapterPersonalizado extends BaseAdapter {
 
         View view = act.getLayoutInflater().inflate(R.layout.templetelistas,parent,false);
 
-        TextView nome = (TextView) view.findViewById(R.id.lista_curso_personalizada_nome);
+        TextView titulo = (TextView) view.findViewById(R.id.textViewTitulo);
 
-        ImageView imagem = (ImageView) view.findViewById(R.id.lista_curso_personalizada_imagem);
+        TextView subtitulo = view.findViewById(R.id.textViewSubTitulo);
+
+        ImageView imagem = (ImageView) view.findViewById(R.id.imageViewIcone);
 
         LinearLayout linearLayout = view.findViewById(R.id.linearlayout);
 
@@ -75,19 +77,22 @@ public class AdapterPersonalizado extends BaseAdapter {
 
         if(inspetores != null){
 
-            nome.setText(inspetores.get(position).getNome());
+            titulo.setText(inspetores.get(position).getNome());
+            subtitulo.setText(inspetores.get(position).getEmail());
             imagem.setImageResource(R.drawable.person);
 
         }else{
 
             if(inspecoes != null){
 
-                nome.setText(inspecoes.get(position).getIdInspecao());
+                titulo.setText(inspecoes.get(position).getIdInspecao());
+                subtitulo.setText(inspecoes.get(position).getDataHoraRegistro());
                 imagem.setImageResource(R.drawable.ficha);
 
             }else{
 
-                nome.setText(veiculos.get(position).getPrefixo());
+                titulo.setText("Prefixo: "+veiculos.get(position).getPrefixo());
+                subtitulo.setText("Placa: "+veiculos.get(position).getPlaca());
                 imagem.setImageResource(R.drawable.bus);
 
             }

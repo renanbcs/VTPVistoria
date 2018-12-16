@@ -52,6 +52,11 @@ public class ListaInspecaoVeiculosActivity extends AppCompatActivity {
         viewInspecao = new ArrayList<>();
         listaInspecaoPorVeiculo = new ArrayList<>();
 
+
+        viewInspecao.add("Carregando...");
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, viewInspecao);
+        inspecaoListView.setAdapter(adapter);
+
         firebase.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -72,11 +77,8 @@ public class ListaInspecaoVeiculosActivity extends AppCompatActivity {
                     if(listaInspecao.get(a).getVeiculo().getPrefixo().equals(veiculo.getPrefixo())){
 
                         listaInspecaoPorVeiculo.add(listaInspecao.get(a));
-                        viewInspecao.add("Inspetor: "+ listaInspecao.get(a).getInspetor().getNome()+
-                                "\nData: "+listaInspecao.get(a).getDataHoraRegistro());
 
                     }
-
                 }
 
                 if(listaInspecaoPorVeiculo.size()==0){
@@ -86,9 +88,6 @@ public class ListaInspecaoVeiculosActivity extends AppCompatActivity {
                     finish();
 
                 }
-
-                //ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, viewInspecao);
-                //inspecaoListView.setAdapter(adapter);
 
                 AdapterPersonalizado adapter = new AdapterPersonalizado(listaInspecaoPorVeiculo,act,1);
                 inspecaoListView.setAdapter(adapter);

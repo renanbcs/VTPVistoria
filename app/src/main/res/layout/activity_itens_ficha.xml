@@ -4,10 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="@dimen/altura_dialogos"
-    tools:context=".activity.ItensFichaActivity"
-    android:background="@color/branco">
-
-
+    android:background="#58C3BF"
+    tools:context=".activity.ItensFichaActivity">
 
 
     <TextView
@@ -18,7 +16,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="34dp"
         android:text="@string/itens_ficha"
-        android:textColor="@color/preto"/>
+        android:textColor="@color/branco" />
 
     <TextView
         android:id="@+id/textViewConfirma"
@@ -28,7 +26,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="125dp"
         android:text="@string/continuar"
-        />
+        android:textColor="@color/branco" />
 
     <TextView
         android:id="@+id/textViewConteudo"
@@ -37,14 +35,15 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="91dp"
-        android:scrollbars="vertical" />
+        android:scrollbars="vertical"
+        android:textColor="@color/branco" />
 
 
     <TableRow
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginBottom="42dp"
         android:gravity="center_horizontal">
 
@@ -53,18 +52,22 @@
             android:id="@+id/button_nao_FichaA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
             android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:background="#E0FFFF"
             android:text="@string/não"
-            android:layout_margin="10dp"/>
+            android:textColor="@color/preto" />
 
         <Button
             android:id="@+id/button_sim_FichaA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:background="#E0FFFF"
             android:text="@string/sim"
-            android:layout_margin="10dp"/>
+            android:textColor="@color/preto" />
 
 
     </TableRow>

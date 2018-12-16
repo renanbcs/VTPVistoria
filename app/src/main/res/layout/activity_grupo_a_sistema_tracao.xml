@@ -4,10 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="16dp"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
-    android:layout_marginTop="16dp"
     android:orientation="vertical"
     tools:context=".activity.GrupoA.GrupoASistemaTracaoActivity">
 
@@ -20,90 +16,107 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textViewTituloGrupoA"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:text="Grupo A"
-        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-        android:textSize="15sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textViewSistemaSuspensao"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:text="3 - Sistemas de Tração"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="15sp" />
-
-        <TextView
-            android:id="@+id/textViewEixoCardan"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="10dp"
-            android:gravity="fill_horizontal|center"
-            android:text="Eixo Cardan"
-            android:textIsSelectable="false"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            tools:layout_marginLeft="30dp"
-            tools:style="@android:style/Widget.DeviceDefault.TextView" />
+            android:layout_height="match_parent"
+            android:background="@color/fundoimpar"
+            android:orientation="vertical">
 
-        <CheckBox
-            android:id="@+id/eixoCardanFolga"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Folga" />
+            <TextView
+                android:id="@+id/textViewTituloGrupoA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Grupo A"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
-        <CheckBox
-            android:id="@+id/eixoCardanDesalinhado"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Desalinhado" />
+            <TextView
+                android:id="@+id/textViewSistemaSuspensao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="3 - Sistemas de Tração"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="15sp" />
+        </LinearLayout>
 
-        <CheckBox
-            android:id="@+id/eixoCardanSolto"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Solto" />
+            android:layout_height="match_parent"
+            android:background="@color/fundopar"
+            android:orientation="vertical">
 
-        <CheckBox
-            android:id="@+id/eixoCardanBorrachaDanificada"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Danificada" />
+            <TextView
+                android:id="@+id/textViewEixoCardan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="fill_horizontal|center"
+                android:text="Eixo Cardan"
+                android:textColor="#111"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:style="@android:style/Widget.DeviceDefault.TextView" />
+
+            <CheckBox
+                android:id="@+id/eixoCardanDesalinhado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Desalinhado" />
+
+            <CheckBox
+                android:id="@+id/eixoCardanSolto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Solto" />
+
+            <CheckBox
+                android:id="@+id/eixoCardanBorrachaDanificada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Danificada" />
+
+            <CheckBox
+                android:id="@+id/eixoCardanFolga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Folga" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="16dp"
-            android:orientation="horizontal">
+            android:background="@color/fundopar"
+            android:orientation="horizontal"
+            android:gravity="center">
 
             <Button
                 android:id="@+id/botaoVoltarSelecionarFicha"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="left"
                 android:text="Voltar"
-                tools:layout_marginLeft="50dp" />
+                android:background="@color/fundoimpar"
+                android:layout_margin="10dp"/>
 
             <Button
                 android:id="@+id/botaoProximo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:gravity="center_vertical|end"
                 android:text="Próximo"
-                tools:layout_marginLeft="50dp" />
+                android:background="@color/fundoimpar"
+                android:layout_margin="10dp"/>
 
         </LinearLayout>
 
